@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Primary Deep Space Environment (Phase 2 Tokens) */
+    --bythawk-bg-deep: #030712; /* Near-black navy */
+    --bythawk-bg-space: #071426; /* Deep space blue */
+    --bythawk-bg-navy: #0b1b32; /* Secondary navy */
+    --bythawk-bg-surface: #071426;
+    --bythawk-bg-elevated: #0b1b32;
+    --bythawk-bg-sunken: #02040a;
+
+    /* Precision Borders */
+    --bythawk-border-subtle: rgba(255, 255, 255, 0.08);
+    --bythawk-border-medium: rgba(255, 255, 255, 0.14);
+    --bythawk-border-accent: rgba(32, 217, 243, 0.35);
+    --bythawk-border-violet: rgba(139, 92, 246, 0.35);
+
+    /* Text System */
+    --bythawk-text-primary: #f4f8ff; /* Pure celestial white */
+    --bythawk-text-secondary: #94a3b8; /* Muted blue-grey */
+    --bythawk-text-muted: #64748b;
+    --bythawk-text-accent: #20d9f3; /* Electric cyan */
+
+    /* Accents */
+    --bythawk-cyan: #20d9f3; /* Electric cyan */
+    --bythawk-cyan-hover: #38bdf8;
+    --bythawk-soft-blue: #68afff; /* Soft blue */
+    --bythawk-violet: #8b5cf6;
+    --bythawk-electric-blue: #0284c7;
+
+    /* Focus Rings for Accessibility */
+    --bythawk-focus-ring: #20d9f3;
+  }
+
+  body {
+    background-color: var(--bythawk-bg-deep);
+    color: var(--bythawk-text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* ==========================================================================
+   GLASS & DEPTH SYSTEM
+   ========================================================================== */
+
+.glass-panel {
+  background: rgba(7, 20, 38, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.glass-panel-interactive {
+  background: rgba(7, 20, 38, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-interactive:hover {
+  background: rgba(11, 27, 50, 0.55);
+  border-color: rgba(32, 217, 243, 0.45);
+  box-shadow: 0 20px 40px -15px rgba(3, 7, 18, 0.6), 0 0 30px -5px rgba(32, 217, 243, 0.15);
+  transform: translateY(-3px);
+}
+
+.elevated-panel {
+  background: rgba(16, 28, 61, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--bythawk-border-medium);
+  box-shadow: 0 20px 40px -15px rgba(3, 7, 18, 0.8), 0 0 20px 0 rgba(6, 182, 212, 0.05);
+  border-radius: 1rem;
+}
+
+.glow-panel-cyan {
+  position: relative;
+  background: rgba(11, 19, 41, 0.7);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  box-shadow: inset 0 0 20px 0 rgba(6, 182, 212, 0.08), 0 10px 25px -5px rgba(6, 182, 212, 0.1);
+  border-radius: 0.75rem;
+}
+
+.glow-panel-violet {
+  position: relative;
+  background: rgba(11, 19, 41, 0.7);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  box-shadow: inset 0 0 20px 0 rgba(139, 92, 246, 0.08), 0 10px 25px -5px rgba(139, 92, 246, 0.1);
+  border-radius: 0.75rem;
+}
+
+.dark-panel {
+  background: #080e1e;
+  border: 1px solid var(--bythawk-border-subtle);
+  border-radius: 0.75rem;
+}
+
+.bordered-panel {
+  border: 1px solid var(--bythawk-border-subtle);
+  border-radius: 0.75rem;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY SYSTEM
+   ========================================================================== */
+
+.heading-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.75rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--bythawk-text-primary);
+}
+
+.heading-1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(2rem, 3.5vw + 1rem, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--bythawk-text-primary);
+}
+
+.heading-2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--bythawk-text-primary);
+}
+
+.heading-3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.2rem, 1.5vw + 0.5rem, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  color: var(--bythawk-text-primary);
+}
+
+.text-lead {
+  font-size: clamp(1rem, 1vw + 0.25rem, 1.25rem);
+  line-height: 1.65;
+  color: var(--bythawk-text-secondary);
+}
+
+.text-mono-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bythawk-text-accent);
+}
+
+/* ==========================================================================
+   ACCESSIBILITY & FOCUS STATES
+   ========================================================================== */
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--bythawk-cyan);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.25);
+}
+
+/* ==========================================================================
+   PREFERS-REDUCED-MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

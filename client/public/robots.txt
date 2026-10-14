@@ -1,0 +1,8 @@
+# Bythawk Robots Exclusion File
+# https://bythawk.uk
+
+User-agent: *
+Allow: /
+Disallow: /design-system
+
+Sitemap: https://bythawk.uk/sitemap.xml
