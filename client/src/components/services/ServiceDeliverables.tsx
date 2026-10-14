@@ -36,7 +36,7 @@ export const ServiceDeliverables: React.FC<ServiceDeliverablesProps> = ({
             spotlight={true}
             withReticles={true}
             spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-6 rounded-2xl bg-[#071426]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 relative group flex flex-col justify-between shadow-lg"
+            className="p-6 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 relative group flex flex-col justify-between shadow-lg"
           >
             <div>
               <div className="flex items-center justify-between mb-3.5 pb-2.5 border-b border-white/[0.06]">

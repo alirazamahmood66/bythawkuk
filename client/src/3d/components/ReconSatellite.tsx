@@ -121,18 +121,18 @@ export const ReconSatellite: React.FC<ReconSatelliteProps> = ({ isReducedMotion 
         {/* Feed horn */}
         <mesh position={[0, 0, 0.15]}>
           <cylinderGeometry args={[0.02, 0.04, 0.12, 8]} />
-          <meshStandardMaterial color="#38bdf8" metalness={0.9} roughness={0.2} />
+          <meshStandardMaterial color="#23F7DB" metalness={0.9} roughness={0.2} />
         </mesh>
       </group>
 
       {/* 4. Blinking Navigation Telemetry Beacon */}
       <mesh position={[-0.46, 0.1, 0]}>
         <sphereGeometry args={[0.06, 12, 12]} />
-        <meshBasicMaterial color="#22d3ee" />
+        <meshBasicMaterial color="#30F1BE" />
       </mesh>
       <pointLight
         ref={beaconRef}
-        color="#22d3ee"
+        color="#30F1BE"
         distance={2.5}
         decay={2}
         intensity={1.5}

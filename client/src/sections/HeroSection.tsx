@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
       {/* PINNED STICKY VIEWPORT CONTAINER */}
       <section
         aria-label="BYTHAWK Agency Cosmic Hero"
-        className="sticky top-0 h-screen w-full flex flex-col justify-between overflow-hidden bg-[#030712] pt-18 sm:pt-20 pb-0 z-30"
+        className="sticky top-0 h-screen w-full flex flex-col justify-between overflow-hidden bg-[#001119] pt-18 sm:pt-20 pb-0 z-30"
       >
         {/* 1. PHOTOREALISTIC SATURN WITH LUMINOUS RINGS (GENTLE NATURAL DIVE - NO LABELS) */}
         <motion.div
@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
           <img
             src="/images/cosmic/saturn_ringed_planet.png"
             alt="Real ringed planet Saturn floating in deep space"
-            className="w-full h-full object-contain filter drop-shadow-[0_0_60px_rgba(32,217,243,0.4)]"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_60px_rgba(35,247,219,0.4)]"
             loading="eager"
           />
         </motion.div>
@@ -93,7 +93,7 @@ export const HeroSection: React.FC = () => {
               ].map((cat, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wide bg-[#071426]/85 text-cyan-300 border border-cyan-500/30 backdrop-blur-md shadow-sm"
+                  className="px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wide bg-[#061F25]/85 text-[#30F1BE] border border-[#04A37B]/30 backdrop-blur-md shadow-sm"
                 >
                   {cat}
                 </span>
@@ -108,23 +108,23 @@ export const HeroSection: React.FC = () => {
                   <Badge variant="cyan" withDot pulseDot size="sm">
                     DIGITAL TECHNOLOGY STUDIO
                   </Badge>
-                  <span className="text-xs text-slate-400 uppercase tracking-widest hidden sm:inline font-sans font-semibold">
+                  <span className="text-xs text-[#E8FFFC]/60 uppercase tracking-widest hidden sm:inline font-sans font-semibold">
                     LONDON &bull; UK
                   </span>
                 </div>
 
                 {/* Main Cinematic Display Headline */}
                 <div className="space-y-0.5">
-                  <h1 className="heading-display text-white tracking-tight text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase leading-[1.06]">
+                  <h1 className="heading-display text-[#E8FFFC] tracking-tight text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase leading-[1.06]">
                     WE BUILD <br />
-                    <span className="bg-gradient-to-r from-cyan-300 via-sky-200 to-white bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#E8FFFC] bg-clip-text text-transparent">
                       DIGITAL WORLDS.
                     </span>
                   </h1>
                 </div>
 
                 {/* Supporting Editorial Copy */}
-                <p className="text-lead text-slate-300 max-w-xl text-sm sm:text-base leading-relaxed font-sans">
+                <p className="text-lead text-[#E8FFFC]/70 max-w-xl text-sm sm:text-base leading-relaxed font-sans">
                   Websites, cloud applications, mobile products, and growth engines engineered
                   for ambitious businesses demanding precision and scale.
                 </p>
@@ -146,7 +146,7 @@ export const HeroSection: React.FC = () => {
                     <Button
                       variant="secondary"
                       size="md"
-                      className="rounded-full font-semibold text-xs tracking-normal px-6 py-3 bg-[#071426]/70 border-white/[0.15] hover:border-cyan-400/50 backdrop-blur-md"
+                      className="rounded-full font-semibold text-xs tracking-normal px-6 py-3 bg-[#061F25]/70 border-[#E8FFFC]/[0.15] hover:border-[#23F7DB]/50 backdrop-blur-md"
                       rightIcon={<Compass className="w-3.5 h-3.5" />}
                     >
                       Explore Our Work
@@ -158,11 +158,11 @@ export const HeroSection: React.FC = () => {
                 <div className="pt-0.5">
                   <Link
                     to="/work"
-                    className="inline-flex items-center gap-2 text-xs font-sans text-slate-400 hover:text-cyan-300 transition-colors group"
+                    className="inline-flex items-center gap-2 text-xs font-sans text-[#E8FFFC]/60 hover:text-[#30F1BE] transition-colors group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                    <span className="text-cyan-400 font-semibold">VERIFIED DEPLOYMENTS:</span>
-                    <span className="text-slate-300 group-hover:text-white transition-colors">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#23F7DB] animate-pulse" />
+                    <span className="text-[#23F7DB] font-semibold">VERIFIED DEPLOYMENTS:</span>
+                    <span className="text-[#E8FFFC]/70 group-hover:text-[#E8FFFC] transition-colors">
                       bythawk.com &bull; oaksis.com &bull; ceedrs.com &bull; globalintegratedsupport.com
                     </span>
                     <ArrowRight className="w-3 h-3 text-cyan-400 group-hover:translate-x-1 transition-transform" />

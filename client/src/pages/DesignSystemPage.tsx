@@ -95,57 +95,94 @@ export const DesignSystemPage: React.FC = () => {
           <Container size="xl">
             <SectionHeading
               eyebrow="SYSTEM // 01"
-              title="Color Tokens &"
-              highlight="Deep Space Environment"
-              description="Near-black void baselines, subtle navy surfaces, precision micro-borders, and disciplined electric cyan / cosmic violet accents."
+              title="Aqua Mint Palette &"
+              highlight="Space Environment"
+              description="Midnight Teal baseline, Dark Teal surfaces, Neon Cyan and Neon Mint electric vectors, balanced with Deep Aqua Green and Ice White."
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {/* Background tokens */}
-              <Card className="p-5 flex flex-col justify-between">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {/* Midnight Teal */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
                 <div>
-                  <span className="text-mono-label text-slate-400">Environment</span>
-                  <h3 className="text-white font-semibold text-base mt-1">Deep Cosmic Void</h3>
+                  <span className="text-mono-label text-[#E8FFFC]/60">Baseline</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Midnight Teal</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#030712] border border-white/10 my-4 flex items-center justify-center font-mono text-xs text-slate-500">
-                  {colors.background.deep}
+                <div className="h-16 rounded-lg bg-[#001119] border border-[#E8FFFC]/15 my-4 flex items-center justify-center font-mono text-xs text-[#E8FFFC]/70">
+                  #001119
                 </div>
-                <span className="text-xs text-slate-400">Base application backdrop</span>
+                <span className="text-xs text-[#E8FFFC]/60">Primary void & app backdrop</span>
               </Card>
 
-              <Card className="p-5 flex flex-col justify-between">
+              {/* Dark Teal */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
                 <div>
-                  <span className="text-mono-label text-slate-400">Environment</span>
-                  <h3 className="text-white font-semibold text-base mt-1">Space Navy Surface</h3>
+                  <span className="text-mono-label text-[#E8FFFC]/60">Surface</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Dark Teal</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#0b1329] border border-white/10 my-4 flex items-center justify-center font-mono text-xs text-slate-400">
-                  {colors.background.surface}
+                <div className="h-16 rounded-lg bg-[#061F25] border border-[#E8FFFC]/15 my-4 flex items-center justify-center font-mono text-xs text-[#E8FFFC]/70">
+                  #061F25
                 </div>
-                <span className="text-xs text-slate-400">Standard card & panel surface</span>
+                <span className="text-xs text-[#E8FFFC]/60">Panels, cards & interactive docks</span>
               </Card>
 
-              {/* Accent Cyan */}
-              <Card className="p-5 flex flex-col justify-between">
+              {/* Neon Cyan */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
                 <div>
-                  <span className="text-mono-label text-cyan-400">Primary Accent</span>
-                  <h3 className="text-white font-semibold text-base mt-1">Electric Cyan</h3>
+                  <span className="text-mono-label text-[#23F7DB]">Primary Accent</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Neon Cyan</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-cyan-500 my-4 flex items-center justify-center font-mono text-xs text-slate-950 font-bold shadow-[0_0_15px_rgba(6,182,212,0.4)]">
-                  {colors.accent.cyan}
+                <div className="h-16 rounded-lg bg-[#23F7DB] my-4 flex items-center justify-center font-mono text-xs text-[#001119] font-bold shadow-[0_0_15px_rgba(35,247,219,0.5)]">
+                  #23F7DB
                 </div>
-                <span className="text-xs text-slate-400">High-priority actions & key indicators</span>
+                <span className="text-xs text-[#E8FFFC]/60">High-priority buttons & active indicators</span>
               </Card>
 
-              {/* Accent Violet */}
-              <Card className="p-5 flex flex-col justify-between">
+              {/* Neon Mint */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
                 <div>
-                  <span className="text-mono-label text-violet-400">Secondary Accent</span>
-                  <h3 className="text-white font-semibold text-base mt-1">Cosmic Violet</h3>
+                  <span className="text-mono-label text-[#30F1BE]">Secondary Accent</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Neon Mint</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-violet-600 my-4 flex items-center justify-center font-mono text-xs text-white font-bold shadow-[0_0_15px_rgba(139,92,246,0.3)]">
-                  {colors.accent.violet}
+                <div className="h-16 rounded-lg bg-[#30F1BE] my-4 flex items-center justify-center font-mono text-xs text-[#001119] font-bold shadow-[0_0_15px_rgba(48,241,190,0.4)]">
+                  #30F1BE
                 </div>
-                <span className="text-xs text-slate-400">Creative depth, gradients & highlights</span>
+                <span className="text-xs text-[#E8FFFC]/60">Orbits, badges, code & glows</span>
+              </Card>
+
+              {/* Aqua Mint */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
+                <div>
+                  <span className="text-mono-label text-[#30F1BE]">Mid Accent</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Aqua Mint</h3>
+                </div>
+                <div className="h-16 rounded-lg bg-[#04A37B] my-4 flex items-center justify-center font-mono text-xs text-white font-bold shadow-[0_0_15px_rgba(4,163,123,0.3)]">
+                  #04A37B
+                </div>
+                <span className="text-xs text-[#E8FFFC]/60">Gradient fills & active borders</span>
+              </Card>
+
+              {/* Deep Aqua Green */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
+                <div>
+                  <span className="text-mono-label text-[#30F1BE]">Deep Accent</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Deep Aqua Green</h3>
+                </div>
+                <div className="h-16 rounded-lg bg-[#008C6B] my-4 flex items-center justify-center font-mono text-xs text-white font-bold shadow-[0_0_15px_rgba(0,140,107,0.3)]">
+                  #008C6B
+                </div>
+                <span className="text-xs text-[#E8FFFC]/60">Solid deep CTAs & pill backgrounds</span>
+              </Card>
+
+              {/* Ice White */}
+              <Card className="p-5 flex flex-col justify-between bg-[#061F25]/85 border-[#E8FFFC]/[0.08]">
+                <div>
+                  <span className="text-mono-label text-[#E8FFFC]">Primary Contrast</span>
+                  <h3 className="text-[#E8FFFC] font-semibold text-base mt-1">Ice White</h3>
+                </div>
+                <div className="h-16 rounded-lg bg-[#E8FFFC] my-4 flex items-center justify-center font-mono text-xs text-[#001119] font-bold shadow-[0_0_15px_rgba(232,255,252,0.4)]">
+                  #E8FFFC
+                </div>
+                <span className="text-xs text-[#E8FFFC]/60">Display typography & contrast accents</span>
               </Card>
             </div>
           </Container>

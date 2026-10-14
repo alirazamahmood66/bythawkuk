@@ -74,7 +74,7 @@ export const MobileNav: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: shouldReduceMotion ? 0 : -10 }}
             transition={{ duration: shouldReduceMotion ? 0.01 : 0.25 }}
-            className="fixed inset-0 top-16 z-50 bg-[#030712] overflow-y-auto flex flex-col justify-between"
+            className="fixed inset-0 top-16 z-50 bg-[#001119] overflow-y-auto flex flex-col justify-between"
           >
             {/* Ambient Background Layers */}
             <div className="absolute inset-0 pointer-events-none z-0">
@@ -86,24 +86,24 @@ export const MobileNav: React.FC = () => {
             {/* Menu Content */}
             <div className="relative z-10 p-6 space-y-4 max-w-lg mx-auto w-full">
               {/* Telemetry Header */}
-              <div className="flex items-center justify-between pb-3 border-b border-white/[0.08]">
+              <div className="flex items-center justify-between pb-3 border-b border-[#E8FFFC]/[0.08]">
                 <Badge variant="cyan" withDot pulseDot>
                   Mission Menu
                 </Badge>
-                <span className="text-[11px] font-mono text-slate-500">
+                <span className="text-[11px] font-mono text-[#E8FFFC]/50">
                   BYTHAWK.UK
                 </span>
               </div>
 
               {/* Direct Link: HOME */}
-              <div className="border-b border-white/[0.06] py-3">
+              <div className="border-b border-[#E8FFFC]/[0.06] py-3">
                 <NavLink
                   to="/"
                   end
                   onClick={closeMenu}
                   className={({ isActive }) =>
                     `text-base font-bold font-sans tracking-tight block py-1 focus-ring rounded ${
-                      isActive ? 'text-cyan-400' : 'text-white hover:text-cyan-300'
+                      isActive ? 'text-[#23F7DB]' : 'text-[#E8FFFC] hover:text-[#30F1BE]'
                     }`
                   }
                 >
@@ -115,15 +115,15 @@ export const MobileNav: React.FC = () => {
               <MobileAccordion title="Services" badge="6 Core">
                 <div className="space-y-4 pt-1">
                   {SERVICES_CATEGORIES.map((category) => (
-                    <div key={category.id} className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.04]">
+                    <div key={category.id} className="p-3 rounded-lg bg-[#E8FFFC]/[0.02] border border-[#E8FFFC]/[0.04]">
                       <Link
                         to={category.href}
                         onClick={closeMenu}
-                        className="text-xs font-mono font-bold tracking-wider text-cyan-300 hover:text-cyan-200 block mb-1.5 focus-ring rounded"
+                        className="text-xs font-mono font-bold tracking-wider text-[#23F7DB] hover:text-[#30F1BE] block mb-1.5 focus-ring rounded"
                       >
                         {category.title} &rarr;
                       </Link>
-                      <p className="text-[11px] text-slate-400 mb-2 font-sans">
+                      <p className="text-[11px] text-[#E8FFFC]/70 mb-2 font-sans">
                         {category.description}
                       </p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 pl-1">
@@ -132,9 +132,9 @@ export const MobileNav: React.FC = () => {
                             key={item.title}
                             to={item.href}
                             onClick={closeMenu}
-                            className="text-xs text-slate-300 hover:text-white py-1 flex items-center gap-1.5 focus-ring rounded"
+                            className="text-xs text-[#E8FFFC]/80 hover:text-[#E8FFFC] py-1 flex items-center gap-1.5 focus-ring rounded"
                           >
-                            <span className="w-1 h-1 rounded-full bg-cyan-400/80" />
+                            <span className="w-1 h-1 rounded-full bg-[#23F7DB]" />
                             <span>{item.title}</span>
                           </Link>
                         ))}
@@ -152,12 +152,12 @@ export const MobileNav: React.FC = () => {
                       key={solution.id}
                       to={solution.href}
                       onClick={closeMenu}
-                      className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.04] block hover:border-violet-500/40 focus-ring"
+                      className="p-3 rounded-lg bg-[#E8FFFC]/[0.02] border border-[#E8FFFC]/[0.04] block hover:border-[#23F7DB]/40 focus-ring"
                     >
-                      <span className="font-mono text-xs font-bold text-slate-200 block mb-1">
+                      <span className="font-mono text-xs font-bold text-[#E8FFFC] block mb-1">
                         {solution.title}
                       </span>
-                      <p className="text-[11px] text-slate-400 leading-snug">
+                      <p className="text-[11px] text-[#E8FFFC]/70 leading-snug">
                         {solution.tagline}
                       </p>
                     </Link>
@@ -166,13 +166,13 @@ export const MobileNav: React.FC = () => {
               </MobileAccordion>
 
               {/* Direct Link: WORK */}
-              <div className="border-b border-white/[0.06] py-3">
+              <div className="border-b border-[#E8FFFC]/[0.06] py-3">
                 <NavLink
                   to="/work"
                   onClick={closeMenu}
                   className={({ isActive }) =>
                     `text-base font-bold font-sans tracking-tight block py-1 focus-ring rounded ${
-                      isActive ? 'text-cyan-400' : 'text-white hover:text-cyan-300'
+                      isActive ? 'text-[#23F7DB]' : 'text-[#E8FFFC] hover:text-[#30F1BE]'
                     }`
                   }
                 >
@@ -188,18 +188,18 @@ export const MobileNav: React.FC = () => {
                       key={item.href}
                       to={item.href}
                       onClick={closeMenu}
-                      className="p-2.5 rounded-lg bg-white/[0.02] block text-xs font-semibold text-slate-200 hover:text-cyan-300 focus-ring"
+                      className="p-2.5 rounded-lg bg-[#E8FFFC]/[0.02] block text-xs font-semibold text-[#E8FFFC] hover:text-[#23F7DB] focus-ring"
                     >
                       <div className="flex items-center justify-between">
                         <span>{item.title}</span>
                         {item.badge && (
-                          <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                          <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#04A37B]/10 text-[#30F1BE] border border-[#04A37B]/30">
                             {item.badge}
                           </span>
                         )}
                       </div>
                       {item.description && (
-                        <p className="text-[11px] text-slate-400 mt-0.5 font-normal">
+                        <p className="text-[11px] text-[#E8FFFC]/70 mt-0.5 font-normal">
                           {item.description}
                         </p>
                       )}
@@ -216,7 +216,7 @@ export const MobileNav: React.FC = () => {
                       key={item.href}
                       to={item.href}
                       onClick={closeMenu}
-                      className="p-2 rounded-lg bg-white/[0.02] text-xs font-medium text-slate-300 hover:text-white focus-ring truncate"
+                      className="p-2 rounded-lg bg-[#E8FFFC]/[0.02] text-xs font-medium text-[#E8FFFC]/80 hover:text-[#E8FFFC] focus-ring truncate"
                     >
                       {item.title}
                     </Link>
@@ -225,13 +225,13 @@ export const MobileNav: React.FC = () => {
               </MobileAccordion>
 
               {/* Direct Link: CONTACT */}
-              <div className="border-b border-white/[0.06] py-3">
+              <div className="border-b border-[#E8FFFC]/[0.06] py-3">
                 <NavLink
                   to="/contact"
                   onClick={closeMenu}
                   className={({ isActive }) =>
                     `text-base font-bold font-sans tracking-tight block py-1 focus-ring rounded ${
-                      isActive ? 'text-cyan-400' : 'text-white hover:text-cyan-300'
+                      isActive ? 'text-[#23F7DB]' : 'text-[#E8FFFC] hover:text-[#30F1BE]'
                     }`
                   }
                 >
@@ -241,7 +241,7 @@ export const MobileNav: React.FC = () => {
             </div>
 
             {/* Mobile Footer CTA */}
-            <div className="relative z-10 p-6 border-t border-white/[0.08] bg-[#02040a]/90 mt-6 max-w-lg mx-auto w-full space-y-3">
+            <div className="relative z-10 p-6 border-t border-[#E8FFFC]/[0.08] bg-[#001119]/90 mt-6 max-w-lg mx-auto w-full space-y-3">
               <Link to="/contact" onClick={closeMenu} className="block w-full">
                 <Button
                   variant="primary"
@@ -252,9 +252,9 @@ export const MobileNav: React.FC = () => {
                   Let's Talk
                 </Button>
               </Link>
-              <div className="flex items-center justify-between text-[11px] font-mono text-slate-500 pt-1">
+              <div className="flex items-center justify-between text-[11px] font-mono text-[#E8FFFC]/50 pt-1">
                 <span>London, United Kingdom</span>
-                <span className="text-cyan-400">bythawk.uk</span>
+                <span className="text-[#23F7DB]">bythawk.uk</span>
               </div>
             </div>
           </motion.div>

@@ -23,7 +23,7 @@ const DISCIPLINES: DisciplineNode[] = [
     category: 'CORE WEB',
     tagline: 'High-velocity Next.js & React architectures engineered for sub-second speeds.',
     route: '/services/web-development',
-    color: '#20d9f3',
+    color: '#23F7DB',
     icon: Layers,
     illustration: '/images/cosmic/pulsar_energy_core.png',
   },
@@ -98,7 +98,7 @@ export const PlanetaryGalleryDock: React.FC = () => {
                 spotlight={true}
                 withReticles={true}
                 spotlightColor="rgba(32, 217, 243, 0.12)"
-                className="h-full p-4 rounded-xl bg-[#071426]/30 backdrop-blur-md border-white/[0.08] hover:border-cyan-500/40 hover:bg-[#071426]/50 transition-all duration-300 shadow-lg flex flex-col justify-between relative overflow-hidden"
+                className="h-full p-4 rounded-xl bg-[#061F25]/30 backdrop-blur-md border-white/[0.08] hover:border-cyan-500/40 hover:bg-[#061F25]/50 transition-all duration-300 shadow-lg flex flex-col justify-between relative overflow-hidden"
               >
                 {/* Subtle Transparent Ambient Cosmic Illustration in Card Background */}
                 <div className="absolute -right-3 -bottom-3 w-20 h-20 opacity-20 group-hover:opacity-35 transition-all duration-300 pointer-events-none group-hover:scale-110">

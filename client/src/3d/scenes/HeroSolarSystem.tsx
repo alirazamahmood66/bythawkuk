@@ -25,13 +25,13 @@ export const HeroSolarSystem: React.FC<HeroSolarSystemProps> = ({
 
       {/* 3. Physical Celestial Lighting System */}
       {/* Deep cosmic ambient fill so planetary shadow sides maintain rich silhouette */}
-      <ambientLight intensity={0.22} color="#071426" />
+      <ambientLight intensity={0.22} color="#061F25" />
 
       {/* Primary Key Sunlight (shining from upper left, casting dramatic illuminated crescents) */}
       <directionalLight position={[-12, 8, 9]} intensity={3.2} color="#f8fafc" />
 
       {/* Secondary Stellar Core Point Light */}
-      <pointLight position={[-6, 4, 6]} intensity={3.5} distance={35} decay={1.2} color="#38bdf8" />
+      <pointLight position={[-6, 4, 6]} intensity={3.5} distance={35} decay={1.2} color="#23F7DB" />
 
       {/* 4. Fine Monochromatic Starfield */}
       <Stars

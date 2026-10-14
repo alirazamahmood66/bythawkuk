@@ -152,8 +152,8 @@ export const ServicesOverviewPage: React.FC = () => {
                   variant="default"
                   spotlight={true}
                   withReticles={true}
-                  spotlightColor="rgba(32, 217, 243, 0.14)"
-                  className="p-8 rounded-2xl bg-[#071426]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden shadow-xl"
+                  spotlightColor="rgba(35, 247, 219, 0.14)"
+                  className="p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden shadow-xl"
                 >
                   {/* Subtle top border accent */}
                   <div
@@ -163,11 +163,11 @@ export const ServicesOverviewPage: React.FC = () => {
 
                   <div>
                     {/* Header Phase / Category Pill */}
-                    <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-white/[0.06] text-[10px] font-mono">
-                      <span className="text-cyan-400 font-semibold tracking-wider">
+                    <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-[#E8FFFC]/[0.06] text-[10px] font-mono">
+                      <span className="text-[#23F7DB] font-semibold tracking-wider">
                         DISCIPLINE 0{idx + 1}
                       </span>
-                      <span className="text-cyan-300 uppercase px-2 py-0.5 rounded bg-cyan-950/40 border border-cyan-500/30">
+                      <span className="text-[#30F1BE] uppercase px-2 py-0.5 rounded bg-[#008C6B]/20 border border-[#04A37B]/30">
                         {service.category}
                       </span>
                     </div>

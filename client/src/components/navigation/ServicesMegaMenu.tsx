@@ -77,7 +77,7 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
           animate="open"
           exit="closed"
           variants={menuVariants}
-          className="fixed inset-x-0 top-[76px] bottom-0 z-40 pointer-events-auto overflow-y-auto bg-[#030712]/95 backdrop-blur-2xl border-t border-white/[0.08] flex flex-col justify-between"
+          className="fixed inset-x-0 top-[76px] bottom-0 z-40 pointer-events-auto overflow-y-auto bg-[#001119]/95 backdrop-blur-2xl border-t border-[#E8FFFC]/[0.08] flex flex-col justify-between"
         >
           {/* Atmospheric Background Layers */}
           <div className="absolute inset-0 pointer-events-none z-0">
@@ -85,26 +85,26 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
             <GridOverlay opacity={0.025} />
             <StarField count={45} />
             {/* Fine Orbital Arc decoration */}
-            <div className="absolute -top-32 right-1/4 w-[750px] h-[750px] rounded-full border border-cyan-500/10 pointer-events-none transform -rotate-12 scale-y-50" />
-            <div className="absolute bottom-10 left-10 w-[500px] h-[500px] rounded-full border border-dashed border-violet-500/10 pointer-events-none" />
+            <div className="absolute -top-32 right-1/4 w-[750px] h-[750px] rounded-full border border-[#23F7DB]/10 pointer-events-none transform -rotate-12 scale-y-50" />
+            <div className="absolute bottom-10 left-10 w-[500px] h-[500px] rounded-full border border-dashed border-[#30F1BE]/10 pointer-events-none" />
           </div>
 
           {/* Main Menu Body */}
           <div className="relative z-10 flex-1 py-8 sm:py-10">
             <Container size="xl">
               {/* Header Bar */}
-              <div className="flex items-center justify-between pb-6 mb-8 border-b border-white/[0.08]">
+              <div className="flex items-center justify-between pb-6 mb-8 border-b border-[#E8FFFC]/[0.08]">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <div className="flex items-center gap-2">
                     <Badge variant="cyan" withDot pulseDot>
                       Service Universe
                     </Badge>
-                    <span className="text-white font-bold text-lg tracking-tight font-sans">
+                    <span className="text-[#E8FFFC] font-bold text-lg tracking-tight font-sans">
                       CORE CAPABILITIES
                     </span>
                   </div>
-                  <span className="hidden sm:inline text-white/20">&bull;</span>
-                  <span className="text-xs text-slate-400 font-sans">
+                  <span className="hidden sm:inline text-[#E8FFFC]/20">&bull;</span>
+                  <span className="text-xs text-[#E8FFFC]/70 font-sans">
                     Digital systems built for ambitious businesses.
                   </span>
                 </div>
@@ -112,7 +112,7 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded-lg border border-white/10 hover:border-cyan-500/40 bg-white/[0.02] focus-ring transition-colors cursor-pointer"
+                  className="flex items-center gap-1.5 text-xs text-[#E8FFFC]/70 hover:text-[#E8FFFC] px-2.5 py-1 rounded-lg border border-[#E8FFFC]/10 hover:border-[#23F7DB]/40 bg-[#E8FFFC]/[0.02] focus-ring transition-colors cursor-pointer"
                   aria-label="Close Services Mega Menu"
                 >
                   <X className="w-3.5 h-3.5" />
@@ -134,12 +134,12 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
                 </div>
 
                 {/* Right / Featured Secondary Area */}
-                <div className="lg:col-span-4 flex flex-col space-y-4 lg:border-l lg:border-white/[0.08] lg:pl-8">
-                  <div className="flex items-center justify-between pb-2 border-b border-white/[0.06]">
-                    <span className="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase">
+                <div className="lg:col-span-4 flex flex-col space-y-4 lg:border-l lg:border-[#E8FFFC]/[0.08] lg:pl-8">
+                  <div className="flex items-center justify-between pb-2 border-b border-[#E8FFFC]/[0.06]">
+                    <span className="text-[11px] font-mono font-bold tracking-widest text-[#E8FFFC]/70 uppercase">
                       Featured Capabilities
                     </span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#23F7DB] shadow-[0_0_8px_rgba(35,247,219,0.8)]" />
                   </div>
 
                   <div className="space-y-4">
@@ -153,18 +153,18 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
                   </div>
 
                   {/* Architecture Advisory Box */}
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-cyan-950/30 to-violet-950/20 border border-white/[0.08] text-xs space-y-2 mt-2">
-                    <div className="flex items-center gap-1.5 text-cyan-400 font-mono text-[11px] font-semibold uppercase">
+                  <div className="p-4 rounded-xl bg-[#061F25]/80 border border-[#E8FFFC]/[0.08] text-xs space-y-2 mt-2">
+                    <div className="flex items-center gap-1.5 text-[#23F7DB] font-mono text-[11px] font-semibold uppercase">
                       <Compass className="w-3.5 h-3.5" />
                       <span>Custom Architecture</span>
                     </div>
-                    <p className="text-slate-400 text-[11px] leading-relaxed">
+                    <p className="text-[#E8FFFC]/70 text-[11px] leading-relaxed">
                       Need a custom full-stack or planetary digital solution? We engineer tailored technical architectures.
                     </p>
                     <Link
                       to="/contact"
                       onClick={onClose}
-                      className="inline-flex items-center gap-1.5 text-cyan-300 hover:text-white font-medium text-[11px] font-mono group pt-1"
+                      className="inline-flex items-center gap-1.5 text-[#30F1BE] hover:text-[#E8FFFC] font-medium text-[11px] font-mono group pt-1"
                     >
                       <span>Request Technical Consultation</span>
                       <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
@@ -176,30 +176,30 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
           </div>
 
           {/* Bottom Bar */}
-          <div className="relative z-10 border-t border-white/[0.08] bg-[#02040a]/80 py-4">
+          <div className="relative z-10 border-t border-[#E8FFFC]/[0.08] bg-[#001119]/90 py-4">
             <Container size="xl">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-                <div className="flex items-center gap-6 font-mono text-slate-400">
+                <div className="flex items-center gap-6 font-mono text-[#E8FFFC]/70">
                   <Link
                     to="/services"
                     onClick={onClose}
-                    className="hover:text-cyan-300 transition-colors flex items-center gap-1.5 focus-ring rounded"
+                    className="hover:text-[#23F7DB] transition-colors flex items-center gap-1.5 focus-ring rounded"
                   >
                     <span>Explore All Services</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
-                  <span className="text-white/20">&bull;</span>
+                  <span className="text-[#E8FFFC]/20">&bull;</span>
                   <Link
                     to="/process"
                     onClick={onClose}
-                    className="hover:text-cyan-300 transition-colors flex items-center gap-1.5 focus-ring rounded"
+                    className="hover:text-[#23F7DB] transition-colors flex items-center gap-1.5 focus-ring rounded"
                   >
                     <span>View Engineering Process</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
 
-                <div className="text-[11px] font-mono text-slate-500">
+                <div className="text-[11px] font-mono text-[#E8FFFC]/50">
                   <span>BYTHAWK.UK &bull; Precision Digital Technology Agency</span>
                 </div>
               </div>

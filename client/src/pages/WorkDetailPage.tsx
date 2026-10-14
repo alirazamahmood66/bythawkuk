@@ -68,26 +68,26 @@ export const WorkDetailPage: React.FC = () => {
   // Fallback if project is not found
   if (!project) {
     return (
-      <main className="min-h-screen bg-[#030712] text-white flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#001119] text-[#E8FFFC] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#071426]/90 border-white/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-6 shadow-2xl"
           >
-            <div className="w-16 h-16 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center mx-auto text-cyan-400">
+            <div className="w-16 h-16 rounded-2xl bg-[#008C6B]/20 border border-[#04A37B]/30 flex items-center justify-center mx-auto text-[#23F7DB]">
               <Compass className="w-8 h-8 animate-spin-slow" />
             </div>
             <div className="space-y-2">
-              <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase">
+              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase">
                 ERROR 404 // CASE STUDY SPECIFICATION
               </span>
-              <h1 className="text-2xl font-bold text-white tracking-tight font-sans">
+              <h1 className="text-2xl font-bold text-[#E8FFFC] tracking-tight font-sans">
                 Case Study Not Found
               </h1>
-              <p className="text-sm text-slate-300 leading-relaxed font-sans">
-                The requested project specification <code className="text-cyan-300 font-mono text-xs bg-cyan-950/50 px-1.5 py-0.5 rounded border border-cyan-500/30">/{slug}</code> could not be located in our portfolio registry.
+              <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                The requested project specification <code className="text-[#30F1BE] font-mono text-xs bg-[#008C6B]/30 px-1.5 py-0.5 rounded border border-[#04A37B]/40">/{slug}</code> could not be located in our portfolio registry.
               </p>
             </div>
             <div className="pt-2 flex justify-center gap-4">

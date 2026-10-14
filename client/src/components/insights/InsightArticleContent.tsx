@@ -139,7 +139,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="rounded-2xl bg-[#071426]/90 border-cyan-500/30 p-6 sm:p-8 space-y-4 shadow-xl"
+            className="rounded-2xl bg-[#061F25]/90 border-cyan-500/30 p-6 sm:p-8 space-y-4 shadow-xl"
           >
             <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 tracking-wider uppercase">
               <CheckCircle2 className="w-4 h-4" />
@@ -174,7 +174,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-4 rounded-xl bg-[#071426]/90 border-white/[0.08] group-hover:border-cyan-500/40 group-hover:shadow-cyan-950/30 transition-all flex items-center justify-between"
+                    className="p-4 rounded-xl bg-[#061F25]/90 border-white/[0.08] group-hover:border-cyan-500/40 group-hover:shadow-cyan-950/30 transition-all flex items-center justify-between"
                   >
                     <span className="text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors font-sans">
                       {srv.title}
@@ -216,7 +216,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="p-8 sm:p-10 rounded-2xl bg-[#071426]/90 border-white/[0.08] space-y-4 shadow-xl max-w-2xl mx-auto"
+            className="p-8 sm:p-10 rounded-2xl bg-[#061F25]/90 border-white/[0.08] space-y-4 shadow-xl max-w-2xl mx-auto"
           >
             <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight font-sans">
               Have a digital challenge to solve?

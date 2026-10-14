@@ -40,7 +40,7 @@ export const HomePage: React.FC = () => {
       <SolarSystemHeroSlider />
 
       {/* REST OF HOMEPAGE FLOW */}
-      <div id="studio-overview" className="relative z-10 bg-[#030712]">
+      <div id="studio-overview" className="relative z-10 bg-[#001119]">
         <TrustStripSection />
         <FeaturedWorkSection />
         <WhyBythawkSection />

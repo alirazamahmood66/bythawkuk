@@ -22,8 +22,8 @@ export const FinalCtaSection: React.FC = () => {
   const planetRotate = useTransform(scrollYProgress, [0, 1], [0, -18]);
 
   return (
-    <div ref={ctaRef} className="relative overflow-hidden bg-[#030712]">
-      <Section spacingVariant="cinematic" hasBorderTop className="relative overflow-hidden bg-[#030712]">
+    <div ref={ctaRef} className="relative overflow-hidden bg-[#001119]">
+      <Section spacingVariant="cinematic" hasBorderTop className="relative overflow-hidden bg-[#001119]">
         {/* REAL PHOTOREALISTIC CYAN VORTEX DESTINATION PLANET */}
         <motion.div
           className="absolute -bottom-28 -right-16 sm:right-[2%] md:right-[5%] w-[320px] sm:w-[420px] md:w-[520px] aspect-square pointer-events-none select-none z-0"
@@ -36,7 +36,7 @@ export const FinalCtaSection: React.FC = () => {
           <img
             src="/images/cosmic/cyan_vortex_planet.png"
             alt="Real cyan vortex destination planet in deep space"
-            className="w-full h-full object-contain filter drop-shadow-[0_0_80px_rgba(32,217,243,0.5)] opacity-85"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_80px_rgba(35,247,219,0.5)] opacity-85"
             style={{ mixBlendMode: 'screen' }}
             loading="lazy"
           />
@@ -48,13 +48,13 @@ export const FinalCtaSection: React.FC = () => {
             className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[1000px] h-[450px] rounded-full filter blur-[150px] opacity-25"
             style={{
               background:
-                'radial-gradient(ellipse at center, rgba(32, 217, 243, 0.3) 0%, rgba(104, 175, 255, 0.15) 45%, rgba(139, 92, 246, 0.1) 65%, transparent 80%)',
+                'radial-gradient(ellipse at center, rgba(35, 247, 219, 0.3) 0%, rgba(48, 241, 190, 0.2) 45%, rgba(4, 163, 123, 0.12) 65%, transparent 80%)',
             }}
           />
         </div>
 
         <Container size="lg">
-          <div className="relative z-10 p-8 sm:p-14 lg:p-18 rounded-3xl bg-[#071426]/85 border border-white/[0.1] shadow-2xl shadow-cyan-950/30 text-center space-y-8 backdrop-blur-xl">
+          <div className="relative z-10 p-8 sm:p-14 lg:p-18 rounded-3xl bg-[#061F25]/85 border border-[#E8FFFC]/[0.1] shadow-2xl shadow-[#001119]/80 text-center space-y-8 backdrop-blur-xl">
             {/* Eyebrow */}
             <div className="flex items-center justify-center gap-2">
               <Badge variant="cyan" withDot pulseDot size="md">
@@ -64,13 +64,13 @@ export const FinalCtaSection: React.FC = () => {
 
             {/* Heading */}
             <div className="space-y-3 max-w-3xl mx-auto">
-              <h2 className="heading-1 text-white font-extrabold tracking-tight">
+              <h2 className="heading-1 text-[#E8FFFC] font-extrabold tracking-tight">
                 READY FOR{' '}
-                <span className="bg-gradient-to-r from-cyan-300 via-sky-200 to-violet-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
                   LAUNCH?
                 </span>
               </h2>
-              <p className="text-lead text-slate-300 max-w-xl mx-auto leading-relaxed font-sans">
+              <p className="text-lead text-[#9edcd2] max-w-xl mx-auto leading-relaxed font-sans">
                 Have a digital idea, platform ambition, or technical scaling challenge? Partner with a team engineered to deliver compounding momentum.
               </p>
             </div>
@@ -101,9 +101,9 @@ export const FinalCtaSection: React.FC = () => {
             </div>
 
             {/* Telemetry Footer Info */}
-            <div className="pt-6 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 text-[11px] font-mono text-slate-400">
+            <div className="pt-6 border-t border-[#E8FFFC]/[0.08] flex flex-wrap items-center justify-center gap-6 text-[11px] font-mono text-[#5e948c]">
               <span className="inline-flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                <Sparkles className="w-3.5 h-3.5 text-[#23F7DB]" />
                 <span>Direct Senior Partner Scoping</span>
               </span>
               <span>&bull;</span>

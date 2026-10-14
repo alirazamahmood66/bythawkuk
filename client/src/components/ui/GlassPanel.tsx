@@ -21,10 +21,10 @@ export const GlassPanel: React.FC<GlassPanelProps> = ({
   ...props
 }) => {
   const depthClasses: Record<GlassDepth, string> = {
-    flat: 'bg-[#0b1329]/65',
-    elevated: 'bg-[#101c3d]/75 shadow-xl shadow-black/40',
-    sunken: 'bg-[#02040a]/80 inset-shadow',
-    floating: 'bg-[#101c3d]/85 shadow-2xl shadow-cyan-950/20',
+    flat: 'bg-[#061F25]/70',
+    elevated: 'bg-[#061F25]/90 shadow-xl shadow-black/40',
+    sunken: 'bg-[#001119]/80 inset-shadow',
+    floating: 'bg-[#061F25]/95 shadow-2xl shadow-cyan-950/20',
   };
 
   const blurClasses = {
@@ -36,9 +36,9 @@ export const GlassPanel: React.FC<GlassPanelProps> = ({
 
   const borderClasses = {
     none: 'border-0',
-    subtle: 'border border-white/[0.08]',
-    medium: 'border border-white/[0.14]',
-    accent: 'border border-cyan-500/35',
+    subtle: 'border border-[#E8FFFC]/[0.08]',
+    medium: 'border border-[#E8FFFC]/[0.14]',
+    accent: 'border border-[#23F7DB]/35',
   };
 
   const combinedClassName = `rounded-xl ${depthClasses[depth]} ${blurClasses[blur]} ${borderClasses[borderVariant]} ${className}`;

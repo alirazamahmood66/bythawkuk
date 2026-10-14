@@ -15,7 +15,7 @@ export const LegalTableOfContents: React.FC<LegalTableOfContentsProps> = ({ sect
       variant="default"
       spotlight={true}
       withReticles={true}
-      className="p-6 rounded-2xl bg-[#071426]/90 border-white/[0.08] sticky top-24 space-y-3 shadow-xl"
+      className="p-6 rounded-2xl bg-[#061F25]/90 border-white/[0.08] sticky top-24 space-y-3 shadow-xl"
     >
       <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 uppercase tracking-wider pb-2 border-b border-white/[0.06]">
         <ListFilter className="w-3.5 h-3.5" />

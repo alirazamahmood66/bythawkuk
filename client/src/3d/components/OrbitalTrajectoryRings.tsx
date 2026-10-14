@@ -44,7 +44,7 @@ export const OrbitalTrajectoryRings: React.FC = () => {
               new THREE.Line(
                 traj.geometry,
                 new THREE.LineBasicMaterial({
-                  color: idx === 1 ? '#20d9f3' : '#38bdf8',
+                  color: idx === 1 ? '#23F7DB' : '#30F1BE',
                   transparent: true,
                   opacity: idx === 1 ? 0.35 : 0.12,
                   blending: THREE.AdditiveBlending,
@@ -60,12 +60,12 @@ export const OrbitalTrajectoryRings: React.FC = () => {
         {/* Core glowing star node */}
         <mesh>
           <sphereGeometry args={[0.09, 16, 16]} />
-          <meshBasicMaterial color="#20d9f3" />
+          <meshBasicMaterial color="#23F7DB" />
         </mesh>
         {/* Inner glow halo */}
         <mesh>
           <sphereGeometry args={[0.22, 16, 16]} />
-          <meshBasicMaterial color="#38bdf8" transparent opacity={0.35} blending={THREE.AdditiveBlending} />
+          <meshBasicMaterial color="#30F1BE" transparent opacity={0.35} blending={THREE.AdditiveBlending} />
         </mesh>
         {/* Concentric radar trajectory rings */}
         {beaconRings.map((geom, idx) => (
@@ -75,7 +75,7 @@ export const OrbitalTrajectoryRings: React.FC = () => {
               new THREE.Line(
                 geom,
                 new THREE.LineBasicMaterial({
-                  color: '#20d9f3',
+                  color: '#23F7DB',
                   transparent: true,
                   opacity: 0.45 - idx * 0.1,
                   blending: THREE.AdditiveBlending,

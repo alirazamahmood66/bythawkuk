@@ -25,7 +25,7 @@ export const ProcessSection: React.FC = () => {
   const asteroidRotate = useTransform(scrollYProgress, [0, 1], [0, 75]);
 
   return (
-    <div ref={processRef} className="relative overflow-hidden bg-[#030712]">
+    <div ref={processRef} className="relative overflow-hidden bg-[#001119]">
       {/* 1. PHOTOREALISTIC CRESCENT MOON (Exclusive to Process Section) */}
       {/* 1. PHOTOREALISTIC CRESCENT MOON (Exclusive to Process Section - Transparent PNG) */}
       <motion.div
@@ -74,7 +74,7 @@ export const ProcessSection: React.FC = () => {
           <div className="relative">
             {/* Connecting Trajectory Vector Line (Desktop) */}
             <div
-              className="hidden lg:block absolute top-1/2 left-0 right-0 h-[1px] -translate-y-1/2 bg-gradient-to-r from-cyan-500/20 via-sky-400/40 to-violet-500/20 border-t border-dashed border-cyan-400/30 pointer-events-none"
+              className="hidden lg:block absolute top-1/2 left-0 right-0 h-[1px] -translate-y-1/2 bg-gradient-to-r from-[#23F7DB]/20 via-[#30F1BE]/40 to-[#04A37B]/20 border-t border-dashed border-[#23F7DB]/30 pointer-events-none"
               aria-hidden="true"
             />
 
@@ -84,39 +84,39 @@ export const ProcessSection: React.FC = () => {
                   key={item.step}
                   variant="interactive"
                   spotlight={true}
-                  spotlightColor="rgba(32, 217, 243, 0.16)"
+                  spotlightColor="rgba(35, 247, 219, 0.16)"
                   withReticles={true}
-                  className="p-6 sm:p-8 relative bg-[#071426]/90 border-white/[0.08] hover:border-cyan-400/50 flex flex-col justify-between rounded-2xl shadow-xl shadow-black/40 group transition-all duration-300 backdrop-blur-md"
+                  className="p-6 sm:p-8 relative bg-[#061F25]/85 border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/50 flex flex-col justify-between rounded-2xl shadow-xl shadow-[#001119]/50 group transition-all duration-300 backdrop-blur-md"
                 >
                   <div>
                     {/* Step Header & Orbital Node */}
                     <div className="flex items-center justify-between gap-2 mb-4">
-                      <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
+                      <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-[#23F7DB]/10 text-[#23F7DB] border border-[#23F7DB]/30">
                         PHASE // 0{item.step}
                       </span>
                       <div className="flex items-center gap-1.5">
-                        <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.9)] animate-pulse" />
-                        <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest hidden sm:inline">
+                        <span className="w-2 h-2 rounded-full bg-[#23F7DB] shadow-[0_0_10px_rgba(35,247,219,0.9)] animate-pulse" />
+                        <span className="text-[10px] font-mono text-[#9edcd2]/60 uppercase tracking-widest hidden sm:inline">
                           STAGE LOCK
                         </span>
                       </div>
                     </div>
 
-                    <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-2 font-sans group-hover:text-cyan-200 transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#E8FFFC] tracking-tight mb-2 font-sans group-hover:text-[#23F7DB] transition-colors">
                       {item.title}
                     </h3>
 
-                    <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed font-sans mb-4">
+                    <p className="text-xs sm:text-sm text-[#9edcd2] font-medium leading-relaxed font-sans mb-4">
                       {item.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-white/[0.08] text-[11px] font-mono">
-                    <div className="flex items-center gap-1.5 text-cyan-400 mb-1">
+                  <div className="pt-4 border-t border-[#E8FFFC]/[0.08] text-[11px] font-mono">
+                    <div className="flex items-center gap-1.5 text-[#23F7DB] mb-1">
                       <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
                       <span className="font-semibold uppercase tracking-wider">Mission Deliverable:</span>
                     </div>
-                    <span className="text-slate-400 leading-relaxed block pl-5">{item.focusArea}</span>
+                    <span className="text-[#5e948c] leading-relaxed block pl-5">{item.focusArea}</span>
                   </div>
                 </Card>
               ))}

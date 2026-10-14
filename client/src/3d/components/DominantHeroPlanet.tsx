@@ -37,7 +37,7 @@ export const DominantHeroPlanet: React.FC<DominantHeroPlanetProps> = ({
           roughnessMap={textures.roughnessMap}
           roughness={0.32}
           metalness={0.15}
-          emissive="#0369a1"
+          emissive="#04A37B"
           emissiveIntensity={0.15}
         />
       </mesh>
@@ -46,7 +46,7 @@ export const DominantHeroPlanet: React.FC<DominantHeroPlanetProps> = ({
       <PlanetAtmosphere
         radius={radius}
         config={{
-          color: '#20d9f3',
+          color: '#23F7DB',
           rimPower: 2.2,
           opacity: 0.85,
           scale: 1.045,

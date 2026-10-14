@@ -6,20 +6,20 @@ import { ArrowRight, Globe } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-white/[0.08] bg-[#02040a] text-slate-400 py-16 relative z-20">
+    <footer className="border-t border-[#E8FFFC]/[0.08] bg-[#001119] text-slate-400 py-16 relative z-20">
       <Container size="xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/[0.06]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#E8FFFC]/[0.06]">
           {/* Brand Info & Mission */}
           <div className="lg:col-span-5 space-y-4">
             <Link to="/" className="flex items-center gap-2.5 group focus-ring rounded-lg w-fit">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-400 via-sky-500 to-violet-600 flex items-center justify-center font-bold text-slate-950 text-base shadow-md shadow-cyan-500/25 group-hover:scale-105 transition-transform duration-200">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#23F7DB] via-[#30F1BE] to-[#04A37B] flex items-center justify-center font-bold text-[#001119] text-base shadow-md shadow-[#23F7DB]/25 group-hover:scale-105 transition-transform duration-200">
                 B
               </div>
               <div className="flex flex-col">
-                <span className="font-extrabold tracking-wider text-white text-lg uppercase leading-none font-sans">
+                <span className="font-extrabold tracking-wider text-[#E8FFFC] text-lg uppercase leading-none font-sans">
                   BYTHAWK
                 </span>
-                <span className="text-[9px] tracking-widest text-cyan-400 font-mono font-medium leading-tight">
+                <span className="text-[9px] tracking-widest text-[#30F1BE] font-mono font-medium leading-tight">
                   DIGITAL TECHNOLOGY . UK
                 </span>
               </div>
@@ -30,14 +30,14 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="flex items-center gap-2 text-xs font-mono text-slate-500 pt-1">
-              <Globe className="w-3.5 h-3.5 text-cyan-400" />
+              <Globe className="w-3.5 h-3.5 text-[#23F7DB]" />
               <span>LONDON &bull; UNITED KINGDOM &bull; bythawk.uk</span>
             </div>
           </div>
 
           {/* Navigation Links */}
           <div className="lg:col-span-3 space-y-3">
-            <span className="font-mono text-xs font-bold uppercase tracking-widest text-white block">
+            <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#E8FFFC] block">
               Navigation
             </span>
             <ul className="space-y-2 text-xs font-sans" role="list">
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
                 <li key={item.label}>
                   <Link
                     to={item.href}
-                    className="hover:text-cyan-300 transition-colors focus-ring rounded"
+                    className="hover:text-[#23F7DB] transition-colors focus-ring rounded"
                   >
                     {item.label}
                   </Link>
@@ -63,7 +63,7 @@ export const Footer: React.FC = () => {
 
           {/* Legal Links */}
           <div className="lg:col-span-2 space-y-3">
-            <span className="font-mono text-xs font-bold uppercase tracking-widest text-white block">
+            <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#E8FFFC] block">
               Governance
             </span>
             <ul className="space-y-2 text-xs font-sans" role="list">
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
                 <li key={item.label}>
                   <Link
                     to={item.href}
-                    className="hover:text-cyan-300 transition-colors focus-ring rounded"
+                    className="hover:text-[#23F7DB] transition-colors focus-ring rounded"
                   >
                     {item.label}
                   </Link>

@@ -59,7 +59,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
           variant="default"
           spotlight={true}
           withReticles={true}
-          className="p-5 rounded-xl bg-[#071426]/90 border-white/[0.08] flex flex-col justify-between shadow-sm"
+          className="p-5 rounded-xl bg-[#061F25]/90 border-white/[0.08] flex flex-col justify-between shadow-sm"
         >
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
@@ -92,7 +92,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
           variant="default"
           spotlight={true}
           withReticles={true}
-          className="p-5 rounded-xl bg-[#071426]/90 border-white/[0.08] space-y-3 shadow-sm"
+          className="p-5 rounded-xl bg-[#061F25]/90 border-white/[0.08] space-y-3 shadow-sm"
         >
           <div className="flex items-center justify-between mb-1">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
@@ -158,7 +158,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
           variant="default"
           spotlight={true}
           withReticles={true}
-          className="p-5 rounded-xl bg-[#071426]/90 border-white/[0.08] space-y-3 shadow-sm"
+          className="p-5 rounded-xl bg-[#061F25]/90 border-white/[0.08] space-y-3 shadow-sm"
         >
           <div className="flex items-center justify-between mb-1">
             <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
@@ -204,7 +204,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
       </div>
 
       {/* Privacy Notice */}
-      <div className="p-4 rounded-xl bg-[#071426]/80 border border-white/[0.08] flex items-start space-x-3 text-xs text-slate-300 leading-relaxed font-sans">
+      <div className="p-4 rounded-xl bg-[#061F25]/80 border border-white/[0.08] flex items-start space-x-3 text-xs text-slate-300 leading-relaxed font-sans">
         <ShieldCheck className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
         <p>
           By submitting this enquiry, you acknowledge that Bythawk will process the details provided to assess your project requirements and communicate our response. For more information, please read our{' '}

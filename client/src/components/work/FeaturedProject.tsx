@@ -24,7 +24,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
         spotlight={true}
         withReticles={true}
         spotlightColor="rgba(32, 217, 243, 0.12)"
-        className="rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl bg-[#071426]/90 border-white/[0.08]"
+        className="rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl bg-[#061F25]/90 border-white/[0.08]"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Visual Column */}
@@ -86,7 +86,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                   <Link
                     key={svc.title}
                     to={svc.route}
-                    className="text-xs font-mono px-2.5 py-1 rounded bg-[#0b1b32]/60 border border-white/[0.08] text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
+                    className="text-xs font-mono px-2.5 py-1 rounded bg-[#061F25]/60 border border-white/[0.08] text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
                   >
                     {svc.title}
                   </Link>
@@ -129,7 +129,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold text-cyan-300 bg-[#0b1b32]/70 hover:bg-cyan-950/80 border border-cyan-500/40 hover:border-cyan-400 transition-all shadow-md"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold text-cyan-300 bg-[#061F25]/70 hover:bg-cyan-950/80 border border-cyan-500/40 hover:border-cyan-400 transition-all shadow-md"
                 >
                   <span>Visit Live Platform</span>
                   <ExternalLink className="w-3.5 h-3.5" />

@@ -328,9 +328,9 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
 export const SOLAR_CORE_CONFIG = {
   name: 'BYTHAWK CORE',
   radius: 1.25,
-  color: '#38bdf8',
-  warmColor: '#f8fafc',
-  coronaColor: '#0284c7',
+  color: '#23F7DB',
+  warmColor: '#E8FFFC',
+  coronaColor: '#008C6B',
   emissiveIntensity: 3.5,
   pointLightIntensity: 4.5,
   pointLightDistance: 32,

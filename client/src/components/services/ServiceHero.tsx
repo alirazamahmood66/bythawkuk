@@ -110,7 +110,7 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
 
               <button
                 onClick={scrollToCapabilities}
-                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white bg-[#071426]/80 hover:bg-[#0b1b32] border border-white/[0.08] hover:border-cyan-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white bg-[#061F25]/80 hover:bg-[#061F25] border border-white/[0.08] hover:border-cyan-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <span>Explore Capabilities</span>
                 <ChevronDown className="w-4 h-4 ml-2 opacity-70" />
@@ -127,7 +127,7 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-4 rounded-xl bg-[#071426]/90 border-white/[0.08] shadow-sm"
+              className="p-4 rounded-xl bg-[#061F25]/90 border-white/[0.08] shadow-sm"
             >
               <div className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold">
                 {badge.label}

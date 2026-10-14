@@ -21,16 +21,16 @@ export const Badge: React.FC<BadgeProps> = ({
 }) => {
   const variantStyles: Record<BadgeVariant, { badge: string; dot: string }> = {
     cyan: {
-      badge: 'bg-cyan-500/10 text-cyan-300 border-cyan-500/30 shadow-[0_0_12px_rgba(6,182,212,0.15)]',
-      dot: 'bg-cyan-400',
+      badge: 'bg-[#23F7DB]/10 text-[#23F7DB] border-[#23F7DB]/30 shadow-[0_0_12px_rgba(35,247,219,0.2)]',
+      dot: 'bg-[#23F7DB]',
     },
     violet: {
-      badge: 'bg-violet-500/10 text-violet-300 border-violet-500/30 shadow-[0_0_12px_rgba(139,92,246,0.15)]',
-      dot: 'bg-violet-400',
+      badge: 'bg-[#04A37B]/15 text-[#30F1BE] border-[#04A37B]/30 shadow-[0_0_12px_rgba(48,241,190,0.15)]',
+      dot: 'bg-[#30F1BE]',
     },
     emerald: {
-      badge: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
-      dot: 'bg-emerald-400',
+      badge: 'bg-[#30F1BE]/10 text-[#30F1BE] border-[#30F1BE]/30 shadow-[0_0_12px_rgba(48,241,190,0.2)]',
+      dot: 'bg-[#30F1BE]',
     },
     amber: {
       badge: 'bg-amber-500/10 text-amber-300 border-amber-500/30',

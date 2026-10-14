@@ -5,58 +5,60 @@
  */
 
 export const colors = {
-  // Primary Environment (Deep Space, Dark Navy, Subtle Surfaces)
+  // Primary Environment (Aqua Mint Palette — Bythawk)
   background: {
-    deep: '#030712',      // Cosmic void baseline
-    navy: '#050b18',      // Deep navy background layer
-    surface: '#0b1329',   // Standard card/panel surface
-    elevated: '#101c3d',  // Elevated dropdowns, modals, floating panels
-    sunken: '#02040a',    // Sunken inputs, code blocks
+    deep: '#001119',      // Midnight Teal (cosmic void baseline)
+    navy: '#001119',      // Midnight Teal
+    surface: '#061F25',   // Dark Teal (standard card/panel surface)
+    elevated: '#092c34',  // Elevated dropdowns, modals, floating panels
+    sunken: '#000c12',    // Deep sunken inputs, code blocks
   },
 
   // Glassmorphic Overlays (Translucent with blur)
   glass: {
-    base: 'rgba(11, 19, 41, 0.65)',
-    elevated: 'rgba(16, 28, 61, 0.75)',
-    subtle: 'rgba(255, 255, 255, 0.03)',
-    highlight: 'rgba(255, 255, 255, 0.06)',
+    base: 'rgba(6, 31, 37, 0.65)',
+    elevated: 'rgba(6, 31, 37, 0.85)',
+    subtle: 'rgba(232, 255, 252, 0.04)',
+    highlight: 'rgba(232, 255, 252, 0.08)',
   },
 
   // Borders (Precision micro-borders)
   border: {
-    subtle: 'rgba(255, 255, 255, 0.08)',
-    medium: 'rgba(255, 255, 255, 0.14)',
-    accent: 'rgba(6, 182, 212, 0.35)',      // Cyan subtle glow border
-    violet: 'rgba(139, 92, 246, 0.35)',     // Violet accent border
-    active: 'rgba(56, 189, 248, 0.6)',      // Active interactive border
+    subtle: 'rgba(232, 255, 252, 0.08)',
+    medium: 'rgba(48, 241, 190, 0.2)',
+    accent: 'rgba(35, 247, 219, 0.4)',      // Neon Cyan glow border
+    mint: 'rgba(4, 163, 123, 0.4)',        // Aqua Mint border
+    active: 'rgba(35, 247, 219, 0.6)',      // Active interactive border
   },
 
   // Typography Hierarchy
   text: {
-    primary: '#f8fafc',    // Clean high-contrast white
-    secondary: '#cbd5e1',  // Refined slate
-    muted: '#64748b',      // Subdued metadata & telemetry
-    accentCyan: '#38bdf8', // Interactive electric cyan
-    accentViolet: '#c084fc',
-    inverse: '#030712',    // Inverse dark on bright accent buttons
+    primary: '#E8FFFC',    // Ice White
+    secondary: '#9edcd2',  // Refined mint-slate
+    muted: '#5e948c',      // Subdued metadata & telemetry
+    accentCyan: '#23F7DB', // Neon Cyan
+    accentMint: '#30F1BE', // Neon Mint
+    inverse: '#001119',    // Midnight Teal (inverse dark on bright accents)
   },
 
-  // Accents (Restrained, high-tech palette — NOT gaming neon)
+  // Accents (Official Aqua Mint Palette — Bythawk)
   accent: {
-    cyan: '#06b6d4',          // Brand primary accent
-    cyanHover: '#22d3ee',
-    electricBlue: '#0284c7',  // Deep propulsion blue
-    violet: '#8b5cf6',        // Nebula violet secondary
-    violetHover: '#a78bfa',
+    deepAqua: '#008C6B',     // Deep Aqua Green
+    aquaMint: '#04A37B',     // Aqua Mint
+    neonMint: '#30F1BE',     // Neon Mint
+    neonCyan: '#23F7DB',     // Neon Cyan
+    iceWhite: '#E8FFFC',     // Ice White
+    midnightTeal: '#001119', // Midnight Teal
+    darkTeal: '#061F25',     // Dark Teal
     white: '#ffffff',
   },
 
   // Semantic Alerts
   semantic: {
-    success: '#10b981',
+    success: '#30F1BE',
     warning: '#f59e0b',
     error: '#ef4444',
-    info: '#06b6d4',
+    info: '#23F7DB',
   },
 } as const;
 

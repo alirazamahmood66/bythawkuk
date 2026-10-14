@@ -68,7 +68,7 @@ export const FeaturedInsight: React.FC<FeaturedInsightProps> = ({ article }) => 
           </div>
 
           {/* Right / Bottom: Lightweight Geometric Visual Artwork */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#071426] via-[#030914] to-cyan-950/20 border-t lg:border-t-0 lg:border-l border-white/[0.08] p-8 sm:p-10 flex items-center justify-center relative overflow-hidden min-h-[220px]">
+          <div className="lg:col-span-5 bg-gradient-to-br from-[#061F25] via-[#030914] to-cyan-950/20 border-t lg:border-t-0 lg:border-l border-white/[0.08] p-8 sm:p-10 flex items-center justify-center relative overflow-hidden min-h-[220px]">
             {/* Ambient visual gradient */}
             <div
               className="absolute inset-0 opacity-20 pointer-events-none"

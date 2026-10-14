@@ -9,7 +9,7 @@ interface OrbitRingProps {
 
 export const OrbitRing: React.FC<OrbitRingProps> = ({
   radius,
-  color = '#38bdf8',
+  color = '#30F1BE',
   isHighlighted = false,
 }) => {
   // Generate circular orbit path coordinates with 128 segments for smooth curvature
@@ -30,7 +30,7 @@ export const OrbitRing: React.FC<OrbitRingProps> = ({
         new THREE.Line(
           lineGeometry,
           new THREE.LineBasicMaterial({
-            color: isHighlighted ? '#22d3ee' : color,
+            color: isHighlighted ? '#23F7DB' : color,
             transparent: true,
             opacity: isHighlighted ? 0.35 : 0.08,
             blending: THREE.AdditiveBlending,

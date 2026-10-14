@@ -20,7 +20,7 @@ export const FormSuccess: React.FC<FormSuccessProps> = ({
       variant="default"
       spotlight={true}
       withReticles={true}
-      className="py-12 sm:py-16 text-center max-w-xl mx-auto space-y-6 rounded-2xl bg-[#071426]/90 border-white/[0.08] shadow-xl"
+      className="py-12 sm:py-16 text-center max-w-xl mx-auto space-y-6 rounded-2xl bg-[#061F25]/90 border-white/[0.08] shadow-xl"
     >
       <div className="w-16 h-16 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mx-auto shadow-lg shadow-cyan-950/30">
         <CheckCircle2 className="w-8 h-8" />

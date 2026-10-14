@@ -37,7 +37,7 @@ export const AboutPositioning: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {positioning.pillars.map((pillar, idx) => {
           const Icon = iconMap[idx] || Compass;
-          const colors = ['#20d9f3', '#c084fc', '#38bdf8', '#10b981'];
+          const colors = ['#23F7DB', '#c084fc', '#38bdf8', '#10b981'];
           const accent = colors[idx % colors.length];
 
           return (
@@ -47,7 +47,7 @@ export const AboutPositioning: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.14)"
-              className="p-7 rounded-2xl bg-[#071426]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+              className="p-7 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
             >
               <div>
                 {/* Header Phase Pill */}

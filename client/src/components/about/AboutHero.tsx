@@ -13,7 +13,7 @@ export const AboutHero: React.FC = () => {
       {/* Background ambient radial glow */}
       <div
         className="absolute top-0 right-1/4 w-[650px] h-[400px] rounded-full opacity-25 blur-[140px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #20d9f3 0%, #68afff 40%, #8b5cf6 70%, transparent 80%)' }}
+        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #68afff 40%, #8b5cf6 70%, transparent 80%)' }}
       />
 
       <div className="max-w-4xl space-y-6">
@@ -50,7 +50,7 @@ export const AboutHero: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-4 sm:p-5 rounded-xl bg-[#071426]/85 border-white/[0.08] hover:border-cyan-500/40 transition-all group"
+              className="p-4 sm:p-5 rounded-xl bg-[#061F25]/85 border-white/[0.08] hover:border-cyan-500/40 transition-all group"
             >
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[10px] font-mono tracking-wider text-slate-400 uppercase">

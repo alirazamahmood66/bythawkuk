@@ -44,7 +44,7 @@ export const AboutCapabilities: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-6 rounded-2xl bg-[#071426]/90 border-white/[0.08] group-hover:border-cyan-500/40 group-hover:shadow-cyan-950/40 transition-all duration-300 flex flex-col justify-between h-full shadow-lg"
+              className="p-6 rounded-2xl bg-[#061F25]/90 border-white/[0.08] group-hover:border-cyan-500/40 group-hover:shadow-cyan-950/40 transition-all duration-300 flex flex-col justify-between h-full shadow-lg"
             >
               <div>
                 <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/[0.06] text-[10px] font-mono">

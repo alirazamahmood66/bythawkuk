@@ -16,22 +16,22 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects, resetFilter 
         variant="default"
         spotlight={true}
         withReticles={true}
-        className="py-16 px-8 text-center space-y-4 max-w-md mx-auto my-12 rounded-2xl bg-[#071426]/90 border-white/[0.08] shadow-xl"
+        className="py-16 px-8 text-center space-y-4 max-w-md mx-auto my-12 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] shadow-xl"
       >
-        <div className="w-14 h-14 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center mx-auto text-cyan-400">
+        <div className="w-14 h-14 rounded-2xl bg-[#008C6B]/20 border border-[#04A37B]/30 flex items-center justify-center mx-auto text-[#23F7DB]">
           <Compass className="w-7 h-7" />
         </div>
-        <h3 className="text-xl font-bold text-white tracking-tight font-sans">
+        <h3 className="text-xl font-bold text-[#E8FFFC] tracking-tight font-sans">
           No Projects In This Sector Yet
         </h3>
-        <p className="text-sm text-slate-300 max-w-md mx-auto font-sans leading-relaxed">
+        <p className="text-sm text-[#E8FFFC]/70 max-w-md mx-auto font-sans leading-relaxed">
           We are currently structuring additional case studies and project previews across our disciplines.
         </p>
         {resetFilter && (
           <div className="pt-2">
             <button
               onClick={resetFilter}
-              className="text-xs font-mono tracking-wider text-cyan-400 hover:text-cyan-300 font-semibold"
+              className="text-xs font-mono tracking-wider text-[#30F1BE] hover:text-[#23F7DB] font-semibold"
             >
               View All Projects &rarr;
             </button>

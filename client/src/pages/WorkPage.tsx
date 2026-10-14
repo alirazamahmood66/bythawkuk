@@ -88,7 +88,7 @@ export const WorkPage: React.FC = () => {
   return (
     <PageTransition>
       <CosmicScrollJourney />
-      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <div className="relative z-10 min-h-screen text-[#E8FFFC] selection:bg-[#008C6B]/30 selection:text-[#30F1BE]">
         <Container>
           {/* Section 1: Hero */}
           <WorkHero />
@@ -102,25 +102,25 @@ export const WorkPage: React.FC = () => {
             />
 
             {/* View Mode Toggle Bar */}
-            <div className="flex items-center justify-between py-3 border-y border-white/[0.08]">
+            <div className="flex items-center justify-between py-3 border-y border-[#E8FFFC]/[0.08]">
               <div className="flex items-center gap-2.5">
-                <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                <span className="text-xs font-mono text-slate-300 font-medium uppercase tracking-wider">
+                <span className="w-2 h-2 rounded-full bg-[#23F7DB] animate-pulse" />
+                <span className="text-xs font-mono text-[#E8FFFC]/70 font-medium uppercase tracking-wider">
                   PORTFOLIO TELEMETRY PERSPECTIVE
                 </span>
               </div>
 
-              <div className="inline-flex p-1 rounded-xl bg-[#071426]/90 border border-white/[0.08]">
+              <div className="inline-flex p-1 rounded-xl bg-[#061F25]/90 border border-[#E8FFFC]/[0.08]">
                 <button
                   type="button"
                   onClick={() => setViewMode('orbit')}
                   className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
                     viewMode === 'orbit'
-                      ? 'bg-cyan-950/90 text-cyan-300 border border-cyan-500/50 shadow-sm'
-                      : 'text-slate-400 hover:text-white'
+                      ? 'bg-[#008C6B]/30 text-[#30F1BE] border border-[#04A37B]/50 shadow-sm'
+                      : 'text-[#E8FFFC]/60 hover:text-[#E8FFFC]'
                   }`}
                 >
-                  <Globe className="w-3.5 h-3.5 text-cyan-400" />
+                  <Globe className="w-3.5 h-3.5 text-[#23F7DB]" />
                   <span>ORBITAL SYSTEM</span>
                 </button>
 
@@ -129,11 +129,11 @@ export const WorkPage: React.FC = () => {
                   onClick={() => setViewMode('grid')}
                   className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
                     viewMode === 'grid'
-                      ? 'bg-cyan-950/90 text-cyan-300 border border-cyan-500/50 shadow-sm'
-                      : 'text-slate-400 hover:text-white'
+                      ? 'bg-[#008C6B]/30 text-[#30F1BE] border border-[#04A37B]/50 shadow-sm'
+                      : 'text-[#E8FFFC]/60 hover:text-[#E8FFFC]'
                   }`}
                 >
-                  <LayoutGrid className="w-3.5 h-3.5 text-cyan-400" />
+                  <LayoutGrid className="w-3.5 h-3.5 text-[#23F7DB]" />
                   <span>MATRIX GRID</span>
                 </button>
               </div>

@@ -31,7 +31,7 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
       primary:
         'bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-md shadow-cyan-500/20 border border-cyan-400/40',
       secondary:
-        'bg-[#0b1329] hover:bg-[#101c3d] text-slate-300 hover:text-white border border-white/10 hover:border-cyan-500/30',
+        'bg-[#061F25] hover:bg-[#061F25] text-slate-300 hover:text-white border border-white/10 hover:border-cyan-500/30',
       ghost:
         'bg-transparent hover:bg-white/[0.06] text-slate-400 hover:text-slate-100 border border-transparent',
       glass:

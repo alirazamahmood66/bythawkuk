@@ -52,7 +52,7 @@ export const ProcessHero: React.FC = () => {
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="p-4 rounded-xl bg-[#071426]/90 border-white/[0.08] shadow-sm"
+            className="p-4 rounded-xl bg-[#061F25]/90 border-white/[0.08] shadow-sm"
           >
             <div className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold">
               {h.label}
