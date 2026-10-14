@@ -13,7 +13,7 @@ export const ProcessCta: React.FC = () => {
       {/* Background ambient glow */}
       <div
         className="absolute inset-0 max-w-4xl mx-auto rounded-full opacity-15 blur-[100px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #06b6d4 0%, #8b5cf6 50%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 50%, transparent 70%)' }}
       />
 
       <Card

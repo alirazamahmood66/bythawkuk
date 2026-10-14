@@ -166,29 +166,29 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
     orbitSpeed: 0.07,
     initialAngle: 4.2,
     size: 0.38,
-    color: '#8b5cf6', // Cosmic Violet
-    emissiveColor: '#7c3aed',
+    color: '#30F1BE', // Neon Mint
+    emissiveColor: '#04A37B',
     roughness: 0.55,
     metalness: 0.3,
-    atmosphericGlow: 'rgba(139, 92, 246, 0.35)',
+    atmosphericGlow: 'rgba(48, 241, 190, 0.35)',
     surface: {
       type: 'icy',
       roughness: 0.42,
       metalness: 0.32,
       bumpScale: 0.09,
       atmosphere: {
-        color: '#a78bfa',
+        color: '#30F1BE',
         rimPower: 3.5,
         opacity: 0.4,
         scale: 1.05,
       },
       procedural: {
         palette: {
-          primary: '#1e1638', // Deep violet-indigo mantle
-          secondary: '#2e2154', // Fractured ice crust
-          accent: '#7c3aed', // Sub-surface crystalline fissure glow
-          dark: '#0f0a1c', // Deep chasm fault lines
-          specular: '#c4b5fd', // Glacial specular sheen
+          primary: '#061F25', // Deep dark teal mantle
+          secondary: '#008C6B', // Fractured ice crust
+          accent: '#30F1BE', // Sub-surface crystalline fissure glow
+          dark: '#001119', // Deep chasm fault lines
+          specular: '#E8FFFC', // Glacial specular sheen
         },
         noiseScale: 4.2,
         bumpIntensity: 0.16,
@@ -288,33 +288,33 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
     orbitSpeed: 0.032,
     initialAngle: 5.3,
     size: 0.44,
-    color: '#ec4899', // Nebula Rose
-    emissiveColor: '#db2777',
+    color: '#23F7DB', // Nebula Rose
+    emissiveColor: '#04A37B',
     roughness: 0.48,
     metalness: 0.3,
     hasRings: true,
     ringInnerRadius: 0.56,
     ringOuterRadius: 0.78,
-    ringColor: '#db2777',
-    atmosphericGlow: 'rgba(236, 72, 153, 0.3)',
+    ringColor: '#30F1BE',
+    atmosphericGlow: 'rgba(35, 247, 219, 0.3)',
     surface: {
       type: 'rose_marble',
       roughness: 0.45,
       metalness: 0.28,
       bumpScale: 0.07,
       atmosphere: {
-        color: '#f472b6',
+        color: '#23F7DB',
         rimPower: 2.9,
         opacity: 0.4,
         scale: 1.05,
       },
       procedural: {
         palette: {
-          primary: '#4a044e', // Deep plum tectonic base
-          secondary: '#701a75', // Dusky rose highland ridges
-          accent: '#be185d', // Vibrant magenta-rose marble veining
-          dark: '#2e0234', // Deep metamorphic crevices
-          specular: '#fbcfe8',
+          primary: '#061F25', // Deep plum tectonic base
+          secondary: '#04A37B', // Dusky rose highland ridges
+          accent: '#23F7DB', // Vibrant magenta-rose marble veining
+          dark: '#001119', // Deep metamorphic crevices
+          specular: '#E8FFFC',
         },
         noiseScale: 3.0,
         bumpIntensity: 0.1,

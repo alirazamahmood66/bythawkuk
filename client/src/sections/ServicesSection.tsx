@@ -64,7 +64,7 @@ const FLAGSHIP_SERVICES: ConstellationService[] = [
     description:
       'Native fluid iOS, Android, and cross-platform mobile products built for intuitive touch ergonomics and offline-first persistence.',
     route: '/services/mobile-app-development',
-    color: '#8b5cf6',
+    color: '#30F1BE',
     icon: Smartphone,
     telemetryMetric: { label: 'UI REFRESH SLO', value: '60FPS FLUID // 100% OFFLINE CACHE' },
     capabilities: ['React Native & Native', 'Offline-First DB', 'Hardware Acceleration'],
@@ -92,10 +92,10 @@ export const ServicesSection: React.FC = () => {
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <line x1="20%" y1="15%" x2="50%" y2="40%" stroke="#20d9f3" strokeWidth="1" strokeDasharray="3 5" />
           <line x1="50%" y1="40%" x2="80%" y2="25%" stroke="#68afff" strokeWidth="1" strokeDasharray="3 5" />
-          <line x1="50%" y1="40%" x2="50%" y2="85%" stroke="#8b5cf6" strokeWidth="1" strokeDasharray="3 5" />
+          <line x1="50%" y1="40%" x2="50%" y2="85%" stroke="#30F1BE" strokeWidth="1" strokeDasharray="3 5" />
           <circle cx="20%" cy="15%" r="3" fill="#20d9f3" />
           <circle cx="50%" cy="40%" r="4" fill="#68afff" />
-          <circle cx="80%" cy="25%" r="3" fill="#8b5cf6" />
+          <circle cx="80%" cy="25%" r="3" fill="#30F1BE" />
           <circle cx="50%" cy="85%" r="3" fill="#f59e0b" />
         </svg>
       </div>

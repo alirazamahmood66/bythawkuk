@@ -193,7 +193,7 @@ export const ABOUT_DATA = {
       category: 'MOBILE PLATFORMS',
       description: 'Thoughtful mobile products designed for iOS, Android, and modern cross-platform experiences.',
       route: '/services/mobile-app-development',
-      accentColor: '#8b5cf6',
+      accentColor: '#30F1BE',
     },
     {
       title: 'Digital Marketing',
@@ -217,7 +217,7 @@ export const ABOUT_DATA = {
       category: 'BRAND IDENTITY',
       description: 'Visual systems and creative assets that make your brand recognizable and consistent across all touchpoints.',
       route: '/services/graphic-design',
-      accentColor: '#ec4899',
+      accentColor: '#23F7DB',
     },
     {
       title: 'UI/UX Design',
@@ -225,7 +225,7 @@ export const ABOUT_DATA = {
       category: 'EXPERIENCE CRAFT',
       description: 'Clear, intuitive digital experiences that turn complex products into effortless interactions.',
       route: '/services/ui-ux-design',
-      accentColor: '#c084fc',
+      accentColor: '#04A37B',
     },
   ],
 

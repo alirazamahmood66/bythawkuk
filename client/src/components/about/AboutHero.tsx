@@ -13,7 +13,7 @@ export const AboutHero: React.FC = () => {
       {/* Background ambient radial glow */}
       <div
         className="absolute top-0 right-1/4 w-[650px] h-[400px] rounded-full opacity-25 blur-[140px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #68afff 40%, #8b5cf6 70%, transparent 80%)' }}
+        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #30F1BE 40%, #04A37B 70%, transparent 80%)' }}
       />
 
       <div className="max-w-4xl space-y-6">
@@ -28,7 +28,7 @@ export const AboutHero: React.FC = () => {
         {/* Primary Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
           We Build Digital Worlds{' '}
-          <span className="bg-gradient-to-r from-cyan-300 via-sky-200 to-violet-300 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
             With Purpose.
           </span>
         </h1>

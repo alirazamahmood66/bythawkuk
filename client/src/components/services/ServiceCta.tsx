@@ -35,7 +35,7 @@ export const ServiceCta: React.FC<ServiceCtaProps> = ({
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
           Ready to Engineer Your{' '}
-          <span className="bg-gradient-to-r from-cyan-300 via-sky-200 to-violet-300 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
             Next Milestone?
           </span>
         </h2>

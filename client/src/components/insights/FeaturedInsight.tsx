@@ -73,7 +73,7 @@ export const FeaturedInsight: React.FC<FeaturedInsightProps> = ({ article }) => 
             <div
               className="absolute inset-0 opacity-20 pointer-events-none"
               style={{
-                background: 'radial-gradient(circle at 70% 30%, #06b6d4 0%, #8b5cf6 50%, transparent 80%)',
+                background: 'radial-gradient(circle at 70% 30%, #23F7DB 0%, #04A37B 50%, transparent 80%)',
               }}
             />
 
@@ -88,12 +88,12 @@ export const FeaturedInsight: React.FC<FeaturedInsightProps> = ({ article }) => 
               {/* Concentric rings and technical grid */}
               <circle cx="120" cy="90" r="70" stroke="currentColor" strokeWidth="1" strokeDasharray="4 6" opacity="0.4" />
               <circle cx="120" cy="90" r="45" stroke="currentColor" strokeWidth="1.2" opacity="0.6" />
-              <circle cx="120" cy="90" r="20" stroke="#8b5cf6" strokeWidth="1.5" opacity="0.8" />
+              <circle cx="120" cy="90" r="20" stroke="#30F1BE" strokeWidth="1.5" opacity="0.8" />
               <line x1="20" y1="90" x2="220" y2="90" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 5" opacity="0.3" />
               <line x1="120" y1="10" x2="120" y2="170" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 5" opacity="0.3" />
               <circle cx="120" cy="90" r="4" fill="#06b6d4" />
               <circle cx="170" cy="60" r="3" fill="#38bdf8" />
-              <circle cx="70" cy="120" r="2.5" fill="#8b5cf6" />
+              <circle cx="70" cy="120" r="2.5" fill="#30F1BE" />
             </svg>
           </div>
         </div>

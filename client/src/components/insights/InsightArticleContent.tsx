@@ -78,7 +78,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
       >
         <div
           className="absolute inset-0 opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle at 50% 50%, #06b6d4 0%, #8b5cf6 50%, transparent 80%)' }}
+          style={{ background: 'radial-gradient(circle at 50% 50%, #23F7DB 0%, #04A37B 50%, transparent 80%)' }}
         />
         <svg
           className="w-full max-w-[320px] h-auto text-cyan-400/60"
@@ -88,11 +88,11 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
           aria-hidden="true"
         >
           <circle cx="140" cy="60" r="50" stroke="currentColor" strokeWidth="1" strokeDasharray="3 6" opacity="0.4" />
-          <circle cx="140" cy="60" r="30" stroke="#8b5cf6" strokeWidth="1.2" opacity="0.6" />
+          <circle cx="140" cy="60" r="30" stroke="#30F1BE" strokeWidth="1.2" opacity="0.6" />
           <line x1="20" y1="60" x2="260" y2="60" stroke="currentColor" strokeWidth="0.8" strokeDasharray="4 6" opacity="0.3" />
           <circle cx="140" cy="60" r="4" fill="#06b6d4" />
           <circle cx="200" cy="40" r="2.5" fill="#38bdf8" />
-          <circle cx="80" cy="80" r="2.5" fill="#8b5cf6" />
+          <circle cx="80" cy="80" r="2.5" fill="#30F1BE" />
         </svg>
       </Card>
 

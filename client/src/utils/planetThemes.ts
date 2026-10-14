@@ -9,13 +9,13 @@ export interface PlanetTheme {
 
 const THEMES: Record<string, PlanetTheme> = {
   home: { id: 'home', planet: 'Sun', hex: '#fbbf24', rgb: '251, 191, 36' },
-  services: { id: 'services', planet: 'Mercury', hex: '#22d3ee', rgb: '34, 211, 238' },
-  solutions: { id: 'solutions', planet: 'Venus', hex: '#a78bfa', rgb: '167, 139, 250' },
+  services: { id: 'services', planet: 'Mercury', hex: '#23F7DB', rgb: '35, 247, 219' },
+  solutions: { id: 'solutions', planet: 'Venus', hex: '#30F1BE', rgb: '48, 241, 190' },
   work: { id: 'work', planet: 'Mars', hex: '#fb7a54', rgb: '251, 122, 84' },
-  about: { id: 'about', planet: 'Earth', hex: '#38bdf8', rgb: '56, 189, 248' },
+  about: { id: 'about', planet: 'Earth', hex: '#04A37B', rgb: '4, 163, 123' },
   process: { id: 'process', planet: 'Jupiter', hex: '#f59e0b', rgb: '245, 158, 11' },
   insights: { id: 'insights', planet: 'Saturn', hex: '#facc15', rgb: '250, 204, 21' },
-  contact: { id: 'contact', planet: 'Neptune', hex: '#6366f1', rgb: '99, 102, 241' },
+  contact: { id: 'contact', planet: 'Neptune', hex: '#23F7DB', rgb: '35, 247, 219' },
 };
 
 const DEFAULT_THEME: PlanetTheme = {

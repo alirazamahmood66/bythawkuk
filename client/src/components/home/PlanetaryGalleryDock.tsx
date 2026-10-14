@@ -45,7 +45,7 @@ const DISCIPLINES: DisciplineNode[] = [
     category: 'iOS & ANDROID',
     tagline: 'Fluid cross-platform mobile apps built for seamless offline-first experiences.',
     route: '/services/mobile-app-development',
-    color: '#8b5cf6',
+    color: '#30F1BE',
     icon: Smartphone,
     illustration: '/images/cosmic/neptune_ice_giant.png',
   },

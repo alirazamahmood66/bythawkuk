@@ -43,7 +43,7 @@ export const HeroCard: React.FC = () => (
     <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.04] font-sans">
       We build
       <br />
-      <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent">
+      <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
         digital worlds.
       </span>
     </h1>

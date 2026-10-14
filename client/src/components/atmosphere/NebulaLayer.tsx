@@ -24,15 +24,15 @@ export const NebulaLayer: React.FC<NebulaLayerProps> = ({
       <div
         className="absolute -top-[15%] -right-[10%] w-[650px] h-[650px] rounded-full filter blur-[120px]"
         style={{
-          background: 'radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, rgba(2, 132, 199, 0.05) 50%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(35, 247, 219, 0.18) 0%, rgba(4, 163, 123, 0.08) 50%, transparent 70%)',
         }}
       />
 
-      {/* Middle-left cosmic violet glow */}
+      {/* Middle-left cosmic mint glow */}
       <div
         className="absolute top-[35%] -left-[15%] w-[750px] h-[750px] rounded-full filter blur-[140px]"
         style={{
-          background: 'radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(59, 130, 246, 0.04) 50%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(48, 241, 190, 0.15) 0%, rgba(0, 140, 107, 0.06) 50%, transparent 70%)',
         }}
       />
 

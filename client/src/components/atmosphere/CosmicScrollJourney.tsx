@@ -45,7 +45,7 @@ export const CosmicScrollJourney: React.FC = () => {
             }}
           />
 
-          {/* Lower Work Violet Starburst */}
+          {/* Lower Work Mint Starburst */}
           <div
             className="absolute top-[75%] right-[8%] w-[600px] h-[600px] rounded-full filter blur-[150px] opacity-20 pointer-events-none"
             style={{

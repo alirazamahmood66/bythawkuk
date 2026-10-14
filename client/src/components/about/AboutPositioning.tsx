@@ -17,7 +17,7 @@ export const AboutPositioning: React.FC = () => {
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
           A Digital Technology Partner,{' '}
-          <span className="bg-gradient-to-r from-cyan-300 via-sky-200 to-violet-300 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
             Not Just a Vendor.
           </span>
         </h2>
@@ -37,7 +37,7 @@ export const AboutPositioning: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {positioning.pillars.map((pillar, idx) => {
           const Icon = iconMap[idx] || Compass;
-          const colors = ['#23F7DB', '#c084fc', '#38bdf8', '#10b981'];
+          const colors = ['#23F7DB', '#30F1BE', '#04A37B', '#008C6B'];
           const accent = colors[idx % colors.length];
 
           return (

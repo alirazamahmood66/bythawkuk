@@ -347,7 +347,7 @@ export const DesignSystemPage: React.FC = () => {
               </Card>
 
               <Card variant="elevated">
-                <span className="text-mono-label text-violet-400 block mb-2">Elevated Depth</span>
+                <span className="text-mono-label text-[#30F1BE] block mb-2">Elevated Depth</span>
                 <h4 className="text-white font-semibold text-lg mb-2">Elevated Surface</h4>
                 <p className="text-sm text-slate-400 leading-relaxed">
                   16px backdrop blur with deeper ambient drop-shadow for overlays, drawers, and modal contexts.
@@ -363,10 +363,10 @@ export const DesignSystemPage: React.FC = () => {
               </Card>
 
               <Card variant="glowViolet">
-                <span className="text-mono-label text-violet-300 block mb-2">Glow Panel Violet</span>
-                <h4 className="text-white font-semibold text-lg mb-2">Radial Violet Glow</h4>
+                <span className="text-mono-label text-[#30F1BE] block mb-2">Glow Panel Mint</span>
+                <h4 className="text-white font-semibold text-lg mb-2">Radial Mint Glow</h4>
                 <p className="text-sm text-slate-400 leading-relaxed">
-                  Atmospheric violet radiance designed for creative design capabilities and AI features.
+                  Atmospheric neon mint radiance designed for creative design capabilities and high-velocity systems.
                 </p>
               </Card>
 
@@ -396,7 +396,7 @@ export const DesignSystemPage: React.FC = () => {
                 <span className="text-mono-label block mb-4">Badge Matrix</span>
                 <div className="flex flex-wrap gap-3">
                   <Badge variant="cyan" withDot pulseDot>System Online</Badge>
-                  <Badge variant="violet" withDot>AI Intelligence</Badge>
+                  <Badge variant="violet" withDot>Aqua Mint Active</Badge>
                   <Badge variant="emerald" withDot>Database Active</Badge>
                   <Badge variant="amber" withDot>In Progress</Badge>
                   <Badge variant="neutral">Architecture v1.0</Badge>

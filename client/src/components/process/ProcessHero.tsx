@@ -11,18 +11,18 @@ export const ProcessHero: React.FC = () => {
       {/* Background radial glow */}
       <div
         className="absolute top-0 right-1/4 w-[500px] h-[350px] rounded-full opacity-15 blur-[120px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #38bdf8 0%, #8b5cf6 50%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 50%, transparent 70%)' }}
       />
 
       {/* Decorative Constellation / Trajectory Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-20 -z-10" aria-hidden="true">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <line x1="10%" y1="30%" x2="35%" y2="20%" stroke="#06b6d4" strokeWidth="1" strokeDasharray="4 6" />
-          <line x1="35%" y1="20%" x2="65%" y2="40%" stroke="#8b5cf6" strokeWidth="1" strokeDasharray="4 6" />
+          <line x1="35%" y1="20%" x2="65%" y2="40%" stroke="#30F1BE" strokeWidth="1" strokeDasharray="4 6" />
           <line x1="65%" y1="40%" x2="90%" y2="25%" stroke="#38bdf8" strokeWidth="1" strokeDasharray="4 6" />
           <circle cx="10%" cy="30%" r="3" fill="#06b6d4" />
           <circle cx="35%" cy="20%" r="4" fill="#38bdf8" />
-          <circle cx="65%" cy="40%" r="4" fill="#8b5cf6" />
+          <circle cx="65%" cy="40%" r="4" fill="#30F1BE" />
           <circle cx="90%" cy="25%" r="3" fill="#10b981" />
         </svg>
       </div>

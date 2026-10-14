@@ -8,18 +8,18 @@ export const ContactHero: React.FC = () => {
       {/* Background ambient radial glow */}
       <div
         className="absolute top-0 right-1/4 w-[500px] h-[350px] rounded-full opacity-15 blur-[120px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #06b6d4 0%, #8b5cf6 50%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 50%, transparent 70%)' }}
       />
 
       {/* Decorative Constellation Vectors */}
       <div className="absolute inset-0 pointer-events-none opacity-20 -z-10" aria-hidden="true">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <line x1="15%" y1="25%" x2="45%" y2="40%" stroke="#06b6d4" strokeWidth="1" strokeDasharray="4 6" />
-          <line x1="45%" y1="40%" x2="75%" y2="20%" stroke="#8b5cf6" strokeWidth="1" strokeDasharray="4 6" />
+          <line x1="45%" y1="40%" x2="75%" y2="20%" stroke="#30F1BE" strokeWidth="1" strokeDasharray="4 6" />
           <line x1="45%" y1="40%" x2="55%" y2="80%" stroke="#38bdf8" strokeWidth="1" strokeDasharray="4 6" />
           <circle cx="15%" cy="25%" r="3" fill="#06b6d4" />
           <circle cx="45%" cy="40%" r="4" fill="#38bdf8" />
-          <circle cx="75%" cy="20%" r="3" fill="#8b5cf6" />
+          <circle cx="75%" cy="20%" r="3" fill="#30F1BE" />
           <circle cx="55%" cy="80%" r="3" fill="#10b981" />
         </svg>
       </div>

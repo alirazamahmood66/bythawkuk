@@ -17,7 +17,7 @@ export const InsightsCta: React.FC = () => {
         {/* Subtle radial glow */}
         <div
           className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full opacity-10 blur-3xl pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #06b6d4 0%, #8b5cf6 60%, transparent 80%)' }}
+          style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 60%, transparent 80%)' }}
         />
 
         <div className="relative z-10 space-y-5 max-w-2xl mx-auto">

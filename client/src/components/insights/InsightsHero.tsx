@@ -7,18 +7,18 @@ export const InsightsHero: React.FC = () => {
       {/* Background ambient radial glow */}
       <div
         className="absolute top-0 right-1/4 w-[480px] h-[320px] rounded-full opacity-15 blur-[120px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #06b6d4 0%, #8b5cf6 50%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 50%, transparent 70%)' }}
       />
 
       {/* Subtle Concentric Orbital SVG Geometry */}
       <div className="absolute inset-0 pointer-events-none opacity-20 -z-10" aria-hidden="true">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <circle cx="85%" cy="30%" r="140" stroke="#06b6d4" strokeWidth="1" strokeDasharray="3 6" fill="none" />
-          <circle cx="85%" cy="30%" r="220" stroke="#8b5cf6" strokeWidth="1" strokeDasharray="2 8" fill="none" />
+          <circle cx="85%" cy="30%" r="220" stroke="#30F1BE" strokeWidth="1" strokeDasharray="2 8" fill="none" />
           <circle cx="85%" cy="30%" r="4" fill="#06b6d4" />
           <line x1="10%" y1="70%" x2="40%" y2="85%" stroke="#38bdf8" strokeWidth="1" strokeDasharray="4 6" />
           <circle cx="10%" cy="70%" r="2.5" fill="#38bdf8" />
-          <circle cx="40%" cy="85%" r="3" fill="#8b5cf6" />
+          <circle cx="40%" cy="85%" r="3" fill="#30F1BE" />
         </svg>
       </div>
 

@@ -886,7 +886,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     headline: 'Native & Cross-Platform Mobile Apps Engineered for Performance',
     introduction:
       'We engineer fluid, intuitive iOS and Android applications that deliver native speed, haptic polish, and reliable offline capabilities, keeping your users connected wherever they are.',
-    accentColor: '#8b5cf6',
+    accentColor: '#30F1BE',
     iconName: 'Smartphone',
     metaBadges: [
       { label: 'DELIVERY CADENCE', value: '8–18 Weeks' },
@@ -1676,7 +1676,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     headline: 'Cohesive Visual Systems & Creative Assets Built for the Digital Era',
     introduction:
       'We craft distinct visual identities, comprehensive design systems, and multi-channel creative assets that communicate authority, build recognition, and elevate brand perception across every touchpoint.',
-    accentColor: '#ec4899',
+    accentColor: '#23F7DB',
     iconName: 'Palette',
     metaBadges: [
       { label: 'DELIVERY CADENCE', value: '3–8 Weeks' },
@@ -1936,7 +1936,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     headline: 'Intuitive, Research-Backed User Experiences for Complex Digital Products',
     introduction:
       'We transform intricate workflows into elegant, effortless digital interfaces. Grounded in cognitive psychology, user testing, and systematic component architecture, we design products that users genuinely love using.',
-    accentColor: '#c084fc',
+    accentColor: '#04A37B',
     iconName: 'Layers',
     metaBadges: [
       { label: 'DELIVERY CADENCE', value: '4–12 Weeks' },

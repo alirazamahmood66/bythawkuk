@@ -60,7 +60,7 @@ export const SolutionsOverviewPage: React.FC = () => {
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] font-sans">
                 Engineered Solutions for <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-400 to-violet-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B]">
                   Speed, Scale & Conversion.
                 </span>
               </h1>
