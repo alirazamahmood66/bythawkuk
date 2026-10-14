@@ -70,7 +70,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
     <section
       aria-label="BYTHAWK Interactive Solar System Hero Slider"
       className="relative w-full bg-[#030712] overflow-hidden select-none z-10"
-      style={{ height: isMobile ? '100svh' : 'min(100vh, 1080px)', minHeight: isMobile ? '600px' : '720px' }}
+      style={{ height: isMobile ? '100svh' : '100vh', minHeight: isMobile ? '600px' : '700px' }}
     >
       {/* ── 3D CANVAS ── */}
       <div className="absolute inset-0 z-0">
@@ -133,19 +133,19 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className="pointer-events-auto"
+                className="pointer-events-none"
               >
                 {/* Eyebrow */}
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-2 pointer-events-none">
                   <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
                   <span className="text-[10px] font-mono tracking-[0.25em] text-cyan-400 font-bold">
                     DIGITAL STUDIO &bull; LONDON, UK
                   </span>
                 </div>
 
-                {/* Hero headline — large, no bg */}
+                {/* Hero headline — large, transparent to pointer events so planets behind are 100% clickable */}
                 <h1
-                  className={`font-extrabold text-white tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_24px_rgba(0,0,0,0.9)] ${
+                  className={`font-extrabold text-white tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_24px_rgba(0,0,0,0.9)] pointer-events-none ${
                     isMobile ? 'text-3xl' : 'text-4xl sm:text-5xl lg:text-6xl'
                   }`}
                 >
@@ -156,16 +156,16 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 </h1>
 
                 {!isMobile && (
-                  <p className="mt-3 text-sm text-slate-300/70 max-w-lg leading-relaxed font-sans drop-shadow-[0_1px_8px_rgba(0,0,0,0.8)]">
+                  <p className="mt-3 text-sm text-slate-300/70 max-w-lg leading-relaxed font-sans drop-shadow-[0_1px_8px_rgba(0,0,0,0.8)] pointer-events-none">
                     9 engineering disciplines in orbit. Click any planet to explore.
                   </p>
                 )}
 
-                {/* CTAs — minimal, semi-transparent pill buttons */}
-                <div className={`flex items-center gap-3 ${isMobile ? 'mt-3' : 'mt-5'}`}>
+                {/* CTAs — only buttons have pointer-events-auto */}
+                <div className={`flex items-center gap-3 ${isMobile ? 'mt-3' : 'mt-5'} pointer-events-none`}>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-gradient-to-r from-cyan-300 to-sky-400 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-400/50 transition-all"
+                    className="pointer-events-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 bg-gradient-to-r from-cyan-300 to-sky-400 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-400/50 transition-all"
                   >
                     Start a Project
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -173,7 +173,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => handleSelectPlanet('earth')}
-                    className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-white/80 bg-white/[0.06] border border-white/[0.15] hover:bg-white/[0.12] hover:text-white transition-all backdrop-blur-sm"
+                    className="pointer-events-auto inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-white/80 bg-white/[0.06] border border-white/[0.15] hover:bg-white/[0.12] hover:text-white transition-all backdrop-blur-sm cursor-pointer"
                   >
                     Explore
                     <ArrowUpRight className="w-3 h-3 text-cyan-400" />
@@ -191,18 +191,18 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className={`pointer-events-auto ${
+                className={`pointer-events-none ${
                   !isMobile && activeStation.cardSide === 'right'
                     ? 'flex flex-col items-end text-right'
                     : 'flex flex-col items-start text-left'
                 }`}
               >
                 {/* Back + counter */}
-                <div className={`flex items-center gap-3 mb-3 ${!isMobile && activeStation.cardSide === 'right' ? 'flex-row-reverse' : ''}`}>
+                <div className={`flex items-center gap-3 mb-3 pointer-events-none ${!isMobile && activeStation.cardSide === 'right' ? 'flex-row-reverse' : ''}`}>
                   <button
                     type="button"
                     onClick={() => setIsOverview(true)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-mono font-bold text-white/60 bg-white/[0.06] border border-white/[0.1] hover:bg-white/[0.12] hover:text-white/90 transition-all backdrop-blur-sm"
+                    className="pointer-events-auto inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-mono font-bold text-white/60 bg-white/[0.06] border border-white/[0.1] hover:bg-white/[0.12] hover:text-white/90 transition-all backdrop-blur-sm cursor-pointer"
                   >
                     <RotateCcw className="w-2.5 h-2.5" />
                     ALL WORLDS
@@ -213,7 +213,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 </div>
 
                 {/* Category label */}
-                <div className="flex items-center gap-2 mb-1.5">
+                <div className="flex items-center gap-2 mb-1.5 pointer-events-none">
                   <span
                     className="w-2 h-2 rounded-full"
                     style={{ background: activeStation.color, boxShadow: `0 0 10px ${activeStation.color}` }}
@@ -226,9 +226,9 @@ export const SolarSystemHeroSlider: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Service title — BIG, colored, no card */}
+                {/* Service title — pointer-events-none so any planet behind is 100% clickable */}
                 <h2
-                  className={`font-extrabold tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_32px_rgba(0,0,0,0.95)] ${
+                  className={`font-extrabold tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_32px_rgba(0,0,0,0.95)] pointer-events-none ${
                     isMobile ? 'text-2xl' : 'text-4xl sm:text-5xl lg:text-6xl'
                   }`}
                   style={{
@@ -241,17 +241,17 @@ export const SolarSystemHeroSlider: React.FC = () => {
 
                 {/* Tagline */}
                 <p
-                  className={`mt-1.5 font-mono font-semibold tracking-wide drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)] ${isMobile ? 'text-[11px]' : 'text-xs sm:text-sm'}`}
+                  className={`mt-1.5 font-mono font-semibold tracking-wide drop-shadow-[0_1px_8px_rgba(0,0,0,0.9)] pointer-events-none ${isMobile ? 'text-[11px]' : 'text-xs sm:text-sm'}`}
                   style={{ color: `${activeStation.color}cc` }}
                 >
                   {activeStation.tagline}
                 </p>
 
                 {/* CTAs */}
-                <div className={`flex items-center gap-3 ${isMobile ? 'mt-3' : 'mt-5'}`}>
+                <div className={`flex items-center gap-3 ${isMobile ? 'mt-3' : 'mt-5'} pointer-events-none`}>
                   <Link
                     to={activeStation.route}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 shadow-lg transition-all"
+                    className="pointer-events-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-slate-950 shadow-lg transition-all"
                     style={{
                       background: `linear-gradient(135deg, ${activeStation.color}, #ffffff)`,
                       boxShadow: `0 0 24px ${activeStation.color}50`,
@@ -262,7 +262,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
                   </Link>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-white/80 bg-white/[0.06] border border-white/[0.15] hover:bg-white/[0.12] hover:text-white transition-all backdrop-blur-sm"
+                    className="pointer-events-auto inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-white/80 bg-white/[0.06] border border-white/[0.15] hover:bg-white/[0.12] hover:text-white transition-all backdrop-blur-sm"
                   >
                     Start Project
                     <ArrowUpRight className="w-3 h-3 text-cyan-400" />

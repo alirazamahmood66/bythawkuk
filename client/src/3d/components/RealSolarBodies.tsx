@@ -134,6 +134,11 @@ export const RealSun: React.FC<CelestialInteractProps> = ({
         <sphereGeometry args={[SUN_RADIUS, 64, 64]} />
         <meshBasicMaterial map={tex} color="#ffd9a0" toneMapped={false} />
       </mesh>
+      {/* Invisible enlarged hit sphere for comfortable sun tap */}
+      <mesh>
+        <sphereGeometry args={[SUN_RADIUS * 1.5, 16, 16]} />
+        <meshBasicMaterial transparent opacity={0} depthWrite={false} />
+      </mesh>
       <Atmosphere radius={SUN_RADIUS} color="#ff9a3c" intensity={1.6} scale={1.12} />
       <sprite scale={[SUN_RADIUS * 8, SUN_RADIUS * 8, 1]} raycast={() => null}>
         <spriteMaterial map={glowTexture} blending={THREE.AdditiveBlending} depthWrite={false} transparent toneMapped={false} />
@@ -272,6 +277,7 @@ const EarthNightLights: React.FC<{ radius: number; texture: string; spin: number
 export interface PlanetInteractProps {
   cfg: RealBodyConfig;
   isReducedMotion?: boolean;
+  isMobile?: boolean;
   isHovered?: boolean;
   isActive?: boolean;
   serviceTitle?: string;
@@ -284,6 +290,7 @@ export interface PlanetInteractProps {
 export const RealPlanet: React.FC<PlanetInteractProps> = ({
   cfg,
   isReducedMotion,
+  isMobile = false,
   isHovered,
   isActive,
   serviceTitle,
@@ -302,6 +309,12 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
     if (groupRef.current) groupRef.current.position.copy(getBodyPosition(cfg.id, t, tmp));
     if (spinRef.current) spinRef.current.rotation.y = t * cfg.spin;
   });
+
+  // Generous hit target: on mobile, small planets (Mercury, Venus, Mars) become super easy to tap
+  const hitRadius = useMemo(() => {
+    const base = isMobile ? 1.8 : 1.1;
+    return Math.max(base, cfg.radius * (isMobile ? 2.5 : 1.8));
+  }, [cfg.radius, isMobile]);
 
   return (
     <group
@@ -334,7 +347,7 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
         </mesh>
         {/* Invisible enlarged hit sphere for effortless clicking across all screen sizes */}
         <mesh>
-          <sphereGeometry args={[Math.max(0.65, cfg.radius * 1.6), 16, 16]} />
+          <sphereGeometry args={[hitRadius, 16, 16]} />
           <meshBasicMaterial transparent opacity={0} depthWrite={false} />
         </mesh>
         {cfg.night && <EarthNightLights radius={cfg.radius} texture={cfg.night} spin={cfg.spin} isReducedMotion={isReducedMotion} />}
@@ -370,6 +383,7 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
 
 export interface AllRealPlanetsProps {
   isReducedMotion?: boolean;
+  isMobile?: boolean;
   hoveredPlanetId?: string | null;
   activePlanetId?: string;
   planetServices?: Record<string, { serviceTitle: string; planetName: string }>;
@@ -380,6 +394,7 @@ export interface AllRealPlanetsProps {
 
 export const AllRealPlanets: React.FC<AllRealPlanetsProps> = ({
   isReducedMotion,
+  isMobile = false,
   hoveredPlanetId,
   activePlanetId,
   planetServices,
@@ -393,6 +408,7 @@ export const AllRealPlanets: React.FC<AllRealPlanetsProps> = ({
         key={b.id}
         cfg={b}
         isReducedMotion={isReducedMotion}
+        isMobile={isMobile}
         isHovered={hoveredPlanetId === b.id}
         isActive={activePlanetId === b.id}
         serviceTitle={planetServices?.[b.id]?.serviceTitle}

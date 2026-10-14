@@ -28,7 +28,7 @@ export const InteractiveSolarCanvas: React.FC<InteractiveSolarCanvasProps> = ({
   return (
     <div className={`w-full h-full relative ${className}`}>
       <Canvas
-        camera={{ position: [0, 2.0, 11.8], fov: isMobile ? 62 : 46 }}
+        camera={{ position: [0, 2.0, 11.8], fov: isMobile ? 66 : 48 }}
         gl={{
           antialias: true,
           alpha: true,

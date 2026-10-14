@@ -22,48 +22,48 @@ export interface RealBodyConfig {
   rings?: { inner: number; outer: number; texture: string };
 }
 
-export const SUN_RADIUS = 1.3;
+export const SUN_RADIUS = 1.85;
 export const SUN_TEXTURE = '/textures/2k_sun.jpg';
 export const MILKY_WAY_TEXTURE = '/textures/2k_stars_milky_way.jpg';
 
 // Real Solar System (compressed distances, true planet order, real NASA-derived surface maps).
 // Only Saturn has rings, exactly like the real thing.
 export const REAL_BODIES: RealBodyConfig[] = [
-  { id: 'mercury', texture: '/textures/2k_mercury.jpg', radius: 0.17, orbitRadius: 2.7, speed: 0.045, angle: 1.9, tilt: 0.03, spin: 0.05, bump: 1.2 },
+  { id: 'mercury', texture: '/textures/2k_mercury.jpg', radius: 0.32, orbitRadius: 3.0, speed: 0.18, angle: 1.9, tilt: 0.03, spin: 0.12, bump: 1.2 },
   {
-    id: 'venus', texture: '/textures/2k_venus_atmosphere.jpg', radius: 0.3, orbitRadius: 3.8, speed: 0.032, angle: 1.2, tilt: 0.1, spin: 0.03,
+    id: 'venus', texture: '/textures/2k_venus_atmosphere.jpg', radius: 0.52, orbitRadius: 4.3, speed: 0.13, angle: 1.2, tilt: 0.1, spin: 0.08,
     atmosphere: { color: '#ffd9a0', intensity: 1.1, scale: 1.08 },
   },
   {
-    id: 'earth', texture: '/textures/2k_earth_daymap.jpg', radius: 0.34, orbitRadius: 5.1, speed: 0.024, angle: 1.85, tilt: 0.41, spin: 0.14,
+    id: 'earth', texture: '/textures/2k_earth_daymap.jpg', radius: 0.58, orbitRadius: 5.7, speed: 0.095, angle: 1.85, tilt: 0.41, spin: 0.24,
     night: '/textures/2k_earth_nightmap.jpg',
     atmosphere: { color: '#6cb4ff', intensity: 1.6, scale: 1.1 },
     clouds: '/textures/2k_earth_clouds.jpg', moon: true,
   },
   {
-    id: 'mars', texture: '/textures/2k_mars.jpg', radius: 0.24, orbitRadius: 6.4, speed: 0.018, angle: 1.1, tilt: 0.44, spin: 0.13, bump: 1.4,
+    id: 'mars', texture: '/textures/2k_mars.jpg', radius: 0.42, orbitRadius: 7.1, speed: 0.072, angle: 1.1, tilt: 0.44, spin: 0.20, bump: 1.4,
     atmosphere: { color: '#ffb48a', intensity: 0.7, scale: 1.05 },
   },
   {
-    id: 'jupiter', texture: '/textures/2k_jupiter.jpg', radius: 1.05, orbitRadius: 11.0, speed: 0.012, angle: 1.75, tilt: 0.05, spin: 0.25,
+    id: 'jupiter', texture: '/textures/2k_jupiter.jpg', radius: 1.65, orbitRadius: 11.2, speed: 0.046, angle: 1.75, tilt: 0.05, spin: 0.35,
     atmosphere: { color: '#f3d2a4', intensity: 0.55, scale: 1.035 },
   },
   {
-    id: 'saturn', texture: '/textures/2k_saturn.jpg', radius: 0.9, orbitRadius: 14.8, speed: 0.009, angle: 1.3, tilt: 0.47, spin: 0.22,
+    id: 'saturn', texture: '/textures/2k_saturn.jpg', radius: 1.40, orbitRadius: 15.8, speed: 0.036, angle: 1.3, tilt: 0.47, spin: 0.30,
     atmosphere: { color: '#f0dcae', intensity: 0.5, scale: 1.035 },
-    rings: { inner: 1.25, outer: 2.35, texture: '/textures/2k_saturn_ring_alpha.png' },
+    rings: { inner: 1.88, outer: 3.45, texture: '/textures/2k_saturn_ring_alpha.png' },
   },
   {
-    id: 'uranus', texture: '/textures/2k_uranus.jpg', radius: 0.52, orbitRadius: 18.4, speed: 0.006, angle: 1.8, tilt: 1.7, spin: 0.15,
+    id: 'uranus', texture: '/textures/2k_uranus.jpg', radius: 0.85, orbitRadius: 20.2, speed: 0.028, angle: 1.8, tilt: 1.7, spin: 0.22,
     atmosphere: { color: '#a8f0f4', intensity: 1.2, scale: 1.07 },
   },
   {
-    id: 'neptune', texture: '/textures/2k_neptune.jpg', radius: 0.5, orbitRadius: 21.5, speed: 0.0045, angle: 1.35, tilt: 0.5, spin: 0.16,
+    id: 'neptune', texture: '/textures/2k_neptune.jpg', radius: 0.82, orbitRadius: 23.2, speed: 0.022, angle: 1.35, tilt: 0.5, spin: 0.24,
     atmosphere: { color: '#5b8cff', intensity: 1.4, scale: 1.08 },
   },
 ];
 
-export const ASTEROID_BELT = { inner: 7.4, outer: 9.0 };
+export const ASTEROID_BELT = { inner: 8.1, outer: 9.7 };
 
 /** Single source of truth for body position so camera & meshes can never disagree. */
 export function getBodyPosition(id: string, t: number, out: THREE.Vector3): THREE.Vector3 {

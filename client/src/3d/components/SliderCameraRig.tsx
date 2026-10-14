@@ -40,18 +40,18 @@ export const SliderCameraRig: React.FC<SliderCameraRigProps> = ({
     }
 
     // Panoramic camera setup:
-    // Neptune is at orbit radius 21.5, so we need y=22+, z=36+ on desktop
-    // and y=28+, z=50+ on mobile portrait to fit the outermost planets clearly.
+    // With Neptune at orbit radius 23.2, steeper pitch angles open up the orbits
+    // into deep, grand amphitheaters vertically, avoiding any 'too short' squashing.
     const baseOverview = isMobile
-      ? overviewPos.current.set(0, 28.0, 50.0)
-      : overviewPos.current.set(0, 22.0, 36.0);
+      ? overviewPos.current.set(0, 34.0, 42.0)
+      : overviewPos.current.set(0, 21.0, 27.0);
 
     if (isOverview || activeStationIndex === null) {
       // ═════════════════════════════════════════════════════════════
       // OVERVIEW MODE: Bird's eye panorama of all 9 orbits
       // ═════════════════════════════════════════════════════════════
       targetCam.current.copy(baseOverview);
-      targetLook.current.set(0, -0.4, 0);
+      targetLook.current.set(0, isMobile ? -0.5 : -0.3, 0);
 
       if (!isReducedMotion && !isMobile) {
         targetCam.current.x += state.pointer.x * 2.2;
@@ -72,42 +72,42 @@ export const SliderCameraRig: React.FC<SliderCameraRigProps> = ({
 
       // Close zoom parameters
       const isSun = station.id === 'sun';
-      const closeDistMult = isSun ? 1.0 : (isMobile ? 0.75 : 0.6);
+      const closeDistMult = isSun ? 1.0 : (isMobile ? 0.95 : 0.85);
 
       const closeCamPos = new THREE.Vector3(
-        bodyPos.current.x + station.camOffset[0] * closeDistMult,
+        bodyPos.current.x + (isMobile ? 0 : station.camOffset[0]) * closeDistMult,
         bodyPos.current.y + station.camOffset[1] * closeDistMult,
         bodyPos.current.z + station.camOffset[2] * closeDistMult
       );
       const closeLookPos = new THREE.Vector3(
-        bodyPos.current.x + station.lookOffset[0],
-        bodyPos.current.y + station.lookOffset[1],
-        bodyPos.current.z + station.lookOffset[2]
+        bodyPos.current.x + (isMobile ? 0 : station.lookOffset[0]),
+        bodyPos.current.y + station.lookOffset[1] * 0.4,
+        bodyPos.current.z + (isMobile ? 0 : station.lookOffset[2])
       );
 
       // Wide pull-back position:
-      // Pull back far and high enough so the entire 22-unit radius solar system is in view!
+      // Pull back far and high enough so the entire solar system is in view!
       if (isSun) {
         toBodyNorm.current.copy(baseOverview);
       } else {
         toBodyNorm.current.copy(bodyPos.current).normalize();
-        const radiusOut = isMobile ? 48.0 : 36.0;
-        const elevation = isMobile ? 26.0 : 20.0;
+        const radiusOut = isMobile ? 42.0 : 28.0;
+        const elevation = isMobile ? 34.0 : 21.0;
         toBodyNorm.current.multiplyScalar(radiusOut);
         toBodyNorm.current.y = elevation;
       }
 
       const wideCamPos = toBodyNorm.current;
       const wideLookPos = isSun
-        ? new THREE.Vector3(0, -0.4, 0)
-        : new THREE.Vector3(bodyPos.current.x * 0.3, 0, bodyPos.current.z * 0.3);
+        ? new THREE.Vector3(0, isMobile ? -0.5 : -0.3, 0)
+        : new THREE.Vector3(bodyPos.current.x * 0.25, 0, bodyPos.current.z * 0.25);
 
-      // Timing: 3.5 seconds close inspection -> 3.2 seconds smooth ease-out to wide view
+      // Timing: 3.5 seconds close inspection -> 3.0 seconds smooth ease-out to wide view
       if (elapsed < 3.5) {
         targetCam.current.copy(closeCamPos);
         targetLook.current.copy(closeLookPos);
       } else {
-        const t = Math.min(1, (elapsed - 3.5) / 3.2);
+        const t = Math.min(1, (elapsed - 3.5) / 3.0);
         const easeOut = 1 - Math.pow(1 - t, 3);
 
         targetCam.current.copy(closeCamPos).lerp(wideCamPos, easeOut);

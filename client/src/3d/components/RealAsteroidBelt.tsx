@@ -110,7 +110,7 @@ export const RealAsteroidBelt: React.FC<BeltProps> = ({
   }, [rocks]);
 
   useFrame((state, delta) => {
-    if (groupRef.current && !isReducedMotion) groupRef.current.rotation.y += delta * 0.006;
+    if (groupRef.current && !isReducedMotion) groupRef.current.rotation.y += delta * 0.035;
     const t = isReducedMotion ? 0 : state.clock.elapsedTime;
     rocks.forEach((list, vi) => {
       const m = meshRefs.current[vi];

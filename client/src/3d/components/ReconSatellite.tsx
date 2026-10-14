@@ -21,11 +21,11 @@ export const ReconSatellite: React.FC<ReconSatelliteProps> = ({ isReducedMotion 
     getBodyPosition('earth', t, earthPos.current);
 
     // Orbit around Earth in a high inclination orbit
-    const orbitRadius = 0.85; // Just outside Earth (radius 0.34)
+    const orbitRadius = 1.25; // Just outside Earth (radius 0.58 + atmosphere)
     const orbitSpeed = isReducedMotion ? 0 : t * 0.45;
     const ox = Math.cos(orbitSpeed) * orbitRadius;
     const oz = Math.sin(orbitSpeed) * orbitRadius;
-    const oy = Math.sin(orbitSpeed * 1.5) * 0.22;
+    const oy = Math.sin(orbitSpeed * 1.5) * 0.32;
 
     groupRef.current.position.set(
       earthPos.current.x + ox,
@@ -49,7 +49,7 @@ export const ReconSatellite: React.FC<ReconSatelliteProps> = ({ isReducedMotion 
   });
 
   return (
-    <group ref={groupRef} scale={[0.12, 0.12, 0.12]}>
+    <group ref={groupRef} scale={[0.15, 0.15, 0.15]}>
       {/* 1. Main Satellite Bus (Gold & Titanium Chassis) */}
       <mesh>
         <boxGeometry args={[0.9, 0.6, 0.6]} />

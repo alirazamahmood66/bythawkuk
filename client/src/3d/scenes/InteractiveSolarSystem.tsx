@@ -84,6 +84,7 @@ export const InteractiveSolarSystem: React.FC<InteractiveSolarSystemProps> = ({
       {/* All planets with interactive hover tooltips & click handlers */}
       <AllRealPlanets
         isReducedMotion={isReducedMotion}
+        isMobile={isMobile}
         hoveredPlanetId={hoveredPlanetId}
         activePlanetId={activeStation?.id}
         planetServices={planetServicesMap}
