@@ -33,19 +33,19 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const variantClasses: Record<ButtonVariant, string> = {
       // Primary: High-contrast Neon Cyan / Neon Mint with glow ("Let's Talk")
       primary:
-        'bg-[#23F7DB] hover:bg-[#30F1BE] text-[#001119] font-bold shadow-[0_0_20px_rgba(35,247,219,0.35)] hover:shadow-[0_0_25px_rgba(48,241,190,0.5)] border border-[#23F7DB]/50',
+        'bg-[#F59E0B] hover:bg-[#FBBF24] text-[#020611] font-bold shadow-[0_0_20px_rgba(245, 158, 11, 0.35)] hover:shadow-[0_0_25px_rgba(251, 191, 36, 0.5)] border border-[#F59E0B]/50',
 
       // Secondary: Refined Dark Teal surface with micro border ("Explore Services")
       secondary:
-        'bg-[#061F25] hover:bg-[#092c34] text-[#E8FFFC] hover:text-[#30F1BE] border border-[#E8FFFC]/15 hover:border-[#30F1BE]/50 shadow-sm',
+        'bg-[#070D18] hover:bg-[#0C1527] text-[#FFFBEB] hover:text-[#FBBF24] border border-[#FFFBEB]/15 hover:border-[#FBBF24]/50 shadow-sm',
 
       // Ghost: Minimalist transparent with subtle border highlight on hover ("View Project")
       ghost:
-        'bg-transparent hover:bg-white/[0.04] text-[#E8FFFC]/80 hover:text-[#23F7DB] border border-transparent hover:border-[#E8FFFC]/15',
+        'bg-transparent hover:bg-white/[0.04] text-[#FFFBEB]/80 hover:text-[#F59E0B] border border-transparent hover:border-[#FFFBEB]/15',
 
       // Special CTA: Cinematic gradient shimmer with Aqua Mint / Neon Mint / Neon Cyan depth
       special:
-        'bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] hover:from-[#30F1BE] hover:to-[#008C6B] text-[#001119] font-extrabold shadow-[0_0_30px_rgba(35,247,219,0.4)] hover:shadow-[0_0_35px_rgba(48,241,190,0.6)] border border-[#E8FFFC]/30',
+        'bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] hover:from-[#FBBF24] hover:to-[#EA580C] text-[#020611] font-extrabold shadow-[0_0_30px_rgba(245, 158, 11, 0.4)] hover:shadow-[0_0_35px_rgba(251, 191, 36, 0.6)] border border-[#FFFBEB]/30',
     };
 
     const sizeClasses: Record<ButtonSize, string> = {

@@ -33,7 +33,7 @@ export const StatusIndicator: React.FC<StatusIndicatorProps> = ({
     loading: {
       dot: 'bg-cyan-400',
       pulse: 'bg-cyan-400/75',
-      text: 'text-cyan-400',
+      text: 'text-amber-400',
       defaultLabel: 'Checking Status...',
     },
   };

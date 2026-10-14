@@ -59,16 +59,16 @@ export const FormReview: React.FC<FormReviewProps> = ({
           variant="default"
           spotlight={true}
           withReticles={true}
-          className="p-5 rounded-xl bg-[#061F25]/90 border-white/[0.08] flex flex-col justify-between shadow-sm"
+          className="p-5 rounded-xl bg-[#070D18]/90 border-white/[0.08] flex flex-col justify-between shadow-sm"
         >
           <div className="flex items-center justify-between mb-3">
-            <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
+            <span className="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold">
               STEP 01 // SELECTED DISCIPLINES
             </span>
             <button
               type="button"
               onClick={() => onEditStep(1)}
-              className="text-xs font-mono text-slate-400 hover:text-cyan-400 inline-flex items-center transition-colors"
+              className="text-xs font-mono text-slate-400 hover:text-amber-400 inline-flex items-center transition-colors"
             >
               <Edit2 className="w-3 h-3 mr-1" />
               <span>Edit</span>
@@ -79,7 +79,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
             {selectedTypeLabels.map((lbl) => (
               <span
                 key={lbl}
-                className="text-xs font-mono px-2.5 py-1 rounded bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 font-semibold"
+                className="text-xs font-mono px-2.5 py-1 rounded bg-amber-950/40 border border-amber-500/30 text-amber-300 font-semibold"
               >
                 {lbl}
               </span>
@@ -92,16 +92,16 @@ export const FormReview: React.FC<FormReviewProps> = ({
           variant="default"
           spotlight={true}
           withReticles={true}
-          className="p-5 rounded-xl bg-[#061F25]/90 border-white/[0.08] space-y-3 shadow-sm"
+          className="p-5 rounded-xl bg-[#070D18]/90 border-white/[0.08] space-y-3 shadow-sm"
         >
           <div className="flex items-center justify-between mb-1">
-            <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
+            <span className="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold">
               STEP 02 // SCOPE & PARAMETERS
             </span>
             <button
               type="button"
               onClick={() => onEditStep(2)}
-              className="text-xs font-mono text-slate-400 hover:text-cyan-400 inline-flex items-center transition-colors"
+              className="text-xs font-mono text-slate-400 hover:text-amber-400 inline-flex items-center transition-colors"
             >
               <Edit2 className="w-3 h-3 mr-1" />
               <span>Edit</span>
@@ -109,7 +109,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
           </div>
 
           <div>
-            <span className="text-[11px] font-mono text-cyan-400 uppercase block font-semibold">
+            <span className="text-[11px] font-mono text-amber-400 uppercase block font-semibold">
               DESCRIPTION
             </span>
             <p className="text-sm text-slate-200 mt-1 whitespace-pre-wrap leading-relaxed line-clamp-4 font-sans">
@@ -158,16 +158,16 @@ export const FormReview: React.FC<FormReviewProps> = ({
           variant="default"
           spotlight={true}
           withReticles={true}
-          className="p-5 rounded-xl bg-[#061F25]/90 border-white/[0.08] space-y-3 shadow-sm"
+          className="p-5 rounded-xl bg-[#070D18]/90 border-white/[0.08] space-y-3 shadow-sm"
         >
           <div className="flex items-center justify-between mb-1">
-            <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">
+            <span className="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold">
               STEP 03 // CONTACT COORDINATES
             </span>
             <button
               type="button"
               onClick={() => onEditStep(3)}
-              className="text-xs font-mono text-slate-400 hover:text-cyan-400 inline-flex items-center transition-colors"
+              className="text-xs font-mono text-slate-400 hover:text-amber-400 inline-flex items-center transition-colors"
             >
               <Edit2 className="w-3 h-3 mr-1" />
               <span>Edit</span>
@@ -204,11 +204,11 @@ export const FormReview: React.FC<FormReviewProps> = ({
       </div>
 
       {/* Privacy Notice */}
-      <div className="p-4 rounded-xl bg-[#061F25]/80 border border-white/[0.08] flex items-start space-x-3 text-xs text-slate-300 leading-relaxed font-sans">
-        <ShieldCheck className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+      <div className="p-4 rounded-xl bg-[#070D18]/80 border border-white/[0.08] flex items-start space-x-3 text-xs text-slate-300 leading-relaxed font-sans">
+        <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
         <p>
           By submitting this enquiry, you acknowledge that Bythawk will process the details provided to assess your project requirements and communicate our response. For more information, please read our{' '}
-          <Link to="/privacy" className="text-cyan-400 underline hover:text-cyan-300">
+          <Link to="/privacy" className="text-amber-400 underline hover:text-amber-300">
             Privacy Policy
           </Link>
           .

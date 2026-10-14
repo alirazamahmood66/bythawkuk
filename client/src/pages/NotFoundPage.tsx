@@ -16,7 +16,7 @@ export const NotFoundPage: React.FC = () => {
   return (
     <div className="flex-1 flex items-center justify-center py-16">
       <Container size="sm" className="text-center">
-        <div className="text-7xl font-mono font-bold text-cyan-400 mb-4">404</div>
+        <div className="text-7xl font-mono font-bold text-amber-400 mb-4">404</div>
         <h1 className="text-2xl font-bold text-white mb-2">Orbit Not Found</h1>
         <p className="text-slate-400 mb-6">
           The planetary coordinates or resource requested do not exist in the BYTHAWK system.

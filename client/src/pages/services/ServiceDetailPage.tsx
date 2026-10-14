@@ -141,26 +141,26 @@ export const ServiceDetailPage: React.FC = () => {
   // Handle case where service slug does not exist in dataset
   if (!service) {
     return (
-      <main className="min-h-screen bg-[#001119] text-[#E8FFFC] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
-            <div className="w-16 h-16 rounded-2xl bg-[#008C6B]/20 border border-[#04A37B]/30 flex items-center justify-center mx-auto text-[#23F7DB]">
+            <div className="w-16 h-16 rounded-2xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center mx-auto text-[#F59E0B]">
               <Compass className="w-8 h-8 animate-spin-slow" />
             </div>
             <div className="space-y-2">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase">
                 ERROR 404 // SERVICE SPECIFICATION
               </span>
-              <h1 className="text-2xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h1 className="text-2xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 Service Specification Not Found
               </h1>
-              <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
-                The requested service coordinate <code className="text-[#30F1BE] font-mono text-xs bg-[#008C6B]/30 px-1.5 py-0.5 rounded border border-[#04A37B]/40">/{slug}</code> could not be located within the BYTHAWK orbital network.
+              <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
+                The requested service coordinate <code className="text-[#FBBF24] font-mono text-xs bg-[#EA580C]/30 px-1.5 py-0.5 rounded border border-[#D97706]/40">/{slug}</code> could not be located within the BYTHAWK orbital network.
               </p>
             </div>
             <div className="pt-2 flex justify-center gap-4">
@@ -230,7 +230,7 @@ export const ServiceDetailPage: React.FC = () => {
         </motion.div>
       )}
 
-      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Breadcrumb Navigation */}
           <ServiceBreadcrumbs serviceTitle={service.title} />
@@ -268,22 +268,22 @@ export const ServiceDetailPage: React.FC = () => {
           />
 
           {/* Section 5: Standardized Launch Sequence Bridge (Replaces generic 6-screen duplicate process) */}
-          <section className="py-12 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-12 border-b border-[#FFFBEB]/[0.08]">
             <Card
               variant="default"
               spotlight={true}
               withReticles={true}
               spotlightColor={`${service.accentColor}18`}
-              className="p-8 sm:p-10 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl"
+              className="p-8 sm:p-10 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl"
             >
               <div className="space-y-2 max-w-xl">
-                <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+                <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                   // RIGOROUS UK CRAFTSMANSHIP
                 </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-[#E8FFFC] font-sans">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#FFFBEB] font-sans">
                   Engineered Through Our 6-Stage Launch Sequence
                 </h3>
-                <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                   Every {service.title} engagement executes against our standardized UK quality gates, automated testing, and zero-downtime deployment pipelines.
                 </p>
               </div>

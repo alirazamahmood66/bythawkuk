@@ -7,27 +7,27 @@ export const WorkHero: React.FC = () => {
       {/* Ambient background glow */}
       <div
         className="absolute top-0 right-1/4 w-[500px] h-[350px] rounded-full opacity-15 blur-[120px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 50%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #F59E0B 0%, #D97706 50%, transparent 70%)' }}
       />
 
       {/* Decorative Constellation Vectors */}
       <div className="absolute inset-0 pointer-events-none opacity-20 -z-10" aria-hidden="true">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <line x1="10%" y1="20%" x2="40%" y2="40%" stroke="#06b6d4" strokeWidth="1" strokeDasharray="4 6" />
-          <line x1="40%" y1="40%" x2="70%" y2="25%" stroke="#30F1BE" strokeWidth="1" strokeDasharray="4 6" />
+          <line x1="40%" y1="40%" x2="70%" y2="25%" stroke="#FBBF24" strokeWidth="1" strokeDasharray="4 6" />
           <line x1="40%" y1="40%" x2="50%" y2="80%" stroke="#38bdf8" strokeWidth="1" strokeDasharray="4 6" />
           <circle cx="10%" cy="20%" r="3" fill="#06b6d4" />
           <circle cx="40%" cy="40%" r="4" fill="#38bdf8" />
-          <circle cx="70%" cy="25%" r="3" fill="#30F1BE" />
+          <circle cx="70%" cy="25%" r="3" fill="#FBBF24" />
           <circle cx="50%" cy="80%" r="3" fill="#10b981" />
         </svg>
       </div>
 
       <div className="max-w-3xl space-y-6">
         {/* Eyebrow */}
-        <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 shadow-sm backdrop-blur-sm">
-          <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-          <span className="text-xs font-mono font-medium tracking-wider text-cyan-300 uppercase">
+        <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
+          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+          <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
             BYTHAWK // SELECTED WORK
           </span>
         </div>
@@ -35,7 +35,7 @@ export const WorkHero: React.FC = () => {
         {/* Primary Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] font-sans">
           Digital Experiences <br />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B]">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C]">
             Built to Move.
           </span>
         </h1>

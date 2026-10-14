@@ -23,12 +23,12 @@ export const Section: React.FC<SectionProps> = ({
 }) => {
   const bgClasses = {
     transparent: 'bg-transparent',
-    deep: 'bg-[#001119]',
-    surface: 'bg-[#061F25]/70',
+    deep: 'bg-[#020611]',
+    surface: 'bg-[#070D18]/70',
   };
 
-  const borderTopClass = hasBorderTop ? 'border-t border-[#E8FFFC]/[0.08]' : '';
-  const borderBottomClass = hasBorderBottom ? 'border-b border-[#E8FFFC]/[0.08]' : '';
+  const borderTopClass = hasBorderTop ? 'border-t border-[#FFFBEB]/[0.08]' : '';
+  const borderBottomClass = hasBorderBottom ? 'border-b border-[#FFFBEB]/[0.08]' : '';
 
   return (
     <section

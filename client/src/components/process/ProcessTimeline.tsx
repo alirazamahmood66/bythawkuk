@@ -10,7 +10,7 @@ export const ProcessTimeline: React.FC = () => {
   return (
     <section className="py-16 md:py-24 border-b border-white/[0.08]">
       <div className="max-w-3xl mb-16">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
           <span>// 6-STAGE DELIVERY TRAJECTORY</span>
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -30,7 +30,7 @@ export const ProcessTimeline: React.FC = () => {
             spotlight={true}
             withReticles={true}
             spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 relative group shadow-xl"
+            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-xl"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               {/* Left Column: Number & Stage Identity */}
@@ -73,14 +73,14 @@ export const ProcessTimeline: React.FC = () => {
               <div className="lg:col-span-8 space-y-6 lg:pl-6 lg:border-l lg:border-white/[0.08]">
                 {/* Activities list */}
                 <div>
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-cyan-400 block mb-3 font-semibold">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-amber-400 block mb-3 font-semibold">
                     TYPICAL STAGE ACTIVITIES
                   </span>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {stage.activities.map((act, aIdx) => (
                       <div
                         key={aIdx}
-                        className="flex items-start text-xs sm:text-sm text-slate-300 p-3 rounded-lg bg-[#061F25]/60 border border-white/[0.08] font-sans"
+                        className="flex items-start text-xs sm:text-sm text-slate-300 p-3 rounded-lg bg-[#070D18]/60 border border-white/[0.08] font-sans"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 mr-2.5 flex-shrink-0" />
                         <span>{act}</span>
@@ -96,12 +96,12 @@ export const ProcessTimeline: React.FC = () => {
                       EXPECTED STAGE MILESTONE
                     </span>
                     <div className="flex items-center text-sm font-bold text-white font-sans">
-                      <CheckCircle className="w-4 h-4 text-cyan-400 mr-2 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-amber-400 mr-2 flex-shrink-0" />
                       <span>{stage.deliverable}</span>
                     </div>
                   </div>
 
-                  <span className="text-xs font-mono text-cyan-300 self-start sm:self-auto px-2.5 py-1 rounded bg-cyan-950/40 border border-cyan-500/30">
+                  <span className="text-xs font-mono text-amber-300 self-start sm:self-auto px-2.5 py-1 rounded bg-amber-950/40 border border-amber-500/30">
                     VERIFIED ARTIFACT
                   </span>
                 </div>

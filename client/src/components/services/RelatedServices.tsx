@@ -17,7 +17,7 @@ export const RelatedServices: React.FC<RelatedServicesProps> = ({
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
         <div>
-          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
             <span>// CROSS-DISCIPLINARY SYNERGY</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -30,7 +30,7 @@ export const RelatedServices: React.FC<RelatedServicesProps> = ({
 
         <Link
           to="/services"
-          className="mt-4 md:mt-0 text-xs font-mono tracking-wider text-cyan-400 hover:text-cyan-300 hover:underline inline-flex items-center"
+          className="mt-4 md:mt-0 text-xs font-mono tracking-wider text-amber-400 hover:text-amber-300 hover:underline inline-flex items-center"
         >
           <span>VIEW ALL SERVICES &rarr;</span>
         </Link>
@@ -53,13 +53,13 @@ export const RelatedServices: React.FC<RelatedServicesProps> = ({
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-[10px] font-mono tracking-wider text-cyan-300 uppercase px-2 py-0.5 rounded bg-cyan-950/40 border border-cyan-500/30">
+                  <span className="text-[10px] font-mono tracking-wider text-amber-300 uppercase px-2 py-0.5 rounded bg-amber-950/40 border border-amber-500/30">
                     {service.category}
                   </span>
-                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-cyan-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-amber-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </div>
 
-                <h3 className="text-lg font-semibold text-white tracking-wide group-hover:text-cyan-200 transition-colors mb-2">
+                <h3 className="text-lg font-semibold text-white tracking-wide group-hover:text-amber-200 transition-colors mb-2">
                   {service.title}
                 </h3>
 
@@ -68,7 +68,7 @@ export const RelatedServices: React.FC<RelatedServicesProps> = ({
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-white/[0.08] flex items-center text-xs font-mono text-cyan-400 font-medium">
+              <div className="mt-6 pt-4 border-t border-white/[0.08] flex items-center text-xs font-mono text-amber-400 font-medium">
                 <span>EXPLORE SPECIFICATION &rarr;</span>
               </div>
             </Card>

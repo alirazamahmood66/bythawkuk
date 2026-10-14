@@ -17,11 +17,11 @@ export const InsightsCta: React.FC = () => {
         {/* Subtle radial glow */}
         <div
           className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full opacity-10 blur-3xl pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #23F7DB 0%, #04A37B 60%, transparent 80%)' }}
+          style={{ background: 'radial-gradient(circle, #F59E0B 0%, #D97706 60%, transparent 80%)' }}
         />
 
         <div className="relative z-10 space-y-5 max-w-2xl mx-auto">
-          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase">
             <Sparkles className="w-3.5 h-3.5" />
             <span>// COMMENCE DIALOGUE</span>
           </div>
@@ -36,7 +36,7 @@ export const InsightsCta: React.FC = () => {
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/contact">
-              <Button variant="primary" size="lg" className="flex items-center group shadow-lg shadow-cyan-500/20">
+              <Button variant="primary" size="lg" className="flex items-center group shadow-lg shadow-amber-500/20">
                 <span>Start a Project</span>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

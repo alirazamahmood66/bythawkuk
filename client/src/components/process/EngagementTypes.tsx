@@ -10,7 +10,7 @@ export const EngagementTypes: React.FC = () => {
   return (
     <section className="py-16 md:py-24 border-b border-white/[0.08]">
       <div className="max-w-3xl mb-14">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
           <span>{engagementTypes.sectionEyebrow}</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
@@ -33,16 +33,16 @@ export const EngagementTypes: React.FC = () => {
           >
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono tracking-wider text-cyan-400 uppercase px-2.5 py-1 rounded bg-cyan-950/40 border border-cyan-500/30">
+                <span className="text-[10px] font-mono tracking-wider text-amber-400 uppercase px-2.5 py-1 rounded bg-amber-950/40 border border-amber-500/30">
                   {type.badge}
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold text-white tracking-tight mb-2 group-hover:text-cyan-200 transition-colors">
+              <h3 className="text-xl font-bold text-white tracking-tight mb-2 group-hover:text-amber-200 transition-colors">
                 {type.title}
               </h3>
 
-              <div className="text-xs font-mono text-cyan-400/80 mb-4 uppercase">
+              <div className="text-xs font-mono text-amber-400/80 mb-4 uppercase">
                 {type.targetAudience}
               </div>
 
@@ -67,7 +67,7 @@ export const EngagementTypes: React.FC = () => {
             <div className="pt-4 border-t border-white/[0.08]">
               <Link
                 to={type.serviceLink}
-                className="text-xs font-mono tracking-wider text-cyan-400 hover:text-cyan-300 hover:underline inline-flex items-center font-medium"
+                className="text-xs font-mono tracking-wider text-amber-400 hover:text-amber-300 hover:underline inline-flex items-center font-medium"
               >
                 <span>{type.serviceLinkLabel}</span>
                 <ArrowUpRight className="w-3.5 h-3.5 ml-1" />

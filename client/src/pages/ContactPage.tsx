@@ -62,7 +62,7 @@ export const ContactPage: React.FC = () => {
       >
         <div className="relative w-full h-full">
           {/* Concentric Parabolic Signal Radiation Waves */}
-          <div className="absolute top-[35%] left-[35%] -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border border-cyan-400/30 animate-ping opacity-30 pointer-events-none" />
+          <div className="absolute top-[35%] left-[35%] -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border border-amber-400/30 animate-ping opacity-30 pointer-events-none" />
           <div className="absolute top-[35%] left-[35%] -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border border-cyan-300/40 animate-pulse opacity-40 pointer-events-none" />
 
           <img
@@ -75,7 +75,7 @@ export const ContactPage: React.FC = () => {
         </div>
       </motion.div>
 
-      <article className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <article className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Section 1: Hero */}
           <ContactHero />

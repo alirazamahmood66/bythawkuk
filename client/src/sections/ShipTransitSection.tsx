@@ -29,16 +29,16 @@ export const ShipTransitSection: React.FC = () => {
   const hudOpacity = useTransform(scrollYProgress, [0, 0.1, 0.85, 0.95], [0.5, 1, 1, 0.5]);
 
   return (
-    <div ref={trackRef} className="relative h-[200vh] w-full bg-[#001119]">
+    <div ref={trackRef} className="relative h-[200vh] w-full bg-[#020611]">
       {/* PINNED STICKY VIEWPORT CONTAINER */}
       <section
         aria-label="Bythawk Starship Orbital Transit"
-        className="sticky top-0 h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-[#001119] z-25 select-none"
+        className="sticky top-0 h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-[#020611] z-25 select-none"
       >
         {/* Subtle Ambient Cosmic Background Flare */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full filter blur-[180px] bg-[#23F7DB]/10 pointer-events-none" />
-          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full filter blur-[160px] bg-[#008C6B]/15 pointer-events-none" />
+          <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full filter blur-[180px] bg-[#F59E0B]/10 pointer-events-none" />
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full filter blur-[160px] bg-[#EA580C]/15 pointer-events-none" />
         </div>
 
         {/* 1. PHOTOREALISTIC BYTHAWK RECON STARSHIP (ANCHORED TOP-0 LEFT-0: STARTS BOTTOM-LEFT, TRAVELS UP TO TOP-RIGHT) */}
@@ -54,18 +54,18 @@ export const ShipTransitSection: React.FC = () => {
           <div className="relative w-full h-full">
             {/* Trailing Cyan Ion Plasma Thruster Trail (Behind Rear Engines at Bottom-Left) */}
             <motion.div
-              className="absolute bottom-[22%] -left-20 sm:-left-32 w-36 sm:w-48 h-14 rounded-full bg-gradient-to-r from-transparent via-[#23F7DB]/40 to-[#30F1BE] filter blur-xl pointer-events-none transform -rotate-30 origin-right"
+              className="absolute bottom-[22%] -left-20 sm:-left-32 w-36 sm:w-48 h-14 rounded-full bg-gradient-to-r from-transparent via-[#F59E0B]/40 to-[#FBBF24] filter blur-xl pointer-events-none transform -rotate-30 origin-right"
               style={{ opacity: trailOpacity }}
             />
             <motion.div
-              className="absolute bottom-[24%] left-[6%] w-20 h-7 rounded-full bg-[#30F1BE]/60 filter blur-md pointer-events-none transform -rotate-35"
+              className="absolute bottom-[24%] left-[6%] w-20 h-7 rounded-full bg-[#FBBF24]/60 filter blur-md pointer-events-none transform -rotate-35"
               style={{ opacity: trailOpacity }}
             />
 
             <img
               src="/images/cosmic/bythawk_recon_spaceship.png"
               alt="Bythawk stealth reconnaissance starship traveling forward from bottom-left to top-right"
-              className="w-full h-full object-contain filter contrast-110 brightness-110 drop-shadow-[0_0_50px_rgba(35,247,219,0.7)]"
+              className="w-full h-full object-contain filter contrast-110 brightness-110 drop-shadow-[0_0_50px_rgba(245, 158, 11, 0.7)]"
               loading="eager"
             />
           </div>
@@ -81,20 +81,20 @@ export const ShipTransitSection: React.FC = () => {
             <Badge variant="cyan" withDot pulseDot size="sm">
               ENGINEERING STANDARDS
             </Badge>
-            <span className="text-xs text-[#E8FFFC]/60 uppercase tracking-widest font-mono hidden sm:inline">
+            <span className="text-xs text-[#FFFBEB]/60 uppercase tracking-widest font-mono hidden sm:inline">
               UK TECHNICAL EXCELLENCE
             </span>
           </div>
 
           {/* Monumental Transit Headline */}
-          <h2 className="heading-display text-[#E8FFFC] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight uppercase leading-[1.08] mb-4">
+          <h2 className="heading-display text-[#FFFBEB] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight uppercase leading-[1.08] mb-4">
             PRECISION ARCHITECTURE <br />
-            <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#E8FFFC] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#F59E0B] via-[#FBBF24] to-[#FFFBEB] bg-clip-text text-transparent">
               CUTTING THROUGH THE VOID.
             </span>
           </h2>
 
-          <p className="text-[#E8FFFC]/70 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 font-sans">
+          <p className="text-[#FFFBEB]/70 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 font-sans">
             Every digital product we construct is built for hyper-velocity throughput, resilient
             cloud survivability, and zero-downtime execution.
           </p>
@@ -102,49 +102,49 @@ export const ShipTransitSection: React.FC = () => {
           {/* 3 Active Transparent Glass Cards that let the ship shine through */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {/* Gauge 1 */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#061F25]/40 border border-[#E8FFFC]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#23F7DB]/50 hover:bg-[#061F25]/60 shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#070D18]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 shadow-lg">
               <div className="flex items-center justify-between mb-3">
-                <span className="text-[10px] font-mono text-[#23F7DB] font-bold uppercase tracking-wider">
+                <span className="text-[10px] font-mono text-[#F59E0B] font-bold uppercase tracking-wider">
                   SUB-SECOND LATENCY
                 </span>
-                <Zap className="w-4 h-4 text-[#23F7DB]" />
+                <Zap className="w-4 h-4 text-[#F59E0B]" />
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#E8FFFC] mb-1">
+              <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#FFFBEB] mb-1">
                 &lt; 95ms
               </div>
-              <p className="text-xs text-[#E8FFFC]/70 leading-snug">
+              <p className="text-xs text-[#FFFBEB]/70 leading-snug">
                 Sub-second global time-to-first-byte engineered via Next.js edge caching.
               </p>
             </div>
 
             {/* Gauge 2 */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#061F25]/40 border border-[#E8FFFC]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#23F7DB]/50 hover:bg-[#061F25]/60 shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#070D18]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 shadow-lg">
               <div className="flex items-center justify-between mb-3">
-                <span className="text-[10px] font-mono text-[#23F7DB] font-bold uppercase tracking-wider">
+                <span className="text-[10px] font-mono text-[#F59E0B] font-bold uppercase tracking-wider">
                   ENTERPRISE SURVIVABILITY
                 </span>
-                <ShieldCheck className="w-4 h-4 text-[#30F1BE]" />
+                <ShieldCheck className="w-4 h-4 text-[#FBBF24]" />
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#E8FFFC] mb-1">
+              <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#FFFBEB] mb-1">
                 99.99%
               </div>
-              <p className="text-xs text-[#E8FFFC]/70 leading-snug">
+              <p className="text-xs text-[#FFFBEB]/70 leading-snug">
                 Redundant multi-region microservices built to withstand peak traffic spikes.
               </p>
             </div>
 
             {/* Gauge 3 */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#061F25]/40 border border-[#E8FFFC]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#23F7DB]/50 hover:bg-[#061F25]/60 shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#070D18]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 shadow-lg">
               <div className="flex items-center justify-between mb-3">
-                <span className="text-[10px] font-mono text-[#23F7DB] font-bold uppercase tracking-wider">
+                <span className="text-[10px] font-mono text-[#F59E0B] font-bold uppercase tracking-wider">
                   GLOBAL EDGE FABRIC
                 </span>
-                <Globe className="w-4 h-4 text-[#30F1BE]" />
+                <Globe className="w-4 h-4 text-[#FBBF24]" />
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#E8FFFC] mb-1">
+              <div className="text-2xl sm:text-3xl font-extrabold font-mono text-[#FFFBEB] mb-1">
                 GLOBAL
               </div>
-              <p className="text-xs text-[#E8FFFC]/70 leading-snug">
+              <p className="text-xs text-[#FFFBEB]/70 leading-snug">
                 Serving verified deployments across UK, Europe, and global edge networks.
               </p>
             </div>
@@ -152,8 +152,8 @@ export const ShipTransitSection: React.FC = () => {
         </motion.div>
 
         {/* Bottom Pinned Scroll Prompt */}
-        <div className="absolute bottom-4 sm:bottom-6 text-center text-xs font-mono text-[#E8FFFC]/60 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-[#23F7DB] animate-pulse" />
+        <div className="absolute bottom-4 sm:bottom-6 text-center text-xs font-mono text-[#FFFBEB]/60 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse" />
           <span>SCROLL TO ADVANCE TRANSIT &bull; WATCH SHIP TRAJECTORY</span>
         </div>
       </section>

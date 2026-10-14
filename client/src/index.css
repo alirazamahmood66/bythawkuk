@@ -1,56 +1,63 @@
 @import "tailwindcss";
 
 @theme {
-  --color-deep-aqua: #008C6B;
-  --color-aqua-mint: #04A37B;
-  --color-neon-mint: #30F1BE;
-  --color-midnight-teal: #001119;
-  --color-dark-teal: #061F25;
-  --color-neon-cyan: #23F7DB;
-  --color-ice-white: #E8FFFC;
+  --color-solar-gold: #F59E0B;
+  --color-solar-flare: #FBBF24;
+  --color-sunset-amber: #EA580C;
+  --color-gold-light: #FDE047;
+  --color-obsidian-void: #020611;
+  --color-obsidian-glass: #070D18;
+  --color-starlight-white: #FFFBEB;
+  /* Legacy aliases mapped to Solar Gold */
+  --color-deep-aqua: #D97706;
+  --color-aqua-mint: #F59E0B;
+  --color-neon-mint: #FBBF24;
+  --color-midnight-teal: #020611;
+  --color-dark-teal: #070D18;
+  --color-neon-cyan: #F59E0B;
+  --color-ice-white: #FFFBEB;
 }
 
 @layer base {
   :root {
-    /* Primary Aqua Mint Environment Tokens — Bythawk */
-    --bythawk-bg-deep: #001119; /* Midnight Teal */
-    --bythawk-bg-space: #061F25; /* Dark Teal */
-    --bythawk-bg-navy: #061F25; /* Dark Teal */
-    --bythawk-bg-surface: #061F25; /* Dark Teal */
-    --bythawk-bg-elevated: #092c34; /* Elevated Dark Teal */
-    --bythawk-bg-sunken: #000c12; /* Deep sunken teal */
+    /* Primary Solar Gold & Obsidian Amber Tokens — Bythawk */
+    --bythawk-bg-deep: #020611; /* Obsidian Void */
+    --bythawk-bg-space: #070D18; /* Dark Obsidian Glass */
+    --bythawk-bg-navy: #070D18; /* Dark Obsidian Glass */
+    --bythawk-bg-surface: #070D18; /* Dark Obsidian Surface */
+    --bythawk-bg-elevated: #0C1527; /* Elevated Obsidian */
+    --bythawk-bg-sunken: #010309; /* Deep sunken obsidian */
 
     /* Precision Borders */
-    --bythawk-border-subtle: rgba(232, 255, 252, 0.08);
-    --bythawk-border-medium: rgba(48, 241, 190, 0.2);
-    --bythawk-border-accent: rgba(35, 247, 219, 0.4);
-    --bythawk-border-mint: rgba(4, 163, 123, 0.35);
+    --bythawk-border-subtle: rgba(245, 158, 11, 0.12);
+    --bythawk-border-medium: rgba(245, 158, 11, 0.25);
+    --bythawk-border-accent: rgba(251, 191, 36, 0.45);
+    --bythawk-border-gold: rgba(245, 158, 11, 0.35);
 
     /* Text System */
-    --bythawk-text-primary: #E8FFFC; /* Ice White */
-    --bythawk-text-secondary: #9edcd2; /* Refined muted mint-slate */
-    --bythawk-text-muted: #5e948c;
-    --bythawk-text-accent: #23F7DB; /* Neon Cyan */
-    --bythawk-text-mint: #30F1BE; /* Neon Mint */
+    --bythawk-text-primary: #FFFBEB; /* Warm Starlight White */
+    --bythawk-text-secondary: #CBD5E1; /* Refined Slate Silver */
+    --bythawk-text-muted: #94A3B8;
+    --bythawk-text-accent: #F59E0B; /* Solar Gold */
+    --bythawk-text-gold: #FBBF24; /* Solar Flare */
 
-    /* Aqua Mint Palette Accents */
-    --bythawk-deep-aqua: #008C6B;
-    --bythawk-aqua-mint: #04A37B;
-    --bythawk-neon-mint: #30F1BE;
-    --bythawk-midnight-teal: #001119;
-    --bythawk-dark-teal: #061F25;
-    --bythawk-neon-cyan: #23F7DB;
-    --bythawk-ice-white: #E8FFFC;
+    /* Solar Gold Accents */
+    --bythawk-solar-gold: #F59E0B;
+    --bythawk-solar-flare: #FBBF24;
+    --bythawk-sunset-amber: #EA580C;
+    --bythawk-obsidian-void: #020611;
+    --bythawk-obsidian-glass: #070D18;
+    --bythawk-starlight-white: #FFFBEB;
 
     /* Semantic Mappings */
-    --bythawk-cyan: #23F7DB;
-    --bythawk-cyan-hover: #30F1BE;
-    --bythawk-soft-blue: #30F1BE;
-    --bythawk-violet: #04A37B;
-    --bythawk-electric-blue: #008C6B;
+    --bythawk-cyan: #F59E0B;
+    --bythawk-cyan-hover: #FBBF24;
+    --bythawk-soft-blue: #FBBF24;
+    --bythawk-violet: #EA580C;
+    --bythawk-electric-blue: #D97706;
 
     /* Focus Rings for Accessibility */
-    --bythawk-focus-ring: #23F7DB;
+    --bythawk-focus-ring: #F59E0B;
   }
 
   body {
@@ -64,66 +71,66 @@
   }
 
   ::selection {
-    background: rgba(4, 163, 123, 0.35);
-    color: #E8FFFC;
+    background: rgba(245, 158, 11, 0.35);
+    color: #FFFBEB;
   }
 }
 
 /* ==========================================================================
-   GLASS & DEPTH SYSTEM — AQUA MINT PALETTE
+   GLASS & DEPTH SYSTEM — SOLAR GOLD & OBSIDIAN AMBER
    ========================================================================== */
 
 .glass-panel {
-  background: rgba(6, 31, 37, 0.45);
+  background: rgba(7, 13, 24, 0.65);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(232, 255, 252, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.14);
   border-radius: 1rem;
 }
 
 .glass-panel-interactive {
-  background: rgba(6, 31, 37, 0.45);
+  background: rgba(7, 13, 24, 0.65);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(232, 255, 252, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.14);
   border-radius: 1rem;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-panel-interactive:hover {
-  background: rgba(9, 44, 52, 0.65);
-  border-color: rgba(35, 247, 219, 0.45);
-  box-shadow: 0 20px 40px -15px rgba(0, 17, 25, 0.7), 0 0 30px -5px rgba(35, 247, 219, 0.2);
+  background: rgba(12, 21, 39, 0.85);
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 20px 40px -15px rgba(2, 6, 17, 0.8), 0 0 30px -5px rgba(245, 158, 11, 0.22);
   transform: translateY(-3px);
 }
 
 .elevated-panel {
-  background: rgba(6, 31, 37, 0.9);
+  background: rgba(7, 13, 24, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--bythawk-border-medium);
-  box-shadow: 0 20px 40px -15px rgba(0, 17, 25, 0.85), 0 0 20px 0 rgba(35, 247, 219, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(2, 6, 17, 0.9), 0 0 20px 0 rgba(245, 158, 11, 0.12);
   border-radius: 1rem;
 }
 
-.glow-panel-cyan {
+.glow-panel-cyan, .glow-panel-gold {
   position: relative;
-  background: rgba(6, 31, 37, 0.75);
-  border: 1px solid rgba(35, 247, 219, 0.3);
-  box-shadow: inset 0 0 20px 0 rgba(35, 247, 219, 0.08), 0 10px 25px -5px rgba(35, 247, 219, 0.15);
+  background: rgba(7, 13, 24, 0.8);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: inset 0 0 20px 0 rgba(245, 158, 11, 0.1), 0 10px 25px -5px rgba(245, 158, 11, 0.2);
   border-radius: 0.75rem;
 }
 
 .glow-panel-violet {
   position: relative;
-  background: rgba(6, 31, 37, 0.75);
-  border: 1px solid rgba(48, 241, 190, 0.3);
-  box-shadow: inset 0 0 20px 0 rgba(48, 241, 190, 0.08), 0 10px 25px -5px rgba(48, 241, 190, 0.15);
+  background: rgba(7, 13, 24, 0.8);
+  border: 1px solid rgba(234, 88, 12, 0.35);
+  box-shadow: inset 0 0 20px 0 rgba(234, 88, 12, 0.1), 0 10px 25px -5px rgba(234, 88, 12, 0.2);
   border-radius: 0.75rem;
 }
 
 .dark-panel {
-  background: #061F25;
+  background: #070D18;
   border: 1px solid var(--bythawk-border-subtle);
   border-radius: 0.75rem;
 }

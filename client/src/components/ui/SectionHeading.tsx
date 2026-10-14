@@ -28,7 +28,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
     <div className={`flex flex-col ${alignClasses[align]} max-w-3xl mb-12 sm:mb-16 ${className}`}>
       {eyebrow && (
         <div className="inline-flex items-center gap-2 mb-3">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#23F7DB] shadow-[0_0_8px_rgba(35,247,219,0.8)]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] shadow-[0_0_8px_rgba(245, 158, 11, 0.8)]" />
           <span className="text-mono-label">{eyebrow}</span>
         </div>
       )}
@@ -36,7 +36,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       <TitleTag className="heading-2 text-white">
         {title}{' '}
         {highlight && (
-          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] bg-clip-text text-transparent">
             {highlight}
           </span>
         )}

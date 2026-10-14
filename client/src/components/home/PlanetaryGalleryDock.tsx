@@ -23,7 +23,7 @@ const DISCIPLINES: DisciplineNode[] = [
     category: 'CORE WEB',
     tagline: 'High-velocity Next.js & React architectures engineered for sub-second speeds.',
     route: '/services/web-development',
-    color: '#23F7DB',
+    color: '#F59E0B',
     icon: Layers,
     illustration: '/images/cosmic/pulsar_energy_core.png',
   },
@@ -45,7 +45,7 @@ const DISCIPLINES: DisciplineNode[] = [
     category: 'iOS & ANDROID',
     tagline: 'Fluid cross-platform mobile apps built for seamless offline-first experiences.',
     route: '/services/mobile-app-development',
-    color: '#30F1BE',
+    color: '#FBBF24',
     icon: Smartphone,
     illustration: '/images/cosmic/neptune_ice_giant.png',
   },
@@ -69,14 +69,14 @@ export const PlanetaryGalleryDock: React.FC = () => {
       <div className="flex items-center justify-between gap-4 pb-2 border-b border-white/[0.08] mb-3">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-          <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-cyan-300 font-bold">
+          <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-amber-300 font-bold">
             FLAGSHIP DISCIPLINES // DIGITAL CAPABILITIES
           </span>
         </div>
 
         <Link
           to="/services"
-          className="text-xs text-slate-400 hover:text-cyan-300 font-mono transition-colors hidden sm:inline"
+          className="text-xs text-slate-400 hover:text-amber-300 font-mono transition-colors hidden sm:inline"
         >
           View All Services &rarr;
         </Link>
@@ -98,7 +98,7 @@ export const PlanetaryGalleryDock: React.FC = () => {
                 spotlight={true}
                 withReticles={true}
                 spotlightColor="rgba(32, 217, 243, 0.12)"
-                className="h-full p-4 rounded-xl bg-[#061F25]/30 backdrop-blur-md border-white/[0.08] hover:border-cyan-500/40 hover:bg-[#061F25]/50 transition-all duration-300 shadow-lg flex flex-col justify-between relative overflow-hidden"
+                className="h-full p-4 rounded-xl bg-[#070D18]/30 backdrop-blur-md border-white/[0.08] hover:border-amber-500/40 hover:bg-[#070D18]/50 transition-all duration-300 shadow-lg flex flex-col justify-between relative overflow-hidden"
               >
                 {/* Subtle Transparent Ambient Cosmic Illustration in Card Background */}
                 <div className="absolute -right-3 -bottom-3 w-20 h-20 opacity-20 group-hover:opacity-35 transition-all duration-300 pointer-events-none group-hover:scale-110">
@@ -113,7 +113,7 @@ export const PlanetaryGalleryDock: React.FC = () => {
                 <div className="relative z-10">
                   {/* Node Header */}
                   <div className="flex items-center justify-between mb-2.5 pb-2 border-b border-white/[0.06] text-[10px] font-mono">
-                    <span className="text-cyan-400 font-semibold">{item.code}</span>
+                    <span className="text-amber-400 font-semibold">{item.code}</span>
                     <span className="text-slate-400">{item.category}</span>
                   </div>
 
@@ -128,7 +128,7 @@ export const PlanetaryGalleryDock: React.FC = () => {
                       <Icon className="w-3.5 h-3.5" style={{ color: item.color }} />
                     </div>
 
-                    <h4 className="text-sm font-bold text-white tracking-tight font-sans group-hover:text-cyan-200 transition-colors">
+                    <h4 className="text-sm font-bold text-white tracking-tight font-sans group-hover:text-amber-200 transition-colors">
                       {item.name}
                     </h4>
                   </div>
@@ -140,7 +140,7 @@ export const PlanetaryGalleryDock: React.FC = () => {
                 </div>
 
                 {/* Bottom Prompt */}
-                <div className="relative z-10 pt-2.5 mt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-cyan-400/90 group-hover:text-cyan-300">
+                <div className="relative z-10 pt-2.5 mt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-amber-400/90 group-hover:text-amber-300">
                   <span>EXPLORE DISCIPLINE</span>
                   <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>

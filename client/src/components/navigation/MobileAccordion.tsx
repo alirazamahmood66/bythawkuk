@@ -31,7 +31,7 @@ export const MobileAccordion: React.FC<MobileAccordionProps> = ({
             {title}
           </span>
           {badge && (
-            <span className="text-[10px] font-mono font-semibold uppercase px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
+            <span className="text-[10px] font-mono font-semibold uppercase px-2 py-0.5 rounded-full bg-cyan-500/10 text-amber-300 border border-amber-500/20">
               {badge}
             </span>
           )}
@@ -39,7 +39,7 @@ export const MobileAccordion: React.FC<MobileAccordionProps> = ({
         <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/[0.03] text-slate-400">
           <ChevronDown
             className={`w-4 h-4 transition-transform duration-200 ${
-              isOpen ? 'rotate-180 text-cyan-400' : ''
+              isOpen ? 'rotate-180 text-amber-400' : ''
             }`}
           />
         </div>

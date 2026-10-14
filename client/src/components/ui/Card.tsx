@@ -45,7 +45,7 @@ export const Card: React.FC<CardProps> = ({
   const variantClasses: Record<CardVariant, string> = {
     default: 'glass-panel',
     interactive:
-      'glass-panel-interactive cursor-pointer hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-cyan-950/30 transition-all duration-300',
+      'glass-panel-interactive cursor-pointer hover:border-amber-400/50 hover:shadow-2xl hover:shadow-amber-950/30 transition-all duration-300',
     elevated: 'elevated-panel',
     glowCyan: 'glow-panel-cyan',
     glowViolet: 'glow-panel-violet',
@@ -99,10 +99,10 @@ export const Card: React.FC<CardProps> = ({
       {/* 2. Technical Corner HUD Reticles [ + ] */}
       {withReticles && (
         <div className="pointer-events-none absolute inset-0 z-10" aria-hidden="true">
-          <div className="absolute top-2.5 left-2.5 w-2 h-2 border-t-2 border-l-2 border-cyan-400/50" />
-          <div className="absolute top-2.5 right-2.5 w-2 h-2 border-t-2 border-r-2 border-cyan-400/50" />
-          <div className="absolute bottom-2.5 left-2.5 w-2 h-2 border-b-2 border-l-2 border-cyan-400/50" />
-          <div className="absolute bottom-2.5 right-2.5 w-2 h-2 border-b-2 border-r-2 border-cyan-400/50" />
+          <div className="absolute top-2.5 left-2.5 w-2 h-2 border-t-2 border-l-2 border-amber-400/50" />
+          <div className="absolute top-2.5 right-2.5 w-2 h-2 border-t-2 border-r-2 border-amber-400/50" />
+          <div className="absolute bottom-2.5 left-2.5 w-2 h-2 border-b-2 border-l-2 border-amber-400/50" />
+          <div className="absolute bottom-2.5 right-2.5 w-2 h-2 border-b-2 border-r-2 border-amber-400/50" />
         </div>
       )}
 

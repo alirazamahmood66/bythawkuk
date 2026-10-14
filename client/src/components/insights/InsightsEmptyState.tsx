@@ -13,9 +13,9 @@ export const InsightsEmptyState: React.FC<InsightsEmptyStateProps> = ({ onReset 
       variant="default"
       spotlight={true}
       withReticles={true}
-      className="py-14 px-8 text-center max-w-md mx-auto my-12 rounded-2xl bg-[#061F25]/90 border-white/[0.08] space-y-5 shadow-xl"
+      className="py-14 px-8 text-center max-w-md mx-auto my-12 rounded-2xl bg-[#070D18]/90 border-white/[0.08] space-y-5 shadow-xl"
     >
-      <div className="w-14 h-14 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 flex items-center justify-center mx-auto text-cyan-400 shadow-sm">
+      <div className="w-14 h-14 rounded-2xl bg-amber-950/40 border border-amber-500/30 flex items-center justify-center mx-auto text-amber-400 shadow-sm">
         <Compass className="w-7 h-7" />
       </div>
 

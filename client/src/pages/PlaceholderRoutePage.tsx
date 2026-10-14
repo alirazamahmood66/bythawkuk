@@ -61,20 +61,20 @@ export const PlaceholderRoutePage: React.FC<PlaceholderRoutePageProps> = ({
               </div>
 
               <div className="space-y-2">
-                <span className="text-mono-label block text-cyan-400">
+                <span className="text-mono-label block text-amber-400">
                   BYTHAWK.UK // TELEMETRY
                 </span>
                 <h1 className="heading-1 text-white font-sans">
                   {displayTitle || 'Mission Route'}
                 </h1>
                 <p className="text-sm font-mono text-slate-400">
-                  Endpoint: <span className="text-cyan-300">{location.pathname}</span>
+                  Endpoint: <span className="text-amber-300">{location.pathname}</span>
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#02040a]/80 border border-white/[0.08] max-w-lg mx-auto text-left text-xs font-mono space-y-2 text-slate-400">
                 <div className="flex items-center gap-2 text-slate-300 font-semibold border-b border-white/[0.06] pb-2">
-                  <Terminal className="w-4 h-4 text-cyan-400" />
+                  <Terminal className="w-4 h-4 text-amber-400" />
                   <span>Navigation Verification Node</span>
                 </div>
                 <p>Status: HTTP 200 OK — Routing established and active.</p>

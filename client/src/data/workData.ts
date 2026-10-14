@@ -401,7 +401,7 @@ export const WORK_PROJECTS: WorkProject[] = [
     location: 'London, UK / Global',
     year: '2026',
     duration: '14 Weeks',
-    accentColor: '#30F1BE',
+    accentColor: '#FBBF24',
     featured: false,
     services: [
       { title: 'Web Applications', route: '/services/web-applications' },

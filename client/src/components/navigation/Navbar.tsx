@@ -25,8 +25,8 @@ export const Navbar: React.FC = () => {
         <div
           className={`pointer-events-auto rounded-full transition-all duration-300 flex h-14 items-center justify-between px-4 sm:px-6 ${
             scrolled
-              ? 'bg-[#061F25]/90 backdrop-blur-xl border border-[#E8FFFC]/[0.12] shadow-2xl shadow-[#001119]/60'
-              : 'bg-[#061F25]/75 backdrop-blur-md border border-[#E8FFFC]/[0.08] shadow-xl shadow-[#001119]/40'
+              ? 'bg-[#070D18]/90 backdrop-blur-xl border border-[#FFFBEB]/[0.12] shadow-2xl shadow-[#020611]/60'
+              : 'bg-[#070D18]/75 backdrop-blur-md border border-[#FFFBEB]/[0.08] shadow-xl shadow-[#020611]/40'
           }`}
         >
           {/* LEFT: Clean BYTHAWK Logo / Wordmark */}
@@ -36,16 +36,16 @@ export const Navbar: React.FC = () => {
             aria-label="BYTHAWK Agency Homepage"
           >
             {/* Precision Monogram */}
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#23F7DB] via-[#30F1BE] to-[#04A37B] flex items-center justify-center font-bold text-[#001119] text-sm shadow-md shadow-[#23F7DB]/25 group-hover:scale-105 transition-transform duration-200">
+            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#FDE047] via-[#F59E0B] to-[#EA580C] flex items-center justify-center font-bold text-[#020611] text-sm shadow-md shadow-[#F59E0B]/25 group-hover:scale-105 transition-transform duration-200">
               B
             </div>
 
             {/* Wordmark & UK Telemetry */}
             <div className="flex flex-col">
-              <span className="font-extrabold tracking-wider text-[#E8FFFC] text-sm sm:text-base uppercase leading-none font-sans">
+              <span className="font-extrabold tracking-wider text-[#FFFBEB] text-sm sm:text-base uppercase leading-none font-sans">
                 BYTHAWK
               </span>
-              <span className="text-[8px] sm:text-[9px] tracking-widest text-[#30F1BE] font-mono font-medium leading-tight">
+              <span className="text-[8px] sm:text-[9px] tracking-widest text-[#FBBF24] font-mono font-medium leading-tight">
                 DIGITAL STUDIO &bull; UK
               </span>
             </div>
@@ -60,10 +60,10 @@ export const Navbar: React.FC = () => {
               <Button
                 variant="primary"
                 size="sm"
-                className="rounded-full font-bold text-xs tracking-wide px-5 py-2 shadow-lg shadow-[#23F7DB]/20 hover:shadow-[#30F1BE]/30"
+                className="rounded-full font-bold text-xs tracking-wide px-5 py-2 bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#020611] shadow-lg shadow-[#F59E0B]/25 hover:shadow-[#FBBF24]/40 border-0"
                 rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
               >
-                Let's Talk
+                Get Started
               </Button>
             </Link>
 

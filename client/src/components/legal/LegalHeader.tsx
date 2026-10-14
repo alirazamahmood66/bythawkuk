@@ -19,9 +19,9 @@ export const LegalHeader: React.FC<LegalHeaderProps> = ({
   return (
     <header className="pt-8 pb-10 md:pt-14 md:pb-12 border-b border-white/[0.08]">
       <div className="max-w-4xl space-y-6">
-        <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 shadow-sm backdrop-blur-sm">
-          <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
-          <span className="text-xs font-mono font-medium tracking-wider text-cyan-300 uppercase">
+        <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
+          <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+          <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
             {eyebrow}
           </span>
         </div>
@@ -37,12 +37,12 @@ export const LegalHeader: React.FC<LegalHeaderProps> = ({
         {/* Governance metadata */}
         <div className="pt-4 border-t border-white/[0.08] flex flex-wrap items-center gap-6 text-xs font-mono text-slate-400">
           <div className="flex items-center space-x-2">
-            <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+            <Calendar className="w-3.5 h-3.5 text-amber-400" />
             <span>EFFECTIVE: {effectiveDate}</span>
           </div>
           <span>&bull;</span>
           <div className="flex items-center space-x-2">
-            <Clock className="w-3.5 h-3.5 text-cyan-400" />
+            <Clock className="w-3.5 h-3.5 text-amber-400" />
             <span>LAST REVIEWED: {lastUpdated}</span>
           </div>
           <span>&bull;</span>

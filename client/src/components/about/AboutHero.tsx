@@ -13,14 +13,14 @@ export const AboutHero: React.FC = () => {
       {/* Background ambient radial glow */}
       <div
         className="absolute top-0 right-1/4 w-[650px] h-[400px] rounded-full opacity-25 blur-[140px] pointer-events-none -z-10"
-        style={{ background: 'radial-gradient(circle, #23F7DB 0%, #30F1BE 40%, #04A37B 70%, transparent 80%)' }}
+        style={{ background: 'radial-gradient(circle, #F59E0B 0%, #FBBF24 40%, #D97706 70%, transparent 80%)' }}
       />
 
       <div className="max-w-4xl space-y-6">
         {/* Eyebrow badge */}
-        <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 shadow-lg shadow-cyan-950/50 backdrop-blur-md">
-          <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
-          <span className="text-xs font-mono font-medium tracking-wider text-cyan-300 uppercase">
+        <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 shadow-lg shadow-amber-950/50 backdrop-blur-md">
+          <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
+          <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
             {hero.eyebrow}
           </span>
         </div>
@@ -28,7 +28,7 @@ export const AboutHero: React.FC = () => {
         {/* Primary Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
           We Build Digital Worlds{' '}
-          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] bg-clip-text text-transparent">
             With Purpose.
           </span>
         </h1>
@@ -50,15 +50,15 @@ export const AboutHero: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-4 sm:p-5 rounded-xl bg-[#061F25]/85 border-white/[0.08] hover:border-cyan-500/40 transition-all group"
+              className="p-4 sm:p-5 rounded-xl bg-[#070D18]/85 border-white/[0.08] hover:border-amber-500/40 transition-all group"
             >
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[10px] font-mono tracking-wider text-slate-400 uppercase">
                   {chip.label}
                 </span>
-                <Icon className="w-3.5 h-3.5 text-cyan-400 group-hover:scale-110 transition-transform" />
+                <Icon className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
               </div>
-              <div className="text-sm sm:text-base font-bold text-white group-hover:text-cyan-200 transition-colors">
+              <div className="text-sm sm:text-base font-bold text-white group-hover:text-amber-200 transition-colors">
                 {chip.value}
               </div>
             </Card>

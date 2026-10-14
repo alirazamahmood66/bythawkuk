@@ -12,10 +12,10 @@ export const GlowLayer: React.FC<GlowLayerProps> = ({
   className = '',
 }) => {
   const colorGradients = {
-    cyan: 'radial-gradient(circle, rgba(35, 247, 219, 0.2) 0%, rgba(35, 247, 219, 0) 70%)',
-    violet: 'radial-gradient(circle, rgba(48, 241, 190, 0.18) 0%, rgba(48, 241, 190, 0) 70%)',
-    blue: 'radial-gradient(circle, rgba(4, 163, 123, 0.18) 0%, rgba(4, 163, 123, 0) 70%)',
-    white: 'radial-gradient(circle, rgba(232, 255, 252, 0.1) 0%, rgba(232, 255, 252, 0) 70%)',
+    cyan: 'radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0) 70%)',
+    violet: 'radial-gradient(circle, rgba(251, 191, 36, 0.18) 0%, rgba(251, 191, 36, 0) 70%)',
+    blue: 'radial-gradient(circle, rgba(217, 119, 6, 0.18) 0%, rgba(217, 119, 6, 0) 70%)',
+    white: 'radial-gradient(circle, rgba(255, 251, 235, 0.1) 0%, rgba(255, 251, 235, 0) 70%)',
   };
 
   const positionStyles = {

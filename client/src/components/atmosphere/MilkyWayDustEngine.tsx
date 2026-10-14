@@ -43,10 +43,10 @@ export const MilkyWayDustEngine: React.FC = () => {
     const particles: Particle[] = [];
 
     const colors = [
-      'rgba(232, 255, 252, ', // Ice White (#E8FFFC)
-      'rgba(35, 247, 219, ', // Neon Cyan (#23F7DB)
-      'rgba(48, 241, 190, ', // Neon Mint (#30F1BE)
-      'rgba(4, 163, 123, ', // Aqua Mint (#04A37B)
+      'rgba(232, 255, 252, ', // Ice White (#FFFBEB)
+      'rgba(35, 247, 219, ', // Neon Cyan (#F59E0B)
+      'rgba(48, 241, 190, ', // Neon Mint (#FBBF24)
+      'rgba(4, 163, 123, ', // Aqua Mint (#D97706)
     ];
 
     for (let i = 0; i < particleCount; i++) {
@@ -141,7 +141,7 @@ export const MilkyWayDustEngine: React.FC = () => {
           className="absolute -top-[15%] left-1/2 -translate-x-1/2 w-[140vw] h-[90vh] rotate-[-22deg] filter blur-[120px] pointer-events-none"
           style={{
             background:
-              'radial-gradient(ellipse at 50% 50%, rgba(35, 247, 219, 0.22) 0%, rgba(48, 241, 190, 0.12) 35%, rgba(4, 163, 123, 0.08) 60%, transparent 80%)',
+              'radial-gradient(ellipse at 50% 50%, rgba(245, 158, 11, 0.22) 0%, rgba(251, 191, 36, 0.12) 35%, rgba(217, 119, 6, 0.08) 60%, transparent 80%)',
           }}
         />
 
@@ -150,7 +150,7 @@ export const MilkyWayDustEngine: React.FC = () => {
           className="absolute top-[45%] -left-[10%] w-[80vw] h-[70vh] filter blur-[140px] pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(0, 140, 107, 0.18) 0%, rgba(6, 31, 37, 0.25) 50%, transparent 75%)',
+              'radial-gradient(circle, rgba(234, 88, 12, 0.18) 0%, rgba(7, 13, 24, 0.25) 50%, transparent 75%)',
           }}
         />
 
@@ -159,7 +159,7 @@ export const MilkyWayDustEngine: React.FC = () => {
           className="absolute top-[75%] right-[5%] w-[70vw] h-[60vh] filter blur-[150px] pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(4, 163, 123, 0.14) 0%, rgba(0, 17, 25, 0.3) 60%, transparent 80%)',
+              'radial-gradient(circle, rgba(217, 119, 6, 0.14) 0%, rgba(2, 6, 17, 0.3) 60%, transparent 80%)',
           }}
         />
       </div>
@@ -179,13 +179,13 @@ export const MilkyWayDustEngine: React.FC = () => {
       >
         <defs>
           <linearGradient id="mwOrbitGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#23F7DB" stopOpacity="0.4" />
-            <stop offset="50%" stopColor="#30F1BE" stopOpacity="0.15" />
-            <stop offset="100%" stopColor="#001119" stopOpacity="0" />
+            <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.4" />
+            <stop offset="50%" stopColor="#FBBF24" stopOpacity="0.15" />
+            <stop offset="100%" stopColor="#020611" stopOpacity="0" />
           </linearGradient>
           <linearGradient id="mwOrbitGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#04A37B" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#061F25" stopOpacity="0.05" />
+            <stop offset="0%" stopColor="#D97706" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#070D18" stopOpacity="0.05" />
           </linearGradient>
         </defs>
 
@@ -217,9 +217,9 @@ export const MilkyWayDustEngine: React.FC = () => {
 
         {/* Radar Telemetry Beacon Reticle */}
         <g transform="translate(820, 360)">
-          <circle cx="0" cy="0" r="4" fill="#23F7DB" />
-          <circle cx="0" cy="0" r="14" fill="none" stroke="#23F7DB" strokeWidth="0.7" opacity="0.4" />
-          <circle cx="0" cy="0" r="32" fill="none" stroke="#23F7DB" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.25" />
+          <circle cx="0" cy="0" r="4" fill="#F59E0B" />
+          <circle cx="0" cy="0" r="14" fill="none" stroke="#F59E0B" strokeWidth="0.7" opacity="0.4" />
+          <circle cx="0" cy="0" r="32" fill="none" stroke="#F59E0B" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.25" />
         </g>
       </svg>
     </div>

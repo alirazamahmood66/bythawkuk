@@ -43,7 +43,7 @@ export const ProcessPage: React.FC = () => {
       {/* Continuous Cosmic Scroll Atmosphere */}
       <CosmicScrollJourney />
 
-      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Section 1: Hero */}
           <ProcessHero />

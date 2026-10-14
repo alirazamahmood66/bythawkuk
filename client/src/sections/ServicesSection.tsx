@@ -64,7 +64,7 @@ const FLAGSHIP_SERVICES: ConstellationService[] = [
     description:
       'Native fluid iOS, Android, and cross-platform mobile products built for intuitive touch ergonomics and offline-first persistence.',
     route: '/services/mobile-app-development',
-    color: '#30F1BE',
+    color: '#FBBF24',
     icon: Smartphone,
     telemetryMetric: { label: 'UI REFRESH SLO', value: '60FPS FLUID // 100% OFFLINE CACHE' },
     capabilities: ['React Native & Native', 'Offline-First DB', 'Hardware Acceleration'],
@@ -92,10 +92,10 @@ export const ServicesSection: React.FC = () => {
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <line x1="20%" y1="15%" x2="50%" y2="40%" stroke="#20d9f3" strokeWidth="1" strokeDasharray="3 5" />
           <line x1="50%" y1="40%" x2="80%" y2="25%" stroke="#68afff" strokeWidth="1" strokeDasharray="3 5" />
-          <line x1="50%" y1="40%" x2="50%" y2="85%" stroke="#30F1BE" strokeWidth="1" strokeDasharray="3 5" />
+          <line x1="50%" y1="40%" x2="50%" y2="85%" stroke="#FBBF24" strokeWidth="1" strokeDasharray="3 5" />
           <circle cx="20%" cy="15%" r="3" fill="#20d9f3" />
           <circle cx="50%" cy="40%" r="4" fill="#68afff" />
-          <circle cx="80%" cy="25%" r="3" fill="#30F1BE" />
+          <circle cx="80%" cy="25%" r="3" fill="#FBBF24" />
           <circle cx="50%" cy="85%" r="3" fill="#f59e0b" />
         </svg>
       </div>
@@ -112,7 +112,7 @@ export const ServicesSection: React.FC = () => {
 
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-wider text-cyan-400 hover:text-cyan-300 transition-colors uppercase py-2 focus-ring rounded"
+            className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-wider text-amber-400 hover:text-amber-300 transition-colors uppercase py-2 focus-ring rounded"
           >
             <span>Explore All 8 Disciplines</span>
             <ArrowRight className="w-4 h-4" />
@@ -136,11 +136,11 @@ export const ServicesSection: React.FC = () => {
                   spotlight={true}
                   spotlightColor={`${service.color}22`}
                   withReticles={true}
-                  className="h-full flex flex-col justify-between p-7 sm:p-9 bg-[#061F25]/40 backdrop-blur-md border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/50 hover:bg-[#061F25]/70 rounded-2xl relative shadow-xl shadow-black/50 overflow-hidden group"
+                  className="h-full flex flex-col justify-between p-7 sm:p-9 bg-[#070D18]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#070D18]/70 rounded-2xl relative shadow-xl shadow-black/50 overflow-hidden group"
                 >
                   {/* Subtle Background Blueprint Wireframe Lines */}
                   <div className="absolute top-0 right-0 w-44 h-44 opacity-[0.06] group-hover:opacity-[0.14] transition-opacity pointer-events-none" aria-hidden="true">
-                    <svg viewBox="0 0 100 100" className="w-full h-full text-[#23F7DB] stroke-current" fill="none">
+                    <svg viewBox="0 0 100 100" className="w-full h-full text-[#F59E0B] stroke-current" fill="none">
                       <circle cx="80" cy="20" r="16" strokeWidth="0.8" strokeDasharray="2 3" />
                       <circle cx="80" cy="20" r="32" strokeWidth="0.5" />
                       <line x1="0" y1="20" x2="100" y2="20" strokeWidth="0.5" strokeDasharray="4 4" />
@@ -153,13 +153,13 @@ export const ServicesSection: React.FC = () => {
                     <div className="flex items-center justify-between gap-3 mb-5">
                       <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full animate-ping" style={{ backgroundColor: service.color }} />
-                        <span className="text-[11px] font-mono font-bold tracking-wider text-[#30F1BE] uppercase">
+                        <span className="text-[11px] font-mono font-bold tracking-wider text-[#FBBF24] uppercase">
                           {service.category}
                         </span>
                       </div>
 
                       <div
-                        className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#001119]/80 group-hover:bg-[#001119] border border-[#E8FFFC]/[0.1] group-hover:border-[#23F7DB]/50 transition-all duration-300 shadow-md"
+                        className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#020611]/80 group-hover:bg-[#020611] border border-[#FFFBEB]/[0.1] group-hover:border-[#F59E0B]/50 transition-all duration-300 shadow-md"
                         style={{ color: service.color }}
                       >
                         <IconComponent className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
@@ -168,26 +168,26 @@ export const ServicesSection: React.FC = () => {
 
                     {/* Title */}
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl sm:text-2xl font-extrabold text-[#E8FFFC] tracking-tight group-hover:text-[#23F7DB] transition-colors font-sans">
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-[#FFFBEB] tracking-tight group-hover:text-[#F59E0B] transition-colors font-sans">
                         {service.title}
                       </h3>
-                      <span className="text-[9px] font-mono text-[#E8FFFC]/50 uppercase tracking-widest hidden sm:inline">
+                      <span className="text-[9px] font-mono text-[#FFFBEB]/50 uppercase tracking-widest hidden sm:inline">
                         {service.blueprintCode}
                       </span>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans mb-5">
+                    <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans mb-5">
                       {service.description}
                     </p>
 
                     {/* Embedded Architectural Telemetry Benchmark Strip */}
-                    <div className="p-3 rounded-xl bg-[#001119]/80 border border-[#E8FFFC]/[0.08] group-hover:border-[#23F7DB]/30 flex items-center justify-between text-xs font-mono transition-colors mb-5 shadow-inner">
+                    <div className="p-3 rounded-xl bg-[#020611]/80 border border-[#FFFBEB]/[0.08] group-hover:border-[#F59E0B]/30 flex items-center justify-between text-xs font-mono transition-colors mb-5 shadow-inner">
                       <div className="flex items-center gap-2 min-w-0">
-                        <Cpu className="w-3.5 h-3.5 text-[#23F7DB] shrink-0" />
-                        <span className="text-[#E8FFFC]/60 font-medium truncate">{service.telemetryMetric.label}:</span>
+                        <Cpu className="w-3.5 h-3.5 text-[#F59E0B] shrink-0" />
+                        <span className="text-[#FFFBEB]/60 font-medium truncate">{service.telemetryMetric.label}:</span>
                       </div>
-                      <span className="text-[#30F1BE] font-bold tracking-wider shrink-0 text-[11px] sm:text-xs">
+                      <span className="text-[#FBBF24] font-bold tracking-wider shrink-0 text-[11px] sm:text-xs">
                         {service.telemetryMetric.value}
                       </span>
                     </div>
@@ -197,7 +197,7 @@ export const ServicesSection: React.FC = () => {
                       {service.capabilities.map((cap, i) => (
                         <span
                           key={i}
-                          className="px-2.5 py-1 rounded-md text-[11px] font-mono text-[#E8FFFC]/70 bg-white/[0.04] border border-[#E8FFFC]/[0.08] group-hover:border-[#23F7DB]/30 group-hover:text-[#30F1BE] transition-colors"
+                          className="px-2.5 py-1 rounded-md text-[11px] font-mono text-[#FFFBEB]/70 bg-white/[0.04] border border-[#FFFBEB]/[0.08] group-hover:border-[#F59E0B]/30 group-hover:text-[#FBBF24] transition-colors"
                         >
                           {cap}
                         </span>
@@ -206,12 +206,12 @@ export const ServicesSection: React.FC = () => {
                   </div>
 
                   {/* Card Footer: Blueprint Action */}
-                  <div className="pt-5 mt-4 border-t border-[#E8FFFC]/[0.08] flex items-center justify-between text-xs font-mono font-medium text-[#E8FFFC]/60 group-hover:text-[#30F1BE] transition-colors">
+                  <div className="pt-5 mt-4 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between text-xs font-mono font-medium text-[#FFFBEB]/60 group-hover:text-[#FBBF24] transition-colors">
                     <span className="inline-flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5 text-[#23F7DB]" />
+                      <Sparkles className="w-3.5 h-3.5 text-[#F59E0B]" />
                       <span>Dedicated Architectural Blueprint</span>
                     </span>
-                    <span className="flex items-center gap-1 text-[#23F7DB] font-semibold group-hover:translate-x-1.5 transition-transform">
+                    <span className="flex items-center gap-1 text-[#F59E0B] font-semibold group-hover:translate-x-1.5 transition-transform">
                       <span>Inspect</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </span>
@@ -223,18 +223,18 @@ export const ServicesSection: React.FC = () => {
         </div>
 
         {/* Global Catalog Gateway Banner */}
-        <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-[#061F25]/90 border border-[#E8FFFC]/[0.1] flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-2xl relative overflow-hidden">
+        <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-[#070D18]/90 border border-[#FFFBEB]/[0.1] flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-2xl relative overflow-hidden">
           <div className="space-y-1 relative z-10">
             <div className="flex items-center justify-center sm:justify-start gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#23F7DB] animate-pulse" />
-              <span className="text-[11px] font-mono uppercase tracking-widest text-[#23F7DB] font-semibold">
+              <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse" />
+              <span className="text-[11px] font-mono uppercase tracking-widest text-[#F59E0B] font-semibold">
                 COMPLETE DIGITAL TECHNOLOGY ROSTER
               </span>
             </div>
-            <h4 className="text-lg sm:text-xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+            <h4 className="text-lg sm:text-xl font-bold text-[#FFFBEB] tracking-tight font-sans">
               Need specialized engineering beyond our core quartet?
             </h4>
-            <p className="text-xs sm:text-sm text-[#E8FFFC]/70 font-sans max-w-xl">
+            <p className="text-xs sm:text-sm text-[#FFFBEB]/70 font-sans max-w-xl">
               From bespoke UI/UX design systems to advanced cloud architecture and headless e-commerce, explore all 8 dedicated service blueprints.
             </p>
           </div>
@@ -243,7 +243,7 @@ export const ServicesSection: React.FC = () => {
             <Button
               variant="secondary"
               size="md"
-              className="rounded-full font-bold text-xs tracking-wide px-6 py-3 bg-[#001119]/80 border-[#23F7DB]/30 hover:border-[#23F7DB] shadow-lg"
+              className="rounded-full font-bold text-xs tracking-wide px-6 py-3 bg-[#020611]/80 border-[#F59E0B]/30 hover:border-[#F59E0B] shadow-lg"
               rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
             >
               View Full Catalog

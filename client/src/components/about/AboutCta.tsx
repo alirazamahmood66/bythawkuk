@@ -24,16 +24,16 @@ export const AboutCta: React.FC = () => {
         spotlight={true}
         withReticles={true}
         spotlightColor="rgba(32, 217, 243, 0.18)"
-        className="relative z-10 max-w-4xl mx-auto text-center p-8 sm:p-14 lg:p-16 rounded-3xl bg-[#061F25]/90 border-cyan-500/30 backdrop-blur-xl shadow-2xl"
+        className="relative z-10 max-w-4xl mx-auto text-center p-8 sm:p-14 lg:p-16 rounded-3xl bg-[#070D18]/90 border-amber-500/30 backdrop-blur-xl shadow-2xl"
       >
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-300 uppercase mb-4 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 shadow-md">
-          <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-300 uppercase mb-4 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 shadow-md">
+          <Sparkles className="w-3.5 h-3.5 text-amber-400" />
           <span>{cta.eyebrow}</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
           Build Something{' '}
-          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] bg-clip-text text-transparent">
             Worth Launching.
           </span>
         </h2>
@@ -67,7 +67,7 @@ export const AboutCta: React.FC = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-400">
-          <span className="inline-flex items-center gap-1.5 text-cyan-400">
+          <span className="inline-flex items-center gap-1.5 text-amber-400">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
             <span>UK Timezone Delivery</span>
           </span>

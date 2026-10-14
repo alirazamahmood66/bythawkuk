@@ -69,13 +69,13 @@ export const AboutPage: React.FC = () => {
           <img
             src="/images/cosmic/orbital_shipyard_station.png"
             alt="Bythawk orbital engineering shipyard and space station"
-            className="w-full h-full object-contain filter drop-shadow-[0_0_65px_rgba(35,247,219,0.55)] opacity-90"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_65px_rgba(245, 158, 11, 0.55)] opacity-90"
             loading="eager"
           />
         </div>
       </motion.div>
 
-      <div className="relative z-10 min-h-screen text-[#E8FFFC] selection:bg-[#008C6B]/30 selection:text-[#30F1BE]">
+      <div className="relative z-10 min-h-screen text-[#FFFBEB] selection:bg-[#EA580C]/30 selection:text-[#FBBF24]">
         <Container>
           {/* Section 1: Hero */}
           <AboutHero />
@@ -87,27 +87,27 @@ export const AboutPage: React.FC = () => {
           <PhilosophySection />
 
           {/* Section 4: Studio Discipline & Sequence Navigation Bridge */}
-          <section className="py-12 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-12 border-b border-[#FFFBEB]/[0.08]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card
                 variant="interactive"
                 spotlight={true}
                 withReticles={true}
-                className="p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] flex flex-col justify-between"
+                className="p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] flex flex-col justify-between"
               >
                 <div className="space-y-3">
-                  <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+                  <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                     // 8 INTEGRATED DISCIPLINES
                   </span>
-                  <h3 className="text-2xl font-bold text-[#E8FFFC] font-sans">
+                  <h3 className="text-2xl font-bold text-[#FFFBEB] font-sans">
                     The Services Ecosystem
                   </h3>
-                  <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                  <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                     Explore our 8 core disciplines across web engineering, SaaS web applications, mobile platforms, and UI/UX design.
                   </p>
                 </div>
                 <div className="pt-6">
-                  <Link to="/services" className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#30F1BE] hover:text-[#23F7DB] transition-colors uppercase">
+                  <Link to="/services" className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#FBBF24] hover:text-[#F59E0B] transition-colors uppercase">
                     <span>Explore All Services</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
@@ -118,21 +118,21 @@ export const AboutPage: React.FC = () => {
                 variant="interactive"
                 spotlight={true}
                 withReticles={true}
-                className="p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] flex flex-col justify-between"
+                className="p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] flex flex-col justify-between"
               >
                 <div className="space-y-3">
-                  <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+                  <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                     // BATTLE-TESTED CADENCE
                   </span>
-                  <h3 className="text-2xl font-bold text-[#E8FFFC] font-sans">
+                  <h3 className="text-2xl font-bold text-[#FFFBEB] font-sans">
                     The 6-Stage Launch Sequence
                   </h3>
-                  <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                  <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                     From architectural discovery and interface craft to automated verification and zero-downtime deployment.
                   </p>
                 </div>
                 <div className="pt-6">
-                  <Link to="/process" className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#30F1BE] hover:text-[#23F7DB] transition-colors uppercase">
+                  <Link to="/process" className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#FBBF24] hover:text-[#F59E0B] transition-colors uppercase">
                     <span>Review Launch Sequence</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>

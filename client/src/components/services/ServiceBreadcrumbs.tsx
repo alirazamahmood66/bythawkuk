@@ -13,7 +13,7 @@ export const ServiceBreadcrumbs: React.FC<ServiceBreadcrumbsProps> = ({ serviceT
         <li>
           <Link
             to="/"
-            className="flex items-center hover:text-cyan-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 rounded px-1"
+            className="flex items-center hover:text-amber-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 rounded px-1"
           >
             <Home className="w-3.5 h-3.5 mr-1" />
             <span>HOME</span>
@@ -25,7 +25,7 @@ export const ServiceBreadcrumbs: React.FC<ServiceBreadcrumbsProps> = ({ serviceT
         <li>
           <Link
             to="/services"
-            className="hover:text-cyan-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 rounded px-1"
+            className="hover:text-amber-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 rounded px-1"
           >
             <span>SERVICES</span>
           </Link>
@@ -34,7 +34,7 @@ export const ServiceBreadcrumbs: React.FC<ServiceBreadcrumbsProps> = ({ serviceT
           <ChevronRight className="w-3.5 h-3.5" />
         </li>
         <li aria-current="page">
-          <span className="text-cyan-300 font-medium px-2 py-0.5 bg-cyan-950/40 border border-cyan-500/30 rounded">
+          <span className="text-amber-300 font-medium px-2 py-0.5 bg-amber-950/40 border border-amber-500/30 rounded">
             {serviceTitle.toUpperCase()}
           </span>
         </li>

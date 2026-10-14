@@ -16,7 +16,7 @@ export const ServiceCapabilities: React.FC<ServiceCapabilitiesProps> = ({
     <section id="capabilities" className="py-16 md:py-24 border-b border-white/[0.08] scroll-mt-24">
       {/* Section Header */}
       <div className="max-w-3xl mb-12">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
           <span>// TECHNICAL CAPABILITIES</span>
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
@@ -36,7 +36,7 @@ export const ServiceCapabilities: React.FC<ServiceCapabilitiesProps> = ({
             spotlight={true}
             withReticles={true}
             spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-6 sm:p-7 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+            className="p-6 sm:p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
           >
             <div>
               {/* Number and Accent line */}

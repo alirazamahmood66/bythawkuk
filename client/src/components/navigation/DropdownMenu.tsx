@@ -82,7 +82,7 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
                 className="group flex flex-col p-2.5 rounded-lg hover:bg-white/[0.04] transition-colors focus-ring"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-200 group-hover:text-cyan-300 transition-colors font-sans">
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-amber-300 transition-colors font-sans">
                     {item.title}
                   </span>
                   {item.badge ? (
@@ -90,7 +90,7 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
                       {item.badge}
                     </Badge>
                   ) : (
-                    <ArrowRight className="w-3 h-3 text-slate-500 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-x-0 text-cyan-400" />
+                    <ArrowRight className="w-3 h-3 text-slate-500 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-x-0 text-amber-400" />
                   )}
                 </div>
                 {item.description && (

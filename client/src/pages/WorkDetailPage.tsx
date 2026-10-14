@@ -68,26 +68,26 @@ export const WorkDetailPage: React.FC = () => {
   // Fallback if project is not found
   if (!project) {
     return (
-      <main className="min-h-screen bg-[#001119] text-[#E8FFFC] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
-            <div className="w-16 h-16 rounded-2xl bg-[#008C6B]/20 border border-[#04A37B]/30 flex items-center justify-center mx-auto text-[#23F7DB]">
+            <div className="w-16 h-16 rounded-2xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center mx-auto text-[#F59E0B]">
               <Compass className="w-8 h-8 animate-spin-slow" />
             </div>
             <div className="space-y-2">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase">
                 ERROR 404 // CASE STUDY SPECIFICATION
               </span>
-              <h1 className="text-2xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h1 className="text-2xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 Case Study Not Found
               </h1>
-              <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
-                The requested project specification <code className="text-[#30F1BE] font-mono text-xs bg-[#008C6B]/30 px-1.5 py-0.5 rounded border border-[#04A37B]/40">/{slug}</code> could not be located in our portfolio registry.
+              <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
+                The requested project specification <code className="text-[#FBBF24] font-mono text-xs bg-[#EA580C]/30 px-1.5 py-0.5 rounded border border-[#D97706]/40">/{slug}</code> could not be located in our portfolio registry.
               </p>
             </div>
             <div className="pt-2 flex justify-center gap-4">
@@ -112,7 +112,7 @@ export const WorkDetailPage: React.FC = () => {
   return (
     <PageTransition>
       <CosmicScrollJourney />
-      <article className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <article className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="py-4">
@@ -120,7 +120,7 @@ export const WorkDetailPage: React.FC = () => {
               <li>
                 <Link
                   to="/"
-                  className="flex items-center hover:text-cyan-400 transition-colors px-1"
+                  className="flex items-center hover:text-amber-400 transition-colors px-1"
                 >
                   <Home className="w-3.5 h-3.5 mr-1" />
                   <span>HOME</span>
@@ -132,7 +132,7 @@ export const WorkDetailPage: React.FC = () => {
               <li>
                 <Link
                   to="/work"
-                  className="hover:text-cyan-400 transition-colors px-1"
+                  className="hover:text-amber-400 transition-colors px-1"
                 >
                   <span>WORK</span>
                 </Link>
@@ -141,7 +141,7 @@ export const WorkDetailPage: React.FC = () => {
                 <ChevronRight className="w-3.5 h-3.5" />
               </li>
               <li aria-current="page">
-                <span className="text-white font-medium px-2 py-0.5 bg-cyan-950/40 border border-cyan-500/30 rounded">
+                <span className="text-white font-medium px-2 py-0.5 bg-amber-950/40 border border-amber-500/30 rounded">
                   {project.title.toUpperCase()}
                 </span>
               </li>
@@ -151,9 +151,9 @@ export const WorkDetailPage: React.FC = () => {
           {/* Case Study Hero */}
           <section className="pt-6 pb-12 md:pt-10 md:pb-16 border-b border-white/[0.08]">
             <div className="max-w-4xl space-y-6">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/30 shadow-sm backdrop-blur-sm">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
                 <Terminal className="w-3.5 h-3.5" style={{ color: project.accentColor }} />
-                <span className="text-xs font-mono font-medium tracking-wider text-cyan-300">
+                <span className="text-xs font-mono font-medium tracking-wider text-amber-300">
                   {project.badgeLabel} // {project.primaryCategory.toUpperCase()}
                 </span>
               </div>
@@ -172,10 +172,10 @@ export const WorkDetailPage: React.FC = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-mono text-xs sm:text-sm font-semibold text-cyan-300 bg-cyan-950/60 hover:bg-cyan-900/80 border border-cyan-500/50 hover:border-cyan-400 transition-all shadow-lg shadow-cyan-950/40 group"
+                    className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-mono text-xs sm:text-sm font-semibold text-amber-300 bg-amber-950/60 hover:bg-cyan-900/80 border border-amber-500/50 hover:border-cyan-400 transition-all shadow-lg shadow-amber-950/40 group"
                   >
                     <span>VISIT LIVE PLATFORM</span>
-                    <ExternalLink className="w-4 h-4 text-cyan-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <ExternalLink className="w-4 h-4 text-amber-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     <span className="text-[11px] text-slate-400 font-normal hidden sm:inline ml-1">
                       ({project.liveUrl.replace(/^https?:\/\//, '')})
                     </span>
@@ -217,7 +217,7 @@ export const WorkDetailPage: React.FC = () => {
                 {/* Challenge */}
                 {project.challenge && (
                   <div className="lg:col-span-6 space-y-4">
-                    <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block">
+                    <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block">
                       // THE CHALLENGE
                     </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -232,7 +232,7 @@ export const WorkDetailPage: React.FC = () => {
                 {/* Objectives */}
                 {project.objectives && project.objectives.length > 0 && (
                   <div className="lg:col-span-6 space-y-4">
-                    <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block">
+                    <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block">
                       // CORE OBJECTIVES
                     </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -272,7 +272,7 @@ export const WorkDetailPage: React.FC = () => {
             <section className="py-14 md:py-20 border-b border-white/[0.08]">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 <div className="lg:col-span-5">
-                  <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block mb-2">
+                  <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block mb-2">
                     // THE SOLUTION
                   </span>
                   <h2 className="text-2xl sm:text-4xl font-bold text-white tracking-tight leading-snug">

@@ -361,8 +361,8 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
         <Html position={[0, cfg.radius * 1.5 + 0.35, 0]} center pointerEvents="none">
           <div className="pointer-events-none select-none transition-all duration-300">
             <div className="flex flex-col items-center">
-              <div className="px-3 py-1.5 rounded-lg bg-[#040b18]/90 border border-cyan-400/80 backdrop-blur-xl shadow-[0_0_20px_rgba(32,217,243,0.5)] text-center">
-                <div className="flex items-center justify-center gap-1.5 text-[9px] font-mono tracking-[0.2em] text-cyan-300 font-bold uppercase">
+              <div className="px-3 py-1.5 rounded-lg bg-[#040b18]/90 border border-amber-400/80 backdrop-blur-xl shadow-[0_0_20px_rgba(32,217,243,0.5)] text-center">
+                <div className="flex items-center justify-center gap-1.5 text-[9px] font-mono tracking-[0.2em] text-amber-300 font-bold uppercase">
                   <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
                   {planetName || cfg.id}
                 </div>

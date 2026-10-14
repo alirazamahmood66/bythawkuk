@@ -260,7 +260,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     eyebrow: 'BYTHAWK // SOFTWARE ENGINEERING',
     description:
       'Off-the-shelf software forces you to adapt your business to someone else’s limitations. We architect custom business software, client portals, and cloud microservices designed specifically for your unique operational workflows, competitive advantages, and scale.',
-    accentColor: '#30F1BE',
+    accentColor: '#FBBF24',
     typicalTimeline: '8–14 Weeks',
     engagementModel: 'Milestone-Based Engineering Sprints',
     targetAudience: 'Organizations requiring proprietary software, specialized workflows, or high-security data pipelines.',
@@ -402,7 +402,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     eyebrow: 'BYTHAWK // GROWTH ENGINEERING',
     description:
       'Marketing without strong technical foundations burns ad spend. We unite high-converting landing page engineering, technical SEO, semantic structured data, and automated analytics funnels to deliver sustainable organic customer acquisition.',
-    accentColor: '#23F7DB',
+    accentColor: '#F59E0B',
     typicalTimeline: '4–8 Weeks Initial Sprint',
     engagementModel: 'Growth Sprints or Monthly Retainer',
     targetAudience: 'B2B service providers, high-ticket consultants, and growing commercial brands.',

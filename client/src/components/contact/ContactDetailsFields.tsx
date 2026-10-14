@@ -55,7 +55,7 @@ export const ContactDetailsFields: React.FC<ContactDetailsFieldsProps> = ({
             htmlFor="contact-name"
             className="text-sm font-semibold text-white tracking-wide block font-sans"
           >
-            Full Name <span className="text-cyan-400">*</span>
+            Full Name <span className="text-amber-400">*</span>
           </label>
           <input
             id="contact-name"
@@ -69,7 +69,7 @@ export const ContactDetailsFields: React.FC<ContactDetailsFieldsProps> = ({
             placeholder="e.g. Alex Morgan"
             aria-invalid={Boolean(errors.name)}
             aria-describedby={errors.name ? 'name-error' : undefined}
-            className={`w-full px-4 py-3 rounded-xl bg-[#061F25]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${
+            className={`w-full px-4 py-3 rounded-xl bg-[#070D18]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${
               errors.name
                 ? 'border-red-500 focus:ring-red-500/50'
                 : 'border-white/[0.08] focus:border-cyan-400 focus:ring-cyan-400/50'
@@ -88,7 +88,7 @@ export const ContactDetailsFields: React.FC<ContactDetailsFieldsProps> = ({
             htmlFor="contact-email"
             className="text-sm font-semibold text-white tracking-wide block font-sans"
           >
-            Email Address <span className="text-cyan-400">*</span>
+            Email Address <span className="text-amber-400">*</span>
           </label>
           <input
             id="contact-email"
@@ -102,7 +102,7 @@ export const ContactDetailsFields: React.FC<ContactDetailsFieldsProps> = ({
             placeholder="e.g. alex@company.co.uk"
             aria-invalid={Boolean(errors.email)}
             aria-describedby={errors.email ? 'email-error' : 'email-hint'}
-            className={`w-full px-4 py-3 rounded-xl bg-[#061F25]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${
+            className={`w-full px-4 py-3 rounded-xl bg-[#070D18]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${
               errors.email
                 ? 'border-red-500 focus:ring-red-500/50'
                 : 'border-white/[0.08] focus:border-cyan-400 focus:ring-cyan-400/50'
@@ -135,7 +135,7 @@ export const ContactDetailsFields: React.FC<ContactDetailsFieldsProps> = ({
             value={phone}
             onChange={(e) => onPhoneChange(e.target.value)}
             placeholder="e.g. +44 20 7946 0192"
-            className="w-full px-4 py-3 rounded-xl bg-[#061F25]/90 border border-white/[0.08] text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50"
+            className="w-full px-4 py-3 rounded-xl bg-[#070D18]/90 border border-white/[0.08] text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50"
           />
         </div>
       </div>

@@ -104,7 +104,7 @@ export const InsightsPage: React.FC = () => {
   return (
     <PageTransition>
       <CosmicScrollJourney />
-      <main className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <main className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* 1. Cinematic Editorial Hero */}
           <InsightsHero />

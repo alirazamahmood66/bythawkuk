@@ -123,11 +123,11 @@ export const ServicesOverviewPage: React.FC = () => {
         />
       </motion.div>
 
-      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300 py-12 md:py-20">
+      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300 py-12 md:py-20">
         <Container>
           {/* Header */}
           <div className="max-w-3xl mb-16 space-y-4">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-xs font-mono text-cyan-400">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 text-xs font-mono text-amber-400">
               <Sparkles className="w-3.5 h-3.5" />
               <span>BYTHAWK // SERVICE CAPABILITIES</span>
             </div>
@@ -152,8 +152,8 @@ export const ServicesOverviewPage: React.FC = () => {
                   variant="default"
                   spotlight={true}
                   withReticles={true}
-                  spotlightColor="rgba(35, 247, 219, 0.14)"
-                  className="p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden shadow-xl"
+                  spotlightColor="rgba(245, 158, 11, 0.14)"
+                  className="p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden shadow-xl"
                 >
                   {/* Subtle top border accent */}
                   <div
@@ -163,11 +163,11 @@ export const ServicesOverviewPage: React.FC = () => {
 
                   <div>
                     {/* Header Phase / Category Pill */}
-                    <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-[#E8FFFC]/[0.06] text-[10px] font-mono">
-                      <span className="text-[#23F7DB] font-semibold tracking-wider">
+                    <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-[#FFFBEB]/[0.06] text-[10px] font-mono">
+                      <span className="text-[#F59E0B] font-semibold tracking-wider">
                         DISCIPLINE 0{idx + 1}
                       </span>
-                      <span className="text-[#30F1BE] uppercase px-2 py-0.5 rounded bg-[#008C6B]/20 border border-[#04A37B]/30">
+                      <span className="text-[#FBBF24] uppercase px-2 py-0.5 rounded bg-[#EA580C]/20 border border-[#D97706]/30">
                         {service.category}
                       </span>
                     </div>
@@ -183,7 +183,7 @@ export const ServicesOverviewPage: React.FC = () => {
                         <Icon className="w-6 h-6" style={{ color: service.accentColor }} />
                       </div>
 
-                      <h2 className="text-2xl font-bold text-white tracking-tight group-hover:text-cyan-200 transition-colors">
+                      <h2 className="text-2xl font-bold text-white tracking-tight group-hover:text-amber-200 transition-colors">
                         {service.title}
                       </h2>
                     </div>
@@ -215,7 +215,7 @@ export const ServicesOverviewPage: React.FC = () => {
                     </span>
 
                     <Link to={`/services/${service.slug}`}>
-                      <Button variant="ghost" size="sm" className="group-hover:text-cyan-300">
+                      <Button variant="ghost" size="sm" className="group-hover:text-amber-300">
                         <span>View Specification</span>
                         <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                       </Button>
@@ -234,7 +234,7 @@ export const ServicesOverviewPage: React.FC = () => {
             spotlightColor="rgba(32, 217, 243, 0.15)"
             className="mt-20 p-8 sm:p-12 text-center space-y-4 shadow-2xl"
           >
-            <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block mb-1">
+            <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block mb-1">
               // CUSTOM ARCHITECTURE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">

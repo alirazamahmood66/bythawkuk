@@ -7,7 +7,7 @@ export const WhatHappensNext: React.FC = () => {
   return (
     <section className="py-16 md:py-24 border-b border-white/[0.08]">
       <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
           <CheckCircle2 className="w-3.5 h-3.5" />
           <span>// DISCOVERY PROTOCOL</span>
         </div>
@@ -31,14 +31,14 @@ export const WhatHappensNext: React.FC = () => {
           >
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-500/30 px-2.5 py-1 rounded-full">
+                <span className="font-mono text-xs tracking-wider text-amber-400 bg-amber-950/40 border border-amber-500/30 px-2.5 py-1 rounded-full">
                   STAGE 0{stage.step}
                 </span>
                 {idx < WHAT_HAPPENS_NEXT_STAGES.length - 1 && (
-                  <ArrowRight className="hidden lg:block w-4 h-4 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+                  <ArrowRight className="hidden lg:block w-4 h-4 text-slate-500 group-hover:text-amber-400 transition-colors" />
                 )}
               </div>
-              <h3 className="text-lg font-bold text-white tracking-tight mb-2 group-hover:text-cyan-200 transition-colors">
+              <h3 className="text-lg font-bold text-white tracking-tight mb-2 group-hover:text-amber-200 transition-colors">
                 {stage.title}
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">

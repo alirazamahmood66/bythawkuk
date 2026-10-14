@@ -69,7 +69,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
   return (
     <section
       aria-label="BYTHAWK Interactive Solar System Hero Slider"
-      className="relative w-full bg-[#001119] overflow-hidden select-none z-10"
+      className="relative w-full bg-[#020611] overflow-hidden select-none z-10"
       style={{ height: isMobile ? '100svh' : '100vh', minHeight: isMobile ? '600px' : '700px' }}
     >
       {/* ── 3D CANVAS ── */}
@@ -85,26 +85,26 @@ export const SolarSystemHeroSlider: React.FC = () => {
       </div>
 
       {/* ── SUBTLE VIGNETTE (very light, doesn't dim the planets) ── */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_50%,rgba(0,17,25,0.65)_100%)]" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_50%,rgba(2, 6, 17, 0.65)_100%)]" />
 
       {/* ── TOP STATUS BAR ── */}
       <header className="absolute z-20 top-0 left-0 right-0 pt-[72px] sm:pt-24 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between py-2 border-b border-[#E8FFFC]/[0.08]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between py-2 border-b border-[#FFFBEB]/[0.08]">
           <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#23F7DB] animate-pulse" />
-            <span className="text-[10px] sm:text-[11px] font-mono tracking-[0.18em] text-[#23F7DB]/90 font-semibold uppercase">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
+            <span className="text-[10px] sm:text-[11px] font-mono tracking-[0.18em] text-[#F59E0B]/90 font-semibold uppercase">
               {isMobile ? 'BYTHAWK // LIVE ORBIT' : 'BYTHAWK UK // LIVE CELESTIAL SYSTEM'}
             </span>
           </div>
           <div className="flex items-center gap-2 text-[10px] font-mono text-[#9edcd2]/70">
             {isMobile ? (
-              <span className="flex items-center gap-1 text-[#23F7DB]/80">
+              <span className="flex items-center gap-1 text-[#F59E0B]/80">
                 <Hand className="w-3 h-3" />TAP PLANET
               </span>
             ) : (
               <>
-                <span className="text-[#30F1BE] flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#30F1BE] animate-pulse" />
+                <span className="text-[#FBBF24] flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FBBF24] animate-pulse" />
                   REAL-TIME ORBIT
                 </span>
                 <span className="text-white/10">&bull;</span>
@@ -137,26 +137,26 @@ export const SolarSystemHeroSlider: React.FC = () => {
               >
                 {/* Eyebrow */}
                 <div className="flex items-center gap-2 mb-2 pointer-events-none">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#23F7DB] animate-pulse" />
-                  <span className="text-[10px] font-mono tracking-[0.25em] text-[#30F1BE] font-bold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
+                  <span className="text-[10px] font-mono tracking-[0.25em] text-[#FBBF24] font-bold">
                     DIGITAL STUDIO &bull; LONDON, UK
                   </span>
                 </div>
 
                 {/* Hero headline — large, transparent to pointer events so planets behind are 100% clickable */}
                 <h1
-                  className={`font-extrabold text-[#E8FFFC] tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_24px_rgba(0,17,25,0.9)] pointer-events-none ${
+                  className={`font-extrabold text-[#FFFBEB] tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_24px_rgba(2, 6, 17, 0.9)] pointer-events-none ${
                     isMobile ? 'text-3xl' : 'text-4xl sm:text-5xl lg:text-6xl'
                   }`}
                 >
                   We build{' '}
-                  <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] bg-clip-text text-transparent">
                     digital worlds.
                   </span>
                 </h1>
 
                 {!isMobile && (
-                  <p className="mt-3 text-sm text-[#9edcd2]/80 max-w-lg leading-relaxed font-sans drop-shadow-[0_1px_8px_rgba(0,17,25,0.8)] pointer-events-none">
+                  <p className="mt-3 text-sm text-[#9edcd2]/80 max-w-lg leading-relaxed font-sans drop-shadow-[0_1px_8px_rgba(2, 6, 17, 0.8)] pointer-events-none">
                     9 engineering disciplines in orbit. Click any planet to explore.
                   </p>
                 )}
@@ -165,7 +165,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 <div className={`flex items-center gap-3 ${isMobile ? 'mt-3' : 'mt-5'} pointer-events-none`}>
                   <Link
                     to="/contact"
-                    className="pointer-events-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#001119] bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] shadow-lg shadow-[#23F7DB]/30 hover:shadow-[#30F1BE]/50 transition-all cursor-pointer"
+                    className="pointer-events-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#020611] bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] shadow-lg shadow-[#F59E0B]/30 hover:shadow-[#FBBF24]/50 transition-all cursor-pointer"
                   >
                     Start a Project
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -173,12 +173,12 @@ export const SolarSystemHeroSlider: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => handleSelectPlanet('earth')}
-                    className="pointer-events-auto inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-[#E8FFFC]/90 bg-[#061F25]/60 border border-[#E8FFFC]/[0.15] hover:bg-[#061F25] hover:text-[#23F7DB] hover:border-[#23F7DB]/40 transition-all backdrop-blur-sm cursor-pointer"
+                    className="pointer-events-auto inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-[#FFFBEB]/90 bg-[#070D18]/60 border border-[#FFFBEB]/[0.15] hover:bg-[#070D18] hover:text-[#F59E0B] hover:border-[#F59E0B]/40 transition-all backdrop-blur-sm cursor-pointer"
                   >
                     Explore
-                    <ArrowUpRight className="w-3 h-3 text-[#23F7DB]" />
+                    <ArrowUpRight className="w-3 h-3 text-[#F59E0B]" />
                   </button>
-                  <span className="text-[10px] font-mono text-[#30F1BE]/70 hidden sm:inline">
+                  <span className="text-[10px] font-mono text-[#FBBF24]/70 hidden sm:inline">
                     9 DISCIPLINES IN ORBIT
                   </span>
                 </div>
@@ -265,7 +265,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
                     className="pointer-events-auto inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-white/80 bg-white/[0.06] border border-white/[0.15] hover:bg-white/[0.12] hover:text-white transition-all backdrop-blur-sm"
                   >
                     Start Project
-                    <ArrowUpRight className="w-3 h-3 text-cyan-400" />
+                    <ArrowUpRight className="w-3 h-3 text-amber-400" />
                   </Link>
                 </div>
               </motion.div>
@@ -278,18 +278,18 @@ export const SolarSystemHeroSlider: React.FC = () => {
       <footer className="absolute z-20 bottom-0 left-0 right-0 px-4 sm:px-8 pb-3 sm:pb-5">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Quick cycle controls */}
-          <div className="flex items-center gap-2 bg-[#061F25]/85 backdrop-blur-xl border border-[#E8FFFC]/[0.1] p-1.5 rounded-2xl shadow-xl shadow-[#001119]/50">
+          <div className="flex items-center gap-2 bg-[#070D18]/85 backdrop-blur-xl border border-[#FFFBEB]/[0.1] p-1.5 rounded-2xl shadow-xl shadow-[#020611]/50">
             <button
               onClick={handlePrev}
               aria-label="Previous Planet"
-              className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.12] border border-white/[0.06] text-[#E8FFFC]/80 hover:text-[#23F7DB] transition-all active:scale-95 cursor-pointer"
+              className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.12] border border-white/[0.06] text-[#FFFBEB]/80 hover:text-[#F59E0B] transition-all active:scale-95 cursor-pointer"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={handleNext}
               aria-label="Next Planet"
-              className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.12] border border-white/[0.06] text-[#E8FFFC]/80 hover:text-[#23F7DB] transition-all active:scale-95 cursor-pointer"
+              className="p-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.12] border border-white/[0.06] text-[#FFFBEB]/80 hover:text-[#F59E0B] transition-all active:scale-95 cursor-pointer"
             >
               <ChevronRight className="w-4 h-4" />
             </button>
@@ -301,11 +301,11 @@ export const SolarSystemHeroSlider: React.FC = () => {
               onClick={() => setIsOverview(true)}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono transition-all cursor-pointer ${
                 isOverview
-                  ? 'bg-[#04A37B]/25 border border-[#30F1BE] text-[#E8FFFC] shadow-[0_0_15px_rgba(48,241,190,0.35)]'
-                  : 'bg-white/[0.03] hover:bg-white/[0.08] border border-transparent text-[#9edcd2]/70 hover:text-[#23F7DB]'
+                  ? 'bg-[#D97706]/25 border border-[#FBBF24] text-[#FFFBEB] shadow-[0_0_15px_rgba(251, 191, 36, 0.35)]'
+                  : 'bg-white/[0.03] hover:bg-white/[0.08] border border-transparent text-[#9edcd2]/70 hover:text-[#F59E0B]'
               }`}
             >
-              <Globe className={`w-3.5 h-3.5 ${isOverview ? 'text-[#23F7DB] animate-spin' : 'text-[#9edcd2]/60'}`} style={{ animationDuration: '18s' }} />
+              <Globe className={`w-3.5 h-3.5 ${isOverview ? 'text-[#F59E0B] animate-spin' : 'text-[#9edcd2]/60'}`} style={{ animationDuration: '18s' }} />
               <span className="text-[11px] font-semibold tracking-wide">ALL WORLDS</span>
             </button>
           </div>
@@ -313,10 +313,10 @@ export const SolarSystemHeroSlider: React.FC = () => {
           {/* Scroll Down Hint */}
           <button
             onClick={handleScrollDown}
-            className="hidden sm:flex items-center gap-2 text-xs font-mono text-[#9edcd2]/80 hover:text-[#23F7DB] transition-colors bg-[#061F25]/75 backdrop-blur-xl border border-[#E8FFFC]/[0.1] px-4 py-2 rounded-2xl cursor-pointer"
+            className="hidden sm:flex items-center gap-2 text-xs font-mono text-[#9edcd2]/80 hover:text-[#F59E0B] transition-colors bg-[#070D18]/75 backdrop-blur-xl border border-[#FFFBEB]/[0.1] px-4 py-2 rounded-2xl cursor-pointer"
           >
             <span>EXPLORE STUDIO</span>
-            <ChevronDown className="w-3.5 h-3.5 animate-bounce text-[#23F7DB]" />
+            <ChevronDown className="w-3.5 h-3.5 animate-bounce text-[#F59E0B]" />
           </button>
         </div>
       </footer>

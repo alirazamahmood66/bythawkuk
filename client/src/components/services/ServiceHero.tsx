@@ -75,12 +75,12 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
           {/* Main Copy Column */}
           <div className="lg:col-span-8 xl:col-span-7 space-y-6">
             {/* Eyebrow & Category Badge */}
-            <div className="inline-flex items-center space-x-2.5 px-3 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 shadow-sm backdrop-blur-sm">
+            <div className="inline-flex items-center space-x-2.5 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
               <span
                 className="w-2 h-2 rounded-full animate-pulse"
                 style={{ backgroundColor: accentColor }}
               />
-              <span className="text-xs font-mono font-medium tracking-wider text-cyan-300 uppercase">
+              <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
                 {eyebrow}
               </span>
             </div>
@@ -101,7 +101,7 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
                 <Button
                   variant="primary"
                   size="lg"
-                  className="group flex items-center shadow-lg shadow-cyan-950/30"
+                  className="group flex items-center shadow-lg shadow-amber-950/30"
                 >
                   <span>Initiate Discovery Call</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -110,7 +110,7 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
 
               <button
                 onClick={scrollToCapabilities}
-                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white bg-[#061F25]/80 hover:bg-[#061F25] border border-white/[0.08] hover:border-cyan-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white bg-[#070D18]/80 hover:bg-[#070D18] border border-white/[0.08] hover:border-amber-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               >
                 <span>Explore Capabilities</span>
                 <ChevronDown className="w-4 h-4 ml-2 opacity-70" />
@@ -127,9 +127,9 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-4 rounded-xl bg-[#061F25]/90 border-white/[0.08] shadow-sm"
+              className="p-4 rounded-xl bg-[#070D18]/90 border-white/[0.08] shadow-sm"
             >
-              <div className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold">
+              <div className="text-[11px] font-mono tracking-wider text-amber-400 uppercase font-semibold">
                 {badge.label}
               </div>
               <div className="text-sm font-bold text-white mt-1 font-sans">

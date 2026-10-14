@@ -10,10 +10,10 @@ export const NebulaBackdrop: React.FC = () => {
 
     // Radial gradient with deep space tones
     const grad = ctx.createRadialGradient(128, 128, 10, 128, 128, 128);
-    grad.addColorStop(0, 'rgba(35, 247, 219, 0.16)'); // Electric cyan core
-    grad.addColorStop(0.35, 'rgba(6, 31, 37, 0.25)'); // Deep space teal
-    grad.addColorStop(0.7, 'rgba(4, 163, 123, 0.08)'); // Subtle mint edge
-    grad.addColorStop(1, 'rgba(0, 17, 25, 0)');
+    grad.addColorStop(0, 'rgba(245, 158, 11, 0.16)'); // Electric cyan core
+    grad.addColorStop(0.35, 'rgba(7, 13, 24, 0.25)'); // Deep space teal
+    grad.addColorStop(0.7, 'rgba(217, 119, 6, 0.08)'); // Subtle mint edge
+    grad.addColorStop(1, 'rgba(2, 6, 17, 0)');
 
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, 256, 256);

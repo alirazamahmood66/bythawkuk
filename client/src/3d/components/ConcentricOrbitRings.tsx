@@ -14,7 +14,7 @@ export const ConcentricOrbitRings: React.FC = () => {
         return new THREE.Line(
           new THREE.BufferGeometry().setFromPoints(pts),
           new THREE.LineBasicMaterial({
-            color: '#30F1BE',
+            color: '#FBBF24',
             transparent: true,
             opacity: 0.15,
             blending: THREE.AdditiveBlending,

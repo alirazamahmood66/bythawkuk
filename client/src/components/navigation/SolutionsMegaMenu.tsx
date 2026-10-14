@@ -61,20 +61,20 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
           animate="open"
           exit="closed"
           variants={menuVariants}
-          className="fixed inset-x-0 top-[76px] z-40 pointer-events-auto bg-[#001119]/95 backdrop-blur-2xl border-t border-b border-[#E8FFFC]/[0.08] shadow-2xl shadow-black/80 py-8"
+          className="fixed inset-x-0 top-[76px] z-40 pointer-events-auto bg-[#020611]/95 backdrop-blur-2xl border-t border-b border-[#FFFBEB]/[0.08] shadow-2xl shadow-black/80 py-8"
         >
           <Container size="xl">
             {/* Header */}
-            <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#E8FFFC]/[0.06]">
+            <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#FFFBEB]/[0.06]">
               <div className="flex items-center gap-3">
                 <Badge variant="emerald" withDot>
                   Agency Solutions
                 </Badge>
-                <span className="text-[#E8FFFC] font-bold text-base tracking-tight">
+                <span className="text-[#FFFBEB] font-bold text-base tracking-tight">
                   TARGETED BUSINESS OUTCOMES
                 </span>
-                <span className="hidden sm:inline text-[#E8FFFC]/20">&bull;</span>
-                <span className="text-xs text-[#E8FFFC]/70 hidden sm:inline">
+                <span className="hidden sm:inline text-[#FFFBEB]/20">&bull;</span>
+                <span className="text-xs text-[#FFFBEB]/70 hidden sm:inline">
                   Strategic blueprints designed for rapid commercial velocity.
                 </span>
               </div>
@@ -82,7 +82,7 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="flex items-center gap-1.5 text-xs text-[#E8FFFC]/70 hover:text-[#E8FFFC] px-2.5 py-1 rounded-lg border border-[#E8FFFC]/10 hover:border-[#23F7DB]/40 bg-[#E8FFFC]/[0.02] focus-ring transition-colors cursor-pointer"
+                className="flex items-center gap-1.5 text-xs text-[#FFFBEB]/70 hover:text-[#FFFBEB] px-2.5 py-1 rounded-lg border border-[#FFFBEB]/10 hover:border-[#F59E0B]/40 bg-[#FFFBEB]/[0.02] focus-ring transition-colors cursor-pointer"
                 aria-label="Close Solutions Menu"
               >
                 <X className="w-3.5 h-3.5" />
@@ -97,17 +97,17 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
                   key={item.id}
                   to={item.href}
                   onClick={onClose}
-                  className="group relative p-5 rounded-xl bg-[#061F25]/70 hover:bg-[#061F25] border border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/40 transition-all duration-200 shadow-md focus-ring overflow-hidden flex flex-col justify-between"
+                  className="group relative p-5 rounded-xl bg-[#070D18]/70 hover:bg-[#070D18] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-200 shadow-md focus-ring overflow-hidden flex flex-col justify-between"
                 >
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="font-mono text-xs font-bold tracking-wider text-[#E8FFFC] group-hover:text-[#23F7DB] transition-colors">
+                    <span className="font-mono text-xs font-bold tracking-wider text-[#FFFBEB] group-hover:text-[#F59E0B] transition-colors">
                       {item.title}
                     </span>
-                    <span className="w-5 h-5 rounded-full flex items-center justify-center bg-[#E8FFFC]/[0.04] group-hover:bg-[#23F7DB]/20 text-[#E8FFFC]/60 group-hover:text-[#23F7DB] transition-colors">
+                    <span className="w-5 h-5 rounded-full flex items-center justify-center bg-[#FFFBEB]/[0.04] group-hover:bg-[#F59E0B]/20 text-[#FFFBEB]/60 group-hover:text-[#F59E0B] transition-colors">
                       <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                   </div>
-                  <p className="text-xs text-[#E8FFFC]/70 leading-relaxed font-sans">
+                  <p className="text-xs text-[#FFFBEB]/70 leading-relaxed font-sans">
                     {item.tagline}
                   </p>
                 </Link>
@@ -115,16 +115,16 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
             </div>
 
             {/* Bottom Link */}
-            <div className="mt-6 pt-4 border-t border-[#E8FFFC]/[0.06] flex items-center justify-between text-xs font-mono text-[#E8FFFC]/70">
+            <div className="mt-6 pt-4 border-t border-[#FFFBEB]/[0.06] flex items-center justify-between text-xs font-mono text-[#FFFBEB]/70">
               <Link
                 to="/solutions"
                 onClick={onClose}
-                className="hover:text-[#23F7DB] transition-colors flex items-center gap-1.5 focus-ring rounded"
+                className="hover:text-[#F59E0B] transition-colors flex items-center gap-1.5 focus-ring rounded"
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#23F7DB]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#F59E0B]" />
                 <span>View All Custom Solution Frameworks &rarr;</span>
               </Link>
-              <span className="hidden sm:inline text-[#E8FFFC]/50 text-[11px]">
+              <span className="hidden sm:inline text-[#FFFBEB]/50 text-[11px]">
                 Tailored engineering architectures for UK enterprises
               </span>
             </div>

@@ -166,29 +166,29 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
     orbitSpeed: 0.07,
     initialAngle: 4.2,
     size: 0.38,
-    color: '#30F1BE', // Neon Mint
-    emissiveColor: '#04A37B',
+    color: '#FBBF24', // Neon Mint
+    emissiveColor: '#D97706',
     roughness: 0.55,
     metalness: 0.3,
-    atmosphericGlow: 'rgba(48, 241, 190, 0.35)',
+    atmosphericGlow: 'rgba(251, 191, 36, 0.35)',
     surface: {
       type: 'icy',
       roughness: 0.42,
       metalness: 0.32,
       bumpScale: 0.09,
       atmosphere: {
-        color: '#30F1BE',
+        color: '#FBBF24',
         rimPower: 3.5,
         opacity: 0.4,
         scale: 1.05,
       },
       procedural: {
         palette: {
-          primary: '#061F25', // Deep dark teal mantle
-          secondary: '#008C6B', // Fractured ice crust
-          accent: '#30F1BE', // Sub-surface crystalline fissure glow
-          dark: '#001119', // Deep chasm fault lines
-          specular: '#E8FFFC', // Glacial specular sheen
+          primary: '#070D18', // Deep dark teal mantle
+          secondary: '#EA580C', // Fractured ice crust
+          accent: '#FBBF24', // Sub-surface crystalline fissure glow
+          dark: '#020611', // Deep chasm fault lines
+          specular: '#FFFBEB', // Glacial specular sheen
         },
         noiseScale: 4.2,
         bumpIntensity: 0.16,
@@ -288,33 +288,33 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
     orbitSpeed: 0.032,
     initialAngle: 5.3,
     size: 0.44,
-    color: '#23F7DB', // Nebula Rose
-    emissiveColor: '#04A37B',
+    color: '#F59E0B', // Nebula Rose
+    emissiveColor: '#D97706',
     roughness: 0.48,
     metalness: 0.3,
     hasRings: true,
     ringInnerRadius: 0.56,
     ringOuterRadius: 0.78,
-    ringColor: '#30F1BE',
-    atmosphericGlow: 'rgba(35, 247, 219, 0.3)',
+    ringColor: '#FBBF24',
+    atmosphericGlow: 'rgba(245, 158, 11, 0.3)',
     surface: {
       type: 'rose_marble',
       roughness: 0.45,
       metalness: 0.28,
       bumpScale: 0.07,
       atmosphere: {
-        color: '#23F7DB',
+        color: '#F59E0B',
         rimPower: 2.9,
         opacity: 0.4,
         scale: 1.05,
       },
       procedural: {
         palette: {
-          primary: '#061F25', // Deep plum tectonic base
-          secondary: '#04A37B', // Dusky rose highland ridges
-          accent: '#23F7DB', // Vibrant magenta-rose marble veining
-          dark: '#001119', // Deep metamorphic crevices
-          specular: '#E8FFFC',
+          primary: '#070D18', // Deep plum tectonic base
+          secondary: '#D97706', // Dusky rose highland ridges
+          accent: '#F59E0B', // Vibrant magenta-rose marble veining
+          dark: '#020611', // Deep metamorphic crevices
+          specular: '#FFFBEB',
         },
         noiseScale: 3.0,
         bumpIntensity: 0.1,
@@ -328,9 +328,9 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
 export const SOLAR_CORE_CONFIG = {
   name: 'BYTHAWK CORE',
   radius: 1.25,
-  color: '#23F7DB',
-  warmColor: '#E8FFFC',
-  coronaColor: '#008C6B',
+  color: '#F59E0B',
+  warmColor: '#FFFBEB',
+  coronaColor: '#EA580C',
   emissiveIntensity: 3.5,
   pointLightIntensity: 4.5,
   pointLightDistance: 32,

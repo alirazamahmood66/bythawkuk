@@ -16,7 +16,7 @@ export const ServiceTechnology: React.FC<ServiceTechnologyProps> = ({
     <section className="py-16 md:py-20 border-b border-white/[0.08]">
       {/* Section Header */}
       <div className="max-w-3xl mb-12">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
           <span>// CURATED TOOLING</span>
         </div>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -36,7 +36,7 @@ export const ServiceTechnology: React.FC<ServiceTechnologyProps> = ({
             spotlight={true}
             withReticles={true}
             spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-7 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 shadow-xl"
+            className="p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 shadow-xl"
           >
             <div className="flex items-center space-x-2.5 mb-5 pb-3 border-b border-white/[0.06]">
               <div
@@ -57,7 +57,7 @@ export const ServiceTechnology: React.FC<ServiceTechnologyProps> = ({
               {tier.tools.map((tool, tIdx) => (
                 <div key={tIdx} className="group/tool pb-3 border-b border-white/[0.04] last:border-none last:pb-0">
                   <div className="flex items-baseline justify-between">
-                    <span className="text-sm font-bold text-white group-hover/tool:text-cyan-300 transition-colors font-sans">
+                    <span className="text-sm font-bold text-white group-hover/tool:text-amber-300 transition-colors font-sans">
                       {tool.name}
                     </span>
                   </div>

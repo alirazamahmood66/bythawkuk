@@ -35,7 +35,7 @@ const GlassShell: React.FC<{ color: string; children: React.ReactNode }> = ({ co
 /* ------------------------------------------------------------------ */
 export const HeroCard: React.FC = () => (
   <GlassShell color="#22d3ee">
-    <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] text-cyan-300 mb-5">
+    <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] text-amber-300 mb-5">
       <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
       DIGITAL STUDIO &bull; LONDON, UK
     </div>
@@ -43,7 +43,7 @@ export const HeroCard: React.FC = () => (
     <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.04] font-sans">
       We build
       <br />
-      <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
+      <span className="bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] bg-clip-text text-transparent">
         digital worlds.
       </span>
     </h1>
@@ -55,14 +55,14 @@ export const HeroCard: React.FC = () => (
     <div className="mt-6 flex flex-wrap items-center gap-3">
       <Link
         to="/contact"
-        className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-300 to-sky-400 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40 transition-all"
+        className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-slate-950 bg-gradient-to-r from-[#FBBF24] to-[#D97706] shadow-lg shadow-amber-500/25 hover:shadow-cyan-400/40 transition-all"
       >
         Start a project
         <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
       </Link>
       <Link
         to="/services"
-        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-slate-200 border border-white/[0.14] hover:border-cyan-400/50 hover:text-white transition-all"
+        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-slate-200 border border-white/[0.14] hover:border-amber-400/50 hover:text-white transition-all"
       >
         All services
       </Link>
@@ -71,7 +71,7 @@ export const HeroCard: React.FC = () => (
     <div className="mt-6 pt-4 border-t border-white/[0.08] flex items-center gap-2 text-[10px] font-mono text-slate-400 tracking-wider">
       <span>SCROLL TO LAUNCH</span>
       <span className="flex-1 h-px bg-gradient-to-r from-white/20 to-transparent" />
-      <span className="text-cyan-300">01 / 07</span>
+      <span className="text-amber-300">01 / 07</span>
     </div>
   </GlassShell>
 );

@@ -23,7 +23,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
         <div>
           <Link
             to="/insights"
-            className="inline-flex items-center space-x-2 text-xs font-mono text-slate-400 hover:text-cyan-400 transition-colors"
+            className="inline-flex items-center space-x-2 text-xs font-mono text-slate-400 hover:text-amber-400 transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Return to All Insights</span>
@@ -32,7 +32,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
 
         {/* Category & Status */}
         <div className="flex flex-wrap items-center gap-2 pt-2">
-          <span className="font-mono text-xs text-cyan-300 bg-cyan-950/40 border border-cyan-500/30 px-3 py-1 rounded-full">
+          <span className="font-mono text-xs text-amber-300 bg-amber-950/40 border border-amber-500/30 px-3 py-1 rounded-full">
             {article.category}
           </span>
           <span className="text-xs font-mono text-slate-400 bg-white/[0.04] border border-white/[0.08] px-2.5 py-1 rounded-full">
@@ -56,12 +56,12 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
             <span className="text-white font-medium">{article.author}</span>
             <span>&bull;</span>
             <div className="flex items-center space-x-1.5">
-              <Clock className="w-3.5 h-3.5 text-cyan-400" />
+              <Clock className="w-3.5 h-3.5 text-amber-400" />
               <span>{article.readTime}</span>
             </div>
           </div>
 
-          <div className="flex items-center space-x-1.5 text-cyan-400">
+          <div className="flex items-center space-x-1.5 text-amber-400">
             <Sparkles className="w-3.5 h-3.5" />
             <span>BYTHAWK PERSPECTIVE</span>
           </div>
@@ -78,21 +78,21 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
       >
         <div
           className="absolute inset-0 opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle at 50% 50%, #23F7DB 0%, #04A37B 50%, transparent 80%)' }}
+          style={{ background: 'radial-gradient(circle at 50% 50%, #F59E0B 0%, #D97706 50%, transparent 80%)' }}
         />
         <svg
-          className="w-full max-w-[320px] h-auto text-cyan-400/60"
+          className="w-full max-w-[320px] h-auto text-amber-400/60"
           viewBox="0 0 280 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
           <circle cx="140" cy="60" r="50" stroke="currentColor" strokeWidth="1" strokeDasharray="3 6" opacity="0.4" />
-          <circle cx="140" cy="60" r="30" stroke="#30F1BE" strokeWidth="1.2" opacity="0.6" />
+          <circle cx="140" cy="60" r="30" stroke="#FBBF24" strokeWidth="1.2" opacity="0.6" />
           <line x1="20" y1="60" x2="260" y2="60" stroke="currentColor" strokeWidth="0.8" strokeDasharray="4 6" opacity="0.3" />
           <circle cx="140" cy="60" r="4" fill="#06b6d4" />
           <circle cx="200" cy="40" r="2.5" fill="#38bdf8" />
-          <circle cx="80" cy="80" r="2.5" fill="#30F1BE" />
+          <circle cx="80" cy="80" r="2.5" fill="#FBBF24" />
         </svg>
       </Card>
 
@@ -139,9 +139,9 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="rounded-2xl bg-[#061F25]/90 border-cyan-500/30 p-6 sm:p-8 space-y-4 shadow-xl"
+            className="rounded-2xl bg-[#070D18]/90 border-amber-500/30 p-6 sm:p-8 space-y-4 shadow-xl"
           >
-            <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 tracking-wider uppercase">
+            <div className="flex items-center space-x-2 text-xs font-mono text-amber-400 tracking-wider uppercase">
               <CheckCircle2 className="w-4 h-4" />
               <span>// KEY TAKEAWAYS</span>
             </div>
@@ -159,7 +159,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
         {/* 5. Explore Related Services */}
         {article.relatedServices && article.relatedServices.length > 0 && (
           <section aria-label="Explore Related Services" className="pt-8 border-t border-white/[0.08]">
-            <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 uppercase tracking-wider mb-4">
+            <div className="flex items-center space-x-2 text-xs font-mono text-amber-400 uppercase tracking-wider mb-4">
               <Compass className="w-3.5 h-3.5" />
               <span>// EXPLORE RELATED SERVICES</span>
             </div>
@@ -174,12 +174,12 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-4 rounded-xl bg-[#061F25]/90 border-white/[0.08] group-hover:border-cyan-500/40 group-hover:shadow-cyan-950/30 transition-all flex items-center justify-between"
+                    className="p-4 rounded-xl bg-[#070D18]/90 border-white/[0.08] group-hover:border-amber-500/40 group-hover:shadow-amber-950/30 transition-all flex items-center justify-between"
                   >
-                    <span className="text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors font-sans">
+                    <span className="text-sm font-semibold text-white group-hover:text-amber-300 transition-colors font-sans">
                       {srv.title}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
                   </Card>
                 </Link>
               ))}
@@ -191,13 +191,13 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
         {relatedArticles.length > 0 && (
           <section aria-label="Related Insights" className="pt-10 border-t border-white/[0.08]">
             <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 uppercase tracking-wider">
+              <div className="flex items-center space-x-2 text-xs font-mono text-amber-400 uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>// RELATED PERSPECTIVES</span>
               </div>
               <Link
                 to="/insights"
-                className="text-xs font-mono text-slate-400 hover:text-cyan-400 transition-colors"
+                className="text-xs font-mono text-slate-400 hover:text-amber-400 transition-colors"
               >
                 All articles &rarr;
               </Link>
@@ -216,7 +216,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="p-8 sm:p-10 rounded-2xl bg-[#061F25]/90 border-white/[0.08] space-y-4 shadow-xl max-w-2xl mx-auto"
+            className="p-8 sm:p-10 rounded-2xl bg-[#070D18]/90 border-white/[0.08] space-y-4 shadow-xl max-w-2xl mx-auto"
           >
             <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight font-sans">
               Have a digital challenge to solve?

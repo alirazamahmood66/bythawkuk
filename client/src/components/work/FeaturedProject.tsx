@@ -14,7 +14,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
   return (
     <section className="py-12 md:py-16 border-b border-white/[0.08]">
       <div className="mb-4">
-        <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase">
+        <span className="text-xs font-mono tracking-wider text-amber-400 uppercase">
           // FEATURED ARCHITECTURE
         </span>
       </div>
@@ -24,7 +24,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
         spotlight={true}
         withReticles={true}
         spotlightColor="rgba(32, 217, 243, 0.12)"
-        className="rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl bg-[#061F25]/90 border-white/[0.08]"
+        className="rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl bg-[#070D18]/90 border-white/[0.08]"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Visual Column */}
@@ -41,7 +41,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                 heroImage={project.heroImage}
                 badgeLabel={project.badgeLabel}
                 aspectRatio="wide"
-                className="group-hover:border-cyan-500/40 transition-colors"
+                className="group-hover:border-amber-500/40 transition-colors"
               />
             </Link>
           </div>
@@ -49,8 +49,8 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
           {/* Copy & Details Column */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center space-x-2">
-              <span className="inline-flex items-center space-x-1.5 font-mono text-[10px] tracking-wider text-cyan-300 px-2.5 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/30 uppercase">
-                <Terminal className="w-3 h-3 text-cyan-400" />
+              <span className="inline-flex items-center space-x-1.5 font-mono text-[10px] tracking-wider text-amber-300 px-2.5 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 uppercase">
+                <Terminal className="w-3 h-3 text-amber-400" />
                 <span>{project.badgeLabel}</span>
               </span>
               <span className="font-mono text-xs text-slate-400">
@@ -59,13 +59,13 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
             </div>
 
             <div>
-              <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block mb-1">
+              <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block mb-1">
                 {project.primaryCategory}
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-sans">
                 <Link
                   to={`/work/${project.slug}`}
-                  className="hover:text-cyan-300 transition-colors"
+                  className="hover:text-amber-300 transition-colors"
                 >
                   {project.title}
                 </Link>
@@ -86,7 +86,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                   <Link
                     key={svc.title}
                     to={svc.route}
-                    className="text-xs font-mono px-2.5 py-1 rounded bg-[#061F25]/60 border border-white/[0.08] text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
+                    className="text-xs font-mono px-2.5 py-1 rounded bg-[#070D18]/60 border border-white/[0.08] text-slate-300 hover:border-amber-500/40 hover:text-amber-300 transition-colors"
                   >
                     {svc.title}
                   </Link>
@@ -119,7 +119,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
             {/* Action CTA */}
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <Link to={`/work/${project.slug}`}>
-                <Button variant="primary" size="md" className="group flex items-center shadow-lg shadow-cyan-950/30">
+                <Button variant="primary" size="md" className="group flex items-center shadow-lg shadow-amber-950/30">
                   <span>View Case Study Preview</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -129,7 +129,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold text-cyan-300 bg-[#061F25]/70 hover:bg-cyan-950/80 border border-cyan-500/40 hover:border-cyan-400 transition-all shadow-md"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold text-amber-300 bg-[#070D18]/70 hover:bg-amber-950/80 border border-amber-500/40 hover:border-cyan-400 transition-all shadow-md"
                 >
                   <span>Visit Live Platform</span>
                   <ExternalLink className="w-3.5 h-3.5" />

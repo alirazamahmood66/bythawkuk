@@ -15,7 +15,7 @@ export const WorkFilters: React.FC<WorkFiltersProps> = ({
   return (
     <nav
       aria-label="Filter portfolio projects by category"
-      className="py-6 border-b border-[#E8FFFC]/[0.08]"
+      className="py-6 border-b border-[#FFFBEB]/[0.08]"
     >
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none sm:flex-wrap">
         {WORK_CATEGORIES.map((category) => {
@@ -33,18 +33,18 @@ export const WorkFilters: React.FC<WorkFiltersProps> = ({
               type="button"
               aria-pressed={isSelected}
               onClick={() => onSelectCategory(category.id)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-mono tracking-wider transition-all duration-200 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#23F7DB]/50 ${
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-mono tracking-wider transition-all duration-200 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#F59E0B]/50 ${
                 isSelected
-                  ? 'bg-[#008C6B]/40 text-[#30F1BE] border border-[#23F7DB] font-semibold shadow-md'
-                  : 'bg-[#061F25]/80 text-[#E8FFFC]/70 hover:text-[#E8FFFC] hover:bg-[#061F25] border border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/40'
+                  ? 'bg-[#EA580C]/40 text-[#FBBF24] border border-[#F59E0B] font-semibold shadow-md'
+                  : 'bg-[#070D18]/80 text-[#FFFBEB]/70 hover:text-[#FFFBEB] hover:bg-[#070D18] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40'
               }`}
             >
               <span>{category.label}</span>
               <span
                 className={`ml-2 text-[10px] px-1.5 py-0.5 rounded-full ${
                   isSelected
-                    ? 'bg-[#23F7DB]/20 text-[#30F1BE] font-bold'
-                    : 'bg-[#E8FFFC]/[0.08] text-[#E8FFFC]/60'
+                    ? 'bg-[#F59E0B]/20 text-[#FBBF24] font-bold'
+                    : 'bg-[#FFFBEB]/[0.08] text-[#FFFBEB]/60'
                 }`}
               >
                 {count}

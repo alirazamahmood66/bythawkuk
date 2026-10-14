@@ -144,7 +144,7 @@ export const FEATURED_SERVICES: FeaturedService[] = [
     description: 'Create interfaces people understand and enjoy using. Cinematic aesthetic precision married with conversion metrics.',
     href: '/services/ui-ux-design',
     category: 'EXPERIENCE DESIGN',
-    color: '#30F1BE',
+    color: '#FBBF24',
   },
 ];
 
@@ -175,7 +175,7 @@ export const SOLUTIONS_ITEMS: SolutionItem[] = [
     title: 'CUSTOM SOFTWARE',
     tagline: 'Software engineered around your unique business requirements and data pipelines.',
     href: '/solutions/custom-software',
-    color: '#30F1BE',
+    color: '#FBBF24',
   },
   {
     id: 'mobile-products',
@@ -189,7 +189,7 @@ export const SOLUTIONS_ITEMS: SolutionItem[] = [
     title: 'GROWTH & MARKETING',
     tagline: 'Combine technology, creative and marketing to accelerate compounding growth.',
     href: '/solutions/growth-marketing',
-    color: '#23F7DB',
+    color: '#F59E0B',
   },
 ];
 

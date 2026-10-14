@@ -15,7 +15,7 @@ export const ProjectApproach: React.FC<ProjectApproachProps> = ({ approach, acce
   return (
     <section className="py-12 md:py-16 border-b border-white/[0.08]">
       <div className="max-w-3xl mb-10">
-        <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block mb-2">
+        <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block mb-2">
           // METHODOLOGY & SPRINT TRAJECTORY
         </span>
         <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -50,7 +50,7 @@ export const ProjectApproach: React.FC<ProjectApproachProps> = ({ approach, acce
                 </span>
               </div>
 
-              <h3 className="text-base font-semibold text-white tracking-wide mb-2 group-hover:text-cyan-200 transition-colors">
+              <h3 className="text-base font-semibold text-white tracking-wide mb-2 group-hover:text-amber-200 transition-colors">
                 {stage.title}
               </h3>
 

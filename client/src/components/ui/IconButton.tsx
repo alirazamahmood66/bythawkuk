@@ -29,13 +29,13 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
 
     const variantClasses: Record<IconButtonVariant, string> = {
       primary:
-        'bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-md shadow-cyan-500/20 border border-cyan-400/40',
+        'bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-md shadow-amber-500/20 border border-amber-400/40',
       secondary:
-        'bg-[#061F25] hover:bg-[#061F25] text-slate-300 hover:text-white border border-white/10 hover:border-cyan-500/30',
+        'bg-[#070D18] hover:bg-[#070D18] text-slate-300 hover:text-white border border-white/10 hover:border-amber-500/30',
       ghost:
         'bg-transparent hover:bg-white/[0.06] text-slate-400 hover:text-slate-100 border border-transparent',
       glass:
-        'bg-white/[0.04] hover:bg-white/[0.08] backdrop-blur-md text-slate-300 hover:text-cyan-300 border border-white/10',
+        'bg-white/[0.04] hover:bg-white/[0.08] backdrop-blur-md text-slate-300 hover:text-amber-300 border border-white/10',
     };
 
     const sizeClasses: Record<IconButtonSize, string> = {

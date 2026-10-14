@@ -21,16 +21,16 @@ export const Badge: React.FC<BadgeProps> = ({
 }) => {
   const variantStyles: Record<BadgeVariant, { badge: string; dot: string }> = {
     cyan: {
-      badge: 'bg-[#23F7DB]/10 text-[#23F7DB] border-[#23F7DB]/30 shadow-[0_0_12px_rgba(35,247,219,0.2)]',
-      dot: 'bg-[#23F7DB]',
+      badge: 'bg-[#F59E0B]/10 text-[#F59E0B] border-[#F59E0B]/30 shadow-[0_0_12px_rgba(245, 158, 11, 0.2)]',
+      dot: 'bg-[#F59E0B]',
     },
     violet: {
-      badge: 'bg-[#04A37B]/15 text-[#30F1BE] border-[#04A37B]/30 shadow-[0_0_12px_rgba(48,241,190,0.15)]',
-      dot: 'bg-[#30F1BE]',
+      badge: 'bg-[#D97706]/15 text-[#FBBF24] border-[#D97706]/30 shadow-[0_0_12px_rgba(251, 191, 36, 0.15)]',
+      dot: 'bg-[#FBBF24]',
     },
     emerald: {
-      badge: 'bg-[#30F1BE]/10 text-[#30F1BE] border-[#30F1BE]/30 shadow-[0_0_12px_rgba(48,241,190,0.2)]',
-      dot: 'bg-[#30F1BE]',
+      badge: 'bg-[#FBBF24]/10 text-[#FBBF24] border-[#FBBF24]/30 shadow-[0_0_12px_rgba(251, 191, 36, 0.2)]',
+      dot: 'bg-[#FBBF24]',
     },
     amber: {
       badge: 'bg-amber-500/10 text-amber-300 border-amber-500/30',

@@ -30,15 +30,15 @@ export const InsightsCategoryFilter: React.FC<InsightsCategoryFilterProps> = ({
               aria-pressed={isActive}
               className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 flex items-center space-x-2 ${
                 isActive
-                  ? 'bg-cyan-400 text-[#001119] font-bold shadow-md shadow-cyan-500/20'
-                  : 'bg-[#061F25]/80 hover:bg-[#061F25] text-slate-300 hover:text-white border border-white/[0.08] hover:border-cyan-500/40'
+                  ? 'bg-cyan-400 text-[#020611] font-bold shadow-md shadow-amber-500/20'
+                  : 'bg-[#070D18]/80 hover:bg-[#070D18] text-slate-300 hover:text-white border border-white/[0.08] hover:border-amber-500/40'
               }`}
             >
               <span>{cat.label}</span>
               <span
                 className={`text-[10px] px-1.5 py-0.5 rounded-full font-mono ${
                   isActive
-                    ? 'bg-black/20 text-[#001119] font-bold'
+                    ? 'bg-black/20 text-[#020611] font-bold'
                     : 'bg-white/[0.08] text-slate-400'
                 }`}
               >

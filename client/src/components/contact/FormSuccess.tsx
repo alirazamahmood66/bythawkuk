@@ -20,14 +20,14 @@ export const FormSuccess: React.FC<FormSuccessProps> = ({
       variant="default"
       spotlight={true}
       withReticles={true}
-      className="py-12 sm:py-16 text-center max-w-xl mx-auto space-y-6 rounded-2xl bg-[#061F25]/90 border-white/[0.08] shadow-xl"
+      className="py-12 sm:py-16 text-center max-w-xl mx-auto space-y-6 rounded-2xl bg-[#070D18]/90 border-white/[0.08] shadow-xl"
     >
-      <div className="w-16 h-16 rounded-2xl bg-cyan-950/40 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mx-auto shadow-lg shadow-cyan-950/30">
+      <div className="w-16 h-16 rounded-2xl bg-amber-950/40 border border-amber-500/30 text-amber-400 flex items-center justify-center mx-auto shadow-lg shadow-amber-950/30">
         <CheckCircle2 className="w-8 h-8" />
       </div>
 
       <div className="space-y-2">
-        <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase">
+        <span className="text-xs font-mono tracking-wider text-amber-400 uppercase">
           ENQUIRY RECEIVED // REFERENCE: {referenceNumber}
         </span>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-sans">
@@ -40,9 +40,9 @@ export const FormSuccess: React.FC<FormSuccessProps> = ({
         Your enquiry has been received. Our team will review the details and determine the appropriate next step for your project.
       </p>
 
-      <div className="p-4 rounded-xl bg-cyan-950/30 border border-cyan-500/30 text-xs font-mono text-slate-300 flex items-center justify-center space-x-2">
+      <div className="p-4 rounded-xl bg-amber-950/30 border border-amber-500/30 text-xs font-mono text-slate-300 flex items-center justify-center space-x-2">
         <span>STATUS:</span>
-        <span className="text-cyan-400 font-bold">ENQUIRY LOGGED &bull; UNDER REVIEW</span>
+        <span className="text-amber-400 font-bold">ENQUIRY LOGGED &bull; UNDER REVIEW</span>
       </div>
 
       <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -65,7 +65,7 @@ export const FormSuccess: React.FC<FormSuccessProps> = ({
         <button
           type="button"
           onClick={onReset}
-          className="text-xs font-mono text-slate-400 hover:text-cyan-400 underline transition-colors"
+          className="text-xs font-mono text-slate-400 hover:text-amber-400 underline transition-colors"
         >
           Submit another project enquiry &rarr;
         </button>

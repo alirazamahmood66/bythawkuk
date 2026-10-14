@@ -67,8 +67,8 @@ export const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
               onClick={() => toggleType(option.id)}
               className={`p-5 rounded-xl border text-left transition-all duration-200 flex flex-col justify-between group focus:outline-none focus:ring-2 focus:ring-cyan-400/50 ${
                 isSelected
-                  ? 'bg-cyan-950/60 border-cyan-400 text-white shadow-lg shadow-cyan-950/40'
-                  : 'bg-[#061F25]/80 border-white/[0.08] hover:border-cyan-500/40 text-slate-300 hover:text-white'
+                  ? 'bg-amber-950/60 border-cyan-400 text-white shadow-lg shadow-amber-950/40'
+                  : 'bg-[#070D18]/80 border-white/[0.08] hover:border-amber-500/40 text-slate-300 hover:text-white'
               }`}
             >
               <div>
@@ -76,8 +76,8 @@ export const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
                   <span
                     className={`text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded border ${
                       isSelected
-                        ? 'bg-cyan-900/40 text-cyan-300 border-cyan-500/30 font-semibold'
-                        : 'bg-[#061F25]/60 text-slate-400 border-white/[0.08]'
+                        ? 'bg-cyan-900/40 text-amber-300 border-amber-500/30 font-semibold'
+                        : 'bg-[#070D18]/60 text-slate-400 border-white/[0.08]'
                     }`}
                   >
                     {option.category}
@@ -86,8 +86,8 @@ export const ProjectTypeSelector: React.FC<ProjectTypeSelectorProps> = ({
                   <div
                     className={`w-5 h-5 rounded-md flex items-center justify-center border transition-colors ${
                       isSelected
-                        ? 'bg-cyan-400 text-[#001119] border-cyan-400'
-                        : 'border-white/20 group-hover:border-cyan-400/50'
+                        ? 'bg-cyan-400 text-[#020611] border-cyan-400'
+                        : 'border-white/20 group-hover:border-amber-400/50'
                     }`}
                     aria-hidden="true"
                   >

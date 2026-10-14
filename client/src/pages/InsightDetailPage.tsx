@@ -87,26 +87,26 @@ export const InsightDetailPage: React.FC = () => {
   // Graceful Not-Found View if Slug Does Not Exist
   if (!article) {
     return (
-      <main className="min-h-screen bg-[#001119] text-[#E8FFFC] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
-            <div className="w-16 h-16 rounded-2xl bg-[#008C6B]/20 border border-[#04A37B]/30 flex items-center justify-center mx-auto text-[#23F7DB]">
+            <div className="w-16 h-16 rounded-2xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center mx-auto text-[#F59E0B]">
               <Compass className="w-8 h-8 animate-spin-slow" />
             </div>
 
             <div className="space-y-2">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase">
                 ERROR 404 // ARTICLE SPECIFICATION
               </span>
-              <h1 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 Insight Not Found
               </h1>
-              <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+              <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                 The article you're looking for doesn't exist or may have been updated. Explore our other editorial perspectives.
               </p>
             </div>
@@ -133,26 +133,26 @@ export const InsightDetailPage: React.FC = () => {
   return (
     <PageTransition>
       <CosmicScrollJourney />
-      <main className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <main className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Semantic Breadcrumbs */}
           <nav aria-label="Breadcrumbs" className="pt-6 pb-2">
             <ol className="flex flex-wrap items-center space-x-2 text-xs font-mono text-slate-400">
               <li className="flex items-center">
-                <Link to="/" className="hover:text-cyan-400 transition-colors flex items-center">
+                <Link to="/" className="hover:text-amber-400 transition-colors flex items-center">
                   <Home className="w-3.5 h-3.5 mr-1" />
                   <span>Home</span>
                 </Link>
               </li>
               <li className="flex items-center space-x-2">
                 <ChevronRight className="w-3.5 h-3.5 text-white/20" />
-                <Link to="/insights" className="hover:text-cyan-400 transition-colors">
+                <Link to="/insights" className="hover:text-amber-400 transition-colors">
                   Insights
                 </Link>
               </li>
               <li className="flex items-center space-x-2 text-white font-medium">
                 <ChevronRight className="w-3.5 h-3.5 text-white/20" />
-                <span aria-current="page" className="truncate max-w-[200px] sm:max-w-xs md:max-w-md text-cyan-300">
+                <span aria-current="page" className="truncate max-w-[200px] sm:max-w-xs md:max-w-md text-amber-300">
                   {article.title}
                 </span>
               </li>

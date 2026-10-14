@@ -15,7 +15,7 @@ export const ContactAlternative: React.FC = () => {
           className="lg:col-span-7 p-7 md:p-10 flex flex-col justify-between"
         >
           <div>
-            <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-4">
+            <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               <span>// ENGAGEMENT OVERVIEW</span>
             </div>
@@ -32,14 +32,14 @@ export const ContactAlternative: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-white/[0.08]">
             <div className="flex items-start space-x-3">
-              <MessageSquare className="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" />
+              <MessageSquare className="w-4 h-4 text-amber-400 mt-1 flex-shrink-0" />
               <div>
                 <span className="block text-xs font-mono text-white font-medium">STRUCTURED INTAKE</span>
                 <span className="text-xs text-slate-400">Detailed review of engineering specifications</span>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <Layers className="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" />
+              <Layers className="w-4 h-4 text-amber-400 mt-1 flex-shrink-0" />
               <div>
                 <span className="block text-xs font-mono text-white font-medium">TECHNICAL FIT</span>
                 <span className="text-xs text-slate-400">Architecture, security, and scalability evaluation</span>
@@ -58,8 +58,8 @@ export const ContactAlternative: React.FC = () => {
         >
           <div className="space-y-6">
             <div>
-              <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 uppercase mb-2">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" />
+              <div className="flex items-center space-x-2 text-xs font-mono text-amber-400 uppercase mb-2">
+                <MapPin className="w-3.5 h-3.5 text-amber-400" />
                 <span>STUDIO LOCATION</span>
               </div>
               <h3 className="text-xl font-bold text-white">London, United Kingdom</h3>
@@ -69,7 +69,7 @@ export const ContactAlternative: React.FC = () => {
             </div>
 
             <div className="rounded-xl bg-[#030914]/80 border border-white/[0.08] p-4 space-y-3">
-              <span className="text-xs font-mono text-cyan-400 tracking-wider uppercase block">
+              <span className="text-xs font-mono text-amber-400 tracking-wider uppercase block">
                 CORE DISCIPLINES
               </span>
               <ul className="space-y-2 text-xs text-slate-300">

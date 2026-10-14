@@ -85,7 +85,7 @@ export const SERVICES_ECOSYSTEM_DATA: EcosystemService[] = [
     description: 'Thoughtful mobile products designed for iOS, Android and modern cross-platform experiences.',
     route: '/services/mobile-app-development',
     category: 'MOBILE PLATFORMS',
-    color: '#30F1BE',
+    color: '#FBBF24',
     iconName: 'Smartphone',
   },
   {
@@ -112,7 +112,7 @@ export const SERVICES_ECOSYSTEM_DATA: EcosystemService[] = [
     description: 'Visual systems and creative assets that make your brand recognisable and consistent.',
     route: '/services/graphic-design',
     category: 'BRAND IDENTITY',
-    color: '#23F7DB',
+    color: '#F59E0B',
     iconName: 'Palette',
   },
   {
@@ -121,7 +121,7 @@ export const SERVICES_ECOSYSTEM_DATA: EcosystemService[] = [
     description: 'Clear, intuitive digital experiences that turn complex products into simple interactions.',
     route: '/services/ui-ux-design',
     category: 'EXPERIENCE CRAFT',
-    color: '#04A37B',
+    color: '#D97706',
     iconName: 'Layers',
   },
 ];
@@ -161,7 +161,7 @@ export const FEATURED_WORK_DATA: FeaturedProject[] = [
     services: ['Web Development', 'UI/UX Design', 'Technical SEO'],
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
     route: '/work/ceedrs-platform',
-    accentColor: '#30F1BE',
+    accentColor: '#FBBF24',
   },
   {
     id: 'project-4',

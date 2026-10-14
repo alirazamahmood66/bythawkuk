@@ -23,7 +23,7 @@ export const ServiceOverview: React.FC<ServiceOverviewProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
         {/* Left Narrative Column */}
         <div className="lg:col-span-6 space-y-6">
-          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase">
             <span>// STRATEGIC IMPERATIVE</span>
           </div>
 
@@ -51,7 +51,7 @@ export const ServiceOverview: React.FC<ServiceOverviewProps> = ({
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-5 sm:p-6 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 relative group shadow-md"
+              className="p-5 sm:p-6 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-md"
             >
               <div className="flex items-start space-x-3.5">
                 <div
@@ -65,7 +65,7 @@ export const ServiceOverview: React.FC<ServiceOverviewProps> = ({
                   <CheckCircle2 className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white tracking-wide group-hover:text-cyan-200 transition-colors font-sans">
+                  <h3 className="text-base font-bold text-white tracking-wide group-hover:text-amber-200 transition-colors font-sans">
                     {pillar.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed font-sans font-normal">

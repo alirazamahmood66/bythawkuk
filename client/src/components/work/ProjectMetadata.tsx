@@ -25,7 +25,7 @@ export const ProjectMetadata: React.FC<ProjectMetadataProps> = ({
     <div className="py-8 border-y border-white/[0.08] grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
       {/* Category */}
       <div>
-        <span className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold block mb-1.5">
+        <span className="text-[11px] font-mono tracking-wider text-amber-400 uppercase font-semibold block mb-1.5">
           CATEGORY
         </span>
         <span className="text-sm font-bold text-white font-sans">
@@ -40,7 +40,7 @@ export const ProjectMetadata: React.FC<ProjectMetadataProps> = ({
 
       {/* Services (with real links) */}
       <div>
-        <span className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold block mb-1.5">
+        <span className="text-[11px] font-mono tracking-wider text-amber-400 uppercase font-semibold block mb-1.5">
           SERVICES
         </span>
         <div className="flex flex-col space-y-1">
@@ -48,7 +48,7 @@ export const ProjectMetadata: React.FC<ProjectMetadataProps> = ({
             <Link
               key={svc.title}
               to={svc.route}
-              className="text-xs font-medium text-slate-300 hover:text-cyan-300 hover:underline inline-flex items-center transition-colors"
+              className="text-xs font-medium text-slate-300 hover:text-amber-300 hover:underline inline-flex items-center transition-colors"
             >
               <span>{svc.title} &rarr;</span>
             </Link>
@@ -58,7 +58,7 @@ export const ProjectMetadata: React.FC<ProjectMetadataProps> = ({
 
       {/* Representative Stack */}
       <div>
-        <span className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold block mb-1.5">
+        <span className="text-[11px] font-mono tracking-wider text-amber-400 uppercase font-semibold block mb-1.5">
           REPRESENTATIVE STACK
         </span>
         <div className="flex flex-wrap gap-1">
@@ -80,7 +80,7 @@ export const ProjectMetadata: React.FC<ProjectMetadataProps> = ({
 
       {/* Year & Horizon */}
       <div>
-        <span className="text-[11px] font-mono tracking-wider text-cyan-400 uppercase font-semibold block mb-1.5">
+        <span className="text-[11px] font-mono tracking-wider text-amber-400 uppercase font-semibold block mb-1.5">
           DELIVERY TIMELINE
         </span>
         <span className="text-sm font-bold text-white font-sans">

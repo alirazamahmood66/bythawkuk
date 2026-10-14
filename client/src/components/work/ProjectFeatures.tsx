@@ -16,7 +16,7 @@ export const ProjectFeatures: React.FC<ProjectFeaturesProps> = ({ features, acce
   return (
     <section className="py-12 md:py-16 border-b border-white/[0.08]">
       <div className="max-w-3xl mb-10">
-        <span className="text-xs font-mono tracking-wider text-cyan-400 uppercase block mb-2">
+        <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block mb-2">
           // ARCHITECTURAL CAPABILITIES
         </span>
         <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">

@@ -22,21 +22,21 @@ export const OrbitalDecoration: React.FC<OrbitalDecorationProps> = ({
     >
       {/* Outer Ellipse */}
       <div
-        className="w-full h-full rounded-full border border-[#23F7DB]/20"
+        className="w-full h-full rounded-full border border-[#F59E0B]/20"
         style={{
           transform: 'rotate(-25deg) scaleY(0.4)',
         }}
       />
       {/* Secondary Orbit with subtle dash */}
       <div
-        className="absolute w-[80%] h-[80%] rounded-full border border-dashed border-[#30F1BE]/20"
+        className="absolute w-[80%] h-[80%] rounded-full border border-dashed border-[#FBBF24]/20"
         style={{
           transform: 'rotate(-20deg) scaleY(0.4)',
         }}
       />
       {/* Micro Planetary Node */}
       <div
-        className="absolute top-[28%] right-[14%] w-2 h-2 rounded-full bg-[#23F7DB] shadow-[0_0_8px_rgba(35,247,219,0.8)]"
+        className="absolute top-[28%] right-[14%] w-2 h-2 rounded-full bg-[#F59E0B] shadow-[0_0_8px_rgba(245, 158, 11, 0.8)]"
       />
     </div>
   );

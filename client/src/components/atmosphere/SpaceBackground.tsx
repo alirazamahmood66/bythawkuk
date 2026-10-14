@@ -25,7 +25,7 @@ export const SpaceBackground: React.FC<SpaceBackgroundProps> = ({
   className = '',
 }) => {
   return (
-    <div className={`relative w-full overflow-hidden bg-[#001119] ${className}`}>
+    <div className={`relative w-full overflow-hidden bg-[#020611] ${className}`}>
       {/* Background Atmosphere Layers */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <MilkyWayDustEngine />

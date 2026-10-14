@@ -15,7 +15,7 @@ export const ContactFaq: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Context */}
         <div className="lg:col-span-4 space-y-4">
-          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>// FREQUENTLY ASKED QUESTIONS</span>
           </div>
@@ -36,7 +36,7 @@ export const ContactFaq: React.FC = () => {
               spotlightColor="rgba(32, 217, 243, 0.1)"
               className="p-5"
             >
-              <span className="text-xs font-mono text-cyan-400 uppercase block mb-1">
+              <span className="text-xs font-mono text-amber-400 uppercase block mb-1">
                 READY TO BEGIN?
               </span>
               <p className="text-xs text-slate-300 mb-3 font-light leading-relaxed">
@@ -44,7 +44,7 @@ export const ContactFaq: React.FC = () => {
               </p>
               <a
                 href="/process"
-                className="text-xs font-mono font-medium text-cyan-400 hover:text-cyan-300 hover:underline inline-flex items-center"
+                className="text-xs font-mono font-medium text-amber-400 hover:text-amber-300 hover:underline inline-flex items-center"
               >
                 <span>Explore our 6-stage process &rarr;</span>
               </a>
@@ -80,7 +80,7 @@ export const ContactFaq: React.FC = () => {
                     <span className="pr-4">{faq.question}</span>
                     <ChevronDown
                       className={`w-4 h-4 text-slate-400 transition-transform duration-200 flex-shrink-0 ${
-                        isOpen ? 'rotate-180 text-cyan-400' : ''
+                        isOpen ? 'rotate-180 text-amber-400' : ''
                       }`}
                     />
                   </button>

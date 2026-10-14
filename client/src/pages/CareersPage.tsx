@@ -160,45 +160,45 @@ export const CareersPage: React.FC = () => {
           <img
             src="/images/cosmic/astronaut_eva_spacewalker.png"
             alt="Deep-space EVA astronaut spacewalker"
-            className="w-full h-full object-contain filter drop-shadow-[0_0_60px_rgba(35,247,219,0.55)] opacity-95"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_60px_rgba(245, 158, 11, 0.55)] opacity-95"
             style={{ mixBlendMode: 'screen' }}
             loading="eager"
           />
         </div>
       </motion.div>
 
-      <div className="relative z-10 min-h-screen text-[#E8FFFC] selection:bg-[#008C6B]/30 selection:text-[#30F1BE]">
+      <div className="relative z-10 min-h-screen text-[#FFFBEB] selection:bg-[#EA580C]/30 selection:text-[#FBBF24]">
         <Container>
           {/* Hero Section */}
-          <section className="pt-12 pb-16 md:pt-20 md:pb-24 border-b border-[#E8FFFC]/[0.08]">
+          <section className="pt-12 pb-16 md:pt-20 md:pb-24 border-b border-[#FFFBEB]/[0.08]">
             <div className="max-w-4xl space-y-6">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#008C6B]/20 border border-[#04A37B]/30 backdrop-blur-sm shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-[#23F7DB]" />
-                <span className="text-xs font-mono font-medium tracking-wider text-[#30F1BE]">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EA580C]/20 border border-[#D97706]/30 backdrop-blur-sm shadow-sm">
+                <Sparkles className="w-3.5 h-3.5 text-[#F59E0B]" />
+                <span className="text-xs font-mono font-medium tracking-wider text-[#FBBF24]">
                   BYTHAWK // STUDIO TALENT & CULTURE
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#E8FFFC] leading-[1.1] font-sans">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#FFFBEB] leading-[1.1] font-sans">
                 Build the Future of <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C]">
                   Digital Worlds With Us.
                 </span>
               </h1>
 
-              <p className="text-base sm:text-xl text-[#E8FFFC]/70 leading-relaxed font-light max-w-3xl">
+              <p className="text-base sm:text-xl text-[#FFFBEB]/70 leading-relaxed font-light max-w-3xl">
                 We are a dedicated UK digital technology studio obsessed with high-performance software engineering, cinematic visual craft, and sub-second web experiences. We hire autonomous, craft-focused builders who take immense pride in their work.
               </p>
             </div>
           </section>
 
           {/* Studio Culture & Values */}
-          <section className="py-16 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-16 border-b border-[#FFFBEB]/[0.08]">
             <div className="mb-10">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                 // HOW WE OPERATE
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans mt-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans mt-2">
                 Our Engineering Philosophy
               </h2>
             </div>
@@ -231,15 +231,15 @@ export const CareersPage: React.FC = () => {
                   variant="default"
                   spotlight={true}
                   withReticles={true}
-                  className="p-6 bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-3 rounded-2xl"
+                  className="p-6 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-3 rounded-2xl"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-[#008C6B]/20 border border-[#04A37B]/30 flex items-center justify-center text-[#23F7DB]">
+                  <div className="w-10 h-10 rounded-xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center text-[#F59E0B]">
                     <perk.icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#E8FFFC] font-sans">
+                  <h3 className="text-lg font-bold text-[#FFFBEB] font-sans">
                     {perk.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                  <p className="text-xs sm:text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                     {perk.desc}
                   </p>
                 </Card>
@@ -248,19 +248,19 @@ export const CareersPage: React.FC = () => {
           </section>
 
           {/* Open Positions List */}
-          <section className="py-16 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-16 border-b border-[#FFFBEB]/[0.08]">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
               <div>
-                <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+                <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                   // CURRENT OPENINGS
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#E8FFFC] tracking-tight font-sans mt-2">
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#FFFBEB] tracking-tight font-sans mt-2">
                   Active Positions ({OPEN_POSITIONS.length})
                 </h2>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#30F1BE] animate-pulse" />
-                <span className="text-xs font-mono text-[#30F1BE] font-semibold uppercase">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FBBF24] animate-pulse" />
+                <span className="text-xs font-mono text-[#FBBF24] font-semibold uppercase">
                   APPLICATIONS ACTIVELY REVIEWED
                 </span>
               </div>
@@ -273,14 +273,14 @@ export const CareersPage: React.FC = () => {
                   variant="interactive"
                   spotlight={true}
                   withReticles={true}
-                  className="p-6 sm:p-8 bg-[#061F25]/85 border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/40 transition-all rounded-2xl"
+                  className="p-6 sm:p-8 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all rounded-2xl"
                 >
                   <div className="space-y-6">
                     {/* Header Strip */}
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                       <div>
                         <div className="flex items-center gap-2 mb-2">
-                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#008C6B]/20 border border-[#04A37B]/30 text-[#30F1BE] font-bold uppercase">
+                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#EA580C]/20 border border-[#D97706]/30 text-[#FBBF24] font-bold uppercase">
                             {job.department}
                           </span>
                           <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.04] border border-white/[0.08] text-slate-400 uppercase">
@@ -293,7 +293,7 @@ export const CareersPage: React.FC = () => {
                       </div>
 
                       <div className="flex items-center gap-1.5 text-xs font-mono text-slate-400 shrink-0">
-                        <MapPin className="w-3.5 h-3.5 text-cyan-400" />
+                        <MapPin className="w-3.5 h-3.5 text-amber-400" />
                         <span>{job.location}</span>
                       </div>
                     </div>
@@ -306,13 +306,13 @@ export const CareersPage: React.FC = () => {
                     {/* Responsibilities & Requirements Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 border-t border-white/[0.06]">
                       <div className="space-y-2">
-                        <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold block">
+                        <span className="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold block">
                           RESPONSIBILITIES:
                         </span>
                         <ul className="space-y-1.5 text-xs text-slate-300">
                           {job.responsibilities.map((r, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                              <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
                               <span>{r}</span>
                             </li>
                           ))}
@@ -320,13 +320,13 @@ export const CareersPage: React.FC = () => {
                       </div>
 
                       <div className="space-y-2">
-                        <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold block">
+                        <span className="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold block">
                           REQUIREMENTS:
                         </span>
                         <ul className="space-y-1.5 text-xs text-slate-300">
                           {job.requirements.map((req, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                              <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
                               <span>{req}</span>
                             </li>
                           ))}
@@ -337,12 +337,12 @@ export const CareersPage: React.FC = () => {
                     {/* Apply Action */}
                     <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
                       <span className="text-xs font-mono text-slate-400">
-                        Reference: <code className="text-cyan-300 font-mono">BYTHAWK-HR-{job.id.toUpperCase()}</code>
+                        Reference: <code className="text-amber-300 font-mono">BYTHAWK-HR-{job.id.toUpperCase()}</code>
                       </span>
 
                       <a
                         href={`mailto:careers@bythawk.uk?subject=Application:%20${encodeURIComponent(job.title)}`}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-lg shadow-cyan-500/25"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-lg shadow-amber-500/25"
                       >
                         <Mail className="w-3.5 h-3.5" />
                         <span>Apply via Email</span>
@@ -360,21 +360,21 @@ export const CareersPage: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-8 sm:p-12 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
+              className="p-8 sm:p-12 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
             >
-              <span className="text-xs font-mono tracking-widest text-[#23F7DB] uppercase font-semibold">
+              <span className="text-xs font-mono tracking-widest text-[#F59E0B] uppercase font-semibold">
                 // SPECULATIVE ENQUIRIES
               </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#E8FFFC] tracking-tight font-sans">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#FFFBEB] tracking-tight font-sans">
                 Don’t See Your Exact Role?
               </h2>
-              <p className="text-sm sm:text-base text-[#E8FFFC]/70 leading-relaxed font-sans max-w-xl mx-auto">
+              <p className="text-sm sm:text-base text-[#FFFBEB]/70 leading-relaxed font-sans max-w-xl mx-auto">
                 We are always excited to connect with exceptional engineers, 3D artists, and product strategists. Send your GitHub, portfolio, and an introductory note directly to our team.
               </p>
               <div className="pt-2">
                 <a
                   href="mailto:careers@bythawk.uk?subject=Speculative%20Enquiry%20-%20Bythawk"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-mono text-xs font-bold text-[#30F1BE] bg-[#001119] hover:bg-[#061F25] border border-[#04A37B]/40 hover:border-[#23F7DB] transition-all shadow-md"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#020611] hover:bg-[#070D18] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all shadow-md"
                 >
                   <Mail className="w-4 h-4" />
                   <span>careers@bythawk.uk</span>

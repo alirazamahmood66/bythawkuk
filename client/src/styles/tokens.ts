@@ -5,60 +5,60 @@
  */
 
 export const colors = {
-  // Primary Environment (Aqua Mint Palette — Bythawk)
+  // Primary Environment (Solar Gold & Obsidian Amber — Bythawk)
   background: {
-    deep: '#001119',      // Midnight Teal (cosmic void baseline)
-    navy: '#001119',      // Midnight Teal
-    surface: '#061F25',   // Dark Teal (standard card/panel surface)
-    elevated: '#092c34',  // Elevated dropdowns, modals, floating panels
-    sunken: '#000c12',    // Deep sunken inputs, code blocks
+    deep: '#020611',      // Obsidian Void (cosmic void baseline)
+    navy: '#020611',      // Obsidian Void
+    surface: '#070D18',   // Dark Obsidian Glass (standard card/panel surface)
+    elevated: '#0C1527',  // Elevated dropdowns, modals, floating panels
+    sunken: '#010309',    // Deep sunken inputs, code blocks
   },
 
   // Glassmorphic Overlays (Translucent with blur)
   glass: {
-    base: 'rgba(6, 31, 37, 0.65)',
-    elevated: 'rgba(6, 31, 37, 0.85)',
-    subtle: 'rgba(232, 255, 252, 0.04)',
-    highlight: 'rgba(232, 255, 252, 0.08)',
+    base: 'rgba(7, 13, 24, 0.65)',
+    elevated: 'rgba(7, 13, 24, 0.88)',
+    subtle: 'rgba(245, 158, 11, 0.05)',
+    highlight: 'rgba(245, 158, 11, 0.1)',
   },
 
   // Borders (Precision micro-borders)
   border: {
-    subtle: 'rgba(232, 255, 252, 0.08)',
-    medium: 'rgba(48, 241, 190, 0.2)',
-    accent: 'rgba(35, 247, 219, 0.4)',      // Neon Cyan glow border
-    mint: 'rgba(4, 163, 123, 0.4)',        // Aqua Mint border
-    active: 'rgba(35, 247, 219, 0.6)',      // Active interactive border
+    subtle: 'rgba(245, 158, 11, 0.14)',
+    medium: 'rgba(245, 158, 11, 0.28)',
+    accent: 'rgba(251, 191, 36, 0.45)',    // Solar Flare gold glow border
+    gold: 'rgba(245, 158, 11, 0.4)',       // Solar Gold border
+    active: 'rgba(245, 158, 11, 0.65)',    // Active interactive border
   },
 
   // Typography Hierarchy
   text: {
-    primary: '#E8FFFC',    // Ice White
-    secondary: '#9edcd2',  // Refined mint-slate
-    muted: '#5e948c',      // Subdued metadata & telemetry
-    accentCyan: '#23F7DB', // Neon Cyan
-    accentMint: '#30F1BE', // Neon Mint
-    inverse: '#001119',    // Midnight Teal (inverse dark on bright accents)
+    primary: '#FFFBEB',    // Warm Starlight White
+    secondary: '#CBD5E1',  // Refined Slate Silver
+    muted: '#94A3B8',      // Subdued metadata & telemetry
+    accentGold: '#F59E0B', // Solar Gold
+    accentFlare: '#FBBF24',// Solar Flare
+    inverse: '#020611',    // Obsidian Void (inverse dark on bright gold accents)
   },
 
-  // Accents (Official Aqua Mint Palette — Bythawk)
+  // Accents (Solar Gold & Obsidian Amber Palette — Bythawk)
   accent: {
-    deepAqua: '#008C6B',     // Deep Aqua Green
-    aquaMint: '#04A37B',     // Aqua Mint
-    neonMint: '#30F1BE',     // Neon Mint
-    neonCyan: '#23F7DB',     // Neon Cyan
-    iceWhite: '#E8FFFC',     // Ice White
-    midnightTeal: '#001119', // Midnight Teal
-    darkTeal: '#061F25',     // Dark Teal
+    solarGold: '#F59E0B',    // Primary Brand Solar Gold
+    solarFlare: '#FBBF24',   // Solar Flare / Highlight
+    sunsetAmber: '#EA580C',  // Deep Sunset Amber
+    goldLight: '#FDE047',    // Light Gold
+    obsidianVoid: '#020611', // Obsidian Void
+    obsidianGlass: '#070D18',// Dark Obsidian Glass
+    starlightWhite: '#FFFBEB',// Warm White
     white: '#ffffff',
   },
 
   // Semantic Alerts
   semantic: {
-    success: '#30F1BE',
-    warning: '#f59e0b',
+    success: '#10b981',
+    warning: '#F59E0B',
     error: '#ef4444',
-    info: '#23F7DB',
+    info: '#38bdf8',
   },
 } as const;
 

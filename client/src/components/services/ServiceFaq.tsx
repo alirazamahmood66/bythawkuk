@@ -25,7 +25,7 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
         {/* Left Column: Context */}
         <div className="lg:col-span-4 space-y-4">
-          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>// FREQUENTLY ASKED QUESTIONS</span>
           </div>
@@ -44,9 +44,9 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-5 rounded-2xl bg-[#061F25]/90 border-white/[0.08]"
+              className="p-5 rounded-2xl bg-[#070D18]/90 border-white/[0.08]"
             >
-              <span className="text-xs font-mono text-cyan-400 uppercase block mb-1">
+              <span className="text-xs font-mono text-amber-400 uppercase block mb-1">
                 NEED BESPOKE ADVICE?
               </span>
               <p className="text-xs text-slate-300 mb-3 font-sans">
@@ -54,7 +54,7 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
               </p>
               <a
                 href="/contact"
-                className="text-xs font-mono font-bold text-cyan-300 hover:text-white inline-flex items-center gap-1.5 transition-colors"
+                className="text-xs font-mono font-bold text-amber-300 hover:text-white inline-flex items-center gap-1.5 transition-colors"
               >
                 <span>Talk with an engineer</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -76,7 +76,7 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
                 variant="default"
                 spotlight={true}
                 spotlightColor="rgba(32, 217, 243, 0.08)"
-                className="rounded-2xl bg-[#061F25]/85 border-white/[0.08] hover:border-cyan-500/30 overflow-hidden transition-all duration-200"
+                className="rounded-2xl bg-[#070D18]/85 border-white/[0.08] hover:border-amber-500/30 overflow-hidden transition-all duration-200"
               >
                 <h3>
                   <button
@@ -89,7 +89,7 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
                     <span className="pr-4">{faq.question}</span>
                     <ChevronDown
                       className={`w-4 h-4 text-slate-400 transition-transform duration-200 flex-shrink-0 ${
-                        isOpen ? 'rotate-180 text-cyan-400' : ''
+                        isOpen ? 'rotate-180 text-amber-400' : ''
                       }`}
                       style={{ color: isOpen ? accentColor : undefined }}
                     />

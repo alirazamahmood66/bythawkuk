@@ -19,7 +19,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ document }) => {
   return (
     <PageTransition>
       <CosmicScrollJourney />
-      <article className="relative z-10 min-h-screen text-white selection:bg-cyan-500/20 selection:text-cyan-300">
+      <article className="relative z-10 min-h-screen text-white selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Document Header */}
           <LegalHeader
@@ -38,7 +38,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ document }) => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                className="rounded-2xl bg-[#061F25]/90 border-white/[0.08] p-6 sm:p-10 space-y-6 shadow-xl"
+                className="rounded-2xl bg-[#070D18]/90 border-white/[0.08] p-6 sm:p-10 space-y-6 shadow-xl"
               >
                 {document.sections.map((section) => (
                   <LegalSectionView key={section.id} section={section} />
@@ -50,10 +50,10 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ document }) => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                className="p-6 sm:p-8 rounded-2xl bg-[#061F25]/90 border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl"
+                className="p-6 sm:p-8 rounded-2xl bg-[#070D18]/90 border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl"
               >
                 <div className="space-y-1">
-                  <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider block">
+                  <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block">
                     LEGAL & DATA GOVERNANCE
                   </span>
                   <p className="text-xs sm:text-sm text-slate-300 font-sans">
@@ -62,7 +62,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ document }) => {
                 </div>
                 <Link to="/contact">
                   <Button variant="secondary" size="sm" className="whitespace-nowrap flex items-center">
-                    <MessageSquare className="w-3.5 h-3.5 mr-2 text-cyan-400" />
+                    <MessageSquare className="w-3.5 h-3.5 mr-2 text-amber-400" />
                     <span>Contact Governance</span>
                     <ArrowRight className="w-3.5 h-3.5 ml-2" />
                   </Button>

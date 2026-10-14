@@ -24,7 +24,7 @@ export const NavItem: React.FC<NavItemProps> = ({
 }) => {
   const commonClasses = `relative inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer select-none focus-ring ${
     isActiveRoute || isOpen
-      ? 'text-cyan-300 bg-white/[0.04]'
+      ? 'text-amber-300 bg-white/[0.04]'
       : 'text-slate-300 hover:text-white hover:bg-white/[0.02]'
   }`;
 
@@ -42,7 +42,7 @@ export const NavItem: React.FC<NavItemProps> = ({
         <span>{label}</span>
         <ChevronDown
           className={`w-3.5 h-3.5 transition-transform duration-200 text-slate-400 ${
-            isOpen ? 'rotate-180 text-cyan-400' : ''
+            isOpen ? 'rotate-180 text-amber-400' : ''
           }`}
           aria-hidden="true"
         />
@@ -58,7 +58,7 @@ export const NavItem: React.FC<NavItemProps> = ({
       to={href || '#'}
       onClick={onClick}
       className={({ isActive }) =>
-        `${commonClasses} ${isActive ? 'text-cyan-300 bg-white/[0.04]' : ''}`
+        `${commonClasses} ${isActive ? 'text-amber-300 bg-white/[0.04]' : ''}`
       }
     >
       <span>{label}</span>

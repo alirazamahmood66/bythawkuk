@@ -70,7 +70,7 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
           placeholder="Tell us what you're building, what you're trying to improve, your primary objectives, and what success would look like."
           aria-invalid={Boolean(errors.description)}
           aria-describedby={errors.description ? 'desc-error' : 'desc-hint'}
-          className={`w-full p-4 rounded-xl bg-[#061F25]/90 border text-white placeholder-slate-400 text-sm leading-relaxed transition-all focus:outline-none focus:ring-2 ${
+          className={`w-full p-4 rounded-xl bg-[#070D18]/90 border text-white placeholder-slate-400 text-sm leading-relaxed transition-all focus:outline-none focus:ring-2 ${
             errors.description
               ? 'border-red-500 focus:ring-red-500/50'
               : 'border-white/[0.08] focus:border-cyan-400 focus:ring-cyan-400/50'
@@ -106,7 +106,7 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
             value={company}
             onChange={(e) => onCompanyChange(e.target.value)}
             placeholder="e.g. Acme Health UK"
-            className="w-full px-4 py-3 rounded-xl bg-[#061F25]/90 border border-white/[0.08] text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50"
+            className="w-full px-4 py-3 rounded-xl bg-[#070D18]/90 border border-white/[0.08] text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/50"
           />
         </div>
 
@@ -128,7 +128,7 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
             placeholder="https://example.co.uk"
             aria-invalid={Boolean(errors.website)}
             aria-describedby={errors.website ? 'website-error' : undefined}
-            className={`w-full px-4 py-3 rounded-xl bg-[#061F25]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${
+            className={`w-full px-4 py-3 rounded-xl bg-[#070D18]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${
               errors.website
                 ? 'border-red-500 focus:ring-red-500/50'
                 : 'border-white/[0.08] focus:border-cyan-400 focus:ring-cyan-400/50'
@@ -162,8 +162,8 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
                 onClick={() => onBudgetChange(opt.id)}
                 className={`p-3 rounded-xl border text-left transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 ${
                   isSelected
-                    ? 'bg-cyan-950/60 border-cyan-400 text-white shadow-md shadow-cyan-950/40'
-                    : 'bg-[#061F25]/80 border-white/[0.08] hover:border-cyan-500/40 text-slate-300 hover:text-white'
+                    ? 'bg-amber-950/60 border-cyan-400 text-white shadow-md shadow-amber-950/40'
+                    : 'bg-[#070D18]/80 border-white/[0.08] hover:border-amber-500/40 text-slate-300 hover:text-white'
                 }`}
               >
                 <div className="text-xs font-bold text-white tracking-wide font-sans">
@@ -198,8 +198,8 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
                 onClick={() => onTimelineChange(opt.id)}
                 className={`p-3 rounded-xl border text-left transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 ${
                   isSelected
-                    ? 'bg-cyan-950/60 border-cyan-400 text-white shadow-md shadow-cyan-950/40'
-                    : 'bg-[#061F25]/80 border-white/[0.08] hover:border-cyan-500/40 text-slate-300 hover:text-white'
+                    ? 'bg-amber-950/60 border-cyan-400 text-white shadow-md shadow-amber-950/40'
+                    : 'bg-[#070D18]/80 border-white/[0.08] hover:border-amber-500/40 text-slate-300 hover:text-white'
                 }`}
               >
                 <div className="text-xs font-bold text-white tracking-wide font-sans">

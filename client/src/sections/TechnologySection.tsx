@@ -28,9 +28,9 @@ export const TechnologySection: React.FC = () => {
       <Container size="xl">
         <SectionHeading
           eyebrow="ENGINEERING STACK // 05"
-          title="Technology"
+          title="The Technology"
           highlight="Ecosystem"
-          description="We choose technology based on the problem, not the trend. Modern, scalable, and battle-tested frameworks tailored for production reliability."
+          description="We use a modern, proven tech stack to build future-ready products that perform, grow and adapt to your business needs."
         />
 
         {/* Categorized Architecture Grid */}
@@ -45,27 +45,27 @@ export const TechnologySection: React.FC = () => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                spotlightColor="rgba(35, 247, 219, 0.14)"
-                className="p-6 sm:p-7 relative bg-[#061F25]/75 border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/50 transition-all flex flex-col justify-between group"
+                spotlightColor="rgba(245, 158, 11, 0.14)"
+                className="p-6 sm:p-7 relative bg-[#070D18]/75 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 transition-all flex flex-col justify-between group"
               >
                 <div>
                   {/* Technical Header Bar */}
-                  <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#E8FFFC]/[0.06] text-[11px] font-mono">
-                    <span className="text-[#23F7DB] font-semibold tracking-wider">
+                  <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#FFFBEB]/[0.06] text-[11px] font-mono">
+                    <span className="text-[#F59E0B] font-semibold tracking-wider">
                       MOD 0{idx + 1} // {cat.category.toUpperCase().split(' ')[0]}
                     </span>
-                    <div className="flex items-center gap-1.5 text-[#30F1BE]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#30F1BE] animate-pulse" />
+                    <div className="flex items-center gap-1.5 text-[#FBBF24]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FBBF24] animate-pulse" />
                       <span className="text-[10px] tracking-widest uppercase">ACTIVE</span>
                     </div>
                   </div>
 
                   {/* Icon & Category Title */}
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-lg bg-[#04A37B]/15 border border-[#30F1BE]/30 flex items-center justify-center shrink-0 text-[#23F7DB] group-hover:scale-105 group-hover:border-[#23F7DB] transition-all duration-300">
-                      <Icon className="w-4 h-4 text-[#23F7DB]" />
+                    <div className="w-9 h-9 rounded-lg bg-[#D97706]/15 border border-[#FBBF24]/30 flex items-center justify-center shrink-0 text-[#F59E0B] group-hover:scale-105 group-hover:border-[#F59E0B] transition-all duration-300">
+                      <Icon className="w-4 h-4 text-[#F59E0B]" />
                     </div>
-                    <h3 className="text-base font-bold text-[#E8FFFC] font-sans tracking-tight group-hover:text-[#23F7DB] transition-colors">
+                    <h3 className="text-base font-bold text-[#FFFBEB] font-sans tracking-tight group-hover:text-[#F59E0B] transition-colors">
                       {cat.category}
                     </h3>
                   </div>
@@ -75,18 +75,18 @@ export const TechnologySection: React.FC = () => {
                   </p>
 
                   {/* Architectural Benchmark Telemetry */}
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#04A37B]/15 border border-[#30F1BE]/20 text-[10px] font-mono text-[#23F7DB] mb-5">
-                    <Activity className="w-3 h-3 text-[#23F7DB] shrink-0" />
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#D97706]/15 border border-[#FBBF24]/20 text-[10px] font-mono text-[#F59E0B] mb-5">
+                    <Activity className="w-3 h-3 text-[#F59E0B] shrink-0" />
                     <span>{benchmark}</span>
                   </div>
                 </div>
 
                 {/* Technologies Badges */}
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-[#E8FFFC]/[0.06]">
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-[#FFFBEB]/[0.06]">
                   {cat.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="font-mono text-xs px-2.5 py-1 rounded-md bg-[#001119] text-[#9edcd2] border border-[#E8FFFC]/[0.08] hover:border-[#23F7DB]/50 hover:text-[#23F7DB] hover:bg-[#04A37B]/15 transition-all cursor-default"
+                      className="font-mono text-xs px-2.5 py-1 rounded-md bg-[#020611] text-[#9edcd2] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:text-[#F59E0B] hover:bg-[#D97706]/15 transition-all cursor-default"
                     >
                       {tech}
                     </span>

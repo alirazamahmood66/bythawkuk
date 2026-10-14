@@ -18,7 +18,7 @@ export const ServiceBenefits: React.FC<ServiceBenefitsProps> = ({
     <section className="py-16 md:py-20 border-b border-white/[0.08]">
       {/* Section Header */}
       <div className="max-w-3xl mb-12">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-3">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">
           <span>// STRATEGIC ADVANTAGE</span>
         </div>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
@@ -38,7 +38,7 @@ export const ServiceBenefits: React.FC<ServiceBenefitsProps> = ({
             spotlight={true}
             withReticles={true}
             spotlightColor="rgba(32, 217, 243, 0.14)"
-            className="p-7 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 relative group shadow-lg"
+            className="p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-lg"
           >
             <div className="flex items-start space-x-4">
               <div
@@ -53,7 +53,7 @@ export const ServiceBenefits: React.FC<ServiceBenefitsProps> = ({
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-white tracking-wide group-hover:text-cyan-200 transition-colors font-sans">
+                <h3 className="text-lg font-bold text-white tracking-wide group-hover:text-amber-200 transition-colors font-sans">
                   {benefit.title}
                 </h3>
                 <p className="text-sm text-slate-300 mt-2 leading-relaxed font-sans font-normal">

@@ -24,7 +24,7 @@ export const NebulaLayer: React.FC<NebulaLayerProps> = ({
       <div
         className="absolute -top-[15%] -right-[10%] w-[650px] h-[650px] rounded-full filter blur-[120px]"
         style={{
-          background: 'radial-gradient(circle, rgba(35, 247, 219, 0.18) 0%, rgba(4, 163, 123, 0.08) 50%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, rgba(217, 119, 6, 0.08) 50%, transparent 70%)',
         }}
       />
 
@@ -32,7 +32,7 @@ export const NebulaLayer: React.FC<NebulaLayerProps> = ({
       <div
         className="absolute top-[35%] -left-[15%] w-[750px] h-[750px] rounded-full filter blur-[140px]"
         style={{
-          background: 'radial-gradient(circle, rgba(48, 241, 190, 0.15) 0%, rgba(0, 140, 107, 0.06) 50%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, rgba(234, 88, 12, 0.06) 50%, transparent 70%)',
         }}
       />
 

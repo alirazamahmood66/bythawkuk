@@ -21,7 +21,7 @@ export const InsightCard: React.FC<InsightCardProps> = ({ article }) => {
       <div>
         {/* Category & Status Badges */}
         <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-white/[0.06]">
-          <span className="font-mono text-xs text-cyan-300 bg-cyan-950/40 border border-cyan-500/30 px-2.5 py-0.5 rounded-full">
+          <span className="font-mono text-xs text-amber-300 bg-amber-950/40 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
             {article.category}
           </span>
           <span className="text-[10px] font-mono text-slate-400 bg-white/[0.04] border border-white/[0.08] px-2 py-0.5 rounded">
@@ -30,7 +30,7 @@ export const InsightCard: React.FC<InsightCardProps> = ({ article }) => {
         </div>
 
         {/* Title */}
-        <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-cyan-200 transition-colors mb-3">
+        <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight leading-snug group-hover:text-amber-200 transition-colors mb-3">
           <Link to={`/insights/${article.slug}`}>
             {article.title}
           </Link>
@@ -45,13 +45,13 @@ export const InsightCard: React.FC<InsightCardProps> = ({ article }) => {
       {/* Footer Info & Action */}
       <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between text-xs font-mono">
         <div className="flex items-center space-x-1.5 text-slate-400">
-          <Clock className="w-3.5 h-3.5 text-cyan-400" />
+          <Clock className="w-3.5 h-3.5 text-amber-400" />
           <span>{article.readTime}</span>
         </div>
 
         <Link
           to={`/insights/${article.slug}`}
-          className="inline-flex items-center space-x-1 text-cyan-400 hover:text-cyan-300 group-hover:translate-x-0.5 transition-transform font-medium"
+          className="inline-flex items-center space-x-1 text-amber-400 hover:text-amber-300 group-hover:translate-x-0.5 transition-transform font-medium"
           aria-label={`Read insight: ${article.title}`}
         >
           <span>Read</span>

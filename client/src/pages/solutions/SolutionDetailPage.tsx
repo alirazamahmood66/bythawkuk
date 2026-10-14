@@ -41,23 +41,23 @@ export const SolutionDetailPage: React.FC = () => {
 
   if (!solution) {
     return (
-      <main className="min-h-screen bg-[#001119] text-[#E8FFFC] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
             <div className="space-y-2">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase">
                 ERROR 404 // SOLUTION SPECIFICATION
               </span>
-              <h1 className="text-2xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h1 className="text-2xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 Solution Not Found
               </h1>
-              <p className="text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
-                The requested solution coordinate <code className="text-[#30F1BE] font-mono text-xs bg-[#008C6B]/30 px-1.5 py-0.5 rounded border border-[#04A37B]/40">/{slug}</code> could not be located in our solutions registry.
+              <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
+                The requested solution coordinate <code className="text-[#FBBF24] font-mono text-xs bg-[#EA580C]/30 px-1.5 py-0.5 rounded border border-[#D97706]/40">/{slug}</code> could not be located in our solutions registry.
               </p>
             </div>
             <div className="pt-2 flex justify-center gap-4">
@@ -88,13 +88,13 @@ export const SolutionDetailPage: React.FC = () => {
     <PageTransition>
       <CosmicScrollJourney />
 
-      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-cyan-300">
+      <div className="relative z-10 min-h-screen text-space-text selection:bg-cyan-500/20 selection:text-amber-300">
         <Container>
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="py-4">
             <ol className="flex items-center space-x-2 text-xs font-mono tracking-wider text-slate-400 flex-wrap">
               <li>
-                <Link to="/" className="flex items-center hover:text-cyan-400 transition-colors px-1">
+                <Link to="/" className="flex items-center hover:text-amber-400 transition-colors px-1">
                   <Home className="w-3.5 h-3.5 mr-1" />
                   <span>HOME</span>
                 </Link>
@@ -103,7 +103,7 @@ export const SolutionDetailPage: React.FC = () => {
                 <ChevronRight className="w-3.5 h-3.5" />
               </li>
               <li>
-                <Link to="/solutions" className="hover:text-cyan-400 transition-colors px-1">
+                <Link to="/solutions" className="hover:text-amber-400 transition-colors px-1">
                   <span>SOLUTIONS</span>
                 </Link>
               </li>
@@ -111,7 +111,7 @@ export const SolutionDetailPage: React.FC = () => {
                 <ChevronRight className="w-3.5 h-3.5" />
               </li>
               <li aria-current="page">
-                <span className="text-white font-medium px-2 py-0.5 bg-cyan-950/40 border border-cyan-500/30 rounded">
+                <span className="text-white font-medium px-2 py-0.5 bg-amber-950/40 border border-amber-500/30 rounded">
                   {solution.title.toUpperCase()}
                 </span>
               </li>
@@ -121,9 +121,9 @@ export const SolutionDetailPage: React.FC = () => {
           {/* Hero Section */}
           <section className="pt-6 pb-12 md:pt-10 md:pb-16 border-b border-white/[0.08]">
             <div className="max-w-4xl space-y-6">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-500/30 shadow-sm backdrop-blur-sm">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
                 <Terminal className="w-3.5 h-3.5" style={{ color: solution.accentColor }} />
-                <span className="text-xs font-mono font-medium tracking-wider text-cyan-300">
+                <span className="text-xs font-mono font-medium tracking-wider text-amber-300">
                   {solution.eyebrow}
                 </span>
               </div>
@@ -138,13 +138,13 @@ export const SolutionDetailPage: React.FC = () => {
 
               {/* Engagement Meta Strip */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#061F25] border border-[#E8FFFC]/[0.08] text-xs font-mono text-[#E8FFFC]/70">
-                  <Clock className="w-3.5 h-3.5 text-[#23F7DB]" />
-                  <span>Timeline: <strong className="text-[#E8FFFC]">{solution.typicalTimeline}</strong></span>
+                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#070D18] border border-[#FFFBEB]/[0.08] text-xs font-mono text-[#FFFBEB]/70">
+                  <Clock className="w-3.5 h-3.5 text-[#F59E0B]" />
+                  <span>Timeline: <strong className="text-[#FFFBEB]">{solution.typicalTimeline}</strong></span>
                 </div>
-                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#061F25] border border-[#E8FFFC]/[0.08] text-xs font-mono text-[#E8FFFC]/70">
-                  <Users className="w-3.5 h-3.5 text-[#23F7DB]" />
-                  <span>Model: <strong className="text-[#E8FFFC]">{solution.engagementModel}</strong></span>
+                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#070D18] border border-[#FFFBEB]/[0.08] text-xs font-mono text-[#FFFBEB]/70">
+                  <Users className="w-3.5 h-3.5 text-[#F59E0B]" />
+                  <span>Model: <strong className="text-[#FFFBEB]">{solution.engagementModel}</strong></span>
                 </div>
               </div>
             </div>
@@ -157,12 +157,12 @@ export const SolutionDetailPage: React.FC = () => {
                   variant="default"
                   spotlight={true}
                   withReticles={true}
-                  className="p-5 bg-[#061F25]/90 border-[#E8FFFC]/[0.08] text-center"
+                  className="p-5 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] text-center"
                 >
-                  <span className="block text-2xl sm:text-3xl font-extrabold text-[#30F1BE] font-sans">
+                  <span className="block text-2xl sm:text-3xl font-extrabold text-[#FBBF24] font-sans">
                     {outcome.value}
                   </span>
-                  <span className="block text-xs font-mono text-[#E8FFFC]/60 uppercase tracking-wider mt-1">
+                  <span className="block text-xs font-mono text-[#FFFBEB]/60 uppercase tracking-wider mt-1">
                     {outcome.label}
                   </span>
                 </Card>
@@ -171,12 +171,12 @@ export const SolutionDetailPage: React.FC = () => {
           </section>
 
           {/* Core Challenges Solved */}
-          <section className="py-14 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-14 border-b border-[#FFFBEB]/[0.08]">
             <div className="max-w-4xl space-y-6">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                 // CRITICAL CHALLENGES RESOLVED
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 What This Architecture Solves
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
@@ -186,12 +186,12 @@ export const SolutionDetailPage: React.FC = () => {
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-5 bg-[#061F25]/80 border-[#E8FFFC]/[0.08] flex items-start gap-3"
+                    className="p-5 bg-[#070D18]/80 border-[#FFFBEB]/[0.08] flex items-start gap-3"
                   >
-                    <span className="font-mono text-sm font-bold text-[#23F7DB] shrink-0 mt-0.5">
+                    <span className="font-mono text-sm font-bold text-[#F59E0B] shrink-0 mt-0.5">
                       0{idx + 1}
                     </span>
-                    <p className="text-xs sm:text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                    <p className="text-xs sm:text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                       {challenge}
                     </p>
                   </Card>
@@ -201,12 +201,12 @@ export const SolutionDetailPage: React.FC = () => {
           </section>
 
           {/* Architectural Capabilities */}
-          <section className="py-14 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-14 border-b border-[#FFFBEB]/[0.08]">
             <div className="space-y-6">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                 // SOLUTION SPECIFICATIONS
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 Engineered Capabilities
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
@@ -216,15 +216,15 @@ export const SolutionDetailPage: React.FC = () => {
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-6 bg-[#061F25]/85 border-[#E8FFFC]/[0.08] space-y-2.5"
+                    className="p-6 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] space-y-2.5"
                   >
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#23F7DB] shrink-0" />
-                      <h3 className="text-base font-bold text-[#E8FFFC] font-sans">
+                      <CheckCircle2 className="w-4 h-4 text-[#F59E0B] shrink-0" />
+                      <h3 className="text-base font-bold text-[#FFFBEB] font-sans">
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-xs sm:text-sm text-[#E8FFFC]/70 leading-relaxed pl-6 font-sans">
+                    <p className="text-xs sm:text-sm text-[#FFFBEB]/70 leading-relaxed pl-6 font-sans">
                       {feature.description}
                     </p>
                   </Card>
@@ -234,12 +234,12 @@ export const SolutionDetailPage: React.FC = () => {
           </section>
 
           {/* Phased Deliverables Timeline */}
-          <section className="py-14 border-b border-[#E8FFFC]/[0.08]">
+          <section className="py-14 border-b border-[#FFFBEB]/[0.08]">
             <div className="space-y-6">
-              <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+              <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                 // SPRINT MILESTONES
               </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                 Tangible Deliverables Roadmap
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
@@ -249,16 +249,16 @@ export const SolutionDetailPage: React.FC = () => {
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-6 bg-[#061F25]/90 border-[#E8FFFC]/[0.08] space-y-3 flex flex-col justify-between"
+                    className="p-6 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-3 flex flex-col justify-between"
                   >
                     <div>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#008C6B]/20 border border-[#04A37B]/30 text-[#30F1BE] font-bold uppercase inline-block mb-3">
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#EA580C]/20 border border-[#D97706]/30 text-[#FBBF24] font-bold uppercase inline-block mb-3">
                         {deliv.timeframe}
                       </span>
-                      <h3 className="text-lg font-bold text-[#E8FFFC] font-sans mb-1">
+                      <h3 className="text-lg font-bold text-[#FFFBEB] font-sans mb-1">
                         {deliv.title}
                       </h3>
-                      <p className="text-xs text-[#E8FFFC]/70 leading-relaxed font-sans">
+                      <p className="text-xs text-[#FFFBEB]/70 leading-relaxed font-sans">
                         {deliv.description}
                       </p>
                     </div>
@@ -270,12 +270,12 @@ export const SolutionDetailPage: React.FC = () => {
 
           {/* Related Real Projects / Case Studies */}
           {relatedProjects.length > 0 && (
-            <section className="py-14 border-b border-[#E8FFFC]/[0.08]">
+            <section className="py-14 border-b border-[#FFFBEB]/[0.08]">
               <div className="space-y-6">
-                <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+                <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                   // PROVEN BENCHMARKS
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                   Relevant Case Studies
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
@@ -285,11 +285,11 @@ export const SolutionDetailPage: React.FC = () => {
                       variant="interactive"
                       spotlight={true}
                       withReticles={true}
-                      className="p-6 bg-[#061F25]/85 border-[#E8FFFC]/[0.08] rounded-xl flex flex-col justify-between"
+                      className="p-6 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] rounded-xl flex flex-col justify-between"
                     >
                       <div className="space-y-3">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#008C6B]/20 border border-[#04A37B]/30 text-[#30F1BE] font-semibold uppercase">
+                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#EA580C]/20 border border-[#D97706]/30 text-[#FBBF24] font-semibold uppercase">
                             {project.badgeLabel}
                           </span>
                           {project.liveUrl && (
@@ -297,25 +297,25 @@ export const SolutionDetailPage: React.FC = () => {
                               href={project.liveUrl}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-[10px] font-mono text-[#30F1BE] hover:text-[#23F7DB] flex items-center gap-1"
+                              className="text-[10px] font-mono text-[#FBBF24] hover:text-[#F59E0B] flex items-center gap-1"
                             >
                               <span>{project.liveUrl.replace(/^https?:\/\//, '')}</span>
                               <ExternalLink className="w-3 h-3" />
                             </a>
                           )}
                         </div>
-                        <h3 className="text-xl font-bold text-[#E8FFFC] font-sans">
+                        <h3 className="text-xl font-bold text-[#FFFBEB] font-sans">
                           {project.title}
                         </h3>
-                        <p className="text-xs text-[#E8FFFC]/70 leading-relaxed font-sans">
+                        <p className="text-xs text-[#FFFBEB]/70 leading-relaxed font-sans">
                           {project.shortDescription}
                         </p>
                       </div>
 
-                      <div className="pt-4 mt-4 border-t border-[#E8FFFC]/[0.08] flex items-center justify-between">
+                      <div className="pt-4 mt-4 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between">
                         <Link
                           to={`/work/${project.slug}`}
-                          className="text-xs font-mono text-[#30F1BE] hover:text-[#23F7DB] font-semibold flex items-center gap-1.5"
+                          className="text-xs font-mono text-[#FBBF24] hover:text-[#F59E0B] font-semibold flex items-center gap-1.5"
                         >
                           <span>Inspect Full Case Study</span>
                           <ArrowRight className="w-3.5 h-3.5" />
@@ -330,12 +330,12 @@ export const SolutionDetailPage: React.FC = () => {
 
           {/* Solution FAQs */}
           {solution.faqs && solution.faqs.length > 0 && (
-            <section className="py-14 border-b border-[#E8FFFC]/[0.08]">
+            <section className="py-14 border-b border-[#FFFBEB]/[0.08]">
               <div className="max-w-3xl space-y-6">
-                <span className="text-xs font-mono tracking-wider text-[#23F7DB] uppercase font-semibold">
+                <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
                   // ENGAGEMENT QUESTIONS
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#E8FFFC] tracking-tight font-sans">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#FFFBEB] tracking-tight font-sans">
                   Frequently Asked Questions
                 </h2>
                 <div className="space-y-4 pt-2">
@@ -345,12 +345,12 @@ export const SolutionDetailPage: React.FC = () => {
                       variant="default"
                       spotlight={true}
                       withReticles={true}
-                      className="p-5 bg-[#061F25]/80 border-[#E8FFFC]/[0.08] space-y-2"
+                      className="p-5 bg-[#070D18]/80 border-[#FFFBEB]/[0.08] space-y-2"
                     >
-                      <h3 className="text-base font-bold text-[#E8FFFC] font-sans">
+                      <h3 className="text-base font-bold text-[#FFFBEB] font-sans">
                         {faq.question}
                       </h3>
-                      <p className="text-xs sm:text-sm text-[#E8FFFC]/70 leading-relaxed font-sans">
+                      <p className="text-xs sm:text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
                         {faq.answer}
                       </p>
                     </Card>
@@ -366,12 +366,12 @@ export const SolutionDetailPage: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-8 sm:p-12 rounded-2xl bg-[#061F25]/90 border-[#E8FFFC]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
+              className="p-8 sm:p-12 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
             >
-              <span className="text-xs font-mono tracking-widest text-[#23F7DB] uppercase font-semibold">
+              <span className="text-xs font-mono tracking-widest text-[#F59E0B] uppercase font-semibold">
                 // READY TO DEPLOY
               </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#E8FFFC] tracking-tight font-sans">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#FFFBEB] tracking-tight font-sans">
                 Deploy {solution.title}
               </h2>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans max-w-xl mx-auto">
@@ -379,7 +379,7 @@ export const SolutionDetailPage: React.FC = () => {
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
                 <Link to="/contact">
-                  <Button variant="primary" size="lg" className="shadow-lg shadow-cyan-950/40">
+                  <Button variant="primary" size="lg" className="shadow-lg shadow-amber-950/40">
                     <span>Initiate Scoping Session</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>

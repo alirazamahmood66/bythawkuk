@@ -50,7 +50,7 @@ export const RingedHeroPlanet: React.FC<RingedHeroPlanetProps> = ({
             roughnessMap={planetTextures.roughnessMap}
             roughness={0.4}
             metalness={0.2}
-            emissive="#008C6B"
+            emissive="#EA580C"
             emissiveIntensity={0.12}
           />
         </mesh>
@@ -59,7 +59,7 @@ export const RingedHeroPlanet: React.FC<RingedHeroPlanetProps> = ({
         <PlanetAtmosphere
           radius={radius}
           config={{
-            color: '#23F7DB',
+            color: '#F59E0B',
             rimPower: 2.5,
             opacity: 0.65,
             scale: 1.045,

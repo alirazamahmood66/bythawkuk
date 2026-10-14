@@ -12,14 +12,14 @@ export const TechnologyPhilosophy: React.FC = () => {
     <section className="py-16 md:py-24 border-b border-white/[0.08]">
       {/* 1. Technology Philosophy */}
       <div className="max-w-4xl space-y-4 mb-16">
-        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-cyan-400 uppercase">
+        <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase">
           <Terminal className="w-3.5 h-3.5" />
           <span>// ENGINEERING ETHOS</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
           Technology Should Disappear{' '}
-          <span className="bg-gradient-to-r from-[#23F7DB] via-[#30F1BE] to-[#04A37B] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] bg-clip-text text-transparent">
             Into the Experience.
           </span>
         </h2>
@@ -40,11 +40,11 @@ export const TechnologyPhilosophy: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-7 rounded-2xl bg-[#061F25]/90 border-white/[0.08] hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+              className="p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-white/[0.06] text-[10px] font-mono">
-                  <span className="text-cyan-400 font-semibold tracking-wider">
+                  <span className="text-amber-400 font-semibold tracking-wider">
                     LAW 0{idx + 1}
                   </span>
                   <div className="flex items-center gap-1.5 text-emerald-400">
@@ -53,11 +53,11 @@ export const TechnologyPhilosophy: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="w-11 h-11 rounded-xl bg-cyan-950/60 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4 group-hover:scale-105 group-hover:border-cyan-400 transition-all duration-300 shadow-md">
-                  <Icon className="w-5 h-5 text-cyan-400" />
+                <div className="w-11 h-11 rounded-xl bg-amber-950/60 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-4 group-hover:scale-105 group-hover:border-cyan-400 transition-all duration-300 shadow-md">
+                  <Icon className="w-5 h-5 text-amber-400" />
                 </div>
 
-                <h3 className="text-lg font-bold text-white tracking-tight mb-2 group-hover:text-cyan-200 transition-colors font-sans">
+                <h3 className="text-lg font-bold text-white tracking-tight mb-2 group-hover:text-amber-200 transition-colors font-sans">
                   {principle.title}
                 </h3>
 
@@ -68,7 +68,7 @@ export const TechnologyPhilosophy: React.FC = () => {
 
               <div className="mt-6 pt-3 border-t border-white/[0.06] text-[10px] font-mono text-slate-400 flex items-center justify-between">
                 <span>CORE DIRECTIVE</span>
-                <span className="text-cyan-400">&bull; ACTIVE</span>
+                <span className="text-amber-400">&bull; ACTIVE</span>
               </div>
             </Card>
           );
@@ -81,13 +81,13 @@ export const TechnologyPhilosophy: React.FC = () => {
         spotlight={true}
         withReticles={true}
         spotlightColor="rgba(32, 217, 243, 0.16)"
-        className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#061F25] via-[#091a33] to-[#061F25] border-cyan-500/30 shadow-2xl relative overflow-hidden"
+        className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#070D18] via-[#091a33] to-[#070D18] border-amber-500/30 shadow-2xl relative overflow-hidden"
       >
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 relative z-10">
           <div className="space-y-4 max-w-2xl">
             <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-[11px] font-mono text-cyan-300 font-semibold shadow-sm">
-                <Globe className="w-3.5 h-3.5 text-cyan-400 animate-spin-slow" />
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-500/40 text-[11px] font-mono text-amber-300 font-semibold shadow-sm">
+                <Globe className="w-3.5 h-3.5 text-amber-400 animate-spin-slow" />
                 <span>{ukPositioning.location}</span>
               </span>
               <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
@@ -106,15 +106,15 @@ export const TechnologyPhilosophy: React.FC = () => {
           </div>
 
           <div className="flex-shrink-0">
-            <div className="p-6 rounded-2xl bg-black/50 border border-cyan-500/30 backdrop-blur-xl text-center space-y-2 shadow-xl">
+            <div className="p-6 rounded-2xl bg-black/50 border border-amber-500/30 backdrop-blur-xl text-center space-y-2 shadow-xl">
               <div className="flex items-center justify-center gap-2 text-[11px] font-mono text-slate-400 uppercase">
-                <Radio className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+                <Radio className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
                 <span>OPERATIONAL TIMEZONE</span>
               </div>
               <div className="text-lg font-mono font-bold text-white tracking-tight">
                 GMT / BST (UK Time)
               </div>
-              <div className="text-[10px] font-mono text-cyan-300 bg-cyan-950/60 border border-cyan-500/30 px-3 py-1 rounded">
+              <div className="text-[10px] font-mono text-amber-300 bg-amber-950/60 border border-amber-500/30 px-3 py-1 rounded">
                 REAL-TIME SENIOR COLLABORATION
               </div>
             </div>
