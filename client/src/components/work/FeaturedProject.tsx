@@ -23,15 +23,15 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.12)"
-        className="rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl bg-[#070D18]/90 border-white/[0.08]"
+        spotlightColor="rgba(245, 158, 11, 0.12)"
+        className="rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl bg-[#0B0C10]/90 border-white/[0.08]"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Visual Column */}
           <div className="lg:col-span-7">
             <Link
               to={`/work/${project.slug}`}
-              className="block group rounded-2xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
+              className="block group rounded-2xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-amber-400/50"
               aria-label={`View ${project.title} case study preview`}
             >
               <ProjectVisual
@@ -86,7 +86,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                   <Link
                     key={svc.title}
                     to={svc.route}
-                    className="text-xs font-mono px-2.5 py-1 rounded bg-[#070D18]/60 border border-white/[0.08] text-slate-300 hover:border-amber-500/40 hover:text-amber-300 transition-colors"
+                    className="text-xs font-mono px-2.5 py-1 rounded bg-[#0B0C10]/60 border border-white/[0.08] text-slate-300 hover:border-amber-500/40 hover:text-amber-300 transition-colors"
                   >
                     {svc.title}
                   </Link>
@@ -129,7 +129,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({ project }) => 
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold text-amber-300 bg-[#070D18]/70 hover:bg-amber-950/80 border border-amber-500/40 hover:border-cyan-400 transition-all shadow-md"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold text-amber-300 bg-[#0B0C10]/70 hover:bg-amber-950/80 border border-amber-500/40 hover:border-cyan-400 transition-all shadow-md"
                 >
                   <span>Visit Live Platform</span>
                   <ExternalLink className="w-3.5 h-3.5" />

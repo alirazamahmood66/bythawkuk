@@ -11,7 +11,7 @@ export const ContactAlternative: React.FC = () => {
           variant="default"
           spotlight={true}
           withReticles={true}
-          spotlightColor="rgba(32, 217, 243, 0.12)"
+          spotlightColor="rgba(245, 158, 11, 0.12)"
           className="lg:col-span-7 p-7 md:p-10 flex flex-col justify-between"
         >
           <div>
@@ -68,7 +68,7 @@ export const ContactAlternative: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl bg-[#030914]/80 border border-white/[0.08] p-4 space-y-3">
+            <div className="rounded-xl bg-[#040407]/80 border border-white/[0.08] p-4 space-y-3">
               <span className="text-xs font-mono text-amber-400 tracking-wider uppercase block">
                 CORE DISCIPLINES
               </span>

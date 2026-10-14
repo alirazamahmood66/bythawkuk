@@ -38,7 +38,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ document }) => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                className="rounded-2xl bg-[#070D18]/90 border-white/[0.08] p-6 sm:p-10 space-y-6 shadow-xl"
+                className="rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] p-6 sm:p-10 space-y-6 shadow-xl"
               >
                 {document.sections.map((section) => (
                   <LegalSectionView key={section.id} section={section} />
@@ -50,7 +50,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ document }) => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                className="p-6 sm:p-8 rounded-2xl bg-[#070D18]/90 border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl"
+                className="p-6 sm:p-8 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xl"
               >
                 <div className="space-y-1">
                   <span className="text-xs font-mono text-amber-400 uppercase tracking-wider block">

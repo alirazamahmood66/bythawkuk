@@ -36,7 +36,7 @@ export const WorkFilters: React.FC<WorkFiltersProps> = ({
               className={`px-3.5 py-1.5 rounded-lg text-xs font-mono tracking-wider transition-all duration-200 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#F59E0B]/50 ${
                 isSelected
                   ? 'bg-[#EA580C]/40 text-[#FBBF24] border border-[#F59E0B] font-semibold shadow-md'
-                  : 'bg-[#070D18]/80 text-[#FFFBEB]/70 hover:text-[#FFFBEB] hover:bg-[#070D18] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40'
+                  : 'bg-[#0B0C10]/80 text-[#FFFBEB]/70 hover:text-[#FFFBEB] hover:bg-[#0B0C10] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40'
               }`}
             >
               <span>{category.label}</span>

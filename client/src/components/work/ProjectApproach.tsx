@@ -33,7 +33,7 @@ export const ProjectApproach: React.FC<ProjectApproachProps> = ({ approach, acce
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.12)"
+            spotlightColor="rgba(245, 158, 11, 0.12)"
             className="p-6 flex flex-col justify-between group"
           >
             <div>

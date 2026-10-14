@@ -29,8 +29,8 @@ export const PhilosophySection: React.FC = () => {
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-6 sm:p-8 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 group"
+            spotlightColor="rgba(245, 158, 11, 0.12)"
+            className="p-6 sm:p-8 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 group"
           >
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               <div className="md:col-span-2 flex items-center gap-3">
@@ -80,8 +80,8 @@ export const PhilosophySection: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.14)"
-              className="p-7 sm:p-8 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+              spotlightColor="rgba(245, 158, 11, 0.14)"
+              className="p-7 sm:p-8 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between mb-5 pb-3 border-b border-white/[0.06]">

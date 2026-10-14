@@ -40,7 +40,7 @@ export const NebulaLayer: React.FC<NebulaLayerProps> = ({
       <div
         className="absolute -bottom-[20%] left-[20%] w-[900px] h-[600px] rounded-full filter blur-[150px]"
         style={{
-          background: 'radial-gradient(ellipse, rgba(14, 165, 233, 0.08) 0%, rgba(15, 23, 42, 0.2) 60%, transparent 80%)',
+          background: 'radial-gradient(ellipse, rgba(245, 158, 11, 0.08) 0%, rgba(4, 4, 7, 0.2) 60%, transparent 80%)',
         }}
       />
     </div>

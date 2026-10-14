@@ -20,7 +20,7 @@ export const FeaturedInsight: React.FC<FeaturedInsightProps> = ({ article }) => 
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.14)"
+        spotlightColor="rgba(245, 158, 11, 0.14)"
         className="rounded-2xl overflow-hidden group shadow-2xl p-0"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch">
@@ -68,7 +68,7 @@ export const FeaturedInsight: React.FC<FeaturedInsightProps> = ({ article }) => 
           </div>
 
           {/* Right / Bottom: Lightweight Geometric Visual Artwork */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#070D18] via-[#030914] to-cyan-950/20 border-t lg:border-t-0 lg:border-l border-white/[0.08] p-8 sm:p-10 flex items-center justify-center relative overflow-hidden min-h-[220px]">
+          <div className="lg:col-span-5 bg-gradient-to-br from-[#0B0C10] via-[#040407] to-amber-950/20 border-t lg:border-t-0 lg:border-l border-white/[0.08] p-8 sm:p-10 flex items-center justify-center relative overflow-hidden min-h-[220px]">
             {/* Ambient visual gradient */}
             <div
               className="absolute inset-0 opacity-20 pointer-events-none"

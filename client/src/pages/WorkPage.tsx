@@ -110,7 +110,7 @@ export const WorkPage: React.FC = () => {
                 </span>
               </div>
 
-              <div className="inline-flex p-1 rounded-xl bg-[#070D18]/90 border border-[#FFFBEB]/[0.08]">
+              <div className="inline-flex p-1 rounded-xl bg-[#0B0C10]/90 border border-[#FFFBEB]/[0.08]">
                 <button
                   type="button"
                   onClick={() => setViewMode('orbit')}

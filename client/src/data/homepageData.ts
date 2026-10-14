@@ -76,7 +76,7 @@ export const SERVICES_ECOSYSTEM_DATA: EcosystemService[] = [
     description: 'Conversion-focused commerce experiences designed to sell, scale and evolve.',
     route: '/services/ecommerce',
     category: 'COMMERCE ENGINE',
-    color: '#0284c7',
+    color: '#F59E0B',
     iconName: 'ShoppingBag',
   },
   {

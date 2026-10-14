@@ -29,11 +29,11 @@ export const ShipTransitSection: React.FC = () => {
   const hudOpacity = useTransform(scrollYProgress, [0, 0.1, 0.85, 0.95], [0.5, 1, 1, 0.5]);
 
   return (
-    <div ref={trackRef} className="relative h-[200vh] w-full bg-[#020611]">
+    <div ref={trackRef} className="relative h-[200vh] w-full bg-[#040407]">
       {/* PINNED STICKY VIEWPORT CONTAINER */}
       <section
         aria-label="Bythawk Starship Orbital Transit"
-        className="sticky top-0 h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-[#020611] z-25 select-none"
+        className="sticky top-0 h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-[#040407] z-25 select-none"
       >
         {/* Subtle Ambient Cosmic Background Flare */}
         <div className="absolute inset-0 pointer-events-none">
@@ -102,7 +102,7 @@ export const ShipTransitSection: React.FC = () => {
           {/* 3 Active Transparent Glass Cards that let the ship shine through */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {/* Gauge 1 */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#070D18]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#0B0C10]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#0B0C10]/60 shadow-lg">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[10px] font-mono text-[#F59E0B] font-bold uppercase tracking-wider">
                   SUB-SECOND LATENCY
@@ -118,7 +118,7 @@ export const ShipTransitSection: React.FC = () => {
             </div>
 
             {/* Gauge 2 */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#070D18]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#0B0C10]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#0B0C10]/60 shadow-lg">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[10px] font-mono text-[#F59E0B] font-bold uppercase tracking-wider">
                   ENTERPRISE SURVIVABILITY
@@ -134,7 +134,7 @@ export const ShipTransitSection: React.FC = () => {
             </div>
 
             {/* Gauge 3 */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#070D18]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 shadow-lg">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#0B0C10]/40 border border-[#FFFBEB]/[0.1] backdrop-blur-md text-left transition-all duration-300 hover:border-[#F59E0B]/50 hover:bg-[#0B0C10]/60 shadow-lg">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[10px] font-mono text-[#F59E0B] font-bold uppercase tracking-wider">
                   GLOBAL EDGE FABRIC

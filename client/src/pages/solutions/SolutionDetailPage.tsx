@@ -41,13 +41,13 @@ export const SolutionDetailPage: React.FC = () => {
 
   if (!solution) {
     return (
-      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#040407] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
             <div className="space-y-2">
               <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase">
@@ -138,11 +138,11 @@ export const SolutionDetailPage: React.FC = () => {
 
               {/* Engagement Meta Strip */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#070D18] border border-[#FFFBEB]/[0.08] text-xs font-mono text-[#FFFBEB]/70">
+                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#0B0C10] border border-[#FFFBEB]/[0.08] text-xs font-mono text-[#FFFBEB]/70">
                   <Clock className="w-3.5 h-3.5 text-[#F59E0B]" />
                   <span>Timeline: <strong className="text-[#FFFBEB]">{solution.typicalTimeline}</strong></span>
                 </div>
-                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#070D18] border border-[#FFFBEB]/[0.08] text-xs font-mono text-[#FFFBEB]/70">
+                <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#0B0C10] border border-[#FFFBEB]/[0.08] text-xs font-mono text-[#FFFBEB]/70">
                   <Users className="w-3.5 h-3.5 text-[#F59E0B]" />
                   <span>Model: <strong className="text-[#FFFBEB]">{solution.engagementModel}</strong></span>
                 </div>
@@ -157,7 +157,7 @@ export const SolutionDetailPage: React.FC = () => {
                   variant="default"
                   spotlight={true}
                   withReticles={true}
-                  className="p-5 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] text-center"
+                  className="p-5 bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] text-center"
                 >
                   <span className="block text-2xl sm:text-3xl font-extrabold text-[#FBBF24] font-sans">
                     {outcome.value}
@@ -186,7 +186,7 @@ export const SolutionDetailPage: React.FC = () => {
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-5 bg-[#070D18]/80 border-[#FFFBEB]/[0.08] flex items-start gap-3"
+                    className="p-5 bg-[#0B0C10]/80 border-[#FFFBEB]/[0.08] flex items-start gap-3"
                   >
                     <span className="font-mono text-sm font-bold text-[#F59E0B] shrink-0 mt-0.5">
                       0{idx + 1}
@@ -216,7 +216,7 @@ export const SolutionDetailPage: React.FC = () => {
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-6 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] space-y-2.5"
+                    className="p-6 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] space-y-2.5"
                   >
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-[#F59E0B] shrink-0" />
@@ -249,7 +249,7 @@ export const SolutionDetailPage: React.FC = () => {
                     variant="default"
                     spotlight={true}
                     withReticles={true}
-                    className="p-6 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-3 flex flex-col justify-between"
+                    className="p-6 bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] space-y-3 flex flex-col justify-between"
                   >
                     <div>
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#EA580C]/20 border border-[#D97706]/30 text-[#FBBF24] font-bold uppercase inline-block mb-3">
@@ -285,7 +285,7 @@ export const SolutionDetailPage: React.FC = () => {
                       variant="interactive"
                       spotlight={true}
                       withReticles={true}
-                      className="p-6 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] rounded-xl flex flex-col justify-between"
+                      className="p-6 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] rounded-xl flex flex-col justify-between"
                     >
                       <div className="space-y-3">
                         <div className="flex items-center justify-between">
@@ -345,7 +345,7 @@ export const SolutionDetailPage: React.FC = () => {
                       variant="default"
                       spotlight={true}
                       withReticles={true}
-                      className="p-5 bg-[#070D18]/80 border-[#FFFBEB]/[0.08] space-y-2"
+                      className="p-5 bg-[#0B0C10]/80 border-[#FFFBEB]/[0.08] space-y-2"
                     >
                       <h3 className="text-base font-bold text-[#FFFBEB] font-sans">
                         {faq.question}
@@ -366,7 +366,7 @@ export const SolutionDetailPage: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-8 sm:p-12 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
+              className="p-8 sm:p-12 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
             >
               <span className="text-xs font-mono tracking-widest text-[#F59E0B] uppercase font-semibold">
                 // READY TO DEPLOY

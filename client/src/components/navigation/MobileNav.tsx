@@ -74,7 +74,7 @@ export const MobileNav: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: shouldReduceMotion ? 0 : -10 }}
             transition={{ duration: shouldReduceMotion ? 0.01 : 0.25 }}
-            className="fixed inset-0 top-16 z-50 bg-[#020611] overflow-y-auto flex flex-col justify-between"
+            className="fixed inset-0 top-16 z-50 bg-[#040407] overflow-y-auto flex flex-col justify-between"
           >
             {/* Ambient Background Layers */}
             <div className="absolute inset-0 pointer-events-none z-0">
@@ -241,7 +241,7 @@ export const MobileNav: React.FC = () => {
             </div>
 
             {/* Mobile Footer CTA */}
-            <div className="relative z-10 p-6 border-t border-[#FFFBEB]/[0.08] bg-[#020611]/90 mt-6 max-w-lg mx-auto w-full space-y-3">
+            <div className="relative z-10 p-6 border-t border-[#FFFBEB]/[0.08] bg-[#040407]/90 mt-6 max-w-lg mx-auto w-full space-y-3">
               <Link to="/contact" onClick={closeMenu} className="block w-full">
                 <Button
                   variant="primary"

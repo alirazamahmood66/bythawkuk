@@ -17,7 +17,7 @@ export const CosmicScrollJourney: React.FC = () => {
 
   return (
     <>
-      <div className="fixed inset-0 z-0 pointer-events-none select-none overflow-hidden bg-[#020611]">
+      <div className="fixed inset-0 z-0 pointer-events-none select-none overflow-hidden bg-[#040407]">
         {/* 1. 60FPS MILKY WAY & MICRO-ASTEROID DUST ENGINE */}
         <MilkyWayDustEngine />
 
@@ -49,7 +49,7 @@ export const CosmicScrollJourney: React.FC = () => {
           <div
             className="absolute top-[75%] right-[8%] w-[600px] h-[600px] rounded-full filter blur-[150px] opacity-20 pointer-events-none"
             style={{
-              background: `radial-gradient(circle, rgba(${theme.rgb}, 0.28) 0%, rgba(7, 13, 24, 0.25) 50%, transparent 75%)`,
+              background: `radial-gradient(circle, rgba(${theme.rgb}, 0.28) 0%, rgba(11, 12, 16, 0.25) 50%, transparent 75%)`,
             }}
           />
         </motion.div>
@@ -78,11 +78,11 @@ export const CosmicScrollJourney: React.FC = () => {
           className="absolute inset-0 z-20 pointer-events-none"
           style={{
             background:
-              'radial-gradient(ellipse at 25% 45%, rgba(2, 6, 17, 0.94) 0%, rgba(2, 6, 17, 0.6) 45%, transparent 75%)',
+              'radial-gradient(ellipse at 25% 45%, rgba(4, 4, 7, 0.94) 0%, rgba(4, 4, 7, 0.6) 45%, transparent 75%)',
           }}
         />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#020611] via-[#020611]/85 to-transparent z-25 pointer-events-none" />
-        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#020611]/80 to-transparent z-25 pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#040407] via-[#040407]/85 to-transparent z-25 pointer-events-none" />
+        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#040407]/80 to-transparent z-25 pointer-events-none" />
       </div>
 
       {/* 5. ORBIT SCROLL TRACKER TELEMETRY PROBE */}

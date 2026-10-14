@@ -77,7 +77,7 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
           animate="open"
           exit="closed"
           variants={menuVariants}
-          className="fixed inset-x-0 top-[76px] bottom-0 z-40 pointer-events-auto overflow-y-auto bg-[#020611]/95 backdrop-blur-2xl border-t border-[#FFFBEB]/[0.08] flex flex-col justify-between"
+          className="fixed inset-x-0 top-[76px] bottom-0 z-40 pointer-events-auto overflow-y-auto bg-[#040407]/95 backdrop-blur-2xl border-t border-[#FFFBEB]/[0.08] flex flex-col justify-between"
         >
           {/* Atmospheric Background Layers */}
           <div className="absolute inset-0 pointer-events-none z-0">
@@ -153,7 +153,7 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
                   </div>
 
                   {/* Architecture Advisory Box */}
-                  <div className="p-4 rounded-xl bg-[#070D18]/80 border border-[#FFFBEB]/[0.08] text-xs space-y-2 mt-2">
+                  <div className="p-4 rounded-xl bg-[#0B0C10]/80 border border-[#FFFBEB]/[0.08] text-xs space-y-2 mt-2">
                     <div className="flex items-center gap-1.5 text-[#F59E0B] font-mono text-[11px] font-semibold uppercase">
                       <Compass className="w-3.5 h-3.5" />
                       <span>Custom Architecture</span>
@@ -176,7 +176,7 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
           </div>
 
           {/* Bottom Bar */}
-          <div className="relative z-10 border-t border-[#FFFBEB]/[0.08] bg-[#020611]/90 py-4">
+          <div className="relative z-10 border-t border-[#FFFBEB]/[0.08] bg-[#040407]/90 py-4">
             <Container size="xl">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                 <div className="flex items-center gap-6 font-mono text-[#FFFBEB]/70">

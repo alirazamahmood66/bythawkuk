@@ -40,8 +40,8 @@ export const AboutProcessTeaser: React.FC = () => {
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.14)"
-            className="p-5 sm:p-6 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+            spotlightColor="rgba(245, 158, 11, 0.14)"
+            className="p-5 sm:p-6 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
           >
             <div>
               <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/[0.06]">

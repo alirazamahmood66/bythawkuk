@@ -5,19 +5,19 @@
  */
 
 export const colors = {
-  // Primary Environment (Solar Gold & Obsidian Amber — Bythawk)
+  // Primary Environment (Solar Gold & Neutral Obsidian — Bythawk)
   background: {
-    deep: '#020611',      // Obsidian Void (cosmic void baseline)
-    navy: '#020611',      // Obsidian Void
-    surface: '#070D18',   // Dark Obsidian Glass (standard card/panel surface)
-    elevated: '#0C1527',  // Elevated dropdowns, modals, floating panels
-    sunken: '#010309',    // Deep sunken inputs, code blocks
+    deep: '#040407',      // Neutral Obsidian Void (zero blue dominance)
+    navy: '#040407',      // Neutral Obsidian Void
+    surface: '#0B0C10',   // Neutral Dark Charcoal Glass
+    elevated: '#12131A',  // Elevated dropdowns, modals, floating panels
+    sunken: '#020204',    // Deep sunken inputs, code blocks
   },
 
   // Glassmorphic Overlays (Translucent with blur)
   glass: {
-    base: 'rgba(7, 13, 24, 0.65)',
-    elevated: 'rgba(7, 13, 24, 0.88)',
+    base: 'rgba(11, 12, 16, 0.72)',
+    elevated: 'rgba(14, 15, 20, 0.92)',
     subtle: 'rgba(245, 158, 11, 0.05)',
     highlight: 'rgba(245, 158, 11, 0.1)',
   },
@@ -38,17 +38,17 @@ export const colors = {
     muted: '#94A3B8',      // Subdued metadata & telemetry
     accentGold: '#F59E0B', // Solar Gold
     accentFlare: '#FBBF24',// Solar Flare
-    inverse: '#020611',    // Obsidian Void (inverse dark on bright gold accents)
+    inverse: '#040407',    // Obsidian Void
   },
 
-  // Accents (Solar Gold & Obsidian Amber Palette — Bythawk)
+  // Accents (Solar Gold & Neutral Obsidian Palette — Bythawk)
   accent: {
     solarGold: '#F59E0B',    // Primary Brand Solar Gold
     solarFlare: '#FBBF24',   // Solar Flare / Highlight
     sunsetAmber: '#EA580C',  // Deep Sunset Amber
     goldLight: '#FDE047',    // Light Gold
-    obsidianVoid: '#020611', // Obsidian Void
-    obsidianGlass: '#070D18',// Dark Obsidian Glass
+    obsidianVoid: '#040407', // Neutral Obsidian Void
+    obsidianGlass: '#0B0C10',// Dark Obsidian Glass
     starlightWhite: '#FFFBEB',// Warm White
     white: '#ffffff',
   },

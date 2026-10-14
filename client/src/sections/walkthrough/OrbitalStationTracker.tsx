@@ -24,7 +24,7 @@ export const OrbitalStationTracker: React.FC<OrbitalStationTrackerProps> = ({
       aria-label="Orbital Trajectory Navigation"
       className="fixed right-4 sm:right-6 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center gap-4 pointer-events-auto"
     >
-      <div className="relative flex flex-col items-center gap-3 py-3 px-2 rounded-full bg-[#070D18]/70 backdrop-blur-md border border-[#FFFBEB]/[0.08] shadow-xl">
+      <div className="relative flex flex-col items-center gap-3 py-3 px-2 rounded-full bg-[#0B0C10]/70 backdrop-blur-md border border-[#FFFBEB]/[0.08] shadow-xl">
         {STATIONS.map((station, idx) => {
           const isActive = idx === activeStation;
           return (
@@ -35,7 +35,7 @@ export const OrbitalStationTracker: React.FC<OrbitalStationTrackerProps> = ({
               aria-label={`Scroll to ${station.label} station`}
             >
               {/* Tooltip on hover */}
-              <span className="absolute right-7 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider text-[#FFFBEB] bg-[#020611]/90 border border-[#FFFBEB]/[0.1] opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap shadow-lg">
+              <span className="absolute right-7 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider text-[#FFFBEB] bg-[#040407]/90 border border-[#FFFBEB]/[0.1] opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap shadow-lg">
                 {station.code} // {station.label}
               </span>
 

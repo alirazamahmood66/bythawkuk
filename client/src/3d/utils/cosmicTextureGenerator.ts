@@ -61,7 +61,7 @@ export function getOrCreateVortexGasGiantTextures(): {
   // Cinematic color palette matching the reference image:
   const deepNavy = hexToRgb('#030c1c');    // Deep midnight shadow
   const oceanBlue = hexToRgb('#04294f');   // Rich cobalt oceanic body
-  const azureBlue = hexToRgb('#0284c7');   // Vivid electric blue stream
+  const azureBlue = hexToRgb('#F59E0B');   // Vivid electric blue stream
   const brightCyan = hexToRgb('#20d9f3');  // Luminous cyan storm bands
   const pureWhite = hexToRgb('#f0f9ff');   // High-altitude cirrus clouds
 
@@ -173,7 +173,7 @@ export function getOrCreateSaturnPlanetTextures(): {
   const data = imgData.data;
 
   const darkNavy = hexToRgb('#061426');
-  const midBlue = hexToRgb('#1e3a8a');
+  const midBlue = hexToRgb('#EA580C');
   const iceCyan = hexToRgb('#38bdf8');
   const cloudWhite = hexToRgb('#bae6fd');
 

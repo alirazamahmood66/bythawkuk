@@ -66,7 +66,7 @@ export const SolarSystemWalkthroughSection: React.FC = () => {
 
   return (
     <>
-      <div ref={trackRef} className="relative h-[700vh] w-full bg-[#020611]">
+      <div ref={trackRef} className="relative h-[700vh] w-full bg-[#040407]">
         <div className="sticky top-0 h-screen w-full overflow-hidden">
           {/* 3D solar system */}
           <div className="absolute inset-0 z-0 pointer-events-none">
@@ -74,7 +74,7 @@ export const SolarSystemWalkthroughSection: React.FC = () => {
           </div>
 
           {/* readability vignette */}
-          <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(2, 6, 17, 0.55)_100%)]" />
+          <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(4, 4, 7, 0.55)_100%)]" />
 
           {/* cards */}
           <div className="absolute inset-0 z-20">
@@ -97,7 +97,7 @@ export const SolarSystemWalkthroughSection: React.FC = () => {
       </div>
 
       {/* Rest of the homepage continues below the tour */}
-      <div className="relative z-10 bg-[#020611]">
+      <div className="relative z-10 bg-[#040407]">
         <WhyBythawkSection />
         <ProcessSection />
         <TechnologySection />

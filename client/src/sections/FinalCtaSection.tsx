@@ -22,8 +22,8 @@ export const FinalCtaSection: React.FC = () => {
   const planetRotate = useTransform(scrollYProgress, [0, 1], [0, -18]);
 
   return (
-    <div ref={ctaRef} className="relative overflow-hidden bg-[#020611]">
-      <Section spacingVariant="cinematic" hasBorderTop className="relative overflow-hidden bg-[#020611]">
+    <div ref={ctaRef} className="relative overflow-hidden bg-[#040407]">
+      <Section spacingVariant="cinematic" hasBorderTop className="relative overflow-hidden bg-[#040407]">
         {/* REAL PHOTOREALISTIC CYAN VORTEX DESTINATION PLANET */}
         <motion.div
           className="absolute -bottom-28 -right-16 sm:right-[2%] md:right-[5%] w-[320px] sm:w-[420px] md:w-[520px] aspect-square pointer-events-none select-none z-0"
@@ -54,7 +54,7 @@ export const FinalCtaSection: React.FC = () => {
         </div>
 
         <Container size="lg">
-          <div className="relative z-10 p-8 sm:p-14 lg:p-18 rounded-3xl bg-[#070D18]/85 border border-[#FFFBEB]/[0.1] shadow-2xl shadow-[#020611]/80 text-center space-y-8 backdrop-blur-xl">
+          <div className="relative z-10 p-8 sm:p-14 lg:p-18 rounded-3xl bg-[#0B0C10]/85 border border-[#FFFBEB]/[0.1] shadow-2xl shadow-[#040407]/80 text-center space-y-8 backdrop-blur-xl">
             {/* Eyebrow */}
             <div className="flex items-center justify-center gap-2">
               <Badge variant="cyan" withDot pulseDot size="md">
@@ -81,7 +81,7 @@ export const FinalCtaSection: React.FC = () => {
                 <Button
                   variant="special"
                   size="lg"
-                  className="rounded-full font-bold text-sm tracking-wide px-8 py-3.5 bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#020611] shadow-xl shadow-amber-500/30 hover:shadow-amber-500/50"
+                  className="rounded-full font-bold text-sm tracking-wide px-8 py-3.5 bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#040407] shadow-xl shadow-amber-500/30 hover:shadow-amber-500/50"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                 >
                   Get Started
@@ -92,7 +92,7 @@ export const FinalCtaSection: React.FC = () => {
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="rounded-full font-semibold text-sm tracking-normal px-7 py-3.5 bg-[#070D18]/70 border-[#FFFBEB]/[0.15] hover:border-[#F59E0B]/50"
+                  className="rounded-full font-semibold text-sm tracking-normal px-7 py-3.5 bg-[#0B0C10]/70 border-[#FFFBEB]/[0.15] hover:border-[#F59E0B]/50"
                 >
                   View Our Work
                 </Button>

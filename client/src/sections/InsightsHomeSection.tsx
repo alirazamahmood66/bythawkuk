@@ -13,7 +13,7 @@ export const InsightsHomeSection: React.FC = () => {
   const studioInsights = INSIGHTS_ARTICLES.slice(0, 3);
 
   return (
-    <Section spacingVariant="spacious" hasBorderTop className="relative overflow-hidden bg-[#020611]">
+    <Section spacingVariant="spacious" hasBorderTop className="relative overflow-hidden bg-[#040407]">
       <Container size="xl">
         <SectionHeading
           eyebrow="FROM THE STUDIO // EDITORIAL"
@@ -31,7 +31,7 @@ export const InsightsHomeSection: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor="rgba(245, 158, 11, 0.12)"
-              className="p-6 sm:p-7 flex flex-col justify-between border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 bg-[#070D18]/85 group transition-all duration-300"
+              className="p-6 sm:p-7 flex flex-col justify-between border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 bg-[#0B0C10]/85 group transition-all duration-300"
             >
               <div>
                 {/* Header Metadata */}

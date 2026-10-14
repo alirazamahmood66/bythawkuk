@@ -19,7 +19,7 @@ export const ProjectTestimonial: React.FC<ProjectTestimonialProps> = ({ testimon
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.1)"
+        spotlightColor="rgba(245, 158, 11, 0.1)"
         className="max-w-3xl mx-auto text-center p-8 sm:p-10 relative"
       >
         <Quote className="w-8 h-8 text-amber-400/40 mx-auto mb-4" />

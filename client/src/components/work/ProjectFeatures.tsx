@@ -34,7 +34,7 @@ export const ProjectFeatures: React.FC<ProjectFeaturesProps> = ({ features, acce
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.1)"
+            spotlightColor="rgba(245, 158, 11, 0.1)"
             className="p-6 transition-all duration-200"
           >
             <div className="flex items-start space-x-3.5">

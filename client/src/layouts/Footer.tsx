@@ -6,13 +6,13 @@ import { ArrowRight, Globe } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-[#FFFBEB]/[0.08] bg-[#020611] text-slate-400 py-16 relative z-20">
+    <footer className="border-t border-[#FFFBEB]/[0.08] bg-[#040407] text-slate-400 py-16 relative z-20">
       <Container size="xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#FFFBEB]/[0.06]">
           {/* Brand Info & Mission */}
           <div className="lg:col-span-5 space-y-4">
             <Link to="/" className="flex items-center gap-2.5 group focus-ring rounded-lg w-fit">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#FDE047] via-[#F59E0B] to-[#EA580C] flex items-center justify-center font-bold text-[#020611] text-base shadow-md shadow-[#F59E0B]/25 group-hover:scale-105 transition-transform duration-200">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#FDE047] via-[#F59E0B] to-[#EA580C] flex items-center justify-center font-bold text-[#040407] text-base shadow-md shadow-[#F59E0B]/25 group-hover:scale-105 transition-transform duration-200">
                 B
               </div>
               <div className="flex flex-col">
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
               <Button
                 variant="primary"
                 size="sm"
-                className="w-full justify-center text-xs font-bold rounded-full bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#020611] shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 border-0"
+                className="w-full justify-center text-xs font-bold rounded-full bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#040407] shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 border-0"
                 rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
               >
                 Get Started

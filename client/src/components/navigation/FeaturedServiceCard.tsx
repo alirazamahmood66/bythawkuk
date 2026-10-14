@@ -16,7 +16,7 @@ export const FeaturedServiceCard: React.FC<FeaturedServiceCardProps> = ({
     <Link
       to={service.href}
       onClick={onSelect}
-      className="group relative flex flex-col justify-between p-5 rounded-xl bg-[#070D18]/70 hover:bg-[#070D18] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 shadow-lg shadow-black/40 hover:shadow-amber-950/20 overflow-hidden focus-ring"
+      className="group relative flex flex-col justify-between p-5 rounded-xl bg-[#0B0C10]/70 hover:bg-[#0B0C10] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 shadow-lg shadow-black/40 hover:shadow-amber-950/20 overflow-hidden focus-ring"
     >
       {/* Ambient background glow on hover */}
       <div

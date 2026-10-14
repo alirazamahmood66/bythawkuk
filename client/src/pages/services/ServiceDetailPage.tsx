@@ -35,7 +35,7 @@ const SERVICE_CELESTIAL_MAP: Record<string, {
   'web-development': {
     image: '/images/cosmic/pulsar_energy_core.png',
     alt: 'NASA Crab Nebula binary pulsar energy core',
-    glow: 'rgba(32, 217, 243, 0.65)',
+    glow: 'rgba(245, 158, 11, 0.65)',
     size: 'w-[320px] sm:w-[420px] md:w-[480px]',
     badge: 'PULSAR EMISSION CORE // 30 REV/SEC',
     animationType: 'pulsar-spin',
@@ -83,7 +83,7 @@ const SERVICE_CELESTIAL_MAP: Record<string, {
   'digital-marketing': {
     image: '/images/cosmic/quantum_uplink_dish.png',
     alt: 'NASA Goldstone Deep Space Network 70m antenna dish',
-    glow: 'rgba(32, 217, 243, 0.6)',
+    glow: 'rgba(245, 158, 11, 0.6)',
     size: 'w-[300px] sm:w-[380px] md:w-[420px]',
     badge: 'DSN GOLDSTONE // CARRIER UPLINK ACTIVE',
     animationType: 'dish-sweep',
@@ -141,13 +141,13 @@ export const ServiceDetailPage: React.FC = () => {
   // Handle case where service slug does not exist in dataset
   if (!service) {
     return (
-      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#040407] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
             <div className="w-16 h-16 rounded-2xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center mx-auto text-[#F59E0B]">
               <Compass className="w-8 h-8 animate-spin-slow" />
@@ -274,7 +274,7 @@ export const ServiceDetailPage: React.FC = () => {
               spotlight={true}
               withReticles={true}
               spotlightColor={`${service.accentColor}18`}
-              className="p-8 sm:p-10 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl"
+              className="p-8 sm:p-10 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl"
             >
               <div className="space-y-2 max-w-xl">
                 <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">

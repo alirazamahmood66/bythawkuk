@@ -16,7 +16,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({ projects, resetFilter 
         variant="default"
         spotlight={true}
         withReticles={true}
-        className="py-16 px-8 text-center space-y-4 max-w-md mx-auto my-12 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] shadow-xl"
+        className="py-16 px-8 text-center space-y-4 max-w-md mx-auto my-12 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] shadow-xl"
       >
         <div className="w-14 h-14 rounded-2xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center mx-auto text-[#F59E0B]">
           <Compass className="w-7 h-7" />

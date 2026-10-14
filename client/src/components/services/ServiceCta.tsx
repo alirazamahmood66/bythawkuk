@@ -25,8 +25,8 @@ export const ServiceCta: React.FC<ServiceCtaProps> = ({
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.18)"
-        className="relative z-10 max-w-4xl mx-auto text-center p-8 sm:p-14 rounded-3xl bg-[#070D18]/90 border-amber-500/30 backdrop-blur-xl shadow-2xl"
+        spotlightColor="rgba(245, 158, 11, 0.18)"
+        className="relative z-10 max-w-4xl mx-auto text-center p-8 sm:p-14 rounded-3xl bg-[#0B0C10]/90 border-amber-500/30 backdrop-blur-xl shadow-2xl"
       >
         <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-300 uppercase mb-4 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 shadow-md">
           <Terminal className="w-3.5 h-3.5 text-amber-400" />

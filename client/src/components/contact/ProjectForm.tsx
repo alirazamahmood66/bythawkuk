@@ -185,7 +185,7 @@ export const ProjectForm: React.FC = () => {
   return (
     <div
       id="project-form-container"
-      className="p-6 sm:p-10 md:p-12 rounded-2xl bg-[#070D18]/90 border border-white/[0.08] backdrop-blur-xl shadow-2xl relative scroll-mt-24 group overflow-hidden"
+      className="p-6 sm:p-10 md:p-12 rounded-2xl bg-[#0B0C10]/90 border border-white/[0.08] backdrop-blur-xl shadow-2xl relative scroll-mt-24 group overflow-hidden"
     >
       {/* Precision HUD Reticles */}
       <span className="pointer-events-none absolute top-3 left-3 text-[10px] font-mono text-cyan-500/40 select-none">
@@ -217,7 +217,7 @@ export const ProjectForm: React.FC = () => {
                         ? 'bg-space-cyan'
                         : isCurrent
                         ? 'bg-space-cyan/60 animate-pulse'
-                        : 'bg-[#070D18]/80 border border-white/[0.08]'
+                        : 'bg-[#0B0C10]/80 border border-white/[0.08]'
                     }`}
                   />
                   <div className="flex items-center space-x-1.5 text-xs font-mono">

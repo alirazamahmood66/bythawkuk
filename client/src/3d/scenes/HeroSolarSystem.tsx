@@ -25,7 +25,7 @@ export const HeroSolarSystem: React.FC<HeroSolarSystemProps> = ({
 
       {/* 3. Physical Celestial Lighting System */}
       {/* Deep cosmic ambient fill so planetary shadow sides maintain rich silhouette */}
-      <ambientLight intensity={0.22} color="#070D18" />
+      <ambientLight intensity={0.22} color="#0B0C10" />
 
       {/* Primary Key Sunlight (shining from upper left, casting dramatic illuminated crescents) */}
       <directionalLight position={[-12, 8, 9]} intensity={3.2} color="#f8fafc" />

@@ -93,7 +93,7 @@ export const AboutPage: React.FC = () => {
                 variant="interactive"
                 spotlight={true}
                 withReticles={true}
-                className="p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] flex flex-col justify-between"
+                className="p-8 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] flex flex-col justify-between"
               >
                 <div className="space-y-3">
                   <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
@@ -118,7 +118,7 @@ export const AboutPage: React.FC = () => {
                 variant="interactive"
                 spotlight={true}
                 withReticles={true}
-                className="p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] flex flex-col justify-between"
+                className="p-8 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] flex flex-col justify-between"
               >
                 <div className="space-y-3">
                   <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">

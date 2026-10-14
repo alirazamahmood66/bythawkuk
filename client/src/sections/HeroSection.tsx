@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
       {/* PINNED STICKY VIEWPORT CONTAINER */}
       <section
         aria-label="BYTHAWK Agency Cosmic Hero"
-        className="sticky top-0 h-screen w-full flex flex-col justify-between overflow-hidden bg-[#020611] pt-18 sm:pt-20 pb-0 z-30"
+        className="sticky top-0 h-screen w-full flex flex-col justify-between overflow-hidden bg-[#040407] pt-18 sm:pt-20 pb-0 z-30"
       >
         {/* 1. PHOTOREALISTIC SATURN WITH LUMINOUS RINGS (GENTLE NATURAL DIVE - NO LABELS) */}
         <motion.div
@@ -93,7 +93,7 @@ export const HeroSection: React.FC = () => {
               ].map((cat, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wide bg-[#070D18]/85 text-[#FBBF24] border border-[#D97706]/30 backdrop-blur-md shadow-sm"
+                  className="px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wide bg-[#0B0C10]/85 text-[#FBBF24] border border-[#D97706]/30 backdrop-blur-md shadow-sm"
                 >
                   {cat}
                 </span>
@@ -134,7 +134,7 @@ export const HeroSection: React.FC = () => {
                     <Button
                       variant="primary"
                       size="md"
-                      className="rounded-full font-bold text-xs tracking-wide px-7 py-3 bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#020611] shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40"
+                      className="rounded-full font-bold text-xs tracking-wide px-7 py-3 bg-gradient-to-r from-[#FBBF24] to-[#D97706] text-[#040407] shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40"
                       rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
                     >
                       Our Services
@@ -145,7 +145,7 @@ export const HeroSection: React.FC = () => {
                     <Button
                       variant="secondary"
                       size="md"
-                      className="rounded-full font-semibold text-xs tracking-normal px-6 py-3 bg-[#070D18]/70 border-[#FFFBEB]/[0.15] hover:border-[#F59E0B]/50 backdrop-blur-md"
+                      className="rounded-full font-semibold text-xs tracking-normal px-6 py-3 bg-[#0B0C10]/70 border-[#FFFBEB]/[0.15] hover:border-[#F59E0B]/50 backdrop-blur-md"
                     >
                       View Our Work
                     </Button>

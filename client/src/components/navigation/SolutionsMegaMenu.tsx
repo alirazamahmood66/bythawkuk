@@ -61,7 +61,7 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
           animate="open"
           exit="closed"
           variants={menuVariants}
-          className="fixed inset-x-0 top-[76px] z-40 pointer-events-auto bg-[#020611]/95 backdrop-blur-2xl border-t border-b border-[#FFFBEB]/[0.08] shadow-2xl shadow-black/80 py-8"
+          className="fixed inset-x-0 top-[76px] z-40 pointer-events-auto bg-[#040407]/95 backdrop-blur-2xl border-t border-b border-[#FFFBEB]/[0.08] shadow-2xl shadow-black/80 py-8"
         >
           <Container size="xl">
             {/* Header */}
@@ -97,7 +97,7 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
                   key={item.id}
                   to={item.href}
                   onClick={onClose}
-                  className="group relative p-5 rounded-xl bg-[#070D18]/70 hover:bg-[#070D18] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-200 shadow-md focus-ring overflow-hidden flex flex-col justify-between"
+                  className="group relative p-5 rounded-xl bg-[#0B0C10]/70 hover:bg-[#0B0C10] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-200 shadow-md focus-ring overflow-hidden flex flex-col justify-between"
                 >
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <span className="font-mono text-xs font-bold tracking-wider text-[#FFFBEB] group-hover:text-[#F59E0B] transition-colors">

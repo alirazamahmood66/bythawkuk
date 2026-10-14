@@ -68,7 +68,7 @@ export const ContactPage: React.FC = () => {
           <img
             src="/images/cosmic/telemetry_satellite.png"
             alt="Telemetry satellite uplink"
-            className="w-full h-full object-contain filter drop-shadow-[0_0_60px_rgba(32,217,243,0.7)] opacity-95"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_60px_rgba(245, 158, 11, 0.7)] opacity-95"
             style={{ mixBlendMode: 'screen' }}
             loading="eager"
           />

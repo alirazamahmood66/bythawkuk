@@ -25,7 +25,7 @@ export const ProcessSection: React.FC = () => {
   const asteroidRotate = useTransform(scrollYProgress, [0, 1], [0, 75]);
 
   return (
-    <div ref={processRef} className="relative overflow-hidden bg-[#020611]">
+    <div ref={processRef} className="relative overflow-hidden bg-[#040407]">
       {/* 1. PHOTOREALISTIC CRESCENT MOON (Exclusive to Process Section) */}
       {/* 1. PHOTOREALISTIC CRESCENT MOON (Exclusive to Process Section - Transparent PNG) */}
       <motion.div
@@ -86,7 +86,7 @@ export const ProcessSection: React.FC = () => {
                   spotlight={true}
                   spotlightColor="rgba(245, 158, 11, 0.16)"
                   withReticles={true}
-                  className="p-6 sm:p-8 relative bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 flex flex-col justify-between rounded-2xl shadow-xl shadow-[#020611]/50 group transition-all duration-300 backdrop-blur-md"
+                  className="p-6 sm:p-8 relative bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 flex flex-col justify-between rounded-2xl shadow-xl shadow-[#040407]/50 group transition-all duration-300 backdrop-blur-md"
                 >
                   <div>
                     {/* Step Header & Orbital Node */}
@@ -116,7 +116,7 @@ export const ProcessSection: React.FC = () => {
                       <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
                       <span className="font-semibold uppercase tracking-wider">Mission Deliverable:</span>
                     </div>
-                    <span className="text-[#5e948c] leading-relaxed block pl-5">{item.focusArea}</span>
+                    <span className="text-[#94A3B8] leading-relaxed block pl-5">{item.focusArea}</span>
                   </div>
                 </Card>
               ))}

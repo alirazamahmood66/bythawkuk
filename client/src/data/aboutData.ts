@@ -185,7 +185,7 @@ export const ABOUT_DATA = {
       category: 'COMMERCE ENGINE',
       description: 'Conversion-focused commerce experiences designed to sell, scale, and evolve globally.',
       route: '/services/ecommerce',
-      accentColor: '#0284c7',
+      accentColor: '#F59E0B',
     },
     {
       title: 'Mobile App Development',

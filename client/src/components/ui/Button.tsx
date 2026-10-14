@@ -33,11 +33,11 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const variantClasses: Record<ButtonVariant, string> = {
       // Primary: High-contrast Neon Cyan / Neon Mint with glow ("Let's Talk")
       primary:
-        'bg-[#F59E0B] hover:bg-[#FBBF24] text-[#020611] font-bold shadow-[0_0_20px_rgba(245, 158, 11, 0.35)] hover:shadow-[0_0_25px_rgba(251, 191, 36, 0.5)] border border-[#F59E0B]/50',
+        'bg-[#F59E0B] hover:bg-[#FBBF24] text-[#040407] font-bold shadow-[0_0_20px_rgba(245, 158, 11, 0.35)] hover:shadow-[0_0_25px_rgba(251, 191, 36, 0.5)] border border-[#F59E0B]/50',
 
       // Secondary: Refined Dark Teal surface with micro border ("Explore Services")
       secondary:
-        'bg-[#070D18] hover:bg-[#0C1527] text-[#FFFBEB] hover:text-[#FBBF24] border border-[#FFFBEB]/15 hover:border-[#FBBF24]/50 shadow-sm',
+        'bg-[#0B0C10] hover:bg-[#12131A] text-[#FFFBEB] hover:text-[#FBBF24] border border-[#FFFBEB]/15 hover:border-[#FBBF24]/50 shadow-sm',
 
       // Ghost: Minimalist transparent with subtle border highlight on hover ("View Project")
       ghost:
@@ -45,7 +45,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
       // Special CTA: Cinematic gradient shimmer with Aqua Mint / Neon Mint / Neon Cyan depth
       special:
-        'bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] hover:from-[#FBBF24] hover:to-[#EA580C] text-[#020611] font-extrabold shadow-[0_0_30px_rgba(245, 158, 11, 0.4)] hover:shadow-[0_0_35px_rgba(251, 191, 36, 0.6)] border border-[#FFFBEB]/30',
+        'bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] hover:from-[#FBBF24] hover:to-[#EA580C] text-[#040407] font-extrabold shadow-[0_0_30px_rgba(245, 158, 11, 0.4)] hover:shadow-[0_0_35px_rgba(251, 191, 36, 0.6)] border border-[#FFFBEB]/30',
     };
 
     const sizeClasses: Record<ButtonSize, string> = {

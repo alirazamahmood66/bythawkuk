@@ -11,7 +11,7 @@ export const InsightsCta: React.FC = () => {
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.15)"
+        spotlightColor="rgba(245, 158, 11, 0.15)"
         className="p-8 sm:p-12 md:p-16 text-center max-w-4xl mx-auto relative overflow-hidden shadow-2xl"
       >
         {/* Subtle radial glow */}

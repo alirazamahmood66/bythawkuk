@@ -97,15 +97,15 @@ export const PlanetaryGalleryDock: React.FC = () => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                spotlightColor="rgba(32, 217, 243, 0.12)"
-                className="h-full p-4 rounded-xl bg-[#070D18]/30 backdrop-blur-md border-white/[0.08] hover:border-amber-500/40 hover:bg-[#070D18]/50 transition-all duration-300 shadow-lg flex flex-col justify-between relative overflow-hidden"
+                spotlightColor="rgba(245, 158, 11, 0.12)"
+                className="h-full p-4 rounded-xl bg-[#0B0C10]/30 backdrop-blur-md border-white/[0.08] hover:border-amber-500/40 hover:bg-[#0B0C10]/50 transition-all duration-300 shadow-lg flex flex-col justify-between relative overflow-hidden"
               >
                 {/* Subtle Transparent Ambient Cosmic Illustration in Card Background */}
                 <div className="absolute -right-3 -bottom-3 w-20 h-20 opacity-20 group-hover:opacity-35 transition-all duration-300 pointer-events-none group-hover:scale-110">
                   <img
                     src={item.illustration}
                     alt=""
-                    className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(32,217,243,0.3)]"
+                    className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(245, 158, 11, 0.3)]"
                     loading="lazy"
                   />
                 </div>

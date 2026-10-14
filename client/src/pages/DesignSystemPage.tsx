@@ -102,55 +102,55 @@ export const DesignSystemPage: React.FC = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {/* Midnight Teal */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#FFFBEB]/60">Baseline</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Midnight Teal</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#020611] border border-[#FFFBEB]/15 my-4 flex items-center justify-center font-mono text-xs text-[#FFFBEB]/70">
-                  #020611
+                <div className="h-16 rounded-lg bg-[#040407] border border-[#FFFBEB]/15 my-4 flex items-center justify-center font-mono text-xs text-[#FFFBEB]/70">
+                  #040407
                 </div>
                 <span className="text-xs text-[#FFFBEB]/60">Primary void & app backdrop</span>
               </Card>
 
               {/* Dark Teal */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#FFFBEB]/60">Surface</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Dark Teal</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#070D18] border border-[#FFFBEB]/15 my-4 flex items-center justify-center font-mono text-xs text-[#FFFBEB]/70">
-                  #070D18
+                <div className="h-16 rounded-lg bg-[#0B0C10] border border-[#FFFBEB]/15 my-4 flex items-center justify-center font-mono text-xs text-[#FFFBEB]/70">
+                  #0B0C10
                 </div>
                 <span className="text-xs text-[#FFFBEB]/60">Panels, cards & interactive docks</span>
               </Card>
 
               {/* Neon Cyan */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#F59E0B]">Primary Accent</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Neon Cyan</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#F59E0B] my-4 flex items-center justify-center font-mono text-xs text-[#020611] font-bold shadow-[0_0_15px_rgba(245, 158, 11, 0.5)]">
+                <div className="h-16 rounded-lg bg-[#F59E0B] my-4 flex items-center justify-center font-mono text-xs text-[#040407] font-bold shadow-[0_0_15px_rgba(245, 158, 11, 0.5)]">
                   #F59E0B
                 </div>
                 <span className="text-xs text-[#FFFBEB]/60">High-priority buttons & active indicators</span>
               </Card>
 
               {/* Neon Mint */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#FBBF24]">Secondary Accent</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Neon Mint</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#FBBF24] my-4 flex items-center justify-center font-mono text-xs text-[#020611] font-bold shadow-[0_0_15px_rgba(251, 191, 36, 0.4)]">
+                <div className="h-16 rounded-lg bg-[#FBBF24] my-4 flex items-center justify-center font-mono text-xs text-[#040407] font-bold shadow-[0_0_15px_rgba(251, 191, 36, 0.4)]">
                   #FBBF24
                 </div>
                 <span className="text-xs text-[#FFFBEB]/60">Orbits, badges, code & glows</span>
               </Card>
 
               {/* Aqua Mint */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#FBBF24]">Mid Accent</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Aqua Mint</h3>
@@ -162,7 +162,7 @@ export const DesignSystemPage: React.FC = () => {
               </Card>
 
               {/* Deep Aqua Green */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#FBBF24]">Deep Accent</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Deep Aqua Green</h3>
@@ -174,12 +174,12 @@ export const DesignSystemPage: React.FC = () => {
               </Card>
 
               {/* Ice White */}
-              <Card className="p-5 flex flex-col justify-between bg-[#070D18]/85 border-[#FFFBEB]/[0.08]">
+              <Card className="p-5 flex flex-col justify-between bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08]">
                 <div>
                   <span className="text-mono-label text-[#FFFBEB]">Primary Contrast</span>
                   <h3 className="text-[#FFFBEB] font-semibold text-base mt-1">Ice White</h3>
                 </div>
-                <div className="h-16 rounded-lg bg-[#FFFBEB] my-4 flex items-center justify-center font-mono text-xs text-[#020611] font-bold shadow-[0_0_15px_rgba(255, 251, 235, 0.4)]">
+                <div className="h-16 rounded-lg bg-[#FFFBEB] my-4 flex items-center justify-center font-mono text-xs text-[#040407] font-bold shadow-[0_0_15px_rgba(255, 251, 235, 0.4)]">
                   #FFFBEB
                 </div>
                 <span className="text-xs text-[#FFFBEB]/60">Display typography & contrast accents</span>

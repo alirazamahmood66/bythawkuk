@@ -34,7 +34,7 @@ export const NextProject: React.FC<NextProjectProps> = ({ nextProject }) => {
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.12)"
+        spotlightColor="rgba(245, 158, 11, 0.12)"
         className="p-6 sm:p-8 group"
       >
         <Link

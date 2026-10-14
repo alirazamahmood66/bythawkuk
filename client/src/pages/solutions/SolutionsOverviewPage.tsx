@@ -90,7 +90,7 @@ export const SolutionsOverviewPage: React.FC = () => {
                   spotlight={true}
                   withReticles={true}
                   spotlightColor={`${solution.accentColor}20`}
-                  className="flex flex-col justify-between p-7 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 shadow-xl group rounded-2xl"
+                  className="flex flex-col justify-between p-7 bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 shadow-xl group rounded-2xl"
                 >
                   <div className="space-y-5">
                     {/* Header Badges */}
@@ -124,7 +124,7 @@ export const SolutionsOverviewPage: React.FC = () => {
                     {/* Key Outcome Highlights */}
                     <div className="grid grid-cols-3 gap-2 py-3 border-y border-[#FFFBEB]/[0.08]">
                       {solution.keyOutcomes.map((outcome, idx) => (
-                        <div key={idx} className="p-2 rounded-lg bg-[#020611] border border-[#FFFBEB]/[0.06] text-center">
+                        <div key={idx} className="p-2 rounded-lg bg-[#040407] border border-[#FFFBEB]/[0.06] text-center">
                           <span className="block text-sm font-extrabold text-[#FBBF24] font-sans">
                             {outcome.value}
                           </span>
@@ -174,7 +174,7 @@ export const SolutionsOverviewPage: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-8 sm:p-12 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] text-center max-w-3xl mx-auto space-y-6 shadow-2xl"
+              className="p-8 sm:p-12 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] text-center max-w-3xl mx-auto space-y-6 shadow-2xl"
             >
               <span className="text-xs font-mono tracking-widest text-[#F59E0B] uppercase font-semibold">
                 // CUSTOM SPECIFICATION

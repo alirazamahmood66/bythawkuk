@@ -87,13 +87,13 @@ export const InsightDetailPage: React.FC = () => {
   // Graceful Not-Found View if Slug Does Not Exist
   if (!article) {
     return (
-      <main className="min-h-screen bg-[#020611] text-[#FFFBEB] flex items-center justify-center py-24">
+      <main className="min-h-screen bg-[#040407] text-[#FFFBEB] flex items-center justify-center py-24">
         <Container className="text-center">
           <Card
             variant="default"
             spotlight={true}
             withReticles={true}
-            className="max-w-md mx-auto p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
+            className="max-w-md mx-auto p-8 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] space-y-6 shadow-2xl"
           >
             <div className="w-16 h-16 rounded-2xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center mx-auto text-[#F59E0B]">
               <Compass className="w-8 h-8 animate-spin-slow" />

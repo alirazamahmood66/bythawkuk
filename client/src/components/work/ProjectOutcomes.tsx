@@ -31,7 +31,7 @@ export const ProjectOutcomes: React.FC<ProjectOutcomesProps> = ({ outcomes, acce
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.12)"
+            spotlightColor="rgba(245, 158, 11, 0.12)"
             className="p-6"
           >
             <div

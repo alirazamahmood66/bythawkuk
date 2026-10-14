@@ -118,7 +118,7 @@ export const ServicesOverviewPage: React.FC = () => {
         <img
           src="/images/cosmic/bythawk_recon_spaceship.png"
           alt="Bythawk tactical starship in gravitational slingshot"
-          className="w-full h-full object-contain filter drop-shadow-[0_0_55px_rgba(32,217,243,0.7)] opacity-95"
+          className="w-full h-full object-contain filter drop-shadow-[0_0_55px_rgba(245, 158, 11, 0.7)] opacity-95"
           loading="lazy"
         />
       </motion.div>
@@ -153,7 +153,7 @@ export const ServicesOverviewPage: React.FC = () => {
                   spotlight={true}
                   withReticles={true}
                   spotlightColor="rgba(245, 158, 11, 0.14)"
-                  className="p-8 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden shadow-xl"
+                  className="p-8 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden shadow-xl"
                 >
                   {/* Subtle top border accent */}
                   <div
@@ -231,7 +231,7 @@ export const ServicesOverviewPage: React.FC = () => {
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.15)"
+            spotlightColor="rgba(245, 158, 11, 0.15)"
             className="mt-20 p-8 sm:p-12 text-center space-y-4 shadow-2xl"
           >
             <span className="text-xs font-mono tracking-wider text-amber-400 uppercase block mb-1">

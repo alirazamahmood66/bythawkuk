@@ -32,7 +32,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ gallery, title }
             spotlight={true}
             withReticles={true}
             padding="none"
-            className="rounded-2xl overflow-hidden border border-[#FFFBEB]/[0.08] bg-[#070D18]/90 group shadow-xl"
+            className="rounded-2xl overflow-hidden border border-[#FFFBEB]/[0.08] bg-[#0B0C10]/90 group shadow-xl"
           >
             <div className="aspect-video w-full overflow-hidden relative">
               <img
@@ -43,7 +43,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ gallery, title }
               />
             </div>
             {item.caption && (
-              <figcaption className="p-4 text-xs font-mono text-[#FFFBEB]/70 border-t border-[#FFFBEB]/[0.08] bg-[#020611]/50 font-sans">
+              <figcaption className="p-4 text-xs font-mono text-[#FFFBEB]/70 border-t border-[#FFFBEB]/[0.08] bg-[#040407]/50 font-sans">
                 {item.caption}
               </figcaption>
             )}

@@ -24,7 +24,7 @@ const categoryMetrics: Record<string, string> = {
 
 export const TechnologySection: React.FC = () => {
   return (
-    <Section spacingVariant="spacious" hasBorderTop className="relative overflow-hidden bg-[#050b18]/40">
+    <Section spacingVariant="spacious" hasBorderTop className="relative overflow-hidden bg-[#040407]">
       <Container size="xl">
         <SectionHeading
           eyebrow="ENGINEERING STACK // 05"
@@ -46,7 +46,7 @@ export const TechnologySection: React.FC = () => {
                 spotlight={true}
                 withReticles={true}
                 spotlightColor="rgba(245, 158, 11, 0.14)"
-                className="p-6 sm:p-7 relative bg-[#070D18]/75 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 transition-all flex flex-col justify-between group"
+                className="p-6 sm:p-7 relative bg-[#0B0C10]/75 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 transition-all flex flex-col justify-between group"
               >
                 <div>
                   {/* Technical Header Bar */}
@@ -70,7 +70,7 @@ export const TechnologySection: React.FC = () => {
                     </h3>
                   </div>
 
-                  <p className="text-xs text-[#9edcd2]/80 mb-4 leading-relaxed font-sans">
+                  <p className="text-xs text-[#CBD5E1]/80 mb-4 leading-relaxed font-sans">
                     {cat.description}
                   </p>
 
@@ -86,7 +86,7 @@ export const TechnologySection: React.FC = () => {
                   {cat.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="font-mono text-xs px-2.5 py-1 rounded-md bg-[#020611] text-[#9edcd2] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:text-[#F59E0B] hover:bg-[#D97706]/15 transition-all cursor-default"
+                      className="font-mono text-xs px-2.5 py-1 rounded-md bg-[#040407] text-[#CBD5E1] border border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:text-[#F59E0B] hover:bg-[#D97706]/15 transition-all cursor-default"
                     >
                       {tech}
                     </span>

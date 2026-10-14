@@ -23,8 +23,8 @@ export const Section: React.FC<SectionProps> = ({
 }) => {
   const bgClasses = {
     transparent: 'bg-transparent',
-    deep: 'bg-[#020611]',
-    surface: 'bg-[#070D18]/70',
+    deep: 'bg-[#040407]',
+    surface: 'bg-[#0B0C10]/70',
   };
 
   const borderTopClass = hasBorderTop ? 'border-t border-[#FFFBEB]/[0.08]' : '';

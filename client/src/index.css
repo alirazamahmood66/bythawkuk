@@ -5,28 +5,28 @@
   --color-solar-flare: #FBBF24;
   --color-sunset-amber: #EA580C;
   --color-gold-light: #FDE047;
-  --color-obsidian-void: #020611;
-  --color-obsidian-glass: #070D18;
+  --color-obsidian-void: #040407;
+  --color-obsidian-glass: #0B0C10;
   --color-starlight-white: #FFFBEB;
   /* Legacy aliases mapped to Solar Gold */
   --color-deep-aqua: #D97706;
   --color-aqua-mint: #F59E0B;
   --color-neon-mint: #FBBF24;
-  --color-midnight-teal: #020611;
-  --color-dark-teal: #070D18;
+  --color-midnight-teal: #040407;
+  --color-dark-teal: #0B0C10;
   --color-neon-cyan: #F59E0B;
   --color-ice-white: #FFFBEB;
 }
 
 @layer base {
   :root {
-    /* Primary Solar Gold & Obsidian Amber Tokens — Bythawk */
-    --bythawk-bg-deep: #020611; /* Obsidian Void */
-    --bythawk-bg-space: #070D18; /* Dark Obsidian Glass */
-    --bythawk-bg-navy: #070D18; /* Dark Obsidian Glass */
-    --bythawk-bg-surface: #070D18; /* Dark Obsidian Surface */
-    --bythawk-bg-elevated: #0C1527; /* Elevated Obsidian */
-    --bythawk-bg-sunken: #010309; /* Deep sunken obsidian */
+    /* Primary Solar Gold & Neutral Obsidian Tokens — Bythawk */
+    --bythawk-bg-deep: #040407; /* Neutral Obsidian Void */
+    --bythawk-bg-space: #0B0C10; /* Dark Obsidian Surface */
+    --bythawk-bg-navy: #0B0C10; /* Dark Obsidian Surface */
+    --bythawk-bg-surface: #0B0C10; /* Dark Obsidian Surface */
+    --bythawk-bg-elevated: #12131A; /* Elevated Obsidian */
+    --bythawk-bg-sunken: #020204; /* Deep sunken obsidian */
 
     /* Precision Borders */
     --bythawk-border-subtle: rgba(245, 158, 11, 0.12);
@@ -45,8 +45,8 @@
     --bythawk-solar-gold: #F59E0B;
     --bythawk-solar-flare: #FBBF24;
     --bythawk-sunset-amber: #EA580C;
-    --bythawk-obsidian-void: #020611;
-    --bythawk-obsidian-glass: #070D18;
+    --bythawk-obsidian-void: #040407;
+    --bythawk-obsidian-glass: #0B0C10;
     --bythawk-starlight-white: #FFFBEB;
 
     /* Semantic Mappings */
@@ -77,11 +77,11 @@
 }
 
 /* ==========================================================================
-   GLASS & DEPTH SYSTEM — SOLAR GOLD & OBSIDIAN AMBER
+   GLASS & DEPTH SYSTEM — SOLAR GOLD & OBSIDIAN CHARCOAL
    ========================================================================== */
 
 .glass-panel {
-  background: rgba(7, 13, 24, 0.65);
+  background: rgba(11, 12, 16, 0.72);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(245, 158, 11, 0.14);
@@ -89,7 +89,7 @@
 }
 
 .glass-panel-interactive {
-  background: rgba(7, 13, 24, 0.65);
+  background: rgba(11, 12, 16, 0.72);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(245, 158, 11, 0.14);
@@ -98,24 +98,24 @@
 }
 
 .glass-panel-interactive:hover {
-  background: rgba(12, 21, 39, 0.85);
+  background: rgba(18, 19, 26, 0.85);
   border-color: rgba(245, 158, 11, 0.45);
-  box-shadow: 0 20px 40px -15px rgba(2, 6, 17, 0.8), 0 0 30px -5px rgba(245, 158, 11, 0.22);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.85), 0 0 30px -5px rgba(245, 158, 11, 0.22);
   transform: translateY(-3px);
 }
 
 .elevated-panel {
-  background: rgba(7, 13, 24, 0.92);
+  background: rgba(14, 15, 20, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--bythawk-border-medium);
-  box-shadow: 0 20px 40px -15px rgba(2, 6, 17, 0.9), 0 0 20px 0 rgba(245, 158, 11, 0.12);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 20px 0 rgba(245, 158, 11, 0.12);
   border-radius: 1rem;
 }
 
 .glow-panel-cyan, .glow-panel-gold {
   position: relative;
-  background: rgba(7, 13, 24, 0.8);
+  background: rgba(11, 12, 16, 0.85);
   border: 1px solid rgba(245, 158, 11, 0.35);
   box-shadow: inset 0 0 20px 0 rgba(245, 158, 11, 0.1), 0 10px 25px -5px rgba(245, 158, 11, 0.2);
   border-radius: 0.75rem;
@@ -123,14 +123,14 @@
 
 .glow-panel-violet {
   position: relative;
-  background: rgba(7, 13, 24, 0.8);
+  background: rgba(11, 12, 16, 0.85);
   border: 1px solid rgba(234, 88, 12, 0.35);
   box-shadow: inset 0 0 20px 0 rgba(234, 88, 12, 0.1), 0 10px 25px -5px rgba(234, 88, 12, 0.2);
   border-radius: 0.75rem;
 }
 
 .dark-panel {
-  background: #070D18;
+  background: #0B0C10;
   border: 1px solid var(--bythawk-border-subtle);
   border-radius: 0.75rem;
 }

@@ -28,7 +28,7 @@ export const AccessibleServiceNav: React.FC<AccessibleServiceNavProps> = ({
             <li key={planet.id}>
               <Link
                 to={planet.route}
-                className="group flex items-center justify-between p-2.5 rounded-lg bg-[#080e1e]/80 hover:bg-[#101c3d]/90 border border-white/[0.08] hover:border-amber-500/40 transition-all duration-200 focus-ring"
+                className="group flex items-center justify-between p-2.5 rounded-lg bg-[#0B0C10]/80 hover:bg-[#101c3d]/90 border border-white/[0.08] hover:border-amber-500/40 transition-all duration-200 focus-ring"
                 aria-label={`Explore ${planet.name} (${planet.category})`}
               >
                 <div className="flex items-center gap-2 min-w-0">

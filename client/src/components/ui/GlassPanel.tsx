@@ -21,10 +21,10 @@ export const GlassPanel: React.FC<GlassPanelProps> = ({
   ...props
 }) => {
   const depthClasses: Record<GlassDepth, string> = {
-    flat: 'bg-[#070D18]/70',
-    elevated: 'bg-[#070D18]/90 shadow-xl shadow-black/40',
-    sunken: 'bg-[#020611]/80 inset-shadow',
-    floating: 'bg-[#070D18]/95 shadow-2xl shadow-amber-950/20',
+    flat: 'bg-[#0B0C10]/70',
+    elevated: 'bg-[#0B0C10]/90 shadow-xl shadow-black/40',
+    sunken: 'bg-[#040407]/80 inset-shadow',
+    floating: 'bg-[#0B0C10]/95 shadow-2xl shadow-amber-950/20',
   };
 
   const blurClasses = {

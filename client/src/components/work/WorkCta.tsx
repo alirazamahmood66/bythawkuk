@@ -25,7 +25,7 @@ export const WorkCta: React.FC<WorkCtaProps> = ({
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.15)"
+        spotlightColor="rgba(245, 158, 11, 0.15)"
         className="relative z-10 max-w-4xl mx-auto text-center p-8 sm:p-12 shadow-2xl"
       >
         <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-4 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30">

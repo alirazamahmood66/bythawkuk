@@ -29,8 +29,8 @@ export const ProcessTimeline: React.FC = () => {
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-xl"
+            spotlightColor="rgba(245, 158, 11, 0.12)"
+            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-xl"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               {/* Left Column: Number & Stage Identity */}
@@ -80,7 +80,7 @@ export const ProcessTimeline: React.FC = () => {
                     {stage.activities.map((act, aIdx) => (
                       <div
                         key={aIdx}
-                        className="flex items-start text-xs sm:text-sm text-slate-300 p-3 rounded-lg bg-[#070D18]/60 border border-white/[0.08] font-sans"
+                        className="flex items-start text-xs sm:text-sm text-slate-300 p-3 rounded-lg bg-[#0B0C10]/60 border border-white/[0.08] font-sans"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 mr-2.5 flex-shrink-0" />
                         <span>{act}</span>

@@ -37,8 +37,8 @@ export const ServiceBenefits: React.FC<ServiceBenefitsProps> = ({
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.14)"
-            className="p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-lg"
+            spotlightColor="rgba(245, 158, 11, 0.14)"
+            className="p-7 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-lg"
           >
             <div className="flex items-start space-x-4">
               <div

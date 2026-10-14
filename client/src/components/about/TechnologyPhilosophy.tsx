@@ -39,8 +39,8 @@ export const TechnologyPhilosophy: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
+              spotlightColor="rgba(245, 158, 11, 0.12)"
+              className="p-7 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between pb-3.5 mb-5 border-b border-white/[0.06] text-[10px] font-mono">
@@ -80,8 +80,8 @@ export const TechnologyPhilosophy: React.FC = () => {
         variant="default"
         spotlight={true}
         withReticles={true}
-        spotlightColor="rgba(32, 217, 243, 0.16)"
-        className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#070D18] via-[#091a33] to-[#070D18] border-amber-500/30 shadow-2xl relative overflow-hidden"
+        spotlightColor="rgba(245, 158, 11, 0.16)"
+        className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#0B0C10] via-[#091a33] to-[#0B0C10] border-amber-500/30 shadow-2xl relative overflow-hidden"
       >
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 relative z-10">
           <div className="space-y-4 max-w-2xl">

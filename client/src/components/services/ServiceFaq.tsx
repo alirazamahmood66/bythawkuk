@@ -43,8 +43,8 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-5 rounded-2xl bg-[#070D18]/90 border-white/[0.08]"
+              spotlightColor="rgba(245, 158, 11, 0.12)"
+              className="p-5 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08]"
             >
               <span className="text-xs font-mono text-amber-400 uppercase block mb-1">
                 NEED BESPOKE ADVICE?
@@ -75,8 +75,8 @@ export const ServiceFaq: React.FC<ServiceFaqProps> = ({
                 key={idx}
                 variant="default"
                 spotlight={true}
-                spotlightColor="rgba(32, 217, 243, 0.08)"
-                className="rounded-2xl bg-[#070D18]/85 border-white/[0.08] hover:border-amber-500/30 overflow-hidden transition-all duration-200"
+                spotlightColor="rgba(245, 158, 11, 0.08)"
+                className="rounded-2xl bg-[#0B0C10]/85 border-white/[0.08] hover:border-amber-500/30 overflow-hidden transition-all duration-200"
               >
                 <h3>
                   <button

@@ -29,7 +29,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({
   if (heroImage) {
     return (
       <div
-        className={`w-full ${aspectClasses} rounded-2xl overflow-hidden relative border border-[#FFFBEB]/[0.08] bg-[#070D18]/90 group ${className}`}
+        className={`w-full ${aspectClasses} rounded-2xl overflow-hidden relative border border-[#FFFBEB]/[0.08] bg-[#0B0C10]/90 group ${className}`}
       >
         <img
           src={heroImage}
@@ -38,7 +38,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute top-4 right-4 z-10">
-          <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded bg-[#020611]/80 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70 backdrop-blur-md">
+          <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded bg-[#040407]/80 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70 backdrop-blur-md">
             {badgeLabel}
           </span>
         </div>
@@ -49,7 +49,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({
   // Abstract Architectural Blueprint & Constellation Motif
   return (
     <div
-      className={`w-full ${aspectClasses} rounded-2xl overflow-hidden relative border border-[#FFFBEB]/[0.08] bg-[#070D18]/90 p-5 sm:p-7 flex flex-col justify-between group transition-all duration-300 ${className}`}
+      className={`w-full ${aspectClasses} rounded-2xl overflow-hidden relative border border-[#FFFBEB]/[0.08] bg-[#0B0C10]/90 p-5 sm:p-7 flex flex-col justify-between group transition-all duration-300 ${className}`}
     >
       {/* Background radial gradient spotlight */}
       <div

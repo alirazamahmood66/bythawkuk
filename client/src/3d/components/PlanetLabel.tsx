@@ -25,7 +25,7 @@ export const PlanetLabel: React.FC<PlanetLabelProps> = ({
     >
       <div className="flex flex-col items-center animate-in fade-in zoom-in-95 duration-200">
         {/* Technical Annotation Pill */}
-        <div className="flex flex-col items-center px-3 py-1.5 rounded-lg bg-[#070D18]/95 border border-[#F59E0B]/40 shadow-[0_0_20px_rgba(245, 158, 11, 0.35)] backdrop-blur-md whitespace-nowrap">
+        <div className="flex flex-col items-center px-3 py-1.5 rounded-lg bg-[#0B0C10]/95 border border-[#F59E0B]/40 shadow-[0_0_20px_rgba(245, 158, 11, 0.35)] backdrop-blur-md whitespace-nowrap">
           <div className="flex items-center gap-1.5">
             <span
               className="w-1.5 h-1.5 rounded-full animate-ping"

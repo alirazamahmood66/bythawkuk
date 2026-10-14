@@ -35,8 +35,8 @@ export const ServiceProcess: React.FC<ServiceProcessProps> = ({
             variant="default"
             spotlight={true}
             withReticles={true}
-            spotlightColor="rgba(32, 217, 243, 0.12)"
-            className="p-6 sm:p-7 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between relative group shadow-xl"
+            spotlightColor="rgba(245, 158, 11, 0.12)"
+            className="p-6 sm:p-7 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between relative group shadow-xl"
           >
             <div>
               {/* Header: Step Number & Badge */}

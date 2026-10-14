@@ -34,7 +34,7 @@ export const ProcessFaq: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.1)"
+              spotlightColor="rgba(245, 158, 11, 0.1)"
               className="p-5"
             >
               <span className="text-xs font-mono text-amber-400 uppercase block mb-1">
@@ -66,7 +66,7 @@ export const ProcessFaq: React.FC = () => {
                 variant="default"
                 spotlight={true}
                 withReticles={true}
-                spotlightColor="rgba(32, 217, 243, 0.08)"
+                spotlightColor="rgba(245, 158, 11, 0.08)"
                 className="overflow-hidden transition-all duration-200"
               >
                 <h3>
@@ -76,7 +76,7 @@ export const ProcessFaq: React.FC = () => {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => toggleItem(idx)}
-                    className="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none focus:ring-1 focus:ring-cyan-400/50 text-white font-medium text-base transition-colors"
+                    className="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none focus:ring-1 focus:ring-amber-400/50 text-white font-medium text-base transition-colors"
                   >
                     <span className="pr-4">{faq.question}</span>
                     <ChevronDown

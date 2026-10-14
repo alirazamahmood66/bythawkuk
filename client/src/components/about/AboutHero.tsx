@@ -49,8 +49,8 @@ export const AboutHero: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-4 sm:p-5 rounded-xl bg-[#070D18]/85 border-white/[0.08] hover:border-amber-500/40 transition-all group"
+              spotlightColor="rgba(245, 158, 11, 0.12)"
+              className="p-4 sm:p-5 rounded-xl bg-[#0B0C10]/85 border-white/[0.08] hover:border-amber-500/40 transition-all group"
             >
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[10px] font-mono tracking-wider text-slate-400 uppercase">

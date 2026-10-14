@@ -34,7 +34,7 @@ export const TestimonialsSection: React.FC = () => {
                 spotlight={true}
                 withReticles={true}
                 spotlightColor="rgba(245, 158, 11, 0.16)"
-                className="p-8 sm:p-10 relative bg-[#070D18]/85 border-[#FFFBEB]/[0.09] hover:border-[#F59E0B]/50 flex flex-col justify-between group overflow-hidden shadow-xl shadow-[#020611]/50"
+                className="p-8 sm:p-10 relative bg-[#0B0C10]/85 border-[#FFFBEB]/[0.09] hover:border-[#F59E0B]/50 flex flex-col justify-between group overflow-hidden shadow-xl shadow-[#040407]/50"
               >
                 {/* Background HUD watermark */}
                 <div className="absolute right-4 top-4 text-white/[0.03] select-none pointer-events-none font-mono text-8xl font-black">
@@ -48,7 +48,7 @@ export const TestimonialsSection: React.FC = () => {
                       <div className="w-6 h-6 rounded bg-[#D97706]/15 border border-[#FBBF24]/30 flex items-center justify-center text-[#F59E0B]">
                         <Terminal className="w-3.5 h-3.5 text-[#F59E0B]" />
                       </div>
-                      <span className="font-mono text-xs uppercase tracking-widest text-[#9edcd2]/70 font-semibold">
+                      <span className="font-mono text-xs uppercase tracking-widest text-[#CBD5E1]/70 font-semibold">
                         DEBRIEF LOG // REF-0{idx + 1}
                       </span>
                     </div>
@@ -73,21 +73,21 @@ export const TestimonialsSection: React.FC = () => {
                 <div className="relative z-10 pt-6 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between flex-wrap gap-4">
                   <div className="flex items-center gap-3.5">
                     {/* Monogram Seal */}
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#070D18] to-[#020611] border border-[#F59E0B]/40 flex items-center justify-center font-mono font-bold text-sm text-[#F59E0B] shadow-md shadow-[#020611]/50">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0B0C10] to-[#040407] border border-[#F59E0B]/40 flex items-center justify-center font-mono font-bold text-sm text-[#F59E0B] shadow-md shadow-[#040407]/50">
                       {initials}
                     </div>
                     <div>
                       <div className="font-bold text-[#FFFBEB] text-sm font-sans tracking-tight">
                         {item.clientName}
                       </div>
-                      <div className="text-xs text-[#9edcd2]/70 font-sans mt-0.5">
+                      <div className="text-xs text-[#CBD5E1]/70 font-sans mt-0.5">
                         {item.role} &bull; <span className="text-[#FBBF24] font-medium">{item.company}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Project scope tag */}
-                  <div className="flex items-center gap-1.5 text-[10px] font-mono text-[#9edcd2]/70 bg-[#020611]/60 border border-[#FFFBEB]/[0.08] px-2.5 py-1 rounded">
+                  <div className="flex items-center gap-1.5 text-[10px] font-mono text-[#CBD5E1]/70 bg-[#040407]/60 border border-[#FFFBEB]/[0.08] px-2.5 py-1 rounded">
                     <FileCode2 className="w-3 h-3 text-[#F59E0B]" />
                     <span className="truncate max-w-[160px] sm:max-w-none">{item.project}</span>
                   </div>

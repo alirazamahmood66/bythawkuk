@@ -118,19 +118,19 @@ export const FeaturedWorkSection: React.FC = () => {
             spotlight={true}
             spotlightColor={`${primaryProject.accentColor}25`}
             withReticles={true}
-            className="p-6 sm:p-10 bg-[#070D18]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 rounded-2xl overflow-hidden shadow-2xl shadow-[#020611]/80 transition-all duration-300"
+            className="p-6 sm:p-10 bg-[#0B0C10]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#0B0C10]/60 rounded-2xl overflow-hidden shadow-2xl shadow-[#040407]/80 transition-all duration-300"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               {/* Left Column: Titanium Browser Device Framing */}
-              <div className="lg:col-span-7 rounded-xl overflow-hidden border border-[#FFFBEB]/[0.12] bg-[#020611] relative group-hover:border-[#F59E0B]/50 transition-colors shadow-2xl">
+              <div className="lg:col-span-7 rounded-xl overflow-hidden border border-[#FFFBEB]/[0.12] bg-[#040407] relative group-hover:border-[#F59E0B]/50 transition-colors shadow-2xl">
                 {/* Browser Chrome Header */}
-                <div className="px-3.5 py-2.5 bg-[#070D18] border-b border-[#FFFBEB]/[0.08] flex items-center justify-between">
+                <div className="px-3.5 py-2.5 bg-[#0B0C10] border-b border-[#FFFBEB]/[0.08] flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
                     <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                     <span className="w-2.5 h-2.5 rounded-full bg-[#FBBF24]/80" />
                   </div>
-                  <div className="px-3 py-0.5 rounded bg-[#020611]/90 border border-[#FFFBEB]/[0.06] text-[10px] font-mono text-[#9edcd2]/70 flex items-center gap-1.5 max-w-[220px] truncate">
+                  <div className="px-3 py-0.5 rounded bg-[#040407]/90 border border-[#FFFBEB]/[0.06] text-[10px] font-mono text-[#CBD5E1]/70 flex items-center gap-1.5 max-w-[220px] truncate">
                     <ShieldCheck className="w-3 h-3 text-[#F59E0B] shrink-0" />
                     <span className="truncate">{primaryProject.domainUrl}</span>
                   </div>
@@ -163,7 +163,7 @@ export const FeaturedWorkSection: React.FC = () => {
                     {primaryProject.title}
                   </h3>
 
-                  <p className="text-sm text-[#9edcd2] leading-relaxed font-sans mt-3">
+                  <p className="text-sm text-[#CBD5E1] leading-relaxed font-sans mt-3">
                     {primaryProject.description}
                   </p>
                 </div>
@@ -171,11 +171,11 @@ export const FeaturedWorkSection: React.FC = () => {
                 {/* Outcome Metrics Console */}
                 <div className="grid grid-cols-3 gap-2.5 py-4 border-y border-[#FFFBEB]/[0.08]">
                   {primaryProject.metrics.map((m, i) => (
-                    <div key={i} className="p-2.5 rounded-lg bg-[#020611]/80 border border-[#FFFBEB]/[0.06] text-left">
+                    <div key={i} className="p-2.5 rounded-lg bg-[#040407]/80 border border-[#FFFBEB]/[0.06] text-left">
                       <span className="block text-base sm:text-lg font-extrabold text-[#F59E0B] font-sans">
                         {m.value}
                       </span>
-                      <span className="block text-[10px] font-mono text-[#5e948c] uppercase tracking-wider mt-0.5 truncate">
+                      <span className="block text-[10px] font-mono text-[#94A3B8] uppercase tracking-wider mt-0.5 truncate">
                         {m.label}
                       </span>
                     </div>
@@ -219,18 +219,18 @@ export const FeaturedWorkSection: React.FC = () => {
                 spotlight={true}
                 spotlightColor={`${project.accentColor}25`}
                 withReticles={true}
-                className="h-full flex flex-col justify-between p-6 sm:p-8 bg-[#070D18]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#070D18]/60 rounded-2xl overflow-hidden shadow-xl shadow-[#020611]/70 transition-all duration-300"
+                className="h-full flex flex-col justify-between p-6 sm:p-8 bg-[#0B0C10]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#0B0C10]/60 rounded-2xl overflow-hidden shadow-xl shadow-[#040407]/70 transition-all duration-300"
               >
                 <div>
                   {/* Browser Chrome Header & UI Screenshot */}
-                  <div className="w-full rounded-xl overflow-hidden border border-[#FFFBEB]/[0.1] bg-[#020611] mb-6 relative group-hover:border-[#F59E0B]/40 transition-colors shadow-lg">
-                    <div className="px-3 py-2 bg-[#070D18] border-b border-[#FFFBEB]/[0.08] flex items-center justify-between">
+                  <div className="w-full rounded-xl overflow-hidden border border-[#FFFBEB]/[0.1] bg-[#040407] mb-6 relative group-hover:border-[#F59E0B]/40 transition-colors shadow-lg">
+                    <div className="px-3 py-2 bg-[#0B0C10] border-b border-[#FFFBEB]/[0.08] flex items-center justify-between">
                       <div className="flex items-center gap-1.5">
                         <span className="w-2 h-2 rounded-full bg-rose-500/80" />
                         <span className="w-2 h-2 rounded-full bg-amber-500/80" />
                         <span className="w-2 h-2 rounded-full bg-[#FBBF24]/80" />
                       </div>
-                      <div className="px-2.5 py-0.5 rounded bg-[#020611]/90 border border-[#FFFBEB]/[0.06] text-[9px] font-mono text-[#9edcd2]/70 truncate max-w-[160px]">
+                      <div className="px-2.5 py-0.5 rounded bg-[#040407]/90 border border-[#FFFBEB]/[0.06] text-[9px] font-mono text-[#CBD5E1]/70 truncate max-w-[160px]">
                         {project.domainUrl}
                       </div>
                     </div>
@@ -242,7 +242,7 @@ export const FeaturedWorkSection: React.FC = () => {
                         className="w-full h-48 sm:h-56 object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                         loading="lazy"
                       />
-                      <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-[#020611]/90 border border-[#FFFBEB]/[0.1] backdrop-blur-md">
+                      <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-[#040407]/90 border border-[#FFFBEB]/[0.1] backdrop-blur-md">
                         <span className="text-[10px] font-mono text-[#F59E0B] uppercase tracking-widest font-semibold">
                           {project.category}
                         </span>
@@ -255,7 +255,7 @@ export const FeaturedWorkSection: React.FC = () => {
                     <h3 className="text-xl sm:text-2xl font-bold text-[#FFFBEB] tracking-tight group-hover:text-[#F59E0B] transition-colors font-sans">
                       {project.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#9edcd2] leading-relaxed font-sans">
+                    <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed font-sans">
                       {project.description}
                     </p>
                   </div>
@@ -263,11 +263,11 @@ export const FeaturedWorkSection: React.FC = () => {
                   {/* Telemetry Metrics Console */}
                   <div className="grid grid-cols-3 gap-2 py-3 border-y border-[#FFFBEB]/[0.08] mb-4">
                     {project.metrics.map((m, i) => (
-                      <div key={i} className="p-2 rounded-lg bg-[#020611]/80 border border-[#FFFBEB]/[0.06] text-left">
+                      <div key={i} className="p-2 rounded-lg bg-[#040407]/80 border border-[#FFFBEB]/[0.06] text-left">
                         <span className="block text-sm sm:text-base font-extrabold text-[#F59E0B] font-sans">
                           {m.value}
                         </span>
-                        <span className="block text-[9px] font-mono text-[#5e948c] uppercase tracking-wider mt-0.5 truncate">
+                        <span className="block text-[9px] font-mono text-[#94A3B8] uppercase tracking-wider mt-0.5 truncate">
                           {m.label}
                         </span>
                       </div>

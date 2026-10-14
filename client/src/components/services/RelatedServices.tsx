@@ -48,7 +48,7 @@ export const RelatedServices: React.FC<RelatedServicesProps> = ({
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.12)"
+              spotlightColor="rgba(245, 158, 11, 0.12)"
               className="p-6 h-full flex flex-col justify-between"
             >
               <div>

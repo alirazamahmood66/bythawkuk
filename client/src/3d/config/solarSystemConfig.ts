@@ -94,8 +94,8 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
       },
       procedural: {
         palette: {
-          primary: '#162232', // Dark basaltic base rock
-          secondary: '#25384d', // Rugged highland plateaus
+          primary: '#0B0C10', // Dark basaltic base rock
+          secondary: '#12131A', // Rugged highland plateaus
           accent: '#0891b2', // Cool cyan-tinted mineral fault lines
           dark: '#0a1017', // Impact craters and deep rifts
           specular: '#38bdf8',
@@ -118,13 +118,13 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
     initialAngle: 2.1,
     size: 0.46,
     color: '#38bdf8', // Electric Sky Blue
-    emissiveColor: '#0284c7',
+    emissiveColor: '#F59E0B',
     roughness: 0.35,
     metalness: 0.25,
     hasRings: true,
     ringInnerRadius: 0.58,
     ringOuterRadius: 0.82,
-    ringColor: '#0284c7',
+    ringColor: '#F59E0B',
     atmosphericGlow: 'rgba(56, 189, 248, 0.35)',
     surface: {
       type: 'earthlike',
@@ -144,10 +144,10 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
       },
       procedural: {
         palette: {
-          primary: '#082f49', // Deep sapphire ocean abysses
-          secondary: '#0c4a6e', // Continental shelf shallows
-          accent: '#1e3a5f', // Earth/slate landmasses with subtle vegetation
-          dark: '#031726', // Oceanic trenches
+          primary: '#0B0C10', // Deep sapphire ocean abysses
+          secondary: '#12131A', // Continental shelf shallows
+          accent: '#181924', // Earth/slate landmasses with subtle vegetation
+          dark: '#040407', // Oceanic trenches
           specular: '#bae6fd', // Glint on water surfaces
         },
         noiseScale: 2.8,
@@ -184,10 +184,10 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
       },
       procedural: {
         palette: {
-          primary: '#070D18', // Deep dark teal mantle
+          primary: '#0B0C10', // Deep dark teal mantle
           secondary: '#EA580C', // Fractured ice crust
           accent: '#FBBF24', // Sub-surface crystalline fissure glow
-          dark: '#020611', // Deep chasm fault lines
+          dark: '#040407', // Deep chasm fault lines
           specular: '#FFFBEB', // Glacial specular sheen
         },
         noiseScale: 4.2,
@@ -310,10 +310,10 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
       },
       procedural: {
         palette: {
-          primary: '#070D18', // Deep plum tectonic base
+          primary: '#0B0C10', // Deep plum tectonic base
           secondary: '#D97706', // Dusky rose highland ridges
           accent: '#F59E0B', // Vibrant magenta-rose marble veining
-          dark: '#020611', // Deep metamorphic crevices
+          dark: '#040407', // Deep metamorphic crevices
           specular: '#FFFBEB',
         },
         noiseScale: 3.0,

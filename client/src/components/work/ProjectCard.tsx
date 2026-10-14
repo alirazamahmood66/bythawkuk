@@ -17,7 +17,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       spotlight={true}
       withReticles={true}
       spotlightColor="rgba(245, 158, 11, 0.12)"
-      className="p-6 sm:p-7 flex flex-col justify-between group shadow-lg hover:shadow-2xl bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300"
+      className="p-6 sm:p-7 flex flex-col justify-between group shadow-lg hover:shadow-2xl bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all duration-300"
     >
       <div>
         {/* Visual Preview */}
@@ -74,13 +74,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.technologies.slice(0, 4).map((tech) => (
             <span
               key={tech}
-              className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#020611] border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70"
+              className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#040407] border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70"
             >
               {tech}
             </span>
           ))}
           {project.technologies.length > 4 && (
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#020611] border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/60">
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#040407] border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/60">
               +{project.technologies.length - 4}
             </span>
           )}

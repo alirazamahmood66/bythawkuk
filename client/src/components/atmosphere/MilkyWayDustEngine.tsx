@@ -150,7 +150,7 @@ export const MilkyWayDustEngine: React.FC = () => {
           className="absolute top-[45%] -left-[10%] w-[80vw] h-[70vh] filter blur-[140px] pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(234, 88, 12, 0.18) 0%, rgba(7, 13, 24, 0.25) 50%, transparent 75%)',
+              'radial-gradient(circle, rgba(234, 88, 12, 0.18) 0%, rgba(11, 12, 16, 0.25) 50%, transparent 75%)',
           }}
         />
 
@@ -159,7 +159,7 @@ export const MilkyWayDustEngine: React.FC = () => {
           className="absolute top-[75%] right-[5%] w-[70vw] h-[60vh] filter blur-[150px] pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(217, 119, 6, 0.14) 0%, rgba(2, 6, 17, 0.3) 60%, transparent 80%)',
+              'radial-gradient(circle, rgba(217, 119, 6, 0.14) 0%, rgba(4, 4, 7, 0.3) 60%, transparent 80%)',
           }}
         />
       </div>
@@ -181,11 +181,11 @@ export const MilkyWayDustEngine: React.FC = () => {
           <linearGradient id="mwOrbitGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.4" />
             <stop offset="50%" stopColor="#FBBF24" stopOpacity="0.15" />
-            <stop offset="100%" stopColor="#020611" stopOpacity="0" />
+            <stop offset="100%" stopColor="#040407" stopOpacity="0" />
           </linearGradient>
           <linearGradient id="mwOrbitGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#D97706" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#070D18" stopOpacity="0.05" />
+            <stop offset="100%" stopColor="#0B0C10" stopOpacity="0.05" />
           </linearGradient>
         </defs>
 

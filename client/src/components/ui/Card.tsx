@@ -28,7 +28,7 @@ export const Card: React.FC<CardProps> = ({
   glow,
   padding = 'md',
   spotlight = true,
-  spotlightColor = 'rgba(32, 217, 243, 0.14)',
+  spotlightColor = 'rgba(245, 158, 11, 0.14)',
   withReticles = false,
   as = 'div',
   onMouseMove,
@@ -50,7 +50,7 @@ export const Card: React.FC<CardProps> = ({
     glowCyan: 'glow-panel-cyan',
     glowViolet: 'glow-panel-violet',
     dark: 'dark-panel',
-    bordered: 'bordered-panel bg-[#080e1e]/60 backdrop-blur-sm',
+    bordered: 'bordered-panel bg-[#0B0C10]/60 backdrop-blur-sm',
   };
 
   const paddingClasses = {

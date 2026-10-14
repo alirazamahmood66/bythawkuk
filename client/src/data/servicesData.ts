@@ -621,7 +621,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     headline: 'Conversion-Optimized Commerce Platforms Built to Scale Globally',
     introduction:
       'We build high-yield commerce platforms and bespoke storefronts that turn browsing into transactions. Combining ultra-fast checkout flows, resilient inventory sync, and fluid multi-currency purchasing experiences.',
-    accentColor: '#0284c7',
+    accentColor: '#F59E0B',
     iconName: 'ShoppingBag',
     metaBadges: [
       { label: 'DELIVERY CADENCE', value: '6–16 Weeks' },

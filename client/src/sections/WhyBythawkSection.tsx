@@ -13,7 +13,7 @@ export const WhyBythawkSection: React.FC = () => {
   const p4 = WHY_BYTHAWK_DATA[3];
 
   return (
-    <Section spacingVariant="spacious" hasBorderTop className="relative overflow-hidden bg-[#070D18]/40">
+    <Section spacingVariant="spacious" hasBorderTop className="relative overflow-hidden bg-[#0B0C10]/40">
       {/* Subtle Orbital Background Line */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full border border-[#F59E0B]/[0.05] pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-dashed border-[#FFFBEB]/[0.04] pointer-events-none" />
@@ -35,7 +35,7 @@ export const WhyBythawkSection: React.FC = () => {
               spotlight={true}
               spotlightColor="rgba(245, 158, 11, 0.18)"
               withReticles={true}
-              className="h-full p-8 sm:p-10 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#020611]/60 overflow-hidden group"
+              className="h-full p-8 sm:p-10 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#040407]/60 overflow-hidden group"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
@@ -46,7 +46,7 @@ export const WhyBythawkSection: React.FC = () => {
                     <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
                   </div>
 
-                  <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#020611]/80 border border-[#FFFBEB]/[0.08] text-[10px] font-mono text-[#F59E0B]">
+                  <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#040407]/80 border border-[#FFFBEB]/[0.08] text-[10px] font-mono text-[#F59E0B]">
                     <ShieldCheck className="w-3.5 h-3.5 text-[#F59E0B]" />
                     <span>VERIFIED UK ARCHITECTURE</span>
                   </div>
@@ -83,14 +83,14 @@ export const WhyBythawkSection: React.FC = () => {
               spotlight={true}
               spotlightColor="rgba(251, 191, 36, 0.18)"
               withReticles={true}
-              className="h-full p-8 sm:p-10 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#FBBF24]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#020611]/60 overflow-hidden group"
+              className="h-full p-8 sm:p-10 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#FBBF24]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#040407]/60 overflow-hidden group"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
                   <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-[#FBBF24]/10 text-[#FBBF24] border border-[#FBBF24]/30">
                     PRINCIPLE // {p2.number}
                   </span>
-                  <div className="w-9 h-9 rounded-lg bg-[#020611]/80 border border-[#FFFBEB]/[0.08] flex items-center justify-center text-[#FBBF24]">
+                  <div className="w-9 h-9 rounded-lg bg-[#040407]/80 border border-[#FFFBEB]/[0.08] flex items-center justify-center text-[#FBBF24]">
                     <Target className="w-4 h-4" />
                   </div>
                 </div>
@@ -99,16 +99,16 @@ export const WhyBythawkSection: React.FC = () => {
                   {p2.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-[#9edcd2] font-medium leading-relaxed font-sans mb-3">
+                <p className="text-sm sm:text-base text-[#CBD5E1] font-medium leading-relaxed font-sans mb-3">
                   "{p2.description}"
                 </p>
 
-                <p className="text-xs sm:text-sm text-[#9edcd2]/75 leading-relaxed font-sans">
+                <p className="text-xs sm:text-sm text-[#CBD5E1]/75 leading-relaxed font-sans">
                   {p2.detail}
                 </p>
               </div>
 
-              <div className="pt-5 mt-5 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between text-xs font-mono text-[#5e948c]">
+              <div className="pt-5 mt-5 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between text-xs font-mono text-[#94A3B8]">
                 <span>ERGONOMICS TELEMETRY</span>
                 <span className="text-[#FBBF24] font-bold">FRICTION-FREE UX</span>
               </div>
@@ -122,14 +122,14 @@ export const WhyBythawkSection: React.FC = () => {
               spotlight={true}
               spotlightColor="rgba(217, 119, 6, 0.22)"
               withReticles={true}
-              className="h-full p-8 sm:p-10 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#D97706]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#020611]/60 overflow-hidden group"
+              className="h-full p-8 sm:p-10 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#D97706]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#040407]/60 overflow-hidden group"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
                   <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-[#D97706]/15 text-[#FBBF24] border border-[#D97706]/30">
                     PRINCIPLE // {p3.number}
                   </span>
-                  <div className="w-9 h-9 rounded-lg bg-[#020611]/80 border border-[#FFFBEB]/[0.08] flex items-center justify-center text-[#FBBF24]">
+                  <div className="w-9 h-9 rounded-lg bg-[#040407]/80 border border-[#FFFBEB]/[0.08] flex items-center justify-center text-[#FBBF24]">
                     <Cpu className="w-4 h-4" />
                   </div>
                 </div>
@@ -138,16 +138,16 @@ export const WhyBythawkSection: React.FC = () => {
                   {p3.title}
                 </h3>
 
-                <p className="text-sm sm:text-base text-[#9edcd2] font-medium leading-relaxed font-sans mb-3">
+                <p className="text-sm sm:text-base text-[#CBD5E1] font-medium leading-relaxed font-sans mb-3">
                   "{p3.description}"
                 </p>
 
-                <p className="text-xs sm:text-sm text-[#9edcd2]/75 leading-relaxed font-sans">
+                <p className="text-xs sm:text-sm text-[#CBD5E1]/75 leading-relaxed font-sans">
                   {p3.detail}
                 </p>
               </div>
 
-              <div className="pt-5 mt-5 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between text-xs font-mono text-[#5e948c]">
+              <div className="pt-5 mt-5 border-t border-[#FFFBEB]/[0.08] flex items-center justify-between text-xs font-mono text-[#94A3B8]">
                 <span>ARCHITECTURAL SLOS</span>
                 <span className="text-[#FBBF24] font-bold">ZERO CODE DEBT</span>
               </div>
@@ -161,14 +161,14 @@ export const WhyBythawkSection: React.FC = () => {
               spotlight={true}
               spotlightColor="rgba(245, 158, 11, 0.18)"
               withReticles={true}
-              className="h-full p-8 sm:p-10 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#020611]/60 overflow-hidden group"
+              className="h-full p-8 sm:p-10 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 rounded-2xl flex flex-col justify-between relative shadow-xl shadow-[#040407]/60 overflow-hidden group"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
                   <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-[#EA580C]/20 text-[#F59E0B] border border-[#EA580C]/40">
                     PRINCIPLE // {p4.number}
                   </span>
-                  <div className="w-9 h-9 rounded-lg bg-[#020611]/80 border border-[#FFFBEB]/[0.08] flex items-center justify-center text-[#F59E0B]">
+                  <div className="w-9 h-9 rounded-lg bg-[#040407]/80 border border-[#FFFBEB]/[0.08] flex items-center justify-center text-[#F59E0B]">
                     <Orbit className="w-4 h-4" />
                   </div>
                 </div>
@@ -181,12 +181,12 @@ export const WhyBythawkSection: React.FC = () => {
                   "{p4.description}"
                 </p>
 
-                <p className="text-xs sm:text-sm text-[#9edcd2] leading-relaxed font-sans max-w-xl">
+                <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed font-sans max-w-xl">
                   {p4.detail}
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-[#FFFBEB]/[0.08] flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-[#5e948c]">
+              <div className="pt-6 mt-6 border-t border-[#FFFBEB]/[0.08] flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-[#94A3B8]">
                 <span className="text-[#FFFBEB] font-semibold flex items-center gap-2">
                   <Layers className="w-4 h-4 text-[#F59E0B]" />
                   <span>Strategy &bull; Design &bull; Development &bull; Growth</span>

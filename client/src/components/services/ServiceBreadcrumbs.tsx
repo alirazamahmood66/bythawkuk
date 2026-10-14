@@ -13,7 +13,7 @@ export const ServiceBreadcrumbs: React.FC<ServiceBreadcrumbsProps> = ({ serviceT
         <li>
           <Link
             to="/"
-            className="flex items-center hover:text-amber-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 rounded px-1"
+            className="flex items-center hover:text-amber-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-amber-400/50 rounded px-1"
           >
             <Home className="w-3.5 h-3.5 mr-1" />
             <span>HOME</span>
@@ -25,7 +25,7 @@ export const ServiceBreadcrumbs: React.FC<ServiceBreadcrumbsProps> = ({ serviceT
         <li>
           <Link
             to="/services"
-            className="hover:text-amber-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-cyan-400/50 rounded px-1"
+            className="hover:text-amber-400 transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-amber-400/50 rounded px-1"
           >
             <span>SERVICES</span>
           </Link>

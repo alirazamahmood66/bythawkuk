@@ -73,7 +73,7 @@ export const ReconSatellite: React.FC<ReconSatelliteProps> = ({ isReducedMotion 
         <mesh>
           <boxGeometry args={[0.8, 0.04, 1.8]} />
           <meshStandardMaterial
-            color="#1e3a8a"
+            color="#EA580C"
             roughness={0.2}
             metalness={0.7}
             emissive="#172554"
@@ -92,7 +92,7 @@ export const ReconSatellite: React.FC<ReconSatelliteProps> = ({ isReducedMotion 
         <mesh>
           <boxGeometry args={[0.8, 0.04, 1.8]} />
           <meshStandardMaterial
-            color="#1e3a8a"
+            color="#EA580C"
             roughness={0.2}
             metalness={0.7}
             emissive="#172554"

@@ -62,7 +62,7 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
           animate="open"
           exit="closed"
           variants={dropdownVariants}
-          className={`absolute top-full mt-2 w-80 rounded-xl bg-[#080e1e]/95 backdrop-blur-xl border border-white/[0.1] shadow-2xl shadow-black/80 py-2 z-50 overflow-hidden ${className}`}
+          className={`absolute top-full mt-2 w-80 rounded-xl bg-[#0B0C10]/95 backdrop-blur-xl border border-white/[0.1] shadow-2xl shadow-black/80 py-2 z-50 overflow-hidden ${className}`}
         >
           {title && (
             <div className="px-4 py-2 border-b border-white/[0.06] mb-1">

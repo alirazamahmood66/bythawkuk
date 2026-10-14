@@ -136,7 +136,7 @@ export const ServicesSection: React.FC = () => {
                   spotlight={true}
                   spotlightColor={`${service.color}22`}
                   withReticles={true}
-                  className="h-full flex flex-col justify-between p-7 sm:p-9 bg-[#070D18]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#070D18]/70 rounded-2xl relative shadow-xl shadow-black/50 overflow-hidden group"
+                  className="h-full flex flex-col justify-between p-7 sm:p-9 bg-[#0B0C10]/40 backdrop-blur-md border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/50 hover:bg-[#0B0C10]/70 rounded-2xl relative shadow-xl shadow-black/50 overflow-hidden group"
                 >
                   {/* Subtle Background Blueprint Wireframe Lines */}
                   <div className="absolute top-0 right-0 w-44 h-44 opacity-[0.06] group-hover:opacity-[0.14] transition-opacity pointer-events-none" aria-hidden="true">
@@ -159,7 +159,7 @@ export const ServicesSection: React.FC = () => {
                       </div>
 
                       <div
-                        className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#020611]/80 group-hover:bg-[#020611] border border-[#FFFBEB]/[0.1] group-hover:border-[#F59E0B]/50 transition-all duration-300 shadow-md"
+                        className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#040407]/80 group-hover:bg-[#040407] border border-[#FFFBEB]/[0.1] group-hover:border-[#F59E0B]/50 transition-all duration-300 shadow-md"
                         style={{ color: service.color }}
                       >
                         <IconComponent className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
@@ -182,7 +182,7 @@ export const ServicesSection: React.FC = () => {
                     </p>
 
                     {/* Embedded Architectural Telemetry Benchmark Strip */}
-                    <div className="p-3 rounded-xl bg-[#020611]/80 border border-[#FFFBEB]/[0.08] group-hover:border-[#F59E0B]/30 flex items-center justify-between text-xs font-mono transition-colors mb-5 shadow-inner">
+                    <div className="p-3 rounded-xl bg-[#040407]/80 border border-[#FFFBEB]/[0.08] group-hover:border-[#F59E0B]/30 flex items-center justify-between text-xs font-mono transition-colors mb-5 shadow-inner">
                       <div className="flex items-center gap-2 min-w-0">
                         <Cpu className="w-3.5 h-3.5 text-[#F59E0B] shrink-0" />
                         <span className="text-[#FFFBEB]/60 font-medium truncate">{service.telemetryMetric.label}:</span>
@@ -223,7 +223,7 @@ export const ServicesSection: React.FC = () => {
         </div>
 
         {/* Global Catalog Gateway Banner */}
-        <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-[#070D18]/90 border border-[#FFFBEB]/[0.1] flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-2xl relative overflow-hidden">
+        <div className="mt-10 p-6 sm:p-8 rounded-2xl bg-[#0B0C10]/90 border border-[#FFFBEB]/[0.1] flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-2xl relative overflow-hidden">
           <div className="space-y-1 relative z-10">
             <div className="flex items-center justify-center sm:justify-start gap-2">
               <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse" />
@@ -243,7 +243,7 @@ export const ServicesSection: React.FC = () => {
             <Button
               variant="secondary"
               size="md"
-              className="rounded-full font-bold text-xs tracking-wide px-6 py-3 bg-[#020611]/80 border-[#F59E0B]/30 hover:border-[#F59E0B] shadow-lg"
+              className="rounded-full font-bold text-xs tracking-wide px-6 py-3 bg-[#040407]/80 border-[#F59E0B]/30 hover:border-[#F59E0B] shadow-lg"
               rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
             >
               View Full Catalog

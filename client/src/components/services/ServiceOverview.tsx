@@ -50,8 +50,8 @@ export const ServiceOverview: React.FC<ServiceOverviewProps> = ({
               variant="default"
               spotlight={true}
               withReticles={true}
-              spotlightColor="rgba(32, 217, 243, 0.12)"
-              className="p-5 sm:p-6 rounded-2xl bg-[#070D18]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-md"
+              spotlightColor="rgba(245, 158, 11, 0.12)"
+              className="p-5 sm:p-6 rounded-2xl bg-[#0B0C10]/90 border-white/[0.08] hover:border-amber-500/40 transition-all duration-300 relative group shadow-md"
             >
               <div className="flex items-start space-x-3.5">
                 <div

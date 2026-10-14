@@ -63,7 +63,7 @@ const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
     baseSpeed: 16,
     size: 13,
     color: '#F59E0B',
-    glow: 'rgba(32, 217, 243, 0.6)',
+    glow: 'rgba(245, 158, 11, 0.6)',
     astronomicalUnit: '1.00 AU',
     orbitIndex: 'ORBIT I',
     strata: [
@@ -91,7 +91,7 @@ const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
         elements: ['44.8% O', '22.8% Mg', '21.5% Si', '5.8% Fe'],
         architectureTier: 'Tier 2: Node.js / Go Microservices & Business Logic',
         architectureRole: 'High-throughput asynchronous workflows, algorithmic data transforms, event buses.',
-        color: '#0284c7',
+        color: '#F59E0B',
         glow: 'rgba(2, 132, 199, 0.6)',
         description: 'Vast thermal convection currents processing massive transactional throughput with fault-tolerant elasticity.',
       },
@@ -106,7 +106,7 @@ const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
         architectureTier: 'Tier 3: Distributed PostgreSQL & Kafka State Engine',
         architectureRole: 'ACID transactional guarantees, multi-region replication, consensus cluster management.',
         color: '#0ea5e9',
-        glow: 'rgba(14, 165, 233, 0.7)',
+        glow: 'rgba(245, 158, 11, 0.7)',
         description: 'Liquid metallic dynamo generating the magnetosphere that shields data integrity against cosmic corruption.',
       },
       {
@@ -162,7 +162,7 @@ const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
         elements: ['H₂O (Supercritical)', 'NH₃ (Ammonia)', 'CH₄ (Dissociated)'],
         architectureTier: 'Tier 2: Real-Time Telemetry & Adaptive Learning Engine',
         architectureRole: 'Neural analytics tracking student mastery, quiz validation, and live lecture synchronization.',
-        color: '#0284c7',
+        color: '#F59E0B',
         glow: 'rgba(2, 132, 199, 0.7)',
         description: 'Dense, electrically conductive fluid mantle driving real-time cognitive evaluation and progress scoring.',
       },
@@ -468,7 +468,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
   return (
     <div className="w-full space-y-6">
       {/* 1. Orrery Header & Controls Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-[#070D18]/90 border border-white/[0.08] backdrop-blur-md">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-[#0B0C10]/90 border border-white/[0.08] backdrop-blur-md">
         <div className="flex items-center gap-3">
           <div className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_#F59E0B]" />
           <div>
@@ -486,7 +486,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
 
         {/* Dual Mode View Switcher: Exterior vs Interior Core View */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center p-1 rounded-lg bg-[#020611] border border-white/[0.08]">
+          <div className="flex items-center p-1 rounded-lg bg-[#040407] border border-white/[0.08]">
             <button
               type="button"
               onClick={() => setViewMode('exterior')}
@@ -524,7 +524,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
               <button
                 type="button"
                 onClick={() => setIsPlaying(!isPlaying)}
-                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-300 bg-[#020611] border border-white/[0.08] hover:border-amber-500/40 hover:text-amber-300 transition-colors"
+                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-300 bg-[#040407] border border-white/[0.08] hover:border-amber-500/40 hover:text-amber-300 transition-colors"
                 title={isPlaying ? 'Pause planetary orbits' : 'Resume planetary orbits'}
               >
                 {isPlaying ? (
@@ -545,7 +545,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                     'darul-quran-wa-sunnah': 330,
                   });
                 }}
-                className="p-1.5 rounded-lg text-slate-400 hover:text-amber-300 bg-[#020611] border border-white/[0.08] hover:border-amber-500/40 transition-colors"
+                className="p-1.5 rounded-lg text-slate-400 hover:text-amber-300 bg-[#040407] border border-white/[0.08] hover:border-amber-500/40 transition-colors"
                 title="Reset Planetary Alignment"
               >
                 <RotateCw className="w-3.5 h-3.5" />
@@ -558,7 +558,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
       {/* 2. Interactive Orrery Visual Canvas & Telemetry HUD */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Left Column: Visual Canvas (7 cols) */}
-        <div className="lg:col-span-7 relative w-full aspect-square max-w-[620px] mx-auto rounded-2xl bg-[#020611]/95 border border-white/[0.08] p-4 flex items-center justify-center overflow-hidden shadow-2xl">
+        <div className="lg:col-span-7 relative w-full aspect-square max-w-[620px] mx-auto rounded-2xl bg-[#040407]/95 border border-white/[0.08] p-4 flex items-center justify-center overflow-hidden shadow-2xl">
           {/* Background Astronomical Coordinate Grid */}
           <div className="absolute inset-0 bg-space-grid opacity-20 pointer-events-none" />
 
@@ -876,7 +876,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
               </svg>
 
               {/* Architecture Blueprint Badge in corner */}
-              <div className="absolute top-3 left-3 flex items-center gap-2 px-2.5 py-1 rounded-lg bg-[#070D18]/50 border border-white/[0.1] backdrop-blur-md">
+              <div className="absolute top-3 left-3 flex items-center gap-2 px-2.5 py-1 rounded-lg bg-[#0B0C10]/50 border border-white/[0.1] backdrop-blur-md">
                 <img
                   src={activeConfig.imageSrc}
                   alt={activeProject.title}
@@ -890,7 +890,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
           )}
 
           {/* Quick instructions pill at bottom */}
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[#070D18]/60 border border-white/[0.1] text-[10px] font-mono text-slate-300 backdrop-blur-md flex items-center gap-1.5 shadow-lg pointer-events-none">
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[#0B0C10]/60 border border-white/[0.1] text-[10px] font-mono text-slate-300 backdrop-blur-md flex items-center gap-1.5 shadow-lg pointer-events-none">
             <Compass className="w-3 h-3 text-amber-400" />
             <span>
               {viewMode === 'exterior'
@@ -903,7 +903,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
         {/* 3. Obsidian Titanium Planetary Telemetry Inspector (Right / 5 cols) */}
         <div className="lg:col-span-5 space-y-4">
           {/* Quick Planet Navigation Tabs */}
-          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-xl bg-[#070D18]/80 border border-white/[0.08]">
+          <div className="flex flex-wrap gap-1.5 p-1.5 rounded-xl bg-[#0B0C10]/80 border border-white/[0.08]">
             {projects.map((p) => {
               const isSelected = p.slug === activeProject.slug;
               const config = ORBIT_CONFIGS[p.slug];
@@ -939,7 +939,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
             spotlight={true}
             withReticles={true}
             spotlightColor={`${activeConfig.color}25`}
-            className="p-6 sm:p-7 bg-[#070D18]/40 backdrop-blur-xl border border-white/[0.12] rounded-2xl shadow-2xl relative overflow-hidden"
+            className="p-6 sm:p-7 bg-[#0B0C10]/40 backdrop-blur-xl border border-white/[0.12] rounded-2xl shadow-2xl relative overflow-hidden"
           >
             {/* Top Architecture Status Coordinates */}
             <div className="flex items-center justify-between gap-2 pb-4 mb-4 border-b border-white/[0.08]">
@@ -983,7 +983,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                     {activeProject.technologies.slice(0, 5).map((tech) => (
                       <span
                         key={tech}
-                        className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#020611]/70 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70"
+                        className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#040407]/70 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70"
                       >
                         {tech}
                       </span>
@@ -992,7 +992,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                 </div>
 
                 {/* Toggle to Interior Cutaway View Button */}
-                <div className="p-3 rounded-xl bg-[#070D18]/80 border border-[#D97706]/40 mb-5 flex items-center justify-between">
+                <div className="p-3 rounded-xl bg-[#0B0C10]/80 border border-[#D97706]/40 mb-5 flex items-center justify-between">
                   <div className="space-y-0.5">
                     <span className="text-xs font-mono font-bold text-[#FBBF24] block">
                       FULL-STACK ARCHITECTURE BLUEPRINT
@@ -1017,7 +1017,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
 
                 {/* Live Domain Pill (if present) */}
                 {activeProject.liveUrl && (
-                  <div className="p-3 rounded-xl bg-[#020611]/90 border border-[#FFFBEB]/[0.08] flex items-center justify-between mb-5">
+                  <div className="p-3 rounded-xl bg-[#040407]/90 border border-[#FFFBEB]/[0.08] flex items-center justify-between mb-5">
                     <div className="flex items-center gap-2">
                       <Globe className="w-4 h-4 text-[#F59E0B]" />
                       <span className="text-xs font-mono text-[#FFFBEB] font-medium">
@@ -1049,7 +1049,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                       href={activeProject.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#020611] hover:bg-[#070D18] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all shadow-md"
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#040407] hover:bg-[#0B0C10] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all shadow-md"
                     >
                       <span>Launch Platform</span>
                       <ExternalLink className="w-3.5 h-3.5" />
@@ -1076,7 +1076,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                           className={`text-left p-2 rounded-lg text-xs font-mono transition-all ${
                             isSelected
                               ? 'bg-[#EA580C]/40 border border-[#F59E0B]/50 text-[#FBBF24]'
-                              : 'bg-[#020611]/80 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/60 hover:text-[#FFFBEB]'
+                              : 'bg-[#040407]/80 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/60 hover:text-[#FFFBEB]'
                           }`}
                         >
                           <div className="text-[10px] text-[#F59E0B] font-bold">
@@ -1090,7 +1090,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                 </div>
 
                 {/* Selected Stratum Deep Dive Specs */}
-                <div className="p-4 rounded-xl bg-[#020611]/70 border border-[#FFFBEB]/[0.08] space-y-3">
+                <div className="p-4 rounded-xl bg-[#040407]/70 border border-[#FFFBEB]/[0.08] space-y-3">
                   <div>
                     <span className="text-[10px] font-mono text-[#F59E0B] uppercase font-bold tracking-wider block">
                       {activeLayer.classification}
@@ -1134,7 +1134,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                 <button
                   type="button"
                   onClick={() => setViewMode('exterior')}
-                  className="w-full py-2.5 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#020611] hover:bg-[#070D18] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all text-center"
+                  className="w-full py-2.5 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#040407] hover:bg-[#0B0C10] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all text-center"
                 >
                   &larr; RETURN TO ORBITAL EXTERIOR
                 </button>

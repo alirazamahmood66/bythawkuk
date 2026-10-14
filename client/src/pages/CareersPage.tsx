@@ -231,7 +231,7 @@ export const CareersPage: React.FC = () => {
                   variant="default"
                   spotlight={true}
                   withReticles={true}
-                  className="p-6 bg-[#070D18]/90 border-[#FFFBEB]/[0.08] space-y-3 rounded-2xl"
+                  className="p-6 bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] space-y-3 rounded-2xl"
                 >
                   <div className="w-10 h-10 rounded-xl bg-[#EA580C]/20 border border-[#D97706]/30 flex items-center justify-center text-[#F59E0B]">
                     <perk.icon className="w-5 h-5" />
@@ -273,7 +273,7 @@ export const CareersPage: React.FC = () => {
                   variant="interactive"
                   spotlight={true}
                   withReticles={true}
-                  className="p-6 sm:p-8 bg-[#070D18]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all rounded-2xl"
+                  className="p-6 sm:p-8 bg-[#0B0C10]/85 border-[#FFFBEB]/[0.08] hover:border-[#F59E0B]/40 transition-all rounded-2xl"
                 >
                   <div className="space-y-6">
                     {/* Header Strip */}
@@ -360,7 +360,7 @@ export const CareersPage: React.FC = () => {
               variant="default"
               spotlight={true}
               withReticles={true}
-              className="p-8 sm:p-12 rounded-2xl bg-[#070D18]/90 border-[#FFFBEB]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
+              className="p-8 sm:p-12 rounded-2xl bg-[#0B0C10]/90 border-[#FFFBEB]/[0.08] max-w-3xl mx-auto space-y-6 shadow-2xl"
             >
               <span className="text-xs font-mono tracking-widest text-[#F59E0B] uppercase font-semibold">
                 // SPECULATIVE ENQUIRIES
@@ -374,7 +374,7 @@ export const CareersPage: React.FC = () => {
               <div className="pt-2">
                 <a
                   href="mailto:careers@bythawk.uk?subject=Speculative%20Enquiry%20-%20Bythawk"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#020611] hover:bg-[#070D18] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all shadow-md"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#040407] hover:bg-[#0B0C10] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all shadow-md"
                 >
                   <Mail className="w-4 h-4" />
                   <span>careers@bythawk.uk</span>
