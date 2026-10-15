@@ -41,7 +41,7 @@ export const ServiceCta: React.FC<ServiceCtaProps> = ({
         </h2>
 
         <p className="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal font-sans">
-          Schedule a technical discovery session with our London engineering leadership. We will evaluate your architecture, velocity, and commercial targets.
+          Schedule a technical discovery session with our Australian engineering leadership. We will evaluate your architecture, velocity, and commercial targets.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -56,14 +56,14 @@ export const ServiceCta: React.FC<ServiceCtaProps> = ({
             </Button>
           </Link>
 
-          <Link to="/work">
+          <Link to="/portfolio">
             <Button
               variant="secondary"
               size="lg"
               className="w-full sm:w-auto font-semibold px-7 py-4"
               rightIcon={<Compass className="w-4 h-4" />}
             >
-              <span>Explore Agency Work</span>
+              <span>Explore Portfolio</span>
             </Button>
           </Link>
         </div>
@@ -71,7 +71,7 @@ export const ServiceCta: React.FC<ServiceCtaProps> = ({
         <div className="mt-10 pt-6 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-400">
           <span className="inline-flex items-center gap-1.5 text-amber-400">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-            <span>UK Timezone Delivery</span>
+            <span>Australian Timezone Delivery</span>
           </span>
           <span>&bull;</span>
           <span>Direct Engineering Leads</span>

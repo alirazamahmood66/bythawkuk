@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
     <div ref={heroTrackRef} className="relative h-[190vh] w-full">
       {/* PINNED STICKY VIEWPORT CONTAINER */}
       <section
-        aria-label="BYTHAWK Agency Cosmic Hero"
+        aria-label="VTUBER DESIGN Agency Cosmic Hero"
         className="sticky top-0 h-screen w-full flex flex-col justify-between overflow-hidden bg-[#040407] pt-18 sm:pt-20 pb-0 z-30"
       >
         {/* 1. PHOTOREALISTIC SATURN WITH LUMINOUS RINGS (GENTLE NATURAL DIVE - NO LABELS) */}
@@ -109,7 +109,7 @@ export const HeroSection: React.FC = () => {
                     DIGITAL TECHNOLOGY STUDIO
                   </Badge>
                   <span className="text-xs text-[#FFFBEB]/60 uppercase tracking-widest hidden sm:inline font-sans font-semibold">
-                    LONDON &bull; UK
+                    AUSTRALIA &bull; SYDNEY / MELBOURNE
                   </span>
                 </div>
 
@@ -141,13 +141,13 @@ export const HeroSection: React.FC = () => {
                     </Button>
                   </Link>
 
-                  <Link to="/work">
+                  <Link to="/portfolio">
                     <Button
                       variant="secondary"
                       size="md"
                       className="rounded-full font-semibold text-xs tracking-normal px-6 py-3 bg-[#0B0C10]/70 border-[#FFFBEB]/[0.15] hover:border-[#F59E0B]/50 backdrop-blur-md"
                     >
-                      View Our Work
+                      View Portfolio
                     </Button>
                   </Link>
                 </div>
@@ -155,13 +155,13 @@ export const HeroSection: React.FC = () => {
                 {/* Verified Deployments Footnote */}
                 <div className="pt-0.5">
                   <Link
-                    to="/work"
+                    to="/portfolio"
                     className="inline-flex items-center gap-2 text-xs font-sans text-[#FFFBEB]/60 hover:text-[#FBBF24] transition-colors group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
                     <span className="text-[#F59E0B] font-semibold">VERIFIED DEPLOYMENTS:</span>
                     <span className="text-[#FFFBEB]/70 group-hover:text-[#FFFBEB] transition-colors">
-                      bythawk.com &bull; oaksis.com &bull; ceedrs.com &bull; globalintegratedsupport.com
+                      vtuberdesign.co.au &bull; oaksis.com &bull; ceedrs.com &bull; globalintegratedsupport.com
                     </span>
                     <ArrowRight className="w-3 h-3 text-amber-400 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -183,7 +183,7 @@ export const HeroSection: React.FC = () => {
             <div className="flex items-center justify-between text-[11px] font-sans text-slate-400">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>BYTHAWK CELESTIAL ENGINE &bull; 60 FPS MOTION</span>
+                <span>VTUBER DESIGN CELESTIAL ENGINE &bull; 60 FPS MOTION</span>
               </div>
 
               <div className="flex items-center gap-1.5 text-slate-300 hover:text-amber-300 transition-colors cursor-default">
@@ -192,7 +192,7 @@ export const HeroSection: React.FC = () => {
               </div>
 
               <div className="hidden sm:block text-slate-500">
-                <span>LONDON UK &bull; 51.5074° N, 0.1278° W</span>
+                <span>SYDNEY AU &bull; 33.8688° S, 151.2093° E</span>
               </div>
             </div>
           </Container>

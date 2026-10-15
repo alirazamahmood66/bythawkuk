@@ -349,7 +349,7 @@ export function getOrCreateRingTexture(baseColorHex: string): THREE.CanvasTextur
 
 /**
  * Generates an incandescent solar surface texture featuring convective granulation
- * and magnetic temperature gradients for the central BYTHAWK CORE Sun.
+ * and magnetic temperature gradients for the central VTUBER DESIGN CORE Sun.
  */
 export function getOrCreateSunTexture(): THREE.CanvasTexture {
   if (sunTextureCache) {

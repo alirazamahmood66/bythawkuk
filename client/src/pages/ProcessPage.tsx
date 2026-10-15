@@ -18,21 +18,21 @@ export const ProcessPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Our Process | Bythawk — Digital Technology Studio',
+      title: 'Our Process | VTuber Design — Digital Technology Studio',
       description:
-        'Discover Bythawk’s 6-stage engineering and design methodology: from strategic discovery to zero-downtime orbital launch and long-term evolution.',
+        'Discover VTuber Design’s 6-stage engineering and design methodology: from strategic discovery to zero-downtime orbital launch and long-term evolution.',
       path: '/process',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: 'Our Process | Bythawk Digital Technology Studio',
+        name: 'Our Process | VTuber Design Digital Technology Studio',
         description:
           'A structured, transparent engineering methodology turning business challenges into purposeful digital products and platforms.',
-        url: 'https://bythawk.uk/process',
+        url: 'https://vtuberdesign.co.au/process',
         provider: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });

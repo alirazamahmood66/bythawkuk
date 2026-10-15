@@ -23,32 +23,23 @@ export const Navbar: React.FC = () => {
     <header className="fixed top-0 inset-x-0 z-50 transition-all duration-300 pointer-events-none pt-3 sm:pt-4 px-3 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div
-          className={`pointer-events-auto rounded-full transition-all duration-300 flex h-14 items-center justify-between px-4 sm:px-6 ${
+          className={`pointer-events-auto rounded-full transition-all duration-300 flex h-14 sm:h-16 items-center justify-between px-4 sm:px-6 ${
             scrolled
               ? 'bg-[#0B0C10]/90 backdrop-blur-xl border border-[#FFFBEB]/[0.12] shadow-2xl shadow-[#040407]/60'
               : 'bg-[#0B0C10]/75 backdrop-blur-md border border-[#FFFBEB]/[0.08] shadow-xl shadow-[#040407]/40'
           }`}
         >
-          {/* LEFT: Clean BYTHAWK Logo / Wordmark */}
+          {/* LEFT: Standalone 3D Solar Gold Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2.5 group focus-ring rounded-full py-1 px-1.5"
-            aria-label="BYTHAWK Agency Homepage"
+            className="flex items-center group focus-ring rounded-xl py-1 px-1"
+            aria-label="VTuber Design Homepage"
           >
-            {/* Precision Monogram */}
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#FDE047] via-[#F59E0B] to-[#EA580C] flex items-center justify-center font-bold text-[#040407] text-sm shadow-md shadow-[#F59E0B]/25 group-hover:scale-105 transition-transform duration-200">
-              B
-            </div>
-
-            {/* Wordmark & UK Telemetry */}
-            <div className="flex flex-col">
-              <span className="font-extrabold tracking-wider text-[#FFFBEB] text-sm sm:text-base uppercase leading-none font-sans">
-                BYTHAWK
-              </span>
-              <span className="text-[8px] sm:text-[9px] tracking-widest text-[#FBBF24] font-mono font-medium leading-tight">
-                DIGITAL STUDIO &bull; UK
-              </span>
-            </div>
+            <img
+              src="/images/logo/vtuber-design-emblem.png"
+              alt="VTuber Design"
+              className="h-10 sm:h-11 w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:drop-shadow-[0_2px_16px_rgba(245,158,11,0.55)] transition-all duration-200"
+            />
           </Link>
 
           {/* CENTER: Desktop Main Navigation */}

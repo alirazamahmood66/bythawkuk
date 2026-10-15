@@ -25,7 +25,7 @@ export const PLANET_SERVICES: PlanetServiceStation[] = [
     tagline: 'End-to-End Digital Engineering & Innovation',
     description:
       'We engineer bespoke digital platforms, enterprise architectures, and growth engines built for ambitious businesses demanding precision and scale.',
-    tags: ['Full-Stack MERN', 'TypeScript', 'UK Craftsmanship', 'Cloud Scale'],
+    tags: ['Full-Stack MERN', 'TypeScript', 'Senior Craftsmanship', 'Cloud Scale'],
     route: '/contact',
     color: '#f59e0b',
     gradient: 'from-amber-400 via-orange-400 to-yellow-300',
@@ -143,8 +143,8 @@ export const PLANET_SERVICES: PlanetServiceStation[] = [
     category: 'ORGANIC SEARCH',
     tagline: 'Technical SEO & Organic Visibility Engines',
     description:
-      'Data-driven technical SEO audits, semantic schema markup, and UK local search strategies that turn organic discovery into qualified revenue.',
-    tags: ['Technical SEO', 'Schema Markup', 'Core Web Vitals', 'UK Local Ranking'],
+      'Data-driven technical SEO audits, semantic schema markup, and Australian local search strategies that turn organic discovery into qualified revenue.',
+    tags: ['Technical SEO', 'Schema Markup', 'Core Web Vitals', 'Local & Global Ranking'],
     route: '/services/seo',
     color: '#FBBF24',
     gradient: 'from-cyan-300 via-teal-300 to-sky-400',

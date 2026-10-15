@@ -28,7 +28,7 @@ export const ContactHero: React.FC = () => {
         <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
           <Terminal className="w-3.5 h-3.5 text-amber-400" />
           <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
-            BYTHAWK // START A PROJECT
+            VTUBER DESIGN // START A PROJECT
           </span>
         </div>
 

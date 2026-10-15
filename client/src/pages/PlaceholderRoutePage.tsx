@@ -23,8 +23,8 @@ export const PlaceholderRoutePage: React.FC<PlaceholderRoutePageProps> = ({
 
   useEffect(() => {
     const cleanupSeo = applySeo({
-      title: `${title || 'Mission Route'} | Bythawk`,
-      description: 'Bythawk agency architecture route node.',
+      title: `${title || 'Mission Route'} | VTuber Design`,
+      description: 'VTuber Design agency architecture route node.',
       path: location.pathname,
       robots: 'noindex, nofollow',
     });
@@ -62,7 +62,7 @@ export const PlaceholderRoutePage: React.FC<PlaceholderRoutePageProps> = ({
 
               <div className="space-y-2">
                 <span className="text-mono-label block text-amber-400">
-                  BYTHAWK.UK // TELEMETRY
+                  vtuberdesign.co.au // TELEMETRY
                 </span>
                 <h1 className="heading-1 text-white font-sans">
                   {displayTitle || 'Mission Route'}

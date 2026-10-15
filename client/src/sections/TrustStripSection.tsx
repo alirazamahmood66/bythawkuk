@@ -12,9 +12,9 @@ export const TrustStripSection: React.FC = () => {
     },
     {
       icon: ShieldCheck,
-      value: '100% UK',
+      value: '100% Senior',
       label: 'Engineering Architecture',
-      sublabel: 'London HQ & Strict Governance',
+      sublabel: 'Australia Base & Strict Governance',
     },
     {
       icon: Gauge,

@@ -24,7 +24,7 @@ export const RelatedServices: React.FC<RelatedServicesProps> = ({
             Interconnected Capabilities
           </h2>
           <p className="text-slate-300 mt-2 text-base font-light leading-relaxed">
-            BYTHAWK services are designed to reinforce one another, forming complete digital ecosystems.
+            VTUBER DESIGN services are designed to reinforce one another, forming complete digital ecosystems.
           </p>
         </div>
 

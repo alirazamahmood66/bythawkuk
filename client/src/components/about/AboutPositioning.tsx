@@ -82,7 +82,7 @@ export const AboutPositioning: React.FC = () => {
               <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-amber-400/80">
                 <span>VERIFIED DISCIPLINE</span>
                 <span className="text-slate-400">&bull;</span>
-                <span className="text-slate-300">BYTHAWK.UK</span>
+                <span className="text-slate-300">vtuberdesign.co.au</span>
               </div>
             </Card>
           );

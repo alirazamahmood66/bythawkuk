@@ -200,7 +200,7 @@ export const ServicesMegaMenu: React.FC<ServicesMegaMenuProps> = ({
                 </div>
 
                 <div className="text-[11px] font-mono text-[#FFFBEB]/50">
-                  <span>BYTHAWK.UK &bull; Precision Digital Technology Agency</span>
+                  <span>vtuberdesign.co.au &bull; Precision Digital Technology Studio</span>
                 </div>
               </div>
             </Container>

@@ -37,7 +37,7 @@ const OPEN_POSITIONS: JobPosition[] = [
     id: 'senior-fullstack-engineer',
     title: 'Senior Full-Stack Engineer (React 19 & TypeScript)',
     department: 'ENGINEERING',
-    location: 'Remote (UK / GMT ±2h)',
+    location: 'Remote (Australia / AEST ±2h)',
     type: 'Full-Time',
     summary:
       'Lead architecture and development of high-velocity web applications, enterprise telemetry dashboards, and modern cloud APIs. You will own features from schema design to production deployment.',
@@ -57,7 +57,7 @@ const OPEN_POSITIONS: JobPosition[] = [
     id: 'creative-technologist-3d',
     title: 'Creative Technologist & 3D WebGL Developer',
     department: 'CREATIVE TECHNOLOGY',
-    location: 'Remote (UK / Europe)',
+    location: 'Remote (Australia / Global)',
     type: 'Full-Time / Contract',
     summary:
       'Push the boundaries of interactive digital experiences by crafting silky 60fps WebGL shaders, Three.js celestial models, and fluid physics-based micro-interactions.',
@@ -77,7 +77,7 @@ const OPEN_POSITIONS: JobPosition[] = [
     id: 'lead-ui-ux-designer',
     title: 'Lead UI/UX Product Designer',
     department: 'PRODUCT & DESIGN',
-    location: 'Remote (UK / GMT ±2h)',
+    location: 'Remote (Australia / AEST ±2h)',
     type: 'Full-Time',
     summary:
       'Shape the visual language and user experience of flagship client platforms. You will create cohesive design token systems, ergonomic dashboards, and conversion-optimized storefronts.',
@@ -100,9 +100,9 @@ export const CareersPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Careers at Bythawk | Digital Technology Studio',
+      title: 'Careers at VTuber Design | Digital Technology Studio',
       description:
-        'Explore engineering, creative technology, and design careers at Bythawk. Join our remote-first UK digital studio building high-performance digital worlds.',
+        'Explore engineering, creative technology, and design careers at VTuber Design. Join our remote-first Australian digital studio building high-performance digital worlds.',
       path: '/careers',
     });
   }, []);
@@ -175,7 +175,7 @@ export const CareersPage: React.FC = () => {
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EA580C]/20 border border-[#D97706]/30 backdrop-blur-sm shadow-sm">
                 <Sparkles className="w-3.5 h-3.5 text-[#F59E0B]" />
                 <span className="text-xs font-mono font-medium tracking-wider text-[#FBBF24]">
-                  BYTHAWK // STUDIO TALENT & CULTURE
+                  VTUBER DESIGN // STUDIO TALENT & CULTURE
                 </span>
               </div>
 
@@ -187,7 +187,7 @@ export const CareersPage: React.FC = () => {
               </h1>
 
               <p className="text-base sm:text-xl text-[#FFFBEB]/70 leading-relaxed font-light max-w-3xl">
-                We are a dedicated UK digital technology studio obsessed with high-performance software engineering, cinematic visual craft, and sub-second web experiences. We hire autonomous, craft-focused builders who take immense pride in their work.
+                We are a dedicated Australian digital technology studio obsessed with high-performance software engineering, cinematic visual craft, and sub-second web experiences. We hire autonomous, craft-focused builders who take immense pride in their work.
               </p>
             </div>
           </section>
@@ -337,11 +337,11 @@ export const CareersPage: React.FC = () => {
                     {/* Apply Action */}
                     <div className="pt-4 border-t border-white/[0.08] flex items-center justify-between">
                       <span className="text-xs font-mono text-slate-400">
-                        Reference: <code className="text-amber-300 font-mono">BYTHAWK-HR-{job.id.toUpperCase()}</code>
+                        Reference: <code className="text-amber-300 font-mono">VTUBER DESIGN-HR-{job.id.toUpperCase()}</code>
                       </span>
 
                       <a
-                        href={`mailto:careers@bythawk.uk?subject=Application:%20${encodeURIComponent(job.title)}`}
+                        href={`mailto:careers@vtuberdesign.co.au?subject=Application:%20${encodeURIComponent(job.title)}`}
                         className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition-colors shadow-lg shadow-amber-500/25"
                       >
                         <Mail className="w-3.5 h-3.5" />
@@ -373,11 +373,11 @@ export const CareersPage: React.FC = () => {
               </p>
               <div className="pt-2">
                 <a
-                  href="mailto:careers@bythawk.uk?subject=Speculative%20Enquiry%20-%20Bythawk"
+                  href="mailto:careers@vtuberdesign.co.au?subject=Speculative%20Enquiry%20-%20VTuber%20Design"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-mono text-xs font-bold text-[#FBBF24] bg-[#040407] hover:bg-[#0B0C10] border border-[#D97706]/40 hover:border-[#F59E0B] transition-all shadow-md"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>careers@bythawk.uk</span>
+                  <span>careers@vtuberdesign.co.au</span>
                 </a>
               </div>
             </Card>

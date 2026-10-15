@@ -26,7 +26,7 @@ export const InsightsHero: React.FC = () => {
         <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
           <Terminal className="w-3.5 h-3.5 text-amber-400" />
           <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
-            BYTHAWK // INSIGHTS & EDITORIAL
+            VTUBER DESIGN // INSIGHTS & EDITORIAL
           </span>
         </div>
 
@@ -50,7 +50,7 @@ export const InsightsHero: React.FC = () => {
           <span className="text-white/20">&bull;</span>
           <div className="flex items-center space-x-1.5">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            <span>AUTHOR: BYTHAWK EDITORIAL</span>
+            <span>AUTHOR: VTUBER DESIGN EDITORIAL</span>
           </div>
           <span className="text-white/20">&bull;</span>
           <span>DISCIPLINES: 6 CORE AREAS</span>

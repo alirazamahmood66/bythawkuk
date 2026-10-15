@@ -1,6 +1,6 @@
 import React, { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useTexture, Html } from '@react-three/drei';
+import { Html, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 import {
   REAL_BODIES,
@@ -22,7 +22,7 @@ export const MilkyWayBackdrop: React.FC<{ isReducedMotion?: boolean }> = ({ isRe
   });
   return (
     <mesh ref={ref} renderOrder={-10}>
-      <sphereGeometry args={[320, 64, 64]} />
+      <sphereGeometry args={[320, 32, 32]} />
       <meshBasicMaterial map={tex} side={THREE.BackSide} color="#9fb0c8" depthWrite={false} toneMapped={false} />
     </mesh>
   );
@@ -60,15 +60,15 @@ const Atmosphere: React.FC<{ radius: number; color: string; intensity: number; s
     [color, intensity]
   );
   return (
-    <mesh raycast={() => null}>
-      <sphereGeometry args={[radius * scale, 64, 64]} />
+    <mesh scale={[scale, scale, scale]} raycast={() => null}>
+      <sphereGeometry args={[radius, 32, 32]} />
       <primitive object={material} attach="material" />
     </mesh>
   );
 };
 
 /* ------------------------------------------------------------------ */
-/* The Sun                                                              */
+/* Sun (photorealistic Sun texture + rich Solar Gold corona)           */
 /* ------------------------------------------------------------------ */
 export interface CelestialInteractProps {
   isReducedMotion?: boolean;
@@ -83,8 +83,8 @@ export interface CelestialInteractProps {
 export const RealSun: React.FC<CelestialInteractProps> = ({
   isReducedMotion,
   isHovered,
-  serviceTitle = 'Digital Studio Launchpad',
-  planetName = 'THE SUN',
+  serviceTitle = 'Digital Strategy & Core Systems',
+  planetName = 'SOL (SUN)',
   onPointerOver,
   onPointerOut,
   onClick,
@@ -97,11 +97,12 @@ export const RealSun: React.FC<CelestialInteractProps> = ({
     c.width = c.height = 256;
     const g = c.getContext('2d')!;
     const grad = g.createRadialGradient(128, 128, 0, 128, 128, 128);
-    grad.addColorStop(0.0, 'rgba(255,240,200,1)');
-    grad.addColorStop(0.18, 'rgba(255,190,90,0.75)');
-    grad.addColorStop(0.4, 'rgba(255,120,30,0.28)');
-    grad.addColorStop(0.7, 'rgba(255,80,10,0.08)');
-    grad.addColorStop(1.0, 'rgba(255,60,0,0)');
+    // Warm, fiery solar gold corona without harsh white washout
+    grad.addColorStop(0.0, 'rgba(251,191,36,0.95)');
+    grad.addColorStop(0.22, 'rgba(245,158,11,0.65)');
+    grad.addColorStop(0.45, 'rgba(234,88,12,0.25)');
+    grad.addColorStop(0.72, 'rgba(180,83,9,0.07)');
+    grad.addColorStop(1.0, 'rgba(0,0,0,0)');
     g.fillStyle = grad;
     g.fillRect(0, 0, 256, 256);
     const t = new THREE.CanvasTexture(c);
@@ -131,19 +132,19 @@ export const RealSun: React.FC<CelestialInteractProps> = ({
       }}
     >
       <mesh ref={meshRef}>
-        <sphereGeometry args={[SUN_RADIUS, 64, 64]} />
-        <meshBasicMaterial map={tex} color="#ffd9a0" toneMapped={false} />
+        <sphereGeometry args={[SUN_RADIUS, 48, 48]} />
+        <meshBasicMaterial map={tex} color="#ffffff" toneMapped={false} />
       </mesh>
       {/* Invisible enlarged hit sphere for comfortable sun tap */}
       <mesh>
         <sphereGeometry args={[SUN_RADIUS * 1.5, 16, 16]} />
         <meshBasicMaterial transparent opacity={0} depthWrite={false} />
       </mesh>
-      <Atmosphere radius={SUN_RADIUS} color="#ff9a3c" intensity={1.6} scale={1.12} />
-      <sprite scale={[SUN_RADIUS * 8, SUN_RADIUS * 8, 1]} raycast={() => null}>
+      <Atmosphere radius={SUN_RADIUS} color="#f59e0b" intensity={1.8} scale={1.12} />
+      <sprite scale={[SUN_RADIUS * 7.5, SUN_RADIUS * 7.5, 1]} raycast={() => null}>
         <spriteMaterial map={glowTexture} blending={THREE.AdditiveBlending} depthWrite={false} transparent toneMapped={false} />
       </sprite>
-      <pointLight color="#fff6e8" intensity={35} distance={90} decay={1.1} />
+      <pointLight color="#fff6e8" intensity={30} distance={90} decay={1.1} />
 
       {isHovered && (
         <Html position={[0, SUN_RADIUS * 1.5 + 0.4, 0]} center pointerEvents="none">
@@ -185,7 +186,14 @@ const SaturnRings: React.FC<{ inner: number; outer: number; texture: string }> =
   }, [inner, outer]);
   return (
     <mesh geometry={geo} rotation={[-Math.PI / 2, 0, 0]} raycast={() => null}>
-      <meshStandardMaterial map={tex} side={THREE.DoubleSide} transparent depthWrite={false} roughness={1} metalness={0} />
+      <meshStandardMaterial
+        map={tex}
+        side={THREE.DoubleSide}
+        transparent
+        depthWrite={false}
+        roughness={1}
+        metalness={0}
+      />
     </mesh>
   );
 };
@@ -203,7 +211,7 @@ const EarthClouds: React.FC<{ radius: number; texture: string; isReducedMotion?:
   });
   return (
     <mesh ref={ref} raycast={() => null}>
-      <sphereGeometry args={[radius * 1.012, 64, 64]} />
+      <sphereGeometry args={[radius * 1.012, 36, 36]} />
       <meshStandardMaterial alphaMap={tex} color="#ffffff" transparent opacity={0.85} depthWrite={false} roughness={1} />
     </mesh>
   );
@@ -222,7 +230,7 @@ const Moon: React.FC<{ earthRadius: number; isReducedMotion?: boolean }> = ({ ea
   return (
     <group ref={ref}>
       <mesh>
-        <sphereGeometry args={[earthRadius * 0.27, 32, 32]} />
+        <sphereGeometry args={[earthRadius * 0.27, 24, 24]} />
         <meshStandardMaterial map={tex} roughness={1} />
       </mesh>
     </group>
@@ -268,7 +276,7 @@ const EarthNightLights: React.FC<{ radius: number; texture: string; spin: number
   });
   return (
     <mesh ref={ref} raycast={() => null}>
-      <sphereGeometry args={[radius * 1.002, 96, 96]} />
+      <sphereGeometry args={[radius * 1.002, 48, 48]} />
       <primitive object={material} attach="material" />
     </mesh>
   );
@@ -310,7 +318,7 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
     if (spinRef.current) spinRef.current.rotation.y = t * cfg.spin;
   });
 
-  // Generous hit target: on mobile, small planets (Mercury, Venus, Mars) become super easy to tap
+  // Generous hit target: on mobile, small planets become super easy to tap
   const hitRadius = useMemo(() => {
     const base = isMobile ? 1.8 : 1.1;
     return Math.max(base, cfg.radius * (isMobile ? 2.5 : 1.8));
@@ -336,7 +344,7 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
     >
       <group rotation={[0, 0, cfg.tilt]}>
         <mesh ref={spinRef}>
-          <sphereGeometry args={[cfg.radius, 96, 96]} />
+          <sphereGeometry args={[cfg.radius, 40, 40]} />
           <meshStandardMaterial
             map={tex}
             bumpMap={cfg.bump ? tex : null}
@@ -372,7 +380,7 @@ export const RealPlanet: React.FC<PlanetInteractProps> = ({
                   </div>
                 )}
               </div>
-              <div className="w-px h-3 bg-gradient-to-b from-cyan-400/80 to-transparent" />
+              <div className="w-px h-3 bg-gradient-to-b from-amber-400/80 to-transparent" />
             </div>
           </div>
         </Html>
@@ -420,4 +428,3 @@ export const AllRealPlanets: React.FC<AllRealPlanetsProps> = ({
     ))}
   </>
 );
-

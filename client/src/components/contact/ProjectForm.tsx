@@ -62,7 +62,7 @@ export const ProjectForm: React.FC = () => {
     }
 
     if (website.trim() && !isValidUrl(website.trim())) {
-      newErrors.website = 'Please enter a valid website URL (e.g. https://example.co.uk).';
+      newErrors.website = 'Please enter a valid website URL (e.g. https://example.com.au).';
     }
 
     setErrors(newErrors);

@@ -195,9 +195,9 @@ export const SOLUTIONS_ITEMS: SolutionItem[] = [
 
 export const ABOUT_DROPDOWN_ITEMS: DropdownItem[] = [
   {
-    title: 'About Bythawk',
+    title: 'About VTuber Design',
     href: '/about',
-    description: 'Our mission, UK agency heritage, and creative technology ethos.',
+    description: 'Our mission, studio heritage, and creative technology ethos.',
   },
   {
     title: 'Our Process',
@@ -205,8 +205,8 @@ export const ABOUT_DROPDOWN_ITEMS: DropdownItem[] = [
     description: 'Precision engineering workflows from concept discovery to deployment.',
   },
   {
-    title: 'Why Bythawk',
-    href: '/about#why-bythawk',
+    title: 'Why VTuber Design',
+    href: '/about#why-vtuber design',
     description: 'The architectural advantage of a dedicated digital technology agency.',
   },
   {
@@ -280,10 +280,10 @@ export const MAIN_NAV_ITEMS: NavLinkItem[] = [
     href: '/solutions',
   },
   {
-    id: 'work',
-    label: 'Work',
+    id: 'portfolio',
+    label: 'Portfolio',
     type: 'link',
-    href: '/work',
+    href: '/portfolio',
   },
   {
     id: 'about',

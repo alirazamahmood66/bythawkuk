@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://bythawk.uk';
+export const SITE_URL = 'https://vtuberdesign.co.au';
 
 export interface SeoOptions {
   title: string;
@@ -72,7 +72,7 @@ export function applySeo(options: SeoOptions): () => void {
   ogType.content = options.ogType || 'website';
 
   // 6. Schema.org JSON-LD
-  const schemaId = 'bythawk-seo-schema';
+  const schemaId = 'vtuber design-seo-schema';
   let schemaScript = document.getElementById(schemaId) as HTMLScriptElement | null;
   if (options.schema) {
     if (!schemaScript) {
@@ -88,7 +88,7 @@ export function applySeo(options: SeoOptions): () => void {
 
   // Cleanup on unmount
   return () => {
-    document.title = 'Bythawk — Digital Technology Studio | Web, Apps, E-commerce & Growth';
+    document.title = 'VTuber Design — Digital Technology Studio | Web, Apps, E-commerce & Growth';
     const activeSchema = document.getElementById(schemaId);
     if (activeSchema) {
       activeSchema.remove();

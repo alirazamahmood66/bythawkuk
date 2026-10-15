@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Container } from '@/components/ui/Container';
 import { PageTransition } from '@/components/transitions/PageTransition';
@@ -6,17 +6,13 @@ import { CosmicScrollJourney } from '@/components/atmosphere/CosmicScrollJourney
 import {
   WORK_PROJECTS,
   WorkCategory,
-  getFeaturedProject,
 } from '@/data/workData';
 import {
   WorkHero,
   WorkFilters,
-  FeaturedProject,
   ProjectGrid,
-  OrbitalSystemView,
   WorkCta,
 } from '@/components/work';
-import { Globe, LayoutGrid } from 'lucide-react';
 
 import { applySeo } from '@/utils/seo';
 
@@ -36,25 +32,25 @@ export const WorkPage: React.FC = () => {
     }
   };
 
-  // Scroll to top and apply centralized SEO (canonical is always /work regardless of category filter)
+  // Scroll to top and apply centralized SEO
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     const cleanupSeo = applySeo({
-      title: 'Selected Work | Bythawk — Digital Technology Studio',
+      title: 'Portfolio & Client Work | VTuber Design — Digital Technology Studio',
       description:
-        'Explore selected digital platforms, e-commerce architectures, and mobile products engineered by Bythawk.UK.',
-      path: '/work',
+        'Explore client portfolio, digital platforms, e-commerce architectures, and web applications engineered by VTuber Design.',
+      path: '/portfolio',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Selected Work | Bythawk Digital Technology Studio',
+        name: 'Portfolio & Client Work | VTuber Design',
         description:
-          'A curated selection of digital products, platforms, and architectural blueprints shaped through strategy, design, and engineering.',
-        url: 'https://bythawk.uk/work',
+          'A curated portfolio of digital products, platforms, and architectural blueprints shaped through strategy, design, and engineering.',
+        url: 'https://vtuberdesign.co.au/portfolio',
         provider: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });
@@ -81,10 +77,6 @@ export const WorkPage: React.FC = () => {
     return WORK_PROJECTS.filter((p) => p.category.includes(selectedCategory));
   }, [selectedCategory]);
 
-  const featured = useMemo(() => getFeaturedProject(), []);
-
-  const [viewMode, setViewMode] = useState<'orbit' | 'grid'>('orbit');
-
   return (
     <PageTransition>
       <CosmicScrollJourney />
@@ -93,79 +85,24 @@ export const WorkPage: React.FC = () => {
           {/* Section 1: Hero */}
           <WorkHero />
 
-          {/* Section 2: Accessible Category Filters & Perspective Toggle */}
-          <div className="space-y-6">
+          {/* Section 2: Accessible Category Filters */}
+          <div className="pt-6 pb-2">
             <WorkFilters
               selectedCategory={selectedCategory}
               onSelectCategory={handleSelectCategory}
               projectCounts={projectCounts}
             />
-
-            {/* View Mode Toggle Bar */}
-            <div className="flex items-center justify-between py-3 border-y border-[#FFFBEB]/[0.08]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse" />
-                <span className="text-xs font-mono text-[#FFFBEB]/70 font-medium uppercase tracking-wider">
-                  PORTFOLIO TELEMETRY PERSPECTIVE
-                </span>
-              </div>
-
-              <div className="inline-flex p-1 rounded-xl bg-[#0B0C10]/90 border border-[#FFFBEB]/[0.08]">
-                <button
-                  type="button"
-                  onClick={() => setViewMode('orbit')}
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                    viewMode === 'orbit'
-                      ? 'bg-[#EA580C]/30 text-[#FBBF24] border border-[#D97706]/50 shadow-sm'
-                      : 'text-[#FFFBEB]/60 hover:text-[#FFFBEB]'
-                  }`}
-                >
-                  <Globe className="w-3.5 h-3.5 text-[#F59E0B]" />
-                  <span>ORBITAL SYSTEM</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setViewMode('grid')}
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                    viewMode === 'grid'
-                      ? 'bg-[#EA580C]/30 text-[#FBBF24] border border-[#D97706]/50 shadow-sm'
-                      : 'text-[#FFFBEB]/60 hover:text-[#FFFBEB]'
-                  }`}
-                >
-                  <LayoutGrid className="w-3.5 h-3.5 text-[#F59E0B]" />
-                  <span>MATRIX GRID</span>
-                </button>
-              </div>
-            </div>
           </div>
 
-          {/* Section 3: Interactive Solar System Orrery (Shown in Orbit Mode) */}
-          {viewMode === 'orbit' && (
-            <div className="py-8">
-              <OrbitalSystemView projects={filteredProjects} />
-            </div>
-          )}
-
-          {/* Section 4: Featured Project Showcase (shown in Grid Mode or when matching category) */}
-          {viewMode === 'grid' && (selectedCategory === 'all' || featured.category.includes(selectedCategory)) && (
-            <FeaturedProject project={featured} />
-          )}
-
-          {/* Section 5: Project Grid */}
-          <div className={viewMode === 'orbit' ? 'pt-8 border-t border-white/[0.08]' : ''}>
-            <div className="mb-4">
-              <span className="text-xs font-mono tracking-wider text-amber-400 uppercase">
-                // COMPREHENSIVE PLATFORM MATRIX
-              </span>
-            </div>
+          {/* Section 3: Project Grid with Direct, Prominent Screenshots */}
+          <div className="pt-2 pb-12">
             <ProjectGrid
               projects={filteredProjects}
               resetFilter={() => handleSelectCategory('all')}
             />
           </div>
 
-          {/* Section 6: Case Study CTA */}
+          {/* Section 4: Case Study CTA */}
           <WorkCta />
         </Container>
       </div>

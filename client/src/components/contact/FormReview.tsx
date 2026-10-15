@@ -49,7 +49,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
           Review Project Specification
         </h2>
         <p className="text-sm text-space-muted mt-1 leading-relaxed">
-          Please confirm your details before dispatching your project enquiry to our London engineering studio.
+          Please confirm your details before dispatching your project enquiry to our Australian engineering studio.
         </p>
       </div>
 
@@ -207,7 +207,7 @@ export const FormReview: React.FC<FormReviewProps> = ({
       <div className="p-4 rounded-xl bg-[#0B0C10]/80 border border-white/[0.08] flex items-start space-x-3 text-xs text-slate-300 leading-relaxed font-sans">
         <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
         <p>
-          By submitting this enquiry, you acknowledge that Bythawk will process the details provided to assess your project requirements and communicate our response. For more information, please read our{' '}
+          By submitting this enquiry, you acknowledge that VTuber Design will process the details provided to assess your project requirements and communicate our response. For more information, please read our{' '}
           <Link to="/privacy" className="text-amber-400 underline hover:text-amber-300">
             Privacy Policy
           </Link>

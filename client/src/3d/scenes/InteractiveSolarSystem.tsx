@@ -16,6 +16,14 @@ interface InteractiveSolarSystemProps {
   onSelectPlanet: (id: string) => void;
   isReducedMotion?: boolean;
   isMobile?: boolean;
+  onReady?: () => void;
+}
+
+function SceneReadyWatcher({ onReady }: { onReady?: () => void }) {
+  React.useEffect(() => {
+    onReady?.();
+  }, [onReady]);
+  return null;
 }
 
 export const InteractiveSolarSystem: React.FC<InteractiveSolarSystemProps> = ({
@@ -26,6 +34,7 @@ export const InteractiveSolarSystem: React.FC<InteractiveSolarSystemProps> = ({
   onSelectPlanet,
   isReducedMotion = false,
   isMobile = false,
+  onReady,
 }) => {
   const planetServicesMap = useMemo(() => {
     const map: Record<string, { serviceTitle: string; planetName: string }> = {};
@@ -47,27 +56,40 @@ export const InteractiveSolarSystem: React.FC<InteractiveSolarSystemProps> = ({
         isMobile={isMobile}
       />
 
-      {/* Real Milky Way photo backdrop + deep space stars */}
-      <MilkyWayBackdrop isReducedMotion={isReducedMotion} />
+      {/* Deep space procedural stars - renders on FRAME 1 without textures */}
       <Stars
         radius={150}
         depth={60}
-        count={isReducedMotion ? 600 : 2200}
-        factor={3.4}
+        count={isReducedMotion ? 500 : 1800}
+        factor={3.2}
         saturation={0}
         fade
-        speed={isReducedMotion ? 0 : 0.25}
+        speed={isReducedMotion ? 0 : 0.2}
       />
 
-      {/* Balanced lighting so inner and outer planets (Saturn, Uranus, Neptune) are clearly visible */}
-      <ambientLight intensity={0.22} color="#687d9d" />
+      {/* Real Milky Way photo backdrop */}
+      <MilkyWayBackdrop isReducedMotion={isReducedMotion} />
+
+      {/* Balanced lighting so inner and outer planets are clearly visible */}
+      <ambientLight intensity={0.24} color="#687d9d" />
       <directionalLight position={[-12, 10, 16]} intensity={2.0} color="#fff8ee" />
       <directionalLight position={[12, -6, -10]} intensity={0.35} color="#5577aa" />
 
       {/* High-tech Recon Satellite orbiting in Earth's sphere */}
       <ReconSatellite isReducedMotion={isReducedMotion} />
 
-      {/* Sun with hover and click interactions */}
+      {/* Planetary orbit rings - renders on FRAME 1 immediately */}
+      <ConcentricOrbitRings />
+
+      {/* Asteroid belt between Mars and Jupiter - renders on FRAME 1 immediately */}
+      <RealAsteroidBelt
+        count={360}
+        innerRadius={ASTEROID_BELT.inner}
+        outerRadius={ASTEROID_BELT.outer}
+        isReducedMotion={isReducedMotion}
+      />
+
+      {/* Sun with hover and click interactions - renders on FRAME 1 immediately with procedural plasma */}
       <RealSun
         isReducedMotion={isReducedMotion}
         isHovered={hoveredPlanetId === 'sun'}
@@ -78,10 +100,7 @@ export const InteractiveSolarSystem: React.FC<InteractiveSolarSystemProps> = ({
         onClick={() => onSelectPlanet('sun')}
       />
 
-      {/* Planetary orbit rings */}
-      <ConcentricOrbitRings />
-
-      {/* All planets with interactive hover tooltips & click handlers */}
+      {/* All planets with interactive hover tooltips & click handlers - renders on FRAME 1 immediately */}
       <AllRealPlanets
         isReducedMotion={isReducedMotion}
         isMobile={isMobile}
@@ -92,14 +111,7 @@ export const InteractiveSolarSystem: React.FC<InteractiveSolarSystemProps> = ({
         onPointerOut={() => onHoverPlanet(null)}
         onClick={onSelectPlanet}
       />
-
-      {/* Asteroid belt between Mars and Jupiter */}
-      <RealAsteroidBelt
-        count={420}
-        innerRadius={ASTEROID_BELT.inner}
-        outerRadius={ASTEROID_BELT.outer}
-        isReducedMotion={isReducedMotion}
-      />
+      <SceneReadyWatcher onReady={onReady} />
     </>
   );
 };

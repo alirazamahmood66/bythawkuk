@@ -8,21 +8,21 @@ export const TermsPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Terms & Conditions | Bythawk',
+      title: 'Terms & Conditions | VTuber Design',
       description:
-        'Terms and conditions governing the use of the Bythawk digital agency website and project enquiry portal.',
+        'Terms and conditions governing the use of the VTuber Design digital agency website and project enquiry portal.',
       path: '/terms',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: 'Terms & Conditions | Bythawk',
+        name: 'Terms & Conditions | VTuber Design',
         description:
-          'Terms and conditions governing the use of the Bythawk digital agency website and project enquiry portal.',
-        url: 'https://bythawk.uk/terms',
+          'Terms and conditions governing the use of the VTuber Design digital agency website and project enquiry portal.',
+        url: 'https://vtuberdesign.co.au/terms',
         provider: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });

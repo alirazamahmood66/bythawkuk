@@ -1,11 +1,11 @@
 /**
- * BYTHAWK Design System — Tokens
- * Domain: bythawk.uk
+ * VTUBER DESIGN Design System — Tokens
+ * Domain: vtuberdesign.co.au
  * Creative Direction: Cinematic deep-space, precision technology, restrained elegance
  */
 
 export const colors = {
-  // Primary Environment (Solar Gold & Neutral Obsidian — Bythawk)
+  // Primary Environment (Solar Gold & Neutral Obsidian — VTuber Design)
   background: {
     deep: '#040407',      // Neutral Obsidian Void (zero blue dominance)
     navy: '#040407',      // Neutral Obsidian Void
@@ -41,7 +41,7 @@ export const colors = {
     inverse: '#040407',    // Obsidian Void
   },
 
-  // Accents (Solar Gold & Neutral Obsidian Palette — Bythawk)
+  // Accents (Solar Gold & Neutral Obsidian Palette — VTuber Design)
   accent: {
     solarGold: '#F59E0B',    // Primary Brand Solar Gold
     solarFlare: '#FBBF24',   // Solar Flare / Highlight

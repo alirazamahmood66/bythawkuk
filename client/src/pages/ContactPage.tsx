@@ -18,25 +18,25 @@ export const ContactPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Contact Bythawk | Start a Digital Project',
+      title: 'Contact VTuber Design | Start a Digital Project',
       description:
-        'Start your digital project with Bythawk. Discuss web applications, platforms, e-commerce, and digital engineering with our team.',
+        'Start your digital project with VTuber Design. Discuss web applications, platforms, e-commerce, and digital engineering with our team.',
       path: '/contact',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
-        name: 'Contact Bythawk | Start a Digital Project',
+        name: 'Contact VTuber Design | Start a Digital Project',
         description:
-          'Start your digital project with Bythawk. Discuss web applications, platforms, e-commerce, and digital engineering with our team.',
-        url: 'https://bythawk.uk/contact',
+          'Start your digital project with VTuber Design. Discuss web applications, platforms, e-commerce, and digital engineering with our team.',
+        url: 'https://vtuberdesign.co.au/contact',
         mainEntity: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
           address: {
             '@type': 'PostalAddress',
-            addressLocality: 'London',
-            addressCountry: 'GB',
+            addressLocality: 'Sydney',
+            addressCountry: 'AU',
           },
         },
       },

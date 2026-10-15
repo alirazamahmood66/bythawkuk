@@ -32,7 +32,7 @@ export const ShipTransitSection: React.FC = () => {
     <div ref={trackRef} className="relative h-[200vh] w-full bg-[#040407]">
       {/* PINNED STICKY VIEWPORT CONTAINER */}
       <section
-        aria-label="Bythawk Starship Orbital Transit"
+        aria-label="VTuber Design Starship Orbital Transit"
         className="sticky top-0 h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-[#040407] z-25 select-none"
       >
         {/* Subtle Ambient Cosmic Background Flare */}
@@ -41,7 +41,7 @@ export const ShipTransitSection: React.FC = () => {
           <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full filter blur-[160px] bg-[#EA580C]/15 pointer-events-none" />
         </div>
 
-        {/* 1. PHOTOREALISTIC BYTHAWK RECON STARSHIP (ANCHORED TOP-0 LEFT-0: STARTS BOTTOM-LEFT, TRAVELS UP TO TOP-RIGHT) */}
+        {/* 1. PHOTOREALISTIC VTUBER DESIGN RECON STARSHIP (ANCHORED TOP-0 LEFT-0: STARTS BOTTOM-LEFT, TRAVELS UP TO TOP-RIGHT) */}
         <motion.div
           className="absolute top-0 left-0 z-10 pointer-events-none aspect-square w-[260px] sm:w-[340px] md:w-[400px]"
           style={{
@@ -64,7 +64,7 @@ export const ShipTransitSection: React.FC = () => {
 
             <img
               src="/images/cosmic/bythawk_recon_spaceship.png"
-              alt="Bythawk stealth reconnaissance starship traveling forward from bottom-left to top-right"
+              alt="VTuber Design stealth reconnaissance starship traveling forward from bottom-left to top-right"
               className="w-full h-full object-contain filter contrast-110 brightness-110 drop-shadow-[0_0_50px_rgba(245, 158, 11, 0.7)]"
               loading="eager"
             />
@@ -82,7 +82,7 @@ export const ShipTransitSection: React.FC = () => {
               ENGINEERING STANDARDS
             </Badge>
             <span className="text-xs text-[#FFFBEB]/60 uppercase tracking-widest font-mono hidden sm:inline">
-              UK TECHNICAL EXCELLENCE
+              ENTERPRISE TECHNICAL EXCELLENCE
             </span>
           </div>
 
@@ -145,7 +145,7 @@ export const ShipTransitSection: React.FC = () => {
                 GLOBAL
               </div>
               <p className="text-xs text-[#FFFBEB]/70 leading-snug">
-                Serving verified deployments across UK, Europe, and global edge networks.
+                Serving verified deployments across Australia, APAC, and global edge networks.
               </p>
             </div>
           </div>

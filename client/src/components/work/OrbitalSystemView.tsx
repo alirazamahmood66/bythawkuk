@@ -54,8 +54,8 @@ interface PlanetOrbitConfig {
 }
 
 const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
-  'bythawk-studio': {
-    slug: 'bythawk-studio',
+  'vtuber design-studio': {
+    slug: 'vtuber design-studio',
     planetName: 'Earth (Blue Marble)',
     celestialDesignation: 'TERRA-01 // APOLLO 17 REFERENCE',
     imageSrc: '/images/cosmic/earth_blue_marble.png',
@@ -259,7 +259,7 @@ const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
         temperature: '11,700°C',
         pressure: '1,500 GPa',
         elements: ['Silicate rocks', 'Iron', 'Nickel', 'Volatile ices'],
-        architectureTier: 'Tier 4: Judicial Audit Vault & UK/EU GDPR Data Store',
+        architectureTier: 'Tier 4: Judicial Audit Vault & Australian Privacy Data Store',
         architectureRole: 'Court-admissible evidentiary logging, immutable timestamps, legal hold data persistence.',
         color: '#ca8a04',
         glow: 'rgba(202, 138, 4, 0.9)',
@@ -397,23 +397,54 @@ const ORBIT_CONFIGS: Record<string, PlanetOrbitConfig> = {
   },
 };
 
+// Ensure standard slug aliases map to configs
+if (ORBIT_CONFIGS['vtuber design-studio']) {
+  ORBIT_CONFIGS['vtuber-design'] = ORBIT_CONFIGS['vtuber design-studio'];
+}
+if (ORBIT_CONFIGS['oaksis-academy']) {
+  ORBIT_CONFIGS['oaksis'] = ORBIT_CONFIGS['oaksis-academy'];
+}
+if (ORBIT_CONFIGS['ceedrs-platform']) {
+  ORBIT_CONFIGS['ceedrs'] = ORBIT_CONFIGS['ceedrs-platform'];
+}
+if (!ORBIT_CONFIGS['bythawk']) {
+  ORBIT_CONFIGS['bythawk'] = {
+    slug: 'bythawk',
+    planetName: 'Mars (Perseverance)',
+    celestialDesignation: 'ARES-IV // OLYMPUS CALDERA',
+    imageSrc: '/images/cosmic/mars_red_planet.png',
+    radius: 120,
+    baseSpeed: 14,
+    size: 11,
+    color: '#7C3AED',
+    glow: 'rgba(124, 58, 237, 0.6)',
+    astronomicalUnit: '1.52 AU',
+    orbitIndex: 'ORBIT III',
+    strata: ORBIT_CONFIGS['vtuber design-studio']?.strata || [],
+  };
+}
+
 export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }) => {
   const shouldReduceMotion = useReducedMotion();
   const [isPlaying, setIsPlaying] = useState(!shouldReduceMotion);
   const [viewMode, setViewMode] = useState<'exterior' | 'interior'>('exterior');
   const [selectedSlug, setSelectedSlug] = useState<string>(
-    projects[0]?.slug || 'bythawk-studio'
+    projects[0]?.slug || 'global-integrated-support'
   );
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
   const [selectedLayerId, setSelectedLayerId] = useState<string>('crust');
 
   // Angles in degrees for each planet
   const [angles, setAngles] = useState<Record<string, number>>(() => ({
-    'bythawk-studio': 45,
+    'global-integrated-support': 110,
+    'ceedrs': 275,
+    'darul-quran-wa-sunnah': 330,
+    'vtuber-design': 45,
+    'oaksis': 160,
+    'bythawk': 210,
+    'vtuber design-studio': 45,
     'oaksis-academy': 160,
     'ceedrs-platform': 275,
-    'global-integrated-support': 110,
-    'darul-quran-wa-sunnah': 330,
   }));
 
   const lastTimeRef = useRef<number>(performance.now());
@@ -459,7 +490,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
   const activeProject =
     projects.find((p) => p.slug === (hoveredSlug || selectedSlug)) || projects[0];
 
-  const activeConfig = ORBIT_CONFIGS[activeProject.slug] || ORBIT_CONFIGS['bythawk-studio'];
+  const activeConfig = ORBIT_CONFIGS[activeProject.slug] || ORBIT_CONFIGS['vtuber design-studio'];
 
   // Active layer for interior view
   const activeLayer =
@@ -479,7 +510,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
               </span>
             </div>
             <div className="text-[11px] font-mono text-slate-400">
-              Heliocentric alignment around Bythawk Solar Core & Planetary Interior Strata
+              Heliocentric alignment around VTuber Design Solar Core & Planetary Interior Strata
             </div>
           </div>
         </div>
@@ -538,7 +569,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                 type="button"
                 onClick={() => {
                   setAngles({
-                    'bythawk-studio': 45,
+                    'vtuber design-studio': 45,
                     'oaksis-academy': 160,
                     'ceedrs-platform': 275,
                     'global-integrated-support': 110,
@@ -586,7 +617,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
 
               {/* Central Star: REAL NASA SOLAR DYNAMICS OBSERVATORY SUN */}
               <circle cx="0" cy="0" r="58" fill="url(#coronaPulse)" className="animate-pulse" />
-              <g className="cursor-pointer" onClick={() => setSelectedSlug('bythawk-studio')}>
+              <g className="cursor-pointer" onClick={() => setSelectedSlug('vtuber design-studio')}>
                 <image
                   href="/images/cosmic/sun_solar_core.png"
                   x="-46"
@@ -604,7 +635,7 @@ export const OrbitalSystemView: React.FC<OrbitalSystemViewProps> = ({ projects }
                 textAnchor="middle"
                 className="text-[9px] font-mono font-bold fill-amber-300 tracking-widest drop-shadow-md"
               >
-                BYTHAWK SUN // CORE
+                VTUBER DESIGN SUN // CORE
               </text>
 
               {/* Planetary Orbits and Bodies */}

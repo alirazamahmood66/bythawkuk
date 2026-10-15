@@ -36,7 +36,7 @@ export const WorkDetailPage: React.FC = () => {
   useEffect(() => {
     if (project) {
       const cleanupSeo = applySeo({
-        title: `${project.title} | Bythawk`,
+        title: `${project.title} | VTuber Design`,
         description: project.shortDescription,
         path: `/work/${project.slug}`,
         robots: 'index, follow',
@@ -47,8 +47,8 @@ export const WorkDetailPage: React.FC = () => {
           description: project.shortDescription,
           creator: {
             '@type': 'Organization',
-            name: 'BYTHAWK',
-            url: 'https://bythawk.uk',
+            name: 'VTUBER DESIGN',
+            url: 'https://vtuberdesign.co.au',
           },
           genre: project.primaryCategory,
         },
@@ -56,7 +56,7 @@ export const WorkDetailPage: React.FC = () => {
       return cleanupSeo;
     } else {
       const cleanupSeo = applySeo({
-        title: 'Case Study Not Found | Bythawk',
+        title: 'Case Study Not Found | VTuber Design',
         description: 'The requested case study could not be found.',
         path: '/work',
         robots: 'noindex, nofollow',
@@ -318,7 +318,7 @@ export const WorkDetailPage: React.FC = () => {
           {/* Section: Case Study CTA */}
           <WorkCta
             title="Ready to Build Your Digital Milestone?"
-            subtitle="From initial technical scoping to cloud deployment, our UK engineering team delivers with precision."
+            subtitle="From initial technical scoping to cloud deployment, our Australian engineering team delivers with precision."
           />
         </Container>
       </article>

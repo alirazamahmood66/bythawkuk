@@ -34,7 +34,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ gallery, title }
             padding="none"
             className="rounded-2xl overflow-hidden border border-[#FFFBEB]/[0.08] bg-[#0B0C10]/90 group shadow-xl"
           >
-            <div className="aspect-video w-full overflow-hidden relative">
+            <div className="aspect-video w-full overflow-hidden relative theme-img-wrap">
               <img
                 src={item.src}
                 alt={item.alt || `${title} preview ${idx + 1}`}

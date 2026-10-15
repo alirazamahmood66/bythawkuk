@@ -110,7 +110,7 @@ export const FinalCtaSection: React.FC = () => {
               <span>&bull;</span>
               <span className="inline-flex items-center gap-1.5 text-amber-300">
                 <Mail className="w-3.5 h-3.5" />
-                <span>hello@bythawk.uk</span>
+                <span>hello@vtuberdesign.co.au</span>
               </span>
             </div>
           </div>

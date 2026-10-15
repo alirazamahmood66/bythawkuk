@@ -63,7 +63,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
 
           <div className="flex items-center space-x-1.5 text-amber-400">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>BYTHAWK PERSPECTIVE</span>
+            <span>VTUBER DESIGN PERSPECTIVE</span>
           </div>
         </div>
       </header>
@@ -222,7 +222,7 @@ export const InsightArticleContent: React.FC<InsightArticleContentProps> = ({
               Have a digital challenge to solve?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto font-sans leading-relaxed">
-              Discuss architecture, scoping, and timelines directly with our UK engineering team.
+              Discuss architecture, scoping, and timelines directly with our Australian engineering team.
             </p>
             <div className="pt-2">
               <Link to="/contact">

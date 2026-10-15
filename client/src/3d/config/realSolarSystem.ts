@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { useTexture } from '@react-three/drei';
 
 export interface RealBodyConfig {
   id: string;
@@ -25,6 +26,26 @@ export interface RealBodyConfig {
 export const SUN_RADIUS = 1.85;
 export const SUN_TEXTURE = '/textures/2k_sun.jpg';
 export const MILKY_WAY_TEXTURE = '/textures/2k_stars_milky_way.jpg';
+
+// Instant background texture preloading
+if (typeof window !== 'undefined') {
+  useTexture.preload([
+    SUN_TEXTURE,
+    MILKY_WAY_TEXTURE,
+    '/textures/2k_mercury.jpg',
+    '/textures/2k_venus_atmosphere.jpg',
+    '/textures/2k_earth_daymap.jpg',
+    '/textures/2k_earth_nightmap.jpg',
+    '/textures/2k_earth_clouds.jpg',
+    '/textures/2k_moon.jpg',
+    '/textures/2k_mars.jpg',
+    '/textures/2k_jupiter.jpg',
+    '/textures/2k_saturn.jpg',
+    '/textures/2k_saturn_ring_alpha.png',
+    '/textures/2k_uranus.jpg',
+    '/textures/2k_neptune.jpg',
+  ]);
+}
 
 // Real Solar System (compressed distances, true planet order, real NASA-derived surface maps).
 // Only Saturn has rings, exactly like the real thing.

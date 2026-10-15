@@ -11,7 +11,7 @@ interface WorkCtaProps {
 
 export const WorkCta: React.FC<WorkCtaProps> = ({
   title = "HAVE A PROJECT IN MIND? LET'S BUILD IT.",
-  subtitle = 'Whether architecting a complex web platform, scaling a headless commerce storefront, or engineering a cross-platform mobile utility, our London engineering leads are ready.',
+  subtitle = 'Whether architecting a complex web platform, scaling a headless commerce storefront, or engineering an enterprise cloud system, our Australian engineering leads are ready.',
 }) => {
   return (
     <section className="py-20 md:py-28 relative overflow-hidden">
@@ -30,7 +30,7 @@ export const WorkCta: React.FC<WorkCtaProps> = ({
       >
         <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-4 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30">
           <Terminal className="w-3.5 h-3.5" />
-          <span>INITIATE PARTNERSHIP // LONDON • UK</span>
+          <span>INITIATE PARTNERSHIP // AUSTRALIA</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
@@ -66,7 +66,7 @@ export const WorkCta: React.FC<WorkCtaProps> = ({
 
         <div className="mt-8 pt-6 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-400">
           <span>• Fixed Milestone Delivery</span>
-          <span>• Senior UK Engineers</span>
+          <span>• Senior Australian Engineers</span>
           <span>• 100% Codebase Ownership</span>
         </div>
       </Card>

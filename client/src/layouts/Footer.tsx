@@ -11,18 +11,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#FFFBEB]/[0.06]">
           {/* Brand Info & Mission */}
           <div className="lg:col-span-5 space-y-4">
-            <Link to="/" className="flex items-center gap-2.5 group focus-ring rounded-lg w-fit">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#FDE047] via-[#F59E0B] to-[#EA580C] flex items-center justify-center font-bold text-[#040407] text-base shadow-md shadow-[#F59E0B]/25 group-hover:scale-105 transition-transform duration-200">
-                B
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold tracking-wider text-[#FFFBEB] text-lg uppercase leading-none font-sans">
-                  BYTHAWK
-                </span>
-                <span className="text-[9px] tracking-widest text-[#FBBF24] font-mono font-medium leading-tight">
-                  DIGITAL TECHNOLOGY . UK
-                </span>
-              </div>
+            <Link to="/" className="flex items-center group focus-ring rounded-lg w-fit" aria-label="VTuber Design Homepage">
+              <img
+                src="/images/logo/vtuber-design-emblem.png"
+                alt="VTuber Design"
+                className="h-12 sm:h-14 w-auto object-contain filter drop-shadow-[0_2px_14px_rgba(245,158,11,0.35)] group-hover:scale-105 transition-transform duration-200"
+              />
             </Link>
 
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed font-sans">
@@ -31,7 +25,7 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-2 text-xs font-mono text-slate-500 pt-1">
               <Globe className="w-3.5 h-3.5 text-[#F59E0B]" />
-              <span>LONDON &bull; UNITED KINGDOM &bull; bythawk.uk</span>
+              <span>SYDNEY &bull; MELBOURNE &bull; AUSTRALIA &bull; vtuberdesign.co.au</span>
             </div>
           </div>
 
@@ -43,8 +37,8 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs font-sans" role="list">
               {[
                 { label: 'Services Ecosystem', href: '/services' },
-                { label: 'Selected Work', href: '/work' },
-                { label: 'Why Bythawk', href: '/about' },
+                { label: 'Client Portfolio', href: '/portfolio' },
+                { label: 'Why VTuber Design', href: '/about' },
                 { label: 'Launch Sequence', href: '/process' },
                 { label: 'Research & Insights', href: '/insights' },
                 { label: 'Contact Studio', href: '/contact' },
@@ -109,10 +103,10 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright & Telemetry */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} BYTHAWK UK. All rights reserved. Registered in England &amp; Wales.
+            &copy; {new Date().getFullYear()} VTUBER DESIGN. All rights reserved. Australian Digital Technology Studio.
           </div>
           <div className="flex items-center gap-3">
-            <span>Domain: bythawk.uk</span>
+            <span>Domain: vtuberdesign.co.au</span>
             <span>&bull;</span>
             <span className="text-amber-400/80">60 FPS Planetary Simulation Engine</span>
           </div>

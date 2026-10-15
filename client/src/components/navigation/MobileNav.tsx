@@ -91,7 +91,7 @@ export const MobileNav: React.FC = () => {
                   Mission Menu
                 </Badge>
                 <span className="text-[11px] font-mono text-[#FFFBEB]/50">
-                  BYTHAWK.UK
+                  vtuberdesign.co.au
                 </span>
               </div>
 
@@ -253,8 +253,8 @@ export const MobileNav: React.FC = () => {
                 </Button>
               </Link>
               <div className="flex items-center justify-between text-[11px] font-mono text-[#FFFBEB]/50 pt-1">
-                <span>London, United Kingdom</span>
-                <span className="text-[#F59E0B]">bythawk.uk</span>
+                <span>Sydney & Melbourne, Australia</span>
+                <span className="text-[#F59E0B]">vtuberdesign.co.au</span>
               </div>
             </div>
           </motion.div>

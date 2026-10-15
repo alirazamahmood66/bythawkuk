@@ -99,7 +99,7 @@ export const ContactDetailsFields: React.FC<ContactDetailsFieldsProps> = ({
             maxLength={255}
             value={email}
             onChange={(e) => onEmailChange(e.target.value)}
-            placeholder="e.g. alex@company.co.uk"
+            placeholder="e.g. alex@company.com.au"
             aria-invalid={Boolean(errors.email)}
             aria-describedby={errors.email ? 'email-error' : 'email-hint'}
             className={`w-full px-4 py-3 rounded-xl bg-[#0B0C10]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${

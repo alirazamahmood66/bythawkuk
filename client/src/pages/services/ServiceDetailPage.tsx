@@ -113,7 +113,7 @@ export const ServiceDetailPage: React.FC = () => {
   useEffect(() => {
     if (!service) {
       return applySeo({
-        title: 'Service Not Found | Bythawk',
+        title: 'Service Not Found | VTuber Design',
         description: 'The requested service specification could not be located.',
         path: `/services/${slug || ''}`,
         robots: 'noindex, nofollow',
@@ -121,7 +121,7 @@ export const ServiceDetailPage: React.FC = () => {
     }
 
     return applySeo({
-      title: `${service.title} | Bythawk`,
+      title: `${service.title} | VTuber Design`,
       description: service.seoDescription,
       path: `/services/${service.slug}`,
       schema: {
@@ -131,8 +131,8 @@ export const ServiceDetailPage: React.FC = () => {
         description: service.seoDescription,
         provider: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });
@@ -160,7 +160,7 @@ export const ServiceDetailPage: React.FC = () => {
                 Service Specification Not Found
               </h1>
               <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
-                The requested service coordinate <code className="text-[#FBBF24] font-mono text-xs bg-[#EA580C]/30 px-1.5 py-0.5 rounded border border-[#D97706]/40">/{slug}</code> could not be located within the BYTHAWK orbital network.
+                The requested service coordinate <code className="text-[#FBBF24] font-mono text-xs bg-[#EA580C]/30 px-1.5 py-0.5 rounded border border-[#D97706]/40">/{slug}</code> could not be located within the VTUBER DESIGN orbital network.
               </p>
             </div>
             <div className="pt-2 flex justify-center gap-4">
@@ -278,13 +278,13 @@ export const ServiceDetailPage: React.FC = () => {
             >
               <div className="space-y-2 max-w-xl">
                 <span className="text-xs font-mono tracking-wider text-[#F59E0B] uppercase font-semibold">
-                  // RIGOROUS UK CRAFTSMANSHIP
+                  // RIGOROUS CRAFTSMANSHIP
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold text-[#FFFBEB] font-sans">
                   Engineered Through Our 6-Stage Launch Sequence
                 </h3>
                 <p className="text-sm text-[#FFFBEB]/70 leading-relaxed font-sans">
-                  Every {service.title} engagement executes against our standardized UK quality gates, automated testing, and zero-downtime deployment pipelines.
+                  Every {service.title} engagement executes against our standardized quality gates, automated testing, and zero-downtime deployment pipelines.
                 </p>
               </div>
               <Link to="/process" className="shrink-0">
@@ -302,7 +302,7 @@ export const ServiceDetailPage: React.FC = () => {
             accentColor={service.accentColor}
           />
 
-          {/* Section 7: Strategic Value & Why Bythawk */}
+          {/* Section 7: Strategic Value & Why VTuber Design */}
           <ServiceBenefits
             serviceTitle={service.title}
             benefits={service.benefits}

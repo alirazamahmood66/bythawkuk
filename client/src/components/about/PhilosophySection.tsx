@@ -61,7 +61,7 @@ export const PhilosophySection: React.FC = () => {
         ))}
       </div>
 
-      {/* 2. What Makes Bythawk Different */}
+      {/* 2. What Makes VTuber Design Different */}
       <div className="pt-8 border-t border-white/[0.08]">
         <div className="max-w-3xl mb-12">
           <div className="inline-flex items-center space-x-2 text-xs font-mono tracking-wider text-amber-400 uppercase mb-3">

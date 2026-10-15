@@ -22,7 +22,7 @@ export const WhyBythawkSection: React.FC = () => {
         <SectionHeading
           eyebrow="PHILOSOPHY & PRINCIPLES // 03"
           title="Why Ambitious Brands"
-          highlight="Choose Bythawk"
+          highlight="Choose VTuber Design"
           description="Technology should create lasting momentum, not architectural debt. We partner with ambitious leaders to engineer digital systems that deliver compounding competitive advantage."
         />
 
@@ -48,7 +48,7 @@ export const WhyBythawkSection: React.FC = () => {
 
                   <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#040407]/80 border border-[#FFFBEB]/[0.08] text-[10px] font-mono text-[#F59E0B]">
                     <ShieldCheck className="w-3.5 h-3.5 text-[#F59E0B]" />
-                    <span>VERIFIED UK ARCHITECTURE</span>
+                    <span>VERIFIED ENTERPRISE ARCHITECTURE</span>
                   </div>
                 </div>
 
@@ -71,7 +71,7 @@ export const WhyBythawkSection: React.FC = () => {
                   <CheckCircle2 className="w-4 h-4 text-amber-400" />
                   <span>Commercial Drivers &bull; Target Outcomes First</span>
                 </span>
-                <span className="text-amber-400 font-bold">100% UK SENIOR TALENT</span>
+                <span className="text-amber-400 font-bold">100% SENIOR LEADERSHIP</span>
               </div>
             </Card>
           </div>

@@ -16,19 +16,19 @@ import {
 export const HomePage: React.FC = () => {
   useEffect(() => {
     return applySeo({
-      title: 'Bythawk — Digital Technology Studio | Web, Apps, E-commerce & Growth',
+      title: 'VTuber Design — Digital Technology Studio | Web, Apps, E-commerce & Growth',
       description:
-        'Bythawk is a UK digital technology studio engineering high-performance websites, scalable web applications, conversion-focused e-commerce, mobile apps, digital marketing, SEO, and UI/UX design.',
+        'VTuber Design is an Australian digital technology studio engineering high-performance websites, scalable web applications, conversion-focused e-commerce, mobile apps, digital marketing, SEO, and UI/UX design.',
       path: '/',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'Bythawk',
-        url: 'https://bythawk.uk',
+        name: 'VTuber Design',
+        url: 'https://vtuberdesign.co.au',
         publisher: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });

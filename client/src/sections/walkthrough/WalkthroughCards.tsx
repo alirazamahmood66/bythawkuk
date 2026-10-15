@@ -37,7 +37,7 @@ export const HeroCard: React.FC = () => (
   <GlassShell color="#22d3ee">
     <div className="flex items-center gap-2 text-[10px] font-mono tracking-[0.2em] text-amber-300 mb-5">
       <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-      DIGITAL STUDIO &bull; LONDON, UK
+      DIGITAL STUDIO &bull; AUSTRALIA
     </div>
 
     <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.04] font-sans">

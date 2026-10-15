@@ -20,49 +20,49 @@
 
 @layer base {
   :root {
-    /* Primary Solar Gold & Neutral Obsidian Tokens — Bythawk */
-    --bythawk-bg-deep: #040407; /* Neutral Obsidian Void */
-    --bythawk-bg-space: #0B0C10; /* Dark Obsidian Surface */
-    --bythawk-bg-navy: #0B0C10; /* Dark Obsidian Surface */
-    --bythawk-bg-surface: #0B0C10; /* Dark Obsidian Surface */
-    --bythawk-bg-elevated: #12131A; /* Elevated Obsidian */
-    --bythawk-bg-sunken: #020204; /* Deep sunken obsidian */
+    /* Primary Solar Gold & Neutral Obsidian Tokens — VTuber Design */
+    --vtuber-design-bg-deep: #040407; /* Neutral Obsidian Void */
+    --vtuber-design-bg-space: #0B0C10; /* Dark Obsidian Surface */
+    --vtuber-design-bg-navy: #0B0C10; /* Dark Obsidian Surface */
+    --vtuber-design-bg-surface: #0B0C10; /* Dark Obsidian Surface */
+    --vtuber-design-bg-elevated: #12131A; /* Elevated Obsidian */
+    --vtuber-design-bg-sunken: #020204; /* Deep sunken obsidian */
 
     /* Precision Borders */
-    --bythawk-border-subtle: rgba(245, 158, 11, 0.12);
-    --bythawk-border-medium: rgba(245, 158, 11, 0.25);
-    --bythawk-border-accent: rgba(251, 191, 36, 0.45);
-    --bythawk-border-gold: rgba(245, 158, 11, 0.35);
+    --vtuber-design-border-subtle: rgba(245, 158, 11, 0.12);
+    --vtuber-design-border-medium: rgba(245, 158, 11, 0.25);
+    --vtuber-design-border-accent: rgba(251, 191, 36, 0.45);
+    --vtuber-design-border-gold: rgba(245, 158, 11, 0.35);
 
     /* Text System */
-    --bythawk-text-primary: #FFFBEB; /* Warm Starlight White */
-    --bythawk-text-secondary: #CBD5E1; /* Refined Slate Silver */
-    --bythawk-text-muted: #94A3B8;
-    --bythawk-text-accent: #F59E0B; /* Solar Gold */
-    --bythawk-text-gold: #FBBF24; /* Solar Flare */
+    --vtuber-design-text-primary: #FFFBEB; /* Warm Starlight White */
+    --vtuber-design-text-secondary: #CBD5E1; /* Refined Slate Silver */
+    --vtuber-design-text-muted: #94A3B8;
+    --vtuber-design-text-accent: #F59E0B; /* Solar Gold */
+    --vtuber-design-text-gold: #FBBF24; /* Solar Flare */
 
     /* Solar Gold Accents */
-    --bythawk-solar-gold: #F59E0B;
-    --bythawk-solar-flare: #FBBF24;
-    --bythawk-sunset-amber: #EA580C;
-    --bythawk-obsidian-void: #040407;
-    --bythawk-obsidian-glass: #0B0C10;
-    --bythawk-starlight-white: #FFFBEB;
+    --vtuber-design-solar-gold: #F59E0B;
+    --vtuber-design-solar-flare: #FBBF24;
+    --vtuber-design-sunset-amber: #EA580C;
+    --vtuber-design-obsidian-void: #040407;
+    --vtuber-design-obsidian-glass: #0B0C10;
+    --vtuber-design-starlight-white: #FFFBEB;
 
     /* Semantic Mappings */
-    --bythawk-cyan: #F59E0B;
-    --bythawk-cyan-hover: #FBBF24;
-    --bythawk-soft-blue: #FBBF24;
-    --bythawk-violet: #EA580C;
-    --bythawk-electric-blue: #D97706;
+    --vtuber-design-cyan: #F59E0B;
+    --vtuber-design-cyan-hover: #FBBF24;
+    --vtuber-design-soft-blue: #FBBF24;
+    --vtuber-design-violet: #EA580C;
+    --vtuber-design-electric-blue: #D97706;
 
     /* Focus Rings for Accessibility */
-    --bythawk-focus-ring: #F59E0B;
+    --vtuber-design-focus-ring: #F59E0B;
   }
 
   body {
-    background-color: var(--bythawk-bg-deep);
-    color: var(--bythawk-text-primary);
+    background-color: var(--vtuber-design-bg-deep);
+    color: var(--vtuber-design-text-primary);
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -108,7 +108,7 @@
   background: rgba(14, 15, 20, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--bythawk-border-medium);
+  border: 1px solid var(--vtuber-design-border-medium);
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 20px 0 rgba(245, 158, 11, 0.12);
   border-radius: 1rem;
 }
@@ -131,12 +131,12 @@
 
 .dark-panel {
   background: #0B0C10;
-  border: 1px solid var(--bythawk-border-subtle);
+  border: 1px solid var(--vtuber-design-border-subtle);
   border-radius: 0.75rem;
 }
 
 .bordered-panel {
-  border: 1px solid var(--bythawk-border-subtle);
+  border: 1px solid var(--vtuber-design-border-subtle);
   border-radius: 0.75rem;
 }
 
@@ -150,7 +150,7 @@
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.05;
-  color: var(--bythawk-text-primary);
+  color: var(--vtuber-design-text-primary);
 }
 
 .heading-1 {
@@ -159,7 +159,7 @@
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.15;
-  color: var(--bythawk-text-primary);
+  color: var(--vtuber-design-text-primary);
 }
 
 .heading-2 {
@@ -168,7 +168,7 @@
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.25;
-  color: var(--bythawk-text-primary);
+  color: var(--vtuber-design-text-primary);
 }
 
 .heading-3 {
@@ -177,13 +177,13 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.35;
-  color: var(--bythawk-text-primary);
+  color: var(--vtuber-design-text-primary);
 }
 
 .text-lead {
   font-size: clamp(1rem, 1vw + 0.25rem, 1.25rem);
   line-height: 1.65;
-  color: var(--bythawk-text-secondary);
+  color: var(--vtuber-design-text-secondary);
 }
 
 .text-mono-label {
@@ -191,7 +191,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--bythawk-text-accent);
+  color: var(--vtuber-design-text-accent);
 }
 
 /* ==========================================================================
@@ -203,9 +203,9 @@
 }
 
 .focus-ring:focus-visible {
-  outline: 2px solid var(--bythawk-cyan);
+  outline: 2px solid var(--vtuber-design-cyan);
   outline-offset: 3px;
-  box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.25);
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.25);
 }
 
 /* ==========================================================================
@@ -222,3 +222,41 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ==========================================================================
+   [EXPERIMENT] THEME-WISE IMAGE OVERLAY
+   Easily undone: delete or comment out this block if not desired.
+   Applies a subtle Solar Gold & Obsidian warm ambient overlay to imagery.
+   ========================================================================== */
+
+.theme-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  background: linear-gradient(
+    140deg,
+    rgba(245, 158, 11, 0.16) 0%,
+    rgba(4, 4, 7, 0.12) 45%,
+    rgba(234, 88, 12, 0.18) 100%
+  );
+  mix-blend-mode: overlay;
+  transition: opacity 0.4s ease;
+}
+
+.theme-img-wrap:hover::after,
+.group:hover .theme-img-wrap::after {
+  opacity: 0.65;
+}
+
+.theme-img-wrap img {
+  filter: contrast(1.03) brightness(0.97) sepia(0.12) saturate(1.1);
+  transition: filter 0.4s ease, transform 0.6s ease;
+}
+

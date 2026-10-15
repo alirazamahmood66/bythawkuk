@@ -21,24 +21,24 @@ export const AboutPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'About Bythawk | Digital Technology Studio',
+      title: 'About VTuber Design | Digital Technology Studio',
       description:
-        'Bythawk is a UK digital technology studio uniting commercial strategy, human-centered design, and resilient software engineering for ambitious organizations.',
+        'VTuber Design is an Australian digital technology studio uniting commercial strategy, human-centered design, and resilient software engineering for ambitious organizations.',
       path: '/about',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'AboutPage',
-        name: 'About Bythawk | Digital Technology Studio',
+        name: 'About VTuber Design | Digital Technology Studio',
         description:
-          'Bythawk is a UK digital technology studio uniting commercial strategy, human-centered design, and resilient software engineering.',
-        url: 'https://bythawk.uk/about',
+          'VTuber Design is an Australian digital technology studio uniting commercial strategy, human-centered design, and resilient software engineering.',
+        url: 'https://vtuberdesign.co.au/about',
         mainEntity: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
           areaServed: {
-            '@type': 'AdministrativeArea',
-            name: 'United Kingdom',
+            '@type': 'Country',
+            name: 'Australia',
           },
         },
       },
@@ -68,7 +68,7 @@ export const AboutPage: React.FC = () => {
         <div className="relative w-full h-full">
           <img
             src="/images/cosmic/orbital_shipyard_station.png"
-            alt="Bythawk orbital engineering shipyard and space station"
+            alt="VTuber Design orbital engineering shipyard and space station"
             className="w-full h-full object-contain filter drop-shadow-[0_0_65px_rgba(245, 158, 11, 0.55)] opacity-90"
             loading="eager"
           />
@@ -141,7 +141,7 @@ export const AboutPage: React.FC = () => {
             </div>
           </section>
 
-          {/* Section 5: Technology Philosophy & UK Location Statement */}
+          {/* Section 5: Technology Philosophy & Australia Studio Statement */}
           <TechnologyPhilosophy />
 
           {/* Section 6: Conversion CTA */}

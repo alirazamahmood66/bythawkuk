@@ -105,7 +105,7 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
             maxLength={150}
             value={company}
             onChange={(e) => onCompanyChange(e.target.value)}
-            placeholder="e.g. Acme Health UK"
+            placeholder="e.g. Acme Health Australia"
             className="w-full px-4 py-3 rounded-xl bg-[#0B0C10]/90 border border-white/[0.08] text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50"
           />
         </div>
@@ -125,7 +125,7 @@ export const ProjectScopeFields: React.FC<ProjectScopeFieldsProps> = ({
             maxLength={255}
             value={website}
             onChange={(e) => onWebsiteChange(e.target.value)}
-            placeholder="https://example.co.uk"
+            placeholder="https://example.com.au"
             aria-invalid={Boolean(errors.website)}
             aria-describedby={errors.website ? 'website-error' : undefined}
             className={`w-full px-4 py-3 rounded-xl bg-[#0B0C10]/90 border text-white placeholder-slate-400 text-sm transition-all focus:outline-none focus:ring-2 ${

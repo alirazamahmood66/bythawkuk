@@ -125,7 +125,7 @@ export const SolutionsMegaMenu: React.FC<SolutionsMegaMenuProps> = ({
                 <span>View All Custom Solution Frameworks &rarr;</span>
               </Link>
               <span className="hidden sm:inline text-[#FFFBEB]/50 text-[11px]">
-                Tailored engineering architectures for UK enterprises
+                Tailored engineering architectures for Australian enterprises
               </span>
             </div>
           </Container>

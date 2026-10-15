@@ -40,7 +40,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     title: 'Startup MVP & Platform Launch',
     tagline: 'From idea to market-ready digital product with enterprise scalability.',
     category: 'VENTURE & MVP ENGINEERING',
-    eyebrow: 'BYTHAWK // SOLUTION ARCHITECTURE',
+    eyebrow: 'VTUBER DESIGN // SOLUTION ARCHITECTURE',
     description:
       'We engineer production-grade MVPs for venture-backed and bootstrapped startups. We prioritize rapid delivery, robust architecture, and sub-second performance so you can onboard early customers, collect real data, and raise capital on a rock-solid codebase.',
     accentColor: '#06b6d4',
@@ -93,10 +93,10 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
       },
     ],
     technologies: ['React 19', 'TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Stripe', 'Docker'],
-    relatedProjectSlugs: ['ceedrs-platform', 'bythawk-studio'],
+    relatedProjectSlugs: ['ceedrs-platform', 'vtuber design-studio'],
     faqs: [
       {
-        question: 'How fast can Bythawk deliver a working MVP?',
+        question: 'How fast can VTuber Design deliver a working MVP?',
         answer: 'Most startup launch engagements complete in 6 to 10 weeks depending on feature scope and third-party integrations.',
       },
       {
@@ -115,7 +115,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     title: 'Enterprise Digital Transformation',
     tagline: 'Modernize legacy systems, internal workflows and customer touchpoints.',
     category: 'SYSTEM MODERNIZATION',
-    eyebrow: 'BYTHAWK // ENTERPRISE STRATEGY',
+    eyebrow: 'VTUBER DESIGN // ENTERPRISE STRATEGY',
     description:
       'We replace brittle legacy software, manual spreadsheet processes, and fragmented tools with unified, modern cloud platforms. We design intuitive interfaces that empower operational teams, eliminate bottlenecks, and protect data integrity.',
     accentColor: '#38bdf8',
@@ -147,7 +147,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
       },
       {
         title: 'Enterprise Security & Audit Trails',
-        description: 'Full adherence to UK GDPR, encryption at rest and in transit, and granular activity logging.',
+        description: 'Full adherence to Australian Privacy Principles, encryption at rest and in transit, and granular activity logging.',
       },
     ],
     deliverables: [
@@ -186,7 +186,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     title: 'High-Converting E-Commerce Growth',
     tagline: 'Build and optimize digital commerce experiences that scale international revenue.',
     category: 'COMMERCE & CONVERSION',
-    eyebrow: 'BYTHAWK // DIGITAL COMMERCE',
+    eyebrow: 'VTUBER DESIGN // DIGITAL COMMERCE',
     description:
       'We build decoupled, headless storefronts and conversion-engineered shopping experiences. With sub-second catalog transitions, frictionless one-tap mobile checkout, and automated multi-currency pricing, we turn casual visitors into loyal repeat customers.',
     accentColor: '#10b981',
@@ -239,7 +239,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
       },
     ],
     technologies: ['Next.js', 'React', 'Shopify Storefront API', 'Stripe', 'Tailwind CSS', 'GraphQL', 'Algolia'],
-    relatedProjectSlugs: ['oaksis-academy', 'bythawk-studio'],
+    relatedProjectSlugs: ['oaksis-academy', 'vtuber design-studio'],
     faqs: [
       {
         question: 'Do you work with Shopify, WooCommerce, or custom backends?',
@@ -257,7 +257,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     title: 'Bespoke Software & Cloud Engineering',
     tagline: 'Software engineered around your unique business requirements and data pipelines.',
     category: 'CUSTOM CLOUD SOFTWARE',
-    eyebrow: 'BYTHAWK // SOFTWARE ENGINEERING',
+    eyebrow: 'VTUBER DESIGN // SOFTWARE ENGINEERING',
     description:
       'Off-the-shelf software forces you to adapt your business to someone else’s limitations. We architect custom business software, client portals, and cloud microservices designed specifically for your unique operational workflows, competitive advantages, and scale.',
     accentColor: '#FBBF24',
@@ -328,7 +328,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     title: 'Cross-Platform Mobile Apps',
     tagline: 'Launch mobile experiences designed for real users, retention, and peak speed.',
     category: 'MOBILE PRODUCT ENGINEERING',
-    eyebrow: 'BYTHAWK // MOBILE SYSTEMS',
+    eyebrow: 'VTUBER DESIGN // MOBILE SYSTEMS',
     description:
       'We design and build iOS and Android mobile applications using modern cross-platform frameworks. We prioritize fluid 60fps animations, intuitive gesture navigation, offline-first local data synchronization, and frictionless biometric sign-in.',
     accentColor: '#f59e0b',
@@ -381,7 +381,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
       },
     ],
     technologies: ['React Native', 'TypeScript', 'Expo', 'Node.js', 'SQLite', 'Tailwind (NativeWind)', 'Firebase'],
-    relatedProjectSlugs: ['ceedrs-platform', 'bythawk-studio'],
+    relatedProjectSlugs: ['ceedrs-platform', 'vtuber design-studio'],
     faqs: [
       {
         question: 'Do you handle the Apple App Store and Google Play submission process?',
@@ -399,7 +399,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
     title: 'Growth Marketing & SEO Strategy',
     tagline: 'Combine technology, creative and marketing to accelerate compounding growth.',
     category: 'GROWTH ACCELERATION',
-    eyebrow: 'BYTHAWK // GROWTH ENGINEERING',
+    eyebrow: 'VTUBER DESIGN // GROWTH ENGINEERING',
     description:
       'Marketing without strong technical foundations burns ad spend. We unite high-converting landing page engineering, technical SEO, semantic structured data, and automated analytics funnels to deliver sustainable organic customer acquisition.',
     accentColor: '#F59E0B',
@@ -452,7 +452,7 @@ export const SOLUTIONS_DATA: Record<string, SolutionItemData> = {
       },
     ],
     technologies: ['React', 'Next.js', 'Google Tag Manager', 'PostHog', 'Ahrefs', 'Tailwind CSS', 'Schema.org'],
-    relatedProjectSlugs: ['bythawk-studio', 'oaksis-academy'],
+    relatedProjectSlugs: ['vtuber design-studio', 'oaksis-academy'],
     faqs: [
       {
         question: 'How quickly do SEO improvements translate into business results?',

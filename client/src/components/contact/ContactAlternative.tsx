@@ -62,9 +62,9 @@ export const ContactAlternative: React.FC = () => {
                 <MapPin className="w-3.5 h-3.5 text-amber-400" />
                 <span>STUDIO LOCATION</span>
               </div>
-              <h3 className="text-xl font-bold text-white">London, United Kingdom</h3>
+              <h3 className="text-xl font-bold text-white">Sydney & Melbourne, Australia</h3>
               <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed font-light">
-                Bythawk is a UK digital technology studio building high-performance web applications, enterprise platforms, and digital systems.
+                VTuber Design is an Australian digital technology studio building high-performance web applications, enterprise platforms, and digital systems.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ export const ContactAlternative: React.FC = () => {
 
           <div className="mt-6 pt-4 border-t border-white/[0.08]">
             <span className="text-[11px] font-mono text-slate-400 block tracking-wider">
-              BYTHAWK DIGITAL TECHNOLOGY & ENGINEERING STUDIO
+              VTUBER DESIGN DIGITAL TECHNOLOGY & ENGINEERING STUDIO
             </span>
           </div>
         </Card>

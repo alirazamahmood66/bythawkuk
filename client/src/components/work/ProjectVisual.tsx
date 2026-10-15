@@ -29,13 +29,13 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({
   if (heroImage) {
     return (
       <div
-        className={`w-full ${aspectClasses} rounded-2xl overflow-hidden relative border border-[#FFFBEB]/[0.08] bg-[#0B0C10]/90 group ${className}`}
+        className={`w-full ${aspectClasses} rounded-2xl overflow-hidden relative border border-[#FFFBEB]/[0.08] bg-[#0B0C10]/90 group theme-img-wrap ${className}`}
       >
         <img
           src={heroImage}
           alt={`${title} case study visual preview`}
           loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute top-4 right-4 z-10">
           <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded bg-[#040407]/80 border border-[#FFFBEB]/[0.08] text-[#FFFBEB]/70 backdrop-blur-md">
@@ -114,7 +114,7 @@ export const ProjectVisual: React.FC<ProjectVisualProps> = ({
       <div className="flex items-center justify-between text-[10px] font-mono text-[#FFFBEB]/50 z-10 pt-3 border-t border-[#FFFBEB]/[0.08]">
         <span className="flex items-center">
           <Sparkles className="w-3 h-3 mr-1" style={{ color: accentColor }} />
-          <span>BYTHAWK.UK // SPECIFICATION</span>
+          <span>vtuberdesign.co.au // SPECIFICATION</span>
         </span>
         <span className="text-[#F59E0B] font-medium">Verified Blueprint</span>
       </div>

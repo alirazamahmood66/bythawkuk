@@ -92,11 +92,11 @@ export const PROJECT_TYPE_OPTIONS: ProjectTypeOption[] = [
 ];
 
 export const BUDGET_OPTIONS: BudgetOption[] = [
-  { id: 'under-5k', label: 'Under £5k', hint: 'Focused scope / advisory' },
-  { id: '5k-10k', label: '£5k – £10k', hint: 'Targeted build / sprint' },
-  { id: '10k-25k', label: '£10k – £25k', hint: 'Core platform / store' },
-  { id: '25k-50k', label: '£25k – £50k', hint: 'Full-scale digital platform' },
-  { id: '50k-plus', label: '£50k+', hint: 'Comprehensive enterprise system' },
+  { id: 'under-10k', label: 'Under A$10k', hint: 'Focused scope / advisory' },
+  { id: '10k-25k', label: 'A$10k – A$25k', hint: 'Targeted build / sprint' },
+  { id: '25k-50k', label: 'A$25k – A$50k', hint: 'Core platform / store' },
+  { id: '50k-100k', label: 'A$50k – A$100k', hint: 'Full-scale digital platform' },
+  { id: '100k-plus', label: 'A$100k+', hint: 'Comprehensive enterprise system' },
   { id: 'not-sure', label: 'Not sure yet', hint: 'Determine during scoping' },
 ];
 
@@ -159,9 +159,9 @@ export const CONTACT_FAQS: ContactFaqItem[] = [
       'Yes. You can select multiple disciplines (e.g. Web Applications, UI/UX Design, and SEO) directly on the form to discuss a unified engagement.',
   },
   {
-    question: 'Do you work with organizations outside the United Kingdom?',
+    question: 'Do you work with organizations outside Australia?',
     answer:
-      'Yes. We collaborate with clients remotely across both the UK and internationally.',
+      'Yes. We collaborate with clients remotely across both Australia and international markets.',
   },
   {
     question: 'Do you provide ongoing support after deployment?',

@@ -75,7 +75,7 @@ export const TechnologyPhilosophy: React.FC = () => {
         })}
       </div>
 
-      {/* 2. UK / London Presence Banner */}
+      {/* 2. Australian Studio Presence Banner */}
       <Card
         variant="default"
         spotlight={true}
@@ -92,7 +92,7 @@ export const TechnologyPhilosophy: React.FC = () => {
               </span>
               <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>UK REGISTERED HQ</span>
+                <span>AUSTRALIA REGISTERED STUDIO</span>
               </span>
             </div>
 
@@ -112,7 +112,7 @@ export const TechnologyPhilosophy: React.FC = () => {
                 <span>OPERATIONAL TIMEZONE</span>
               </div>
               <div className="text-lg font-mono font-bold text-white tracking-tight">
-                GMT / BST (UK Time)
+                AEST / AEDT (Australia)
               </div>
               <div className="text-[10px] font-mono text-amber-300 bg-amber-950/60 border border-amber-500/30 px-3 py-1 rounded">
                 REAL-TIME SENIOR COLLABORATION

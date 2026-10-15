@@ -49,7 +49,7 @@ export const InsightDetailPage: React.FC = () => {
 
     if (!article) {
       return applySeo({
-        title: 'Insight Not Found | Bythawk Insights',
+        title: 'Insight Not Found | VTuber Design Insights',
         description: 'The requested editorial insight could not be found.',
         path: `/insights/${slug || ''}`,
         robots: 'noindex, nofollow',
@@ -57,7 +57,7 @@ export const InsightDetailPage: React.FC = () => {
     }
 
     return applySeo({
-      title: `${article.title} | Bythawk Insights`,
+      title: `${article.title} | VTuber Design Insights`,
       description: article.excerpt,
       path: `/insights/${article.slug}`,
       robots: 'noindex, follow', // Preview articles are marked noindex, follow until finalized
@@ -73,12 +73,12 @@ export const InsightDetailPage: React.FC = () => {
         },
         publisher: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
         mainEntityOfPage: {
           '@type': 'WebPage',
-          '@id': `https://bythawk.uk/insights/${article.slug}`,
+          '@id': `https://vtuberdesign.co.au/insights/${article.slug}`,
         },
       },
     });

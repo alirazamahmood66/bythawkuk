@@ -41,6 +41,8 @@ export const App: React.FC = () => {
 
           {/* Primary Agency Routes */}
           <Route path="work" element={<WorkPage />} />
+          <Route path="portfolio" element={<WorkPage />} />
+          <Route path="portfolio/:slug" element={<WorkDetailPage />} />
           <Route path="work/:slug" element={<WorkDetailPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="process" element={<ProcessPage />} />

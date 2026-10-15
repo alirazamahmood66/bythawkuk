@@ -21,7 +21,7 @@ export const ContactFaq: React.FC = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-            Starting a Project with Bythawk
+            Starting a Project with VTuber Design
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">

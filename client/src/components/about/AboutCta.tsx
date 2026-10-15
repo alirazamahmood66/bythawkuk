@@ -69,7 +69,7 @@ export const AboutCta: React.FC = () => {
         <div className="mt-10 pt-6 border-t border-white/[0.08] flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-400">
           <span className="inline-flex items-center gap-1.5 text-amber-400">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-            <span>UK Timezone Delivery</span>
+            <span>Australian Timezone Delivery</span>
           </span>
           <span>&bull;</span>
           <span>Direct Engineering Leadership</span>

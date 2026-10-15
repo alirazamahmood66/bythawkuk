@@ -13,6 +13,9 @@ import {
 } from 'lucide-react';
 import { InteractiveSolarCanvas } from '@/3d/canvas/InteractiveSolarCanvas';
 import { PLANET_SERVICES, type PlanetServiceStation } from '@/3d/config/planetServicesConfig';
+import { StarField } from '@/components/atmosphere/StarField';
+import { NebulaLayer } from '@/components/atmosphere/NebulaLayer';
+import { HeroCelestialLoader } from './HeroCelestialLoader';
 
 /* Detect mobile (SSR-safe) */
 function useIsMobile() {
@@ -30,6 +33,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
   const [isOverview, setIsOverview] = useState<boolean>(true);
   const [activeIndex, setActiveIndex] = useState<number>(3);
   const [hoveredPlanetId, setHoveredPlanetId] = useState<string | null>(null);
+  const [canvasReady, setCanvasReady] = useState<boolean>(false);
   const isMobile = useIsMobile();
 
   const activeStation: PlanetServiceStation = PLANET_SERVICES[activeIndex] || PLANET_SERVICES[0];
@@ -68,12 +72,21 @@ export const SolarSystemHeroSlider: React.FC = () => {
 
   return (
     <section
-      aria-label="BYTHAWK Interactive Solar System Hero Slider"
+      aria-label="VTUBER DESIGN Interactive Solar System Hero Slider"
       className="relative w-full bg-[#040407] overflow-hidden select-none z-10"
       style={{ height: isMobile ? '100svh' : '100vh', minHeight: isMobile ? '600px' : '700px' }}
     >
-      {/* ── 3D CANVAS ── */}
-      <div className="absolute inset-0 z-0">
+      {/* ── IN-SITU CELESTIAL GYROSCOPE LOADER (Maintains exact hero layout) ── */}
+      <HeroCelestialLoader isReady={canvasReady} />
+
+      {/* ── CELESTIAL BACKGROUND ATMOSPHERE ── */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <StarField count={isMobile ? 40 : 85} />
+        <NebulaLayer intensity="strong" />
+      </div>
+
+      {/* ── 3D CANVAS (Fades in seamlessly over the celestial atmosphere) ── */}
+      <div className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-out ${canvasReady ? 'opacity-100' : 'opacity-0'}`}>
         <InteractiveSolarCanvas
           activeStationIndex={isOverview ? null : activeIndex}
           isOverview={isOverview}
@@ -81,6 +94,7 @@ export const SolarSystemHeroSlider: React.FC = () => {
           onHoverPlanet={setHoveredPlanetId}
           onSelectPlanet={handleSelectPlanet}
           isMobile={isMobile}
+          onReady={() => setCanvasReady(true)}
         />
       </div>
 
@@ -93,7 +107,9 @@ export const SolarSystemHeroSlider: React.FC = () => {
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
             <span className="text-[10px] sm:text-[11px] font-mono tracking-[0.18em] text-[#F59E0B]/90 font-semibold uppercase">
-              {isMobile ? 'BYTHAWK // LIVE ORBIT' : 'BYTHAWK UK // LIVE CELESTIAL SYSTEM'}
+              {canvasReady
+                ? (isMobile ? 'VTUBER DESIGN // LIVE ORBIT' : 'VTUBER DESIGN // LIVE CELESTIAL SYSTEM')
+                : 'INITIALIZING CELESTIAL SYSTEM...'}
             </span>
           </div>
           <div className="flex items-center gap-2 text-[10px] font-mono text-[#CBD5E1]/70">
@@ -135,18 +151,19 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 transition={{ duration: 0.4, ease: 'easeOut' }}
                 className="pointer-events-none"
               >
-                {/* Eyebrow */}
-                <div className="flex items-center gap-2 mb-2 pointer-events-none">
+                {/* Eyebrow Pill */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0C10]/60 border border-[#F59E0B]/25 backdrop-blur-md mb-3 pointer-events-none shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] animate-pulse" />
-                  <span className="text-[10px] font-mono tracking-[0.25em] text-[#FBBF24] font-bold">
-                    DIGITAL STUDIO &bull; LONDON, UK
+                  <span className="text-[10px] sm:text-[11px] font-mono tracking-[0.22em] text-[#FBBF24] font-bold uppercase">
+                    DIGITAL STUDIO &bull; AUSTRALIA
                   </span>
+                  <span className="text-[9px] font-mono text-[#CBD5E1]/40 hidden sm:inline">&bull; SYDNEY / MELBOURNE</span>
                 </div>
 
-                {/* Hero headline — large, transparent to pointer events so planets behind are 100% clickable */}
+                {/* Hero headline — ultra-clean, high-impact, transparent to pointer events */}
                 <h1
-                  className={`font-extrabold text-[#FFFBEB] tracking-tight leading-[1.05] font-sans drop-shadow-[0_2px_24px_rgba(4, 4, 7, 0.9)] pointer-events-none ${
-                    isMobile ? 'text-3xl' : 'text-4xl sm:text-5xl lg:text-6xl'
+                  className={`font-black text-[#FFFBEB] tracking-tight leading-[1.02] font-sans drop-shadow-[0_4px_30px_rgba(4,4,7,0.95)] pointer-events-none ${
+                    isMobile ? 'text-3xl' : 'text-5xl sm:text-6xl lg:text-7xl'
                   }`}
                 >
                   We build{' '}
@@ -156,8 +173,8 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 </h1>
 
                 {!isMobile && (
-                  <p className="mt-3 text-sm text-[#CBD5E1]/80 max-w-lg leading-relaxed font-sans drop-shadow-[0_1px_8px_rgba(4, 4, 7, 0.8)] pointer-events-none">
-                    9 engineering disciplines in orbit. Click any planet to explore.
+                  <p className="mt-4 text-sm sm:text-base text-[#CBD5E1]/85 max-w-lg leading-relaxed font-sans drop-shadow-[0_2px_12px_rgba(4,4,7,0.9)] pointer-events-none font-normal">
+                    9 engineering disciplines in orbit. Web applications, conversion e-commerce &amp; bespoke digital growth.
                   </p>
                 )}
 
@@ -165,20 +182,20 @@ export const SolarSystemHeroSlider: React.FC = () => {
                 <div className={`flex items-center gap-3 ${isMobile ? 'mt-3' : 'mt-5'} pointer-events-none`}>
                   <Link
                     to="/contact"
-                    className="pointer-events-auto inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-[#040407] bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] shadow-lg shadow-[#F59E0B]/30 hover:shadow-[#FBBF24]/50 transition-all cursor-pointer"
+                    className="pointer-events-auto group inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-xs font-bold text-[#040407] bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C] shadow-lg shadow-[#F59E0B]/30 hover:shadow-[#FBBF24]/60 hover:scale-[1.02] transition-all cursor-pointer"
                   >
                     Start a Project
-                    <ArrowRight className="w-3.5 h-3.5" />
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                   </Link>
                   <button
                     type="button"
                     onClick={() => handleSelectPlanet('earth')}
-                    className="pointer-events-auto inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-semibold text-[#FFFBEB]/90 bg-[#0B0C10]/60 border border-[#FFFBEB]/[0.15] hover:bg-[#0B0C10] hover:text-[#F59E0B] hover:border-[#F59E0B]/40 transition-all backdrop-blur-sm cursor-pointer"
+                    className="pointer-events-auto inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-xs font-semibold text-[#FFFBEB]/90 bg-[#0B0C10]/70 border border-[#FFFBEB]/[0.18] hover:bg-[#0B0C10] hover:text-[#F59E0B] hover:border-[#F59E0B]/50 transition-all backdrop-blur-sm cursor-pointer"
                   >
                     Explore
-                    <ArrowUpRight className="w-3 h-3 text-[#F59E0B]" />
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#F59E0B]" />
                   </button>
-                  <span className="text-[10px] font-mono text-[#FBBF24]/70 hidden sm:inline">
+                  <span className="text-[10px] font-mono text-[#FBBF24]/75 hidden sm:inline tracking-wider">
                     9 DISCIPLINES IN ORBIT
                   </span>
                 </div>

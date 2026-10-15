@@ -28,21 +28,21 @@ export const WorkHero: React.FC = () => {
         <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 shadow-sm backdrop-blur-sm">
           <Sparkles className="w-3.5 h-3.5 text-amber-400" />
           <span className="text-xs font-mono font-medium tracking-wider text-amber-300 uppercase">
-            BYTHAWK // SELECTED WORK
+            VTUBER DESIGN // CLIENT PORTFOLIO
           </span>
         </div>
 
         {/* Primary Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] font-sans">
-          Digital Experiences <br />
+          Client Deployments &amp; <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDE047] via-[#F59E0B] to-[#EA580C]">
-            Built to Move.
+            Engineered Platforms.
           </span>
         </h1>
 
         {/* Supporting Copy */}
         <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl font-sans">
-          A selection of digital products, platforms, and architectural blueprints shaped through strategic discovery, user-centered interface craft, and rigorous UK engineering.
+          A selection of production digital platforms, high-concurrency web applications, and digital ecosystems built for forward-thinking enterprises across Australia and worldwide.
         </p>
       </div>
     </section>

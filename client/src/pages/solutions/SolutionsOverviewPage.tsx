@@ -27,17 +27,17 @@ export const SolutionsOverviewPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Targeted Agency Solutions | Bythawk',
+      title: 'Targeted Agency Solutions | VTuber Design',
       description:
         'Explore targeted digital solutions engineered for startups, enterprise modernization, headless e-commerce, and bespoke software systems.',
       path: '/solutions',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Targeted Agency Solutions | Bythawk',
+        name: 'Targeted Agency Solutions | VTuber Design',
         description:
           'Explore targeted digital solutions engineered for startups, enterprise modernization, headless e-commerce, and bespoke software systems.',
-        url: 'https://bythawk.uk/solutions',
+        url: 'https://vtuberdesign.co.au/solutions',
       },
     });
   }, []);
@@ -54,7 +54,7 @@ export const SolutionsOverviewPage: React.FC = () => {
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 backdrop-blur-sm shadow-sm">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                 <span className="text-xs font-mono font-medium tracking-wider text-amber-300">
-                  BYTHAWK // TARGETED PACKAGES
+                  VTUBER DESIGN // TARGETED PACKAGES
                 </span>
               </div>
 
@@ -77,7 +77,7 @@ export const SolutionsOverviewPage: React.FC = () => {
               eyebrow="TAILORED ENGAGEMENTS"
               title="Explore Our"
               highlight="Solutions"
-              description="Each package combines dedicated strategy, technical architecture, and rapid UK engineering execution."
+              description="Each package combines dedicated strategy, technical architecture, and rapid Australian engineering execution."
               className="mb-12"
             />
 

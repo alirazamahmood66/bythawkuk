@@ -40,13 +40,13 @@ export interface ProcessTeaserStage {
 
 export const ABOUT_DATA = {
   hero: {
-    eyebrow: 'BYTHAWK // ABOUT',
+    eyebrow: 'VTUBER DESIGN // ABOUT',
     headline: 'We Build Digital Worlds With Purpose.',
     subheadline:
-      'Bythawk is a UK digital technology studio. We unite commercial strategy, human-centered design, and resilient software engineering to help ambitious businesses build digital systems that endure and scale.',
+      'VTuber Design is an Australian digital technology studio. We unite commercial strategy, human-centered design, and resilient software engineering to help ambitious businesses build digital systems that endure and scale.',
     chips: [
       { label: 'DISCIPLINE', value: 'Strategy + Design + Tech' },
-      { label: 'BASE OF OPERATIONS', value: 'London • United Kingdom' },
+      { label: 'BASE OF OPERATIONS', value: 'Sydney • Melbourne • Australia' },
       { label: 'METHODOLOGY', value: 'Sprint-Based Validation' },
       { label: 'ENGAGEMENT', value: 'Direct Senior Leadership' },
     ],
@@ -54,7 +54,7 @@ export const ABOUT_DATA = {
 
   positioning: {
     headline: 'A Digital Technology Partner. Not Just a Vendor.',
-    lead: 'Too many digital projects fail at the seams between business strategy, creative design, and technical implementation. Bythawk was created to eliminate those seams.',
+    lead: 'Too many digital projects fail at the seams between business strategy, creative design, and technical implementation. VTuber Design was created to eliminate those seams.',
     paragraphs: [
       'We do not treat software engineering as a mechanical handover of disconnected tickets. We interrogate the underlying business imperative, design interfaces that prioritize human clarity, and engineer architectures prepared for operational longevity.',
       'Our team functions as an embedded digital technology partner—bringing senior technical leadership, transparent sprint velocity, and uncompromised software craftsmanship to every product milestone.',
@@ -129,7 +129,7 @@ export const ABOUT_DATA = {
 
   differences: {
     sectionEyebrow: '// ARCHITECTURAL ADVANTAGE',
-    sectionTitle: 'What Makes Bythawk Different',
+    sectionTitle: 'What Makes VTuber Design Different',
     items: [
       {
         tag: 'STRATEGIC MINDSET',
@@ -157,7 +157,7 @@ export const ABOUT_DATA = {
         title: 'Clear Communication',
         summary: 'Keep decisions, priorities, and velocity completely understandable.',
         detail:
-          'Direct access to senior engineering leads in UK business hours. Clear sprint demonstrations, honest risk assessments, and zero technical obfuscation.',
+          'Direct access to senior engineering leads in Australian business hours (AEST / AEDT). Clear sprint demonstrations, honest risk assessments, and zero technical obfuscation.',
       },
     ],
   },
@@ -262,16 +262,16 @@ export const ABOUT_DATA = {
   },
 
   ukPositioning: {
-    location: 'LONDON • UNITED KINGDOM',
+    location: 'SYDNEY • MELBOURNE • AUSTRALIA',
     eyebrow: '// HERITAGE & PRESENCE',
-    headline: 'UK Digital Thinking. Global Digital Ambition.',
+    headline: 'Australian Digital Craft. Global Digital Ambition.',
     description:
-      'Headquartered in the UK, Bythawk operates with the precision, rigor, and craft expected of modern British software studios. We partner with ambitious organizations across London, the United Kingdom, and international markets.',
+      'Operating across Australia, VTuber Design operates with the precision, rigor, and craft expected of premier software studios. We partner with ambitious organizations across Sydney, Melbourne, Brisbane, and international enterprise markets.',
   },
 
   processTeaser: {
     eyebrow: '// DELIVERY TRAJECTORY',
-    headline: 'The Bythawk Methodology',
+    headline: 'The VTuber Design Methodology',
     description:
       'Our projects move through a transparent 6-stage lifecycle designed to eliminate uncertainty and ensure consistent delivery.',
     stages: [
@@ -287,13 +287,13 @@ export const ABOUT_DATA = {
   },
 
   cta: {
-    eyebrow: 'INITIATE PARTNERSHIP // LONDON • UK',
+    eyebrow: 'INITIATE PARTNERSHIP // AUSTRALIA',
     headline: 'Build Something Worth Launching.',
     subheadline:
       'Have a digital product, platform, or growth challenge in mind? Let us explore what we can engineer together.',
     primaryButtonText: 'Start a Project',
     primaryButtonRoute: '/contact',
-    secondaryButtonText: 'Explore Our Work',
-    secondaryButtonRoute: '/work',
+    secondaryButtonText: 'Explore Portfolio',
+    secondaryButtonRoute: '/portfolio',
   },
 };

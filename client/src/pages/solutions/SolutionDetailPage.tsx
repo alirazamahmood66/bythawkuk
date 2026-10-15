@@ -32,7 +32,7 @@ export const SolutionDetailPage: React.FC = () => {
 
     if (solution) {
       return applySeo({
-        title: `${solution.title} | Bythawk Solutions`,
+        title: `${solution.title} | VTuber Design Solutions`,
         description: solution.description,
         path: `/solutions/${solution.slug}`,
       });
@@ -375,7 +375,7 @@ export const SolutionDetailPage: React.FC = () => {
                 Deploy {solution.title}
               </h2>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans max-w-xl mx-auto">
-                Schedule a 30-minute architectural scoping session with our London engineering team to evaluate requirements, timelines, and milestones.
+                Schedule a 30-minute architectural scoping session with our Australian engineering team to evaluate requirements, timelines, and milestones.
               </p>
               <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
                 <Link to="/contact">

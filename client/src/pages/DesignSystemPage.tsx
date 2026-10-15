@@ -24,8 +24,8 @@ export const DesignSystemPage: React.FC = () => {
 
   useEffect(() => {
     return applySeo({
-      title: 'Design System & Visual Tokens | Bythawk',
-      description: 'Internal design system and visual component tokens for Bythawk.',
+      title: 'Design System & Visual Tokens | VTuber Design',
+      description: 'Internal design system and visual component tokens for VTuber Design.',
       path: '/design-system',
       robots: 'noindex, nofollow',
     });
@@ -48,7 +48,7 @@ export const DesignSystemPage: React.FC = () => {
                   <Badge variant="cyan" withDot pulseDot>
                     Phase 2 Active
                   </Badge>
-                  <Badge variant="neutral">BYTHAWK.UK Design Tokens</Badge>
+                  <Badge variant="neutral">vtuberdesign.co.au Design Tokens</Badge>
                 </div>
                 <h1 className="heading-1 text-white">
                   Visual Foundation & <span className="text-amber-400">Design System</span>
@@ -214,7 +214,7 @@ export const DesignSystemPage: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Card className="p-6">
                   <span className="text-mono-label block mb-2">Heading 1 & 2</span>
-                  <p className="heading-1 mb-2">Pioneering UK Agency</p>
+                  <p className="heading-1 mb-2">Pioneering Australian Studio</p>
                   <p className="heading-2 text-amber-300">Intelligent Digital Systems</p>
                 </Card>
 
@@ -400,7 +400,7 @@ export const DesignSystemPage: React.FC = () => {
                   <Badge variant="emerald" withDot>Database Active</Badge>
                   <Badge variant="amber" withDot>In Progress</Badge>
                   <Badge variant="neutral">Architecture v1.0</Badge>
-                  <Badge variant="outline">UK Domain</Badge>
+                  <Badge variant="outline">Australian Domain</Badge>
                 </div>
               </Card>
 

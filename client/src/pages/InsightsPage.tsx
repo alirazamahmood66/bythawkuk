@@ -48,21 +48,21 @@ export const InsightsPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Insights | Bythawk — Digital Technology Studio',
+      title: 'Insights | VTuber Design — Digital Technology Studio',
       description:
         'Perspectives on technology, product design, development, search, and digital systems shaping modern businesses.',
       path: '/insights', // Canonical stays strictly /insights even when ?category= is present
       schema: {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Insights | Bythawk Digital Technology Studio',
+        name: 'Insights | VTuber Design Digital Technology Studio',
         description:
           'Perspectives on technology, product design, development, search, and digital systems shaping modern businesses.',
-        url: 'https://bythawk.uk/insights',
+        url: 'https://vtuberdesign.co.au/insights',
         provider: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });

@@ -76,7 +76,7 @@ export const INSIGHTS_ARTICLES: InsightArticle[] = [
     category: 'Web Development',
     categorySlug: 'web-development',
     status: 'preview',
-    author: 'Bythawk Editorial',
+    author: 'VTuber Design Editorial',
     readTime: '6 min read',
     featured: true,
     introduction:
@@ -133,7 +133,7 @@ export const INSIGHTS_ARTICLES: InsightArticle[] = [
     category: 'Technology',
     categorySlug: 'technology',
     status: 'preview',
-    author: 'Bythawk Editorial',
+    author: 'VTuber Design Editorial',
     readTime: '8 min read',
     featured: false,
     introduction:
@@ -187,7 +187,7 @@ export const INSIGHTS_ARTICLES: InsightArticle[] = [
     category: 'Mobile',
     categorySlug: 'mobile',
     status: 'preview',
-    author: 'Bythawk Editorial',
+    author: 'VTuber Design Editorial',
     readTime: '7 min read',
     featured: false,
     introduction:
@@ -241,7 +241,7 @@ export const INSIGHTS_ARTICLES: InsightArticle[] = [
     category: 'SEO',
     categorySlug: 'seo',
     status: 'preview',
-    author: 'Bythawk Editorial',
+    author: 'VTuber Design Editorial',
     readTime: '6 min read',
     featured: false,
     introduction:
@@ -295,7 +295,7 @@ export const INSIGHTS_ARTICLES: InsightArticle[] = [
     category: 'Digital Marketing',
     categorySlug: 'digital-marketing',
     status: 'preview',
-    author: 'Bythawk Editorial',
+    author: 'VTuber Design Editorial',
     readTime: '7 min read',
     featured: false,
     introduction:
@@ -348,7 +348,7 @@ export const INSIGHTS_ARTICLES: InsightArticle[] = [
     category: 'Design',
     categorySlug: 'design',
     status: 'preview',
-    author: 'Bythawk Editorial',
+    author: 'VTuber Design Editorial',
     readTime: '8 min read',
     featured: false,
     introduction:

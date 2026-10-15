@@ -22,7 +22,7 @@ export const ServiceBenefits: React.FC<ServiceBenefitsProps> = ({
           <span>// STRATEGIC ADVANTAGE</span>
         </div>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          Why Bythawk for {serviceTitle}
+          Why VTuber Design for {serviceTitle}
         </h2>
         <p className="text-slate-300 mt-3 text-base leading-relaxed font-sans">
           We bring senior technical rigor, commercial alignment, and meticulous engineering craft to every engagement.

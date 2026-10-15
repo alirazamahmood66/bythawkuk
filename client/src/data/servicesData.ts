@@ -84,11 +84,11 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     slug: 'web-development',
     title: 'Web Development',
     shortName: 'Web Dev',
-    eyebrow: 'BYTHAWK // CORE ENGINEERING',
+    eyebrow: 'VTUBER DESIGN // CORE ENGINEERING',
     category: 'CORE ENGINEERING',
     headline: 'High-Performance Web Platforms Engineered for Scale and Impact',
     introduction:
-      'We design and engineer modern web platforms that combine sub-second performance, bulletproof security, and seamless responsive behavior. Built with clean TypeScript, modern component architecture, and rigorous UK software craftsmanship.',
+      'We design and engineer modern web platforms that combine sub-second performance, bulletproof security, and seamless responsive behavior. Built with clean TypeScript, modern component architecture, and rigorous software craftsmanship.',
     accentColor: '#06b6d4',
     iconName: 'Globe',
     metaBadges: [
@@ -100,7 +100,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     overview: {
       strategicHeadline: 'Modern web engineering that eliminates template debt and prioritizes speed.',
       paragraphs: [
-        'At BYTHAWK, we believe a website is an operational asset, not a static digital brochure. Generic templates and bloated WordPress installations accumulate technical debt, impair conversion funnels, and compromise search indexation.',
+        'At VTUBER DESIGN, we believe a website is an operational asset, not a static digital brochure. Generic templates and bloated WordPress installations accumulate technical debt, impair conversion funnels, and compromise search indexation.',
         'We engineer custom web solutions from the ground up using strict type safety, modular component systems, and automated build pipelines. Every line of code is structured for maintainability, high throughput, and effortless future expansion.',
       ],
       corePillars: [
@@ -283,8 +283,8 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         description: 'Engineered from line one to pass Google Core Web Vitals with flying colors, driving conversion and search rankings.',
       },
       {
-        title: 'UK Engineering Leadership',
-        description: 'Direct communication with seasoned senior engineers working in UK business hours without handoff distortion.',
+        title: 'Senior Engineering Leadership',
+        description: 'Direct communication with seasoned senior engineers working in Australian business hours (AEST/AEDT) without handoff distortion.',
       },
       {
         title: 'True Codebase Ownership',
@@ -341,16 +341,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/seo',
       },
     ],
-    seoTitle: 'Custom Web Development Services UK | High Performance Platforms | BYTHAWK',
+    seoTitle: 'Custom Web Development Services Australia | High Performance Platforms | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK builds high-performance, custom web platforms and headless digital experiences for forward-thinking UK businesses. TypeScript, React, and clean architecture.',
+      'VTUBER DESIGN builds high-performance, custom web platforms and headless digital experiences for forward-thinking Australian businesses. TypeScript, React, and clean architecture.',
   },
 
   'web-applications': {
     slug: 'web-applications',
     title: 'Web Applications',
     shortName: 'Web Apps',
-    eyebrow: 'BYTHAWK // CLOUD SYSTEMS',
+    eyebrow: 'VTUBER DESIGN // CLOUD SYSTEMS',
     category: 'CLOUD SYSTEMS',
     headline: 'Mission-Critical Web Applications & Enterprise Dashboards',
     introduction:
@@ -367,7 +367,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Transforming complex business logic into dependable, scalable software systems.',
       paragraphs: [
         'Enterprise operations and SaaS ventures cannot afford brittle tooling, unreliable state synchronisation, or clunky user interfaces. As your business scales, your web applications must support concurrent users, high-volume transactions, and evolving permissions without degradation.',
-        'BYTHAWK builds bespoke web applications designed for long-term operational resilience. We combine rigorous domain modeling, type-safe API architectures, and intuitive user experiences that turn labyrinthine workflows into productive daily routines.',
+        'VTUBER DESIGN builds bespoke web applications designed for long-term operational resilience. We combine rigorous domain modeling, type-safe API architectures, and intuitive user experiences that turn labyrinthine workflows into productive daily routines.',
       ],
       corePillars: [
         {
@@ -607,16 +607,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/mobile-app-development',
       },
     ],
-    seoTitle: 'Custom Web Application Development UK | SaaS & Dashboards | BYTHAWK',
+    seoTitle: 'Custom Web Application Development Australia | SaaS & Dashboards | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK builds mission-critical web applications, enterprise SaaS platforms, and data-dense dashboards for UK businesses. TypeScript, React, and scalable cloud systems.',
+      'VTUBER DESIGN builds mission-critical web applications, enterprise SaaS platforms, and data-dense dashboards for Australian enterprises. TypeScript, React, and scalable cloud systems.',
   },
 
   'ecommerce': {
     slug: 'ecommerce',
     title: 'E-commerce Development',
     shortName: 'E-commerce',
-    eyebrow: 'BYTHAWK // COMMERCE ENGINE',
+    eyebrow: 'VTUBER DESIGN // COMMERCE ENGINE',
     category: 'COMMERCE ENGINE',
     headline: 'Conversion-Optimized Commerce Platforms Built to Scale Globally',
     introduction:
@@ -633,7 +633,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Engineering high-velocity commerce engines where every millisecond translates to revenue.',
       paragraphs: [
         'In digital commerce, sluggish load speeds, complicated multi-step checkouts, and poor mobile responsiveness directly bleed top-line revenue. Winning brands require commerce infrastructure that loads instantly, handles traffic flash sales without breaking, and converts visitors into loyal repeat customers.',
-        'BYTHAWK engineers custom commerce solutions tailored to ambitious UK and international brands. Whether designing a bespoke headless storefront or extending Shopify Plus with custom private apps, we focus obsessively on speed, conversion architecture, and backend automation.',
+        'VTUBER DESIGN engineers custom commerce solutions tailored to ambitious Australian and international brands. Whether designing a bespoke headless storefront or extending Shopify Plus with custom private apps, we focus obsessively on speed, conversion architecture, and backend automation.',
       ],
       corePillars: [
         {
@@ -819,7 +819,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       },
       {
         title: 'International Ready',
-        description: 'Effortlessly serve customers across the UK, Europe, and the world with local currencies and tax calculations.',
+        description: 'Effortlessly serve customers across Australia, the APAC region, and worldwide with local currencies and tax calculations.',
       },
     ],
     faqs: [
@@ -872,16 +872,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/digital-marketing',
       },
     ],
-    seoTitle: 'E-commerce Website Development UK | Shopify Plus & Headless Commerce | BYTHAWK',
+    seoTitle: 'E-commerce Website Development Australia | Shopify Plus & Headless Commerce | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK designs and engineers high-conversion e-commerce stores, Shopify Plus platforms, and headless commerce solutions for ambitious UK and global brands.',
+      'VTUBER DESIGN designs and engineers high-conversion e-commerce stores, Shopify Plus platforms, and headless commerce solutions for ambitious Australian and global brands.',
   },
 
   'mobile-app-development': {
     slug: 'mobile-app-development',
     title: 'Mobile App Development',
     shortName: 'Mobile Apps',
-    eyebrow: 'BYTHAWK // MOBILE PLATFORMS',
+    eyebrow: 'VTUBER DESIGN // MOBILE PLATFORMS',
     category: 'MOBILE PLATFORMS',
     headline: 'Native & Cross-Platform Mobile Apps Engineered for Performance',
     introduction:
@@ -898,7 +898,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Pocket-sized software that feels fluid, native, and indispensable.',
       paragraphs: [
         'A successful mobile application must do far more than replicate a responsive website in a webview. Users expect instant 60fps animations, haptic touch feedback, flawless offline data persistence, and native operating system integration.',
-        'At BYTHAWK, we engineer production-grade mobile applications using React Native and TypeScript, backed by native Swift and Kotlin modules where performance demands it. We manage the entire lifecycle from early wireframing through to App Store and Google Play approval.',
+        'At VTUBER DESIGN, we engineer production-grade mobile applications using React Native and TypeScript, backed by native Swift and Kotlin modules where performance demands it. We manage the entire lifecycle from early wireframing through to App Store and Google Play approval.',
       ],
       corePillars: [
         {
@@ -1084,7 +1084,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       },
       {
         title: 'Offline Dependability',
-        description: 'Your users can continue creating and viewing data whether they are on a London Underground tube or in remote areas.',
+        description: 'Your users can continue creating and viewing data whether they are commuting on the city loop or in remote regional areas.',
       },
     ],
     faqs: [
@@ -1137,16 +1137,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/web-development',
       },
     ],
-    seoTitle: 'Mobile App Development UK | React Native iOS & Android Apps | BYTHAWK',
+    seoTitle: 'Mobile App Development Australia | React Native iOS & Android Apps | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK engineers high-performance cross-platform iOS and Android mobile apps for UK enterprises. React Native, TypeScript, and offline-first architecture.',
+      'VTUBER DESIGN engineers high-performance cross-platform iOS and Android mobile apps for Australian enterprises. React Native, TypeScript, and offline-first architecture.',
   },
 
   'digital-marketing': {
     slug: 'digital-marketing',
     title: 'Digital Marketing',
     shortName: 'Marketing',
-    eyebrow: 'BYTHAWK // GROWTH ENGINE',
+    eyebrow: 'VTUBER DESIGN // GROWTH ENGINE',
     category: 'GROWTH ENGINE',
     headline: 'Precision Multi-Channel Growth Campaigns Grounded in Data',
     introduction:
@@ -1163,7 +1163,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Eliminating guesswork with mathematically disciplined customer acquisition.',
       paragraphs: [
         'Marketing budgets are frequently squandered on vanity impressions, clickbait traffic, and inaccurate attribution dashboards. In modern digital markets, winning companies treat marketing as an engineering discipline: systematically testing hypotheses, optimizing conversion funnels, and allocating spend where incremental returns are mathematically proven.',
-        'BYTHAWK unites technical analytics with creative advertising. We develop full-funnel acquisition engines across Google Ads, Meta, LinkedIn, and lifecycle email automation, ensuring every marketing pound invested maps directly to verified business revenue.',
+        'VTUBER DESIGN unites technical analytics with creative advertising. We develop full-funnel acquisition engines across Google Ads, Meta, LinkedIn, and lifecycle email automation, ensuring every marketing pound invested maps directly to verified business revenue.',
       ],
       corePillars: [
         {
@@ -1400,16 +1400,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/ui-ux-design',
       },
     ],
-    seoTitle: 'Digital Marketing Agency UK | Paid Ads, PPC & Growth Strategy | BYTHAWK',
+    seoTitle: 'Digital Marketing Agency Australia | Paid Ads, PPC & Growth Strategy | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK delivers data-driven digital marketing, Google Ads management, paid social campaigns, and server-side attribution for growth-focused UK businesses.',
+      'VTUBER DESIGN delivers data-driven digital marketing, Google Ads management, paid social campaigns, and server-side attribution for growth-focused Australian businesses.',
   },
 
   'seo': {
     slug: 'seo',
     title: 'SEO & Search Architecture',
     shortName: 'SEO',
-    eyebrow: 'BYTHAWK // DISCOVERY SYSTEMS',
+    eyebrow: 'VTUBER DESIGN // DISCOVERY SYSTEMS',
     category: 'DISCOVERY',
     headline: 'Technical Search Engine Optimization for Sustainable Market Dominance',
     introduction:
@@ -1418,7 +1418,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
     iconName: 'Search',
     metaBadges: [
       { label: 'FOCUS', value: 'Technical SEO & Core Web Vitals' },
-      { label: 'REMIT', value: 'UK National & International' },
+      { label: 'REMIT', value: 'Australia Nationwide & Global' },
       { label: 'TOOLING', value: 'Ahrefs / Screaming Frog / Semrush' },
       { label: 'STANDARDS', value: 'Schema.org JSON-LD / Core Web Vitals' },
     ],
@@ -1426,7 +1426,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Engineering search visibility from the server to the search result snippet.',
       paragraphs: [
         'Search Engine Optimization is no longer about stuffing arbitrary keywords into thin blog posts. Modern search algorithms evaluate rendering efficiency, mobile page performance, structured entity relationships, and authoritativeness across the entire domain.',
-        'At BYTHAWK, we treat SEO as a multidisciplinary engineering and content architecture service. We eliminate crawl bloat, fix indexation leaks, deploy rich semantic Schema.org structured data, and build programmatic content hubs that capture high-intent commercial search traffic.',
+        'At VTUBER DESIGN, we treat SEO as a multidisciplinary engineering and content architecture service. We eliminate crawl bloat, fix indexation leaks, deploy rich semantic Schema.org structured data, and build programmatic content hubs that capture high-intent commercial search traffic.',
       ],
       corePillars: [
         {
@@ -1476,7 +1476,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         id: 'cap-seo-5',
         number: '05',
         title: 'International SEO & Multi-Region Hreflang',
-        description: 'Configuring precise hreflang tags, multi-currency routing, and geotargeting for UK, European, and global audiences.',
+        description: 'Configuring precise hreflang tags, multi-currency routing, and geotargeting for Australian, APAC, and global audiences.',
         keyOutputs: ['Hreflang XML Sitemaps', 'Multi-Regional Canonical Routing', 'Geo-Targeting Verification', 'Currency Signaling'],
       },
       {
@@ -1662,16 +1662,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/web-applications',
       },
     ],
-    seoTitle: 'Technical SEO Agency UK | Search Architecture & Core Web Vitals | BYTHAWK',
+    seoTitle: 'Technical SEO Agency Australia | Search Architecture & Core Web Vitals | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK provides enterprise technical SEO, Core Web Vitals remediation, Schema.org structured data, and search architecture for UK companies seeking organic dominance.',
+      'VTUBER DESIGN provides enterprise technical SEO, Core Web Vitals remediation, Schema.org structured data, and search architecture for Australian companies seeking organic dominance.',
   },
 
   'graphic-design': {
     slug: 'graphic-design',
     title: 'Graphic Design & Brand Systems',
     shortName: 'Graphic Design',
-    eyebrow: 'BYTHAWK // BRAND IDENTITY',
+    eyebrow: 'VTUBER DESIGN // BRAND IDENTITY',
     category: 'BRAND IDENTITY',
     headline: 'Cohesive Visual Systems & Creative Assets Built for the Digital Era',
     introduction:
@@ -1688,7 +1688,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Engineering cohesive visual languages that communicate credibility and prestige.',
       paragraphs: [
         'A disjointed visual identity damages trust before a customer ever reads your value proposition. In a crowded digital landscape, inconsistent typography, outdated logos, and generic stock imagery signal lack of attention to detail.',
-        'At BYTHAWK, we design comprehensive brand identity systems engineered for the digital era. We develop purposeful visual languages—spanning vector marks, mathematical typography scales, bespoke color palettes, and motion design guidelines—that make your business instantly recognizable across web, mobile, and print.',
+        'At VTUBER DESIGN, we design comprehensive brand identity systems engineered for the digital era. We develop purposeful visual languages—spanning vector marks, mathematical typography scales, bespoke color palettes, and motion design guidelines—that make your business instantly recognizable across web, mobile, and print.',
       ],
       corePillars: [
         {
@@ -1922,16 +1922,16 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/digital-marketing',
       },
     ],
-    seoTitle: 'Graphic Design & Brand Identity Agency UK | Visual Systems | BYTHAWK',
+    seoTitle: 'Graphic Design & Brand Identity Agency Australia | Visual Systems | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK crafts bespoke visual identity systems, logos, typography hierarchies, and digital design collateral for forward-thinking UK businesses.',
+      'VTUBER DESIGN crafts bespoke visual identity systems, logos, typography hierarchies, and digital design collateral for forward-thinking Australian businesses.',
   },
 
   'ui-ux-design': {
     slug: 'ui-ux-design',
     title: 'UI/UX Design',
     shortName: 'UI/UX',
-    eyebrow: 'BYTHAWK // EXPERIENCE CRAFT',
+    eyebrow: 'VTUBER DESIGN // EXPERIENCE CRAFT',
     category: 'EXPERIENCE CRAFT',
     headline: 'Intuitive, Research-Backed User Experiences for Complex Digital Products',
     introduction:
@@ -1948,7 +1948,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       strategicHeadline: 'Eliminating user friction through rigorous interface architecture and design token precision.',
       paragraphs: [
         'Complex digital products and platforms often fail not because of flawed underlying technology, but because users cannot navigate their interfaces intuitively. When workflows are convoluted, onboarding is painful, or information hierarchies are chaotic, user adoption plummets and churn spikes.',
-        'At BYTHAWK, we design digital interfaces that feel like natural extensions of human thought. We blend qualitative user research, iterative wireframing, and production-grade Figma design systems to create digital experiences that balance visual sophistication with operational clarity.',
+        'At VTUBER DESIGN, we design digital interfaces that feel like natural extensions of human thought. We blend qualitative user research, iterative wireframing, and production-grade Figma design systems to create digital experiences that balance visual sophistication with operational clarity.',
       ],
       corePillars: [
         {
@@ -2138,7 +2138,7 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
       {
         question: 'How do your UI/UX designers collaborate with developers?',
         answer:
-          'Because BYTHAWK is an integrated technology agency, our designers speak developer language. We design with auto-layout flexbox principles, organize components around code props, export synchronized design tokens (JSON/CSS), and conduct visual QA reviews on staging builds.',
+          'Because VTUBER DESIGN is an integrated technology agency, our designers speak developer language. We design with auto-layout flexbox principles, organize components around code props, export synchronized design tokens (JSON/CSS), and conduct visual QA reviews on staging builds.',
       },
       {
         question: 'What is the difference between UI and UX design?',
@@ -2184,8 +2184,8 @@ export const SERVICES_DETAIL_DATA: Record<string, ServiceDetail> = {
         route: '/services/mobile-app-development',
       },
     ],
-    seoTitle: 'UI/UX Design Agency UK | User Experience & Design Systems | BYTHAWK',
+    seoTitle: 'UI/UX Design Agency Australia | User Experience & Design Systems | VTUBER DESIGN',
     seoDescription:
-      'BYTHAWK creates intuitive, research-driven UI/UX designs, SaaS dashboards, and design systems for forward-thinking UK technology companies.',
+      'VTUBER DESIGN creates intuitive, research-driven UI/UX designs, SaaS dashboards, and design systems for forward-thinking Australian technology companies.',
   },
 };

@@ -8,21 +8,21 @@ export const CookiesPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return applySeo({
-      title: 'Cookie Policy | Bythawk',
+      title: 'Cookie Policy | VTuber Design',
       description:
-        'Learn about essential browser storage technologies used on Bythawk.uk to provide secure and responsive digital experiences.',
+        'Learn about essential browser storage technologies used on vtuberdesign.co.au to provide secure and responsive digital experiences.',
       path: '/cookies',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: 'Cookie Policy | Bythawk',
+        name: 'Cookie Policy | VTuber Design',
         description:
-          'Learn about essential browser storage technologies used on Bythawk.uk to provide secure and responsive digital experiences.',
-        url: 'https://bythawk.uk/cookies',
+          'Learn about essential browser storage technologies used on vtuberdesign.co.au to provide secure and responsive digital experiences.',
+        url: 'https://vtuberdesign.co.au/cookies',
         provider: {
           '@type': 'Organization',
-          name: 'BYTHAWK',
-          url: 'https://bythawk.uk',
+          name: 'VTUBER DESIGN',
+          url: 'https://vtuberdesign.co.au',
         },
       },
     });

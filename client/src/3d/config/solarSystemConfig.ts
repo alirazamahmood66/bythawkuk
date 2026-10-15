@@ -326,7 +326,7 @@ export const HERO_SERVICE_PLANETS: ServicePlanetConfig[] = [
 ];
 
 export const SOLAR_CORE_CONFIG = {
-  name: 'BYTHAWK CORE',
+  name: 'VTUBER DESIGN CORE',
   radius: 1.25,
   color: '#F59E0B',
   warmColor: '#FFFBEB',

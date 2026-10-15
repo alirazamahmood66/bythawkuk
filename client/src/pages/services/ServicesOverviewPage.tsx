@@ -36,17 +36,17 @@ export const ServicesOverviewPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     return applySeo({
-      title: 'Digital Services | Bythawk',
+      title: 'Digital Services | VTuber Design',
       description:
-        'Eight interconnected digital disciplines engineered with UK software craftsmanship. From web applications to user experience and technical search architecture.',
+        'Eight interconnected digital disciplines engineered with Australian software craftsmanship. From web applications to user experience and technical search architecture.',
       path: '/services',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Digital Services | Bythawk',
+        name: 'Digital Services | VTuber Design',
         description:
-          'Eight interconnected digital disciplines engineered with UK software craftsmanship.',
-        url: 'https://bythawk.uk/services',
+          'Eight interconnected digital disciplines engineered with Australian software craftsmanship.',
+        url: 'https://vtuberdesign.co.au/services',
       },
     });
   }, []);
@@ -117,7 +117,7 @@ export const ServicesOverviewPage: React.FC = () => {
       >
         <img
           src="/images/cosmic/bythawk_recon_spaceship.png"
-          alt="Bythawk tactical starship in gravitational slingshot"
+          alt="VTuber Design tactical starship in gravitational slingshot"
           className="w-full h-full object-contain filter drop-shadow-[0_0_55px_rgba(245, 158, 11, 0.7)] opacity-95"
           loading="lazy"
         />
@@ -129,7 +129,7 @@ export const ServicesOverviewPage: React.FC = () => {
           <div className="max-w-3xl mb-16 space-y-4">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-500/30 text-xs font-mono text-amber-400">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>BYTHAWK // SERVICE CAPABILITIES</span>
+              <span>VTUBER DESIGN // SERVICE CAPABILITIES</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -137,7 +137,7 @@ export const ServicesOverviewPage: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
-              Eight interconnected digital disciplines engineered with UK software craftsmanship. From mission-critical cloud platforms to research-backed user experiences and technical search architectures.
+              Eight interconnected digital disciplines engineered with Australian software craftsmanship. From mission-critical cloud platforms to research-backed user experiences and technical search architectures.
             </p>
           </div>
 

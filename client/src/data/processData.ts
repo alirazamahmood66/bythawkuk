@@ -32,7 +32,7 @@ export interface ProcessFaqItem {
 
 export const PROCESS_DATA = {
   hero: {
-    eyebrow: 'BYTHAWK // PROCESS',
+    eyebrow: 'VTUBER DESIGN // PROCESS',
     headline: 'From Complexity to Clarity.',
     subheadline:
       'A structured, transparent engineering methodology that turns intricate business challenges into purposeful digital products, platforms, and experiences.',
@@ -80,7 +80,7 @@ export const PROCESS_DATA = {
       name: 'Design',
       shortDescription: 'Craft intuitive, accessible user interfaces and a scalable design system.',
       overview:
-        'Design at Bythawk is ergonomic and intentional. We create systematic Figma component libraries, test interactive wireframes with real users, and ensure design tokens map 1:1 with code.',
+        'Design at VTuber Design is ergonomic and intentional. We create systematic Figma component libraries, test interactive wireframes with real users, and ensure design tokens map 1:1 with code.',
       activities: [
         'Low-fidelity wireframing & task flow validation',
         'Interactive high-fidelity prototyping',
@@ -258,7 +258,7 @@ export const PROCESS_DATA = {
     {
       question: 'Do you handle both design and development in-house?',
       answer:
-        'Yes. Bythawk provides integrated strategy, design, and engineering under one roof. Our designers and engineers collaborate closely, ensuring that UI prototypes translate pixel-for-pixel into production-grade, accessible code without handoff friction.',
+        'Yes. VTuber Design provides integrated strategy, design, and engineering under one roof. Our designers and engineers collaborate closely, ensuring that UI prototypes translate pixel-for-pixel into production-grade, accessible code without handoff friction.',
     },
     {
       question: 'Can you collaborate alongside our internal technical team?',
@@ -281,10 +281,10 @@ export const PROCESS_DATA = {
     eyebrow: 'READY TO MOVE // IDEA TO EXECUTION',
     headline: 'Ready to Move From Idea to Execution?',
     subheadline:
-      'Book a technical discovery session with our London engineering team. We will review your requirements and outline a clear delivery roadmap.',
+      'Book a technical discovery session with our Australian engineering team. We will review your requirements and outline a clear delivery roadmap.',
     primaryButtonText: 'Start a Project',
     primaryButtonRoute: '/contact',
-    secondaryButtonText: 'Explore Our Work',
-    secondaryButtonRoute: '/work',
+    secondaryButtonText: 'Explore Portfolio',
+    secondaryButtonRoute: '/portfolio',
   },
 };
